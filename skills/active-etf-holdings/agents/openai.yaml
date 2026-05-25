@@ -1,0 +1,4 @@
+interface:
+  display_name: "Active ETF Holdings"
+  short_description: "Collect and summarize Taiwan active ETF holdings."
+  default_prompt: "統計台灣主動型 ETF 的持股張數與比例，並輸出彙總與明細檔。"

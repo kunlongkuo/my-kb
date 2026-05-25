@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+google-genai
+chromadb
+pymupdf
+python-docx
+python-pptx
+pandas
+openpyxl
+python-dotenv
+aiofiles
+sentence-transformers
+pillow
