@@ -348,5 +348,11 @@ N8nJS\Ԛ) 0
 - **報告更新**：同步重新生成並更新 [主動型ETF持股變動.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md) 與 [主動型ETF持股彙總.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md)，以便快速檢視前 50 大熱門持股與涵蓋度。
 - **比較清單同步**：解析 [主動型ETF清單.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF清單.md) 中的最新比較表，自動更新 [台灣ETF比較清單.xlsx](file:///i:/Mark/my-kb/wiki/金融投資/台灣ETF比較清單.xlsx) 中的「主動型」分頁（已更新 28 檔主動型 ETF 資訊）。
 
+## [2026-05-26] active-etf | 每日持股更新與比較清單同步
+- **數據採集與比對**：成功運行 `collect_active_etf_holdings.py`，從 MoneyDJ 爬取今日（2026/05/26）最新 28 檔主動型與被動型 ETF 持股數據，共解析 1502 筆明細，並將數據無縫寫入 `wiki/金融投資/主動型ETF持股明細.xlsx` 中的 `20260526` 工作表。
+- **歷史數據累加**：自動將今日的持股異動比對昨日（2026/05/25）成果，安全更新至 Excel 檔案 `主動型ETF持股明細.xlsx` 中的「新增個股」、「刪除個股」、「加碼張數」與「減碼張數」歷史分頁中，並維持分頁排序與所有歷史資料分頁完整性。
+- **每週加減碼明細計算**：執行 `add_weekly_summary.py`，順利計算並更新 Excel 檔案 `主動型ETF持股明細.xlsx` 中的「Weekly Additions」與「Weekly Reductions」工作表，完成每週持股變動 analysis。
+- **報告與比較清單更新**：同步重新生成並更新 [主動型ETF持股變動.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md) 與 [主動型ETF持股彙總.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md)，並解析 [主動型ETF清單.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF清單.md) 將數據同步更新至 [台灣ETF比較清單.xlsx](file:///i:/Mark/my-kb/wiki/金融投資/台灣ETF比較清單.xlsx) 中的「主動型」分頁。
+
 
 
