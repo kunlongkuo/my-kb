@@ -341,6 +341,8 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                     "etf_name": row_new["ETF名稱"],
                     "stock_code": s_code,
                     "stock_name": row_new["持股名稱"],
+                    "lots_prev": lots_prev,
+                    "lots_new": lots_new,
                     "amount": lots_new - lots_prev
                 })
             elif lots_prev > lots_new:
@@ -350,6 +352,8 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                     "etf_name": row_new["ETF名稱"],
                     "stock_code": s_code,
                     "stock_name": row_new["持股名稱"],
+                    "lots_prev": lots_prev,
+                    "lots_new": lots_new,
                     "amount": lots_prev - lots_new
                 })
 
@@ -365,6 +369,8 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
     fill_header = PatternFill(start_color="4F81BD", end_color="4F81BD", fill_type="solid")
     
     def write_diff_sheet(sheet_title, headers, data_list):
+        is_add_dec_sheet = sheet_title in ("加碼張數", "減碼張數")
+        
         if sheet_title in workbook.sheetnames:
             ws_diff = workbook[sheet_title]
             
@@ -402,12 +408,17 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                         cell.alignment = Alignment(horizontal="center")
                     elif col_idx in (3, 5):
                         cell.alignment = Alignment(horizontal="left")
-                    elif col_idx == 6:
+                    elif col_idx in (6, 7, 8):
                         cell.alignment = Alignment(horizontal="right")
-                        if isinstance(val, float) and not val.is_integer():
-                            cell.number_format = '#,##0.00'
-                        else:
-                            cell.number_format = '#,##0'
+                        if isinstance(val, (int, float)):
+                            if isinstance(val, float) and not val.is_integer():
+                                cell.number_format = '#,##0.00'
+                            else:
+                                cell.number_format = '#,##0'
+                    elif col_idx == 9 and is_add_dec_sheet:
+                        cell.alignment = Alignment(horizontal="right")
+                        if isinstance(val, (int, float)):
+                            cell.number_format = '0.00%'
                 cell.border = thin_border
             if next_row == 1:
                 ws_diff.row_dimensions[next_row].height = 25
@@ -423,17 +434,50 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
             ws_diff.cell(row=next_row, column=4, value=item["stock_code"]).alignment = Alignment(horizontal="center")
             ws_diff.cell(row=next_row, column=5, value=item["stock_name"]).alignment = Alignment(horizontal="left")
             
-            cell_amount = ws_diff.cell(row=next_row, column=6, value=item["amount"])
-            cell_amount.alignment = Alignment(horizontal="right")
-            
-            # 格式化數值
-            val = item["amount"]
-            if isinstance(val, float) and not val.is_integer():
-                cell_amount.number_format = '#,##0.00'
-            else:
-                cell_amount.number_format = '#,##0'
+            if is_add_dec_sheet:
+                # Column F: 原張數
+                cell_prev = ws_diff.cell(row=next_row, column=6, value=item["lots_prev"])
+                cell_prev.alignment = Alignment(horizontal="right")
+                if isinstance(item["lots_prev"], float) and not item["lots_prev"].is_integer():
+                    cell_prev.number_format = '#,##0.00'
+                else:
+                    cell_prev.number_format = '#,##0'
                 
-            for col in range(1, 7):
+                # Column G: 加碼後張數 / 減碼後張數
+                cell_new = ws_diff.cell(row=next_row, column=7, value=item["lots_new"])
+                cell_new.alignment = Alignment(horizontal="right")
+                if isinstance(item["lots_new"], float) and not item["lots_new"].is_integer():
+                    cell_new.number_format = '#,##0.00'
+                else:
+                    cell_new.number_format = '#,##0'
+                
+                # Column H: 加碼張數 / 減碼張數 (Formula)
+                if sheet_title == "加碼張數":
+                    formula_diff = f"=G{next_row}-F{next_row}"
+                else:
+                    formula_diff = f"=F{next_row}-G{next_row}"
+                cell_amount = ws_diff.cell(row=next_row, column=8, value=formula_diff)
+                cell_amount.alignment = Alignment(horizontal="right")
+                cell_amount.number_format = '#,##0.00'
+                
+                # Column I: 加碼比例 / 減碼比例 (Formula)
+                formula_pct = f"=IF(F{next_row}=0,0,H{next_row}/F{next_row})"
+                cell_pct = ws_diff.cell(row=next_row, column=9, value=formula_pct)
+                cell_pct.alignment = Alignment(horizontal="right")
+                cell_pct.number_format = '0.00%'
+                
+                max_cols = 9
+            else:
+                cell_amount = ws_diff.cell(row=next_row, column=6, value=item["amount"])
+                cell_amount.alignment = Alignment(horizontal="right")
+                val = item["amount"]
+                if isinstance(val, float) and not val.is_integer():
+                    cell_amount.number_format = '#,##0.00'
+                else:
+                    cell_amount.number_format = '#,##0'
+                max_cols = 6
+                
+            for col in range(1, max_cols + 1):
                 c = ws_diff.cell(row=next_row, column=col)
                 c.font = font_regular
                 c.border = thin_border
@@ -441,15 +485,18 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
             next_row += 1
             
         # 欄位寬度調整
-        col_widths = {"A": 15, "B": 12, "C": 25, "D": 12, "E": 20, "F": 15}
+        if is_add_dec_sheet:
+            col_widths = {"A": 15, "B": 12, "C": 25, "D": 12, "E": 20, "F": 15, "G": 15, "H": 15, "I": 15}
+        else:
+            col_widths = {"A": 15, "B": 12, "C": 25, "D": 12, "E": 20, "F": 15}
         for col_letter, width in col_widths.items():
             ws_diff.column_dimensions[col_letter].width = width
         ws_diff.views.sheetView[0].showGridLines = True
 
     write_diff_sheet("新增個股", ["新增日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "新增張數"], added_list)
     write_diff_sheet("刪除個股", ["刪除日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "刪除張數"], removed_list)
-    write_diff_sheet("加碼張數", ["加碼日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "加碼張數"], increased_list)
-    write_diff_sheet("減碼張數", ["減碼日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "減碼張數"], decreased_list)
+    write_diff_sheet("加碼張數", ["加碼日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "原張數", "加碼後張數", "加碼張數", "加碼比例"], increased_list)
+    write_diff_sheet("減碼張數", ["減碼日期", "ETF代號", "ETF名稱", "個股代號", "個股名稱", "原張數", "減碼後張數", "減碼張數", "減碼比例"], decreased_list)
     
     # Reorder sheets so the comparison sheets are at the very beginning (indexes 0, 1, 2, 3)
     order_sheets = ["新增個股", "刪除個股", "加碼張數", "減碼張數"]
