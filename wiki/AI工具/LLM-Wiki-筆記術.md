@@ -2,9 +2,9 @@
 title: LLM Wiki 個人知識庫筆記術
 category: METHOD
 tags: [AI, 知識管理, PKM, LLM]
-sources: [raw/LLM_Wiki_Karpathy.md, cards/AI與卡片盒筆記法實測心得.md, cards/用Agent養Agent.md, raw/obsidian/用Agent養Agent：開關啟動與遠端修復.md, cards/Hermes-Desktop-GUI安裝與功能摘要.md, raw/obsidian/Hermes Desktop 讓 Windows 直接就能安裝使用 Hermes Agent！初學者也能自己搞定.md, cards/默片撈重點-ffmpeg-AI.md, raw/obsidian/我學會了一招：不靠聲音、不靠字幕，從一支默片裡撈出 10 個重點.md, cards/Manus-AI-Agent實戰教學.md, raw/obsidian/【Manus 實戰教學】從研究、簡報到個人網站，帶你掌握普通人也能上手的 AI Agent.md, cards/Edits-影片編輯軟體教學.md, raw/obsidian/Edits 下載方法＋新手使用大全.md, cards/Image-Extraction-抓圖神器教學.md, raw/obsidian/教學／Image Extraction「抓圖神器」免安裝 貼網址1鍵抓整頁圖片.md, cards/OpenCode-AI-Agent地端部署.md, raw/obsidian/OpenCode基本功 EP01：免費 AI Agent 啟手式.md, cards/AI簡報高階工作流-NotebookLM-PDNob.md, raw/obsidian/別再只用一句話叫 AI 生成簡報！學會這個隱藏技巧.md]
+sources: [raw/LLM_Wiki_Karpathy.md, cards/AI與卡片盒筆記法實測心得.md, cards/用Agent養Agent.md, raw/obsidian/用Agent養Agent：開關啟動與遠端修復.md, cards/Hermes-Desktop-GUI安裝與功能摘要.md, raw/obsidian/Hermes Desktop 讓 Windows 直接就能安裝使用 Hermes Agent！初學者也能自己搞定.md, cards/默片撈重點-ffmpeg-AI.md, raw/obsidian/我學會了一招：不靠聲音、不靠字幕，從一支默片裡撈出 10 個重點.md, cards/Manus-AI-Agent實戰教學.md, raw/obsidian/【Manus 實戰教學】從研究、簡報到個人網站，帶你掌握普通人也能上手的 AI Agent.md, cards/Edits-影片編輯軟體教學.md, raw/obsidian/Edits 下載方法＋新手使用大全.md, cards/Image-Extraction-抓圖神器教學.md, raw/obsidian/教學／Image Extraction「抓圖神器」免安裝 貼網址1鍵抓整頁圖片.md, cards/OpenCode-AI-Agent地端部署.md, raw/obsidian/OpenCode基本功 EP01：免費 AI Agent 啟手式.md, cards/AI簡報高階工作流-NotebookLM-PDNob.md, raw/obsidian/別再只用一句話叫 AI 生成簡報！學會這個隱藏技巧.md, cards/Codex-Ollama-本地模型串接.md, raw/obsidian/免費無限使用 Codex 桌面版！一個指令，就能透過 Ollama 輕鬆串接本地 AI 模型.md]
 status: verified
-updated: 2026-05-19
+updated: 2026-05-29
 ---
 
 # LLM Wiki 個人知識庫筆記術
@@ -93,7 +93,11 @@ updated: 2026-05-19
 *   **Anthropic Channel 的雙向應用**：Anthropic 的 Channel 功能讓使用者可以直接從外部（如 Telegram）與 Claude 進行對話。這不僅極大地方便了日常控制，也成為修復地端系統的橋樑。當地端 Agent 掛掉時，使用者只需透過 Telegram 傳送修復指令，Claude 便能自動重啟並維護地端 OpenClaw 系統，擺脫了過去必須遠端桌面連回 Mac 電腦的繁瑣。
 *   **多 Agent 的存廢思辨**：當外圍的單一 LLM 代理（如 Claude Code）已經強大到能夠通過遠端命令與自動化腳本接管、修復地端系統時，我們是否還需要複雜的「多代理架構」（如養龍蝦 OpenClaw、養馬 Hermes Agent）？這為個人知識庫與自動化架構的演進提供了深刻的思索方向。
 
-詳細分析與觀點，請參閱卡片 [[用Agent養Agent]]。
+### 3. 本地適配與無限量推論 (Codex-Ollama)
+*   **Ollama v0.24.0 本地適配**：為解決雲端 API 額度限制與隱私安全痛點，Ollama 於 v0.24.0 中加入了對 Codex 桌面版的本地串接支援。
+*   **單指令配對啟用**：只需執行單一終端指令 `ollama launch`，即可讓 Ollama 偵測並將本地開源模型（如 Llama 3 或 Mistral）與地端 Codex 桌面版進行無縫串接，充當其推理大腦。這提供了一個 100% 本地運行、完全免費且保證隱私的開發沙盒，極大便利了地端 Agent 系統的開發除錯。
+
+詳細適配操作與分析，請參閱卡片 [[Codex-Ollama-本地模型串接]]，其他運維哲學請參閱 [[用Agent養Agent]]。
 
 ## 實踐案例：OpenCode AI Agent 地端部署與自訂工具架構 (METHOD)
 在地端 AI 工具的應用中，除了使用封閉的商業軟體，基於開源框架如 **OpenCode** 在本地電腦部署自主運作的 AI Agent 是極具擴充性的 `METHOD` 實踐。
