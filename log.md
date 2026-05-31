@@ -388,7 +388,8 @@ N8nJS\Ԛ) 0
 - **索引與清理**：更新全域索引 [[index.md]] 中的 AI 工具母筆記案例描述，並安全清理 `Clippings/` 目錄下的暫存剪貼檔，保持目錄結構乾淨。
 
 
-
-
-
-
+## [2026-05-31] system | AntiGravity 專屬懶人包與技能同步
+- **技能包安裝與更新**：從 GitHub 來源同步更新 `skills/` 下的 AntiGravity 技能。
+  - 更新並同步了 `02-github`、`03-firebase`、`04-draw` 及 `05-workflow` 的技能描述與規則（補齊安全規則與注意事項）。
+  - 對於 `06-obsidian`（連接 Obsidian），為保留本地專屬的 vault 實體路徑（`I:\Mark\my-kb\raw\obsidian`），特別採取了保留本地原設定的防覆蓋策略。
+- **主懶人包同步**：同步主文件 `09-AntiGravity專屬懶人包.md` 至最新的 v1.4 版本，完整定義了開收工流程與 Obsidian MCPVault 配置。
