@@ -36,26 +36,56 @@ def load_date_sheets(path: str):
             date_sheets[d] = name
     return xl, date_sheets
 
-def get_week_trading_range(date_sheets: dict):
-    """Return the start and end sheet names that span the current trading week.
-    The week is defined as Monday‑Friday. The start sheet is the earliest sheet
-    within the same week as the latest sheet (i.e., the most recent Monday that
-    exists in the workbook). If the workbook lacks a Monday sheet, the earliest
-    available sheet of that week is used.
+def get_weekly_comparison_dates(date_sheets: dict, end_date_str: str = None):
+    """
+    找出週比較的開始日期與結束日期。
+    結束日期 (end_date)：
+        若有指定 end_date_str，則為該日期。
+        若無，則為 date_sheets 中的最新日期 (latest_date)。
+    開始日期 (start_date)：
+        結束日期所在週的週一前一週（即上週一至週五）的最大交易日。
+        如果上週內無交易日，則 fallback 到小於結束日期所在週週一的最大交易日。
     """
     if not date_sheets:
         raise ValueError("No dated sheets found in the workbook.")
-    latest_date = max(date_sheets.keys())
-    # Monday of the week containing latest_date
-    monday = latest_date - timedelta(days=latest_date.weekday())
-    # Find the earliest sheet on/after monday and on/before latest_date
-    candidate_dates = [d for d in date_sheets if monday <= d <= latest_date]
-    if candidate_dates:
-        start_date = min(candidate_dates)
+    
+    if end_date_str:
+        try:
+            end_date = datetime.strptime(end_date_str, "%Y%m%d")
+            if end_date not in date_sheets:
+                # 尋找最接近且小於或等於指定日期的有資料日期
+                valid_dates = [d for d in date_sheets if d <= end_date]
+                if not valid_dates:
+                    raise ValueError(f"No date sheets found on or before {end_date_str}")
+                end_date = max(valid_dates)
+        except Exception as e:
+            raise ValueError(f"Invalid date format or date not found: {end_date_str}. Error: {e}")
     else:
-        # fallback to the latest_date itself if no other sheet in the week
-        start_date = latest_date
-    return date_sheets[start_date], date_sheets[latest_date]
+        end_date = max(date_sheets.keys())
+    
+    # 結束日期所在週的週一
+    monday = end_date - timedelta(days=end_date.weekday())
+    
+    # 上週的範圍 (Monday of last week to Friday of last week)
+    last_week_start = monday - timedelta(days=7)
+    last_week_end = monday - timedelta(days=3)  # Friday of last week is monday - 3 days
+    
+    # 找出上週範圍內的所有交易日
+    last_week_dates = [d for d in date_sheets if last_week_start <= d <= last_week_end]
+    
+    if last_week_dates:
+        start_date = max(last_week_dates)
+    else:
+        # Fallback: 小於結束週週一的最大日期
+        older_dates = [d for d in date_sheets if d < monday]
+        if older_dates:
+            start_date = max(older_dates)
+        else:
+            # 如果連更早的都沒有，那就只能自己跟自己比了
+            start_date = end_date
+            
+    return date_sheets[start_date], date_sheets[end_date]
+
 
 def compute_weekly_changes(xl, start_name, end_name):
     """Compute total added and reduced 張數 for each ETF between two sheets."""
@@ -238,10 +268,38 @@ def move_sheet_to_first(path: str, sheet_name: str):
     wb.save(path)
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Update weekly additions and reductions summary in Excel.")
+    parser.add_argument("--date", type=str, help="Specify the end date in YYYYMMDD format for comparison.")
+    parser.add_argument("--force", action="store_true", help="Force update even if today is not a weekend day.")
+    args = parser.parse_args()
+    
+    # 判斷是否應該執行
+    # 預設僅在週五、六、日 (weekday 4, 5, 6) 執行
+    today_weekday = datetime.now().weekday()
+    is_weekend = today_weekday in [4, 5, 6]
+    
+    if not is_weekend and not args.force and not args.date:
+        print(f"Today is weekday {today_weekday + 1} (not Friday, Saturday, or Sunday).")
+        print("Weekly summary update is skipped to avoid overwriting previous weekend data.")
+        print("To force update, use --force or specify a date with --date YYYYMMDD.")
+        return
+
     xl, date_sheets = load_date_sheets(EXCEL_PATH)
-    start_name, end_name = get_week_trading_range(date_sheets)
+    try:
+        start_name, end_name = get_weekly_comparison_dates(date_sheets, args.date)
+    except Exception as e:
+        print(f"Error determining comparison dates: {e}")
+        return
+
+    if start_name == end_name:
+        print(f"Warning: Start date and End date are the same ({end_name}). No changes will be detected.")
+        
+    print(f"Comparing end date '{end_name}' with start date '{start_name}' (last week's end).")
+    
     additions_df = compute_weekly_additions_detail(xl, start_name, end_name)
     reductions_df = compute_weekly_reductions_detail(xl, start_name, end_name)
+
 
     # Write Weekly Additions and Weekly Reductions sheets
     with pd.ExcelWriter(EXCEL_PATH, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:

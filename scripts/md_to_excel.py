@@ -57,10 +57,21 @@ with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
             df.to_sheet = writer # This is not how you do it with ExcelWriter
             df.to_excel(writer, sheet_name=sheet_name, index=False)
             
-            # Auto-adjust column width (optional but nice)
+            # Auto-adjust column width and add MoneyDJ hyperlinks for ticker column
             worksheet = writer.sheets[sheet_name]
+            from openpyxl.styles import Font
+            
             for idx, col in enumerate(df.columns):
                 max_len = max(df[col].astype(str).map(len).max(), len(col)) + 2
                 worksheet.column_dimensions[chr(65+idx)].width = max_len
+                
+            # Add hyperlink for each ticker cell (column 1)
+            for row_idx in range(2, worksheet.max_row + 1):
+                cell = worksheet.cell(row=row_idx, column=1)
+                code = str(cell.value or "").strip()
+                if code:
+                    url = f"https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid={code}.TW"
+                    cell.hyperlink = url
+                    cell.font = Font(color="0563C1", underline="single")
 
 print(f"Excel file created at: {output_file}")
