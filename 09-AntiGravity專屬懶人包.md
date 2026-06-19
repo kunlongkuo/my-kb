@@ -1,7 +1,7 @@
-﻿# Anti-Gravity 懶人包 #09：服務連接與工作流程設定
+# Anti-Gravity 懶人包 #09：服務連接與工作流程設定
 
-> 版本：v1.4
-> 更新日期：2026-05-31
+> 版本：v1.6
+> 更新日期：2026-06-19
 > 語系偏好：繁體中文（Taiwan）
 
 這份懶人包的目標，是讓 Anti-Gravity 使用者能安全連接 NotebookLM、Firebase、GitHub、Obsidian，並建立「開工 / 收工 / 新專案初始化」工作流程。本版本已重新加回了 Obsidian MCPVault 的一鍵整合設定與專屬 Skill。
@@ -384,6 +384,8 @@ Obsidian vault：
 
 | 日期 | 版本 | 更新內容 |
 |---|---|---|
+| 2026-06-19 | v1.6 | 新增 10-infographic-builder（資訊圖表生成）自訂技能並更新安裝清單 |
+| 2026-06-19 | v1.5 | 新增 07-skill-creator（技能製造機）、08-find-skills（技能搜尋員）、09-smart-search（智慧搜尋）等自訂技能並更新安裝清單 |
 | 2026-05-31 | v1.4 | 重新加回 Obsidian MCPVault 設定與開工/收工自動化流程，並加入獨立 Skill 目錄 |
 | 2026-05-24 | v1.2 | 移除 Obsidian MCPVault 安裝與 MCP 註冊，保留 Obsidian 作為人工專案筆記工作流 |
 | 2026-05-23 | v1.1 | 移除 NotebookLM 個人資料與成果檔定位，改正 NotebookLM OAuth、Obsidian MCP、Git 收工安全流程 |

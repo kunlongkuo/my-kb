@@ -393,3 +393,12 @@ N8nJS\Ԛ) 0
   - 更新並同步了 `02-github`、`03-firebase`、`04-draw` 及 `05-workflow` 的技能描述與規則（補齊安全規則與注意事項）。
   - 對於 `06-obsidian`（連接 Obsidian），為保留本地專屬的 vault 實體路徑（`I:\Mark\my-kb\raw\obsidian`），特別採取了保留本地原設定的防覆蓋策略。
 - **主懶人包同步**：同步主文件 `09-AntiGravity專屬懶人包.md` 至最新的 v1.4 版本，完整定義了開收工流程與 Obsidian MCPVault 配置。
+
+## [2026-06-19] system | 安裝自訂技能與同步懶人包
+- **自訂技能安裝**：
+  - 新增 `skills/07-skill-creator`（技能製造機）以引導自訂技能設計與生成。
+  - 新增 `skills/08-find-skills`（技能搜尋員）以列出與說明已安裝的技能。
+  - 新增 `skills/09-smart-search`（智慧搜尋）提供多維度全文檢索與內容定位指南。
+  - 新增 `skills/10-infographic-builder`（資訊圖表生成）提供結構化圖表設計、Mermaid、SVG 及 AI 生圖渲染之指引。
+- **安裝清單更新**：更新 `skills/00-install-all/SKILL.md`，將新增的自訂技能註冊至一鍵安裝列表中。
+- **懶人包同步**：更新主文件 `09-AntiGravity專屬懶人包.md` 至 v1.6，記錄新技能的加入與版本修訂。

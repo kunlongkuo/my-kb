@@ -38,3 +38,6 @@ scratch/
 # Large binary dependencies and raw media files
 bin/
 raw/
+
+# Voice Cloner
+skills/voxcpm2-voice-cloner/

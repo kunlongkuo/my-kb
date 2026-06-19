@@ -42,6 +42,10 @@
 | Chrome 擴充套件 | 瀏覽器一鍵剪輯工具，將網頁內容匯入知識庫 |
 | Gemini KB App | 前後端分離的知識庫查詢應用 |
 | Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP |
+| 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
+| 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
+| 智慧搜尋 | `skills/09-smart-search` 提供多維度全文檢索與內容定位指南 |
+| 資訊圖表生成 | `skills/10-infographic-builder` 輔助 Mermaid、SVG 與生圖設計 |
 
 ---
 
@@ -73,7 +77,11 @@ my-kb/
 │   ├── 03-firebase/         # Firebase 整合
 │   ├── 04-draw/             # 繪圖工具
 │   ├── 05-workflow/         # 工作流管理
-│   └── 06-obsidian/         # Obsidian 連接
+│   ├── 06-obsidian/         # Obsidian 連接
+│   ├── 07-skill-creator/    # 技能製造機
+│   ├── 08-find-skills/      # 技能搜尋員
+│   ├── 09-smart-search/     # 智慧搜尋
+│   └── 10-infographic-builder/ # 資訊圖表生成
 ├── chrome_extension/        # Chrome 瀏覽器擴充套件
 ├── gemini-kb-app/           # Gemini 知識庫查詢應用
 │   ├── backend/             # 後端 API

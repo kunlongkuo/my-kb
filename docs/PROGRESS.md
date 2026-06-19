@@ -4,6 +4,56 @@
 
 ---
 
+## 2026-06-19 (追加) ── 安裝四大自訂技能與更新收工規則
+
+### ✅ 今日完成
+
+1. **安裝四大自訂技能 (Custom Skills)**
+   - `07-skill-creator` (技能製造機)：提供設計與生成自訂技能的引導。
+   - `08-find-skills` (技能搜尋員)：表格化掃描並列出目前已安裝的技能與說明。
+   - `09-smart-search` (智慧搜尋)：提供全文檢索與內容定位指南。
+   - `10-infographic-builder` (資訊圖表生成)：指引 Mermaid、SVG、Python 與 AI 生圖設計。
+2. **註冊全域安裝與更新文檔**
+   - 將新技能註冊至 `skills/00-install-all/SKILL.md`。
+   - 更新 `09-AntiGravity專屬懶人包.md` 版本至 v1.6，記錄更新歷史。
+   - 於 `log.md` 寫入操作日誌。
+3. **收工規則重構**
+   - 修改並同步了四個核心規則檔 `core_rules.md`、`agents.md`、`claude.md`、`ANTIGRAVITY.md` 以及 `skills/05-workflow/SKILL.md`，將「更新 README.md」、「更新 docs/PROGRESS.md」與「使用具體且詳細的 commit message」等要求寫入「🔴 收工 / 下班了」與「初始化專案」相關規則中。
+4. **更新專案 README.md**
+   - 在自動化工具列表與目錄結構中補齊四項新技能的詳細描述與路徑。
+
+### 📝 改了哪些重要檔案
+
+| 檔案 | 異動類型 | 說明 |
+|------|----------|------|
+| `skills/07-skill-creator/SKILL.md` | **新建** | 技能製造機設定檔 |
+| `skills/08-find-skills/SKILL.md` | **新建** | 技能搜尋員設定檔 |
+| `skills/09-smart-search/SKILL.md` | **新建** | 智慧搜尋設定檔 |
+| `skills/10-infographic-builder/SKILL.md` | **新建** | 資訊圖表生成設定檔 |
+| `skills/00-install-all/SKILL.md` | **修改** | 新增新安裝的四個技能至清單 |
+| `skills/05-workflow/SKILL.md` | **修改** | 將文件更新與具體 commit 規範寫入收工步驟 |
+| `core_rules.md` / `agents.md` / `claude.md` / `ANTIGRAVITY.md` | **修改** | 將文件更新與 Git 提交規範納入「🔴 收工 / 下班了」標準 SOP |
+| `09-AntiGravity專屬懶人包.md` | **修改** | 升級版本至 v1.6，更新修訂歷史記錄 |
+| `README.md` | **修改** | 補齊新自訂技能介紹與目錄結構樹 |
+| `log.md` | **修改** | 記錄自訂技能的安裝與懶人包同步日誌 |
+| `docs/PROGRESS.md` | **修改** | 記錄本追加進度（本檔案） |
+
+### 🧭 做了哪些決策
+
+1. **同步修改全部規則文件**：為了保持一致，將四個核心規則檔以及 `05-workflow` 技能設定檔中的收工規範同步修改，確保無論 AI 讀取哪一個檔案，都能精確依循新的收工 SOP。
+2. **模組化技能編號**：新技能按 `07`、`08`、`09`、`10` 順序進行命名與存放，符合現有專案的命名慣例。
+
+### 🚧 目前卡在哪裡
+
+- 無。已順利完成技能安裝、檔案更新與 SOP 設定。
+
+### 👉 下次接手要先看什麼
+
+1. **`README.md`**：查看四個新自動化工具的用途與目錄結構。
+2. **`skills/` 目錄**：可利用新安裝的 `skills/08-find-skills` 技能來快速掃描目前可用的所有技能細節。
+
+---
+
 ## 2026-06-19 ── 專案文件整理與版本控管強化
 
 ### ✅ 今日完成

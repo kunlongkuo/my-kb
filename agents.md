@@ -10,7 +10,9 @@
 
 ## 🔴 收工 / 下班了
 - 執行專案敏感檔案安全掃描（防止 API Key 外洩）
-- `git add .`，自動產生 commit 訊息並執行 `git commit`、`git push`
+- 更新 `README.md`，寫清楚：專案用途、目前功能、啟動方式、部署方式、環境變數、已知問題、下一步
+- 更新 `docs/PROGRESS.md`，以日期記錄：今天完成什麼、改了哪些重要檔案、做了哪些決策、目前卡在哪裡、下次接手要先看什麼
+- 執行 `git commit` 與 `git push`，且 commit message 必須寫清楚本次改動內容與細節，拒絕簡短無語意的 "update"
 - 更新 Obsidian 每日筆記的「已完成工作」與「待辦事項」
 
 ## 🔵 初始化專案
