@@ -4,6 +4,61 @@
 
 ---
 
+## 2026-06-22 ── 主動型 ETF 資料日更與知識庫目錄結構優化
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更 (2026-06-22)**
+   - 執行 `collect_active_etf_holdings.py` 抓取並追加今日資料至 `主動型ETF持股明細.xlsx` 中的 `20260622` 分頁（共 29 檔主動型 ETF、1,642 筆持股資料）。
+   - 執行 `add_daily_stock_total.py` 累計「每日個股合計」工作表，已累計至 23 個日期分頁，共 17,017 行。
+   - 同步更新 `台灣ETF比較清單.xlsx` 的主動型分頁，並透過 `sync_excel_to_md.py` 同步到對應之 Markdown 比較清單檔中。
+2. **知識庫目錄結構優化（對齊 Schema）**
+   - 將根目錄孤立檔案遷移歸檔：
+     - `Webwright_vs_Playwright.md` ➔ `wiki/工具軟體/Webwright_vs_Playwright.md`
+     - `＜AI影音工具彙整＞.md` ➔ `wiki/AI工具/＜AI影音工具彙整＞.md`
+     - `09-AntiGravity專屬懶人包.md` ➔ `wiki/System/09-AntiGravity專屬懶人包.md`
+   - 更新 `index.md` 全域索引，在對應區塊中完成這三個檔案的連結註冊，打通知識結構。
+3. **`log.md` 歷史編碼亂碼重建修復**
+   - 執行修復腳本對 `log.md` 中 2026-05-03 與 2026-05-05 的亂碼區段進行文字還原與重建，成功回復歷史日誌的可讀性。
+4. **自訂技能版控與同步優化**
+   - 將原先處於 untracked 的 `skills/video-production-workflow/` 技能目錄正式納入 Git 版控。
+   - 建立 `scripts/sync_rules.py` 規則同步腳本，並探測證實根目錄下之四個規則檔（`core_rules.md` 等）已被設定為 NTFS Hard Link，腳本已做例外處理支援自動偵測 Hard Link，提升 Robust 性與 DRY 維護度。
+5. **更新 README.md 與 2026-06-22 每日筆記**
+   - 於 README 中加入規則檔同步與影片工作流功能，並將已修復之 log 亂碼從已知問題移除；更新每日筆記的待辦事項。
+
+### 📝 改了哪些重要檔案
+
+| 檔案 | 異動類型 | 說明 |
+|------|----------|------|
+| `wiki/System/09-AntiGravity專屬懶人包.md` | **移動** | 移自根目錄，以保持根目錄清爽 |
+| `wiki/AI工具/＜AI影音工具彙整＞.md` | **移動** | 移自根目錄，以符合 Zettelkasten 結構 |
+| `wiki/工具軟體/Webwright_vs_Playwright.md` | **移動** | 移自根目錄，以符合 Zettelkasten 結構 |
+| `index.md` | **修改** | 新增上述三檔移位檔案之全域索引與內鏈 |
+| `log.md` | **修改** | 修復還原了 05-03 及 05-05 的編碼亂碼日誌 |
+| `scripts/sync_rules.py` | **新建** | 支援 HardLink 自動偵測與例外處理之規則檔同步工具 |
+| `skills/video-production-workflow/` | **新增暫存** | 將整個目錄下的技能檔納入 Git 追蹤 |
+| `README.md` | **修改** | 更新目前功能表格，移除 log 亂碼已知問題，更新下一步規劃 |
+| `每日筆記/2026-06-22.md` | **新建** | 建立今日開工筆記並標記完成項目 |
+| `docs/PROGRESS.md` | **修改** | 記錄今日開發進度（本檔案） |
+
+### 🧭 做了哪些決策
+
+1. **使用 git mv 遷移孤立檔案**：保留 Git 的歷史修改紀錄，並確保路徑在 index.md 中完全映射。
+2. **以 Python 腳本對 log.md 做字串重建**：利用已知的文字內容修補損毀的日誌段落，避免手動 replace 亂碼出錯，成功恢復檢索可能性。
+3. **HardLink 例外處理與相容性設計**：在 `sync_rules.py` 中利用 Python 的 `st_ino` 來比對 Hard Link 以避免 "same file error"；當未來代碼移至不支援 Link 的環境（如部分雲端平台）時，可回退為 shutil 複製，維持最大相容性。
+
+### 🚧 目前卡在哪裡
+
+- 無。所有任務皆順利完成。
+
+### 👉 下次接手要先看什麼
+
+1. **`每日筆記/2026-06-22.md`**：查閱今日成果與待辦狀態。
+2. **`scripts/sync_rules.py`**：了解四個 Hard-linked 規則檔的維護與同步方式。
+3. **`skills/video-production-workflow/`**：了解新加入 Git 追蹤的影片製作技能詳情。
+
+---
+
 ## 2026-06-19 (追加) ── 安裝四大自訂技能與更新收工規則
 
 ### ✅ 今日完成

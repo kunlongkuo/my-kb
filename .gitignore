@@ -4,6 +4,9 @@
 *.local
 *.env
 
+# Office / Temporary Files
+~$*
+
 # Obsidian workspace and local state
 .obsidian/workspace
 .obsidian/workspace.json

@@ -112,129 +112,33 @@
 - 2026-04-27 23:09:51: Ingested YouTube summary [第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】](wiki\youtube-notes\第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】_tpEo5O3cR_s.md)
 - 2026-04-27 23:15:06: Ingested YouTube summary [第五集｜Obsidian 外掛應用【AI 工具課】](wiki\youtube-notes\第五集｜Obsidian 外掛應用【AI 工具課】_WqzHXvEQc5g.md)
 - 2026-04-28 21:56:43: Ingested YouTube summary [39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）](wiki\youtube-notes\39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）_9oh9hGE9LsY.md)
-- 2026-04-29 21:32:00: Ingested YouTube summary [39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）](wiki\youtube-notes\39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）_9oh9hGE9LsY.md)
 
-## [2026-05-03] ingest & maintenance | ChatGPT �Ϥ��U���P���ޥh��
-- **�����s���**�G�ѪR 
-aw/obsidian/ �U���� ChatGPT �Ϥ��妸�U�����峹�C
-- **�إߥd��**�G�s�W [[ChatGPT-�Ϥ��U���}��]] �Ȯɵ��O�A�Ѩ��w�˨B�J�P�֤��޿�C
-- **�إ߸`�I**�G�s�W wiki/AI�u��/ChatGPT-�Ϥ��U���}��.md�A���ѧ��㪺�w�˫��n�P�󥭥x���λ����C
-- **�����u��**�G�M�z index.md �����ƪ� YouTube �K�n���ءA�O���ؿ����C
-- **���ާ�s**�G�� index.md ���uAI �u��v���O�s�W�U���}���s���C
+## [2026-05-03] ingest & maintenance | ChatGPT 圖片下載與無損浮水印去除
+- **文獻歸檔**：將 `raw/obsidian/` 下的 ChatGPT 圖片下載與無損浮水印去除文章永久歸檔。
+- **建立卡片**：新增 [[ChatGPT-圖片下載腳本]] 暫時筆記，提煉網頁下載與免浮水印去化工具。
+- **建立節點**：新增 `wiki/AI工具/ChatGPT-圖片下載腳本.md`，並將說明補充至 Obsidian。
+- **清理索引**：整理 `index.md`，移除多個重複的 YouTube 摘要，保持目錄清爽。
+- **索引更新**：於 `index.md` 中的「AI 工具」區塊新增下載腳本連結。
 
-## [2026-05-03] ingest | Jason Tools ���u��c
-- **�إߥd��**�G�s�W [[Jason-Tools-�\��K�n]]�A�Ѩ��֤ߥ\��P���~��w�u�աC
-- **�إ߸`�I**�G�s�W [[wiki/�u��n��/Jason-Tools.md]]�A��z����\������P�޳N�[�c�C
-- **���ާ�s**�G�b [[index.md]] ���s�W�u�u��n��v���O�C
+## [2026-05-03] ingest | Jason Tools 整合工具
+- **建立卡片**：新增 [[Jason-Tools-功能摘要]]，提煉核心功能與架構設計。
+- **建立節點**：新增 `wiki/工具軟體/Jason-Tools.md`，彙整主要模組與技術架構。
+- **索引更新**：於 `index.md` 中新增「工具軟體」區塊與 Jason Tools 連結。
 
 - 2026-05-03 23:51:06: Ingested YouTube summary [Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)](wiki\youtube-notes\Rick Astley - Never Gonna Give You Up (Official Vi_dQw4w9WgXcQ.md)
-- 
- 
- Tek�e�X
- 
- 0 0 4 0 3 A 00 0 4 0 5 A 
- 
- I{ g�e�cLrKN;N�R�W
- 
- E T F 0
- 
- - 
- 
- �e�X
- 
- 0 0 4 0 1 A 
- 
- id9h�Scpk�6e�v;N�R�W
- 
- E T F 
- 
- ǌ�e0
- 
- - 
- 
- �O�dO(u��c�OKN
-\gqh�WGr�hQb�!h
-\&N�f�e;N�R�W
- 
- E T F 
- 
- ���s0M�o`g�N�S�O�{��L�ǌ
-�0
- 
- - 
- 
- �OckY�j
- 
- E T F 
- 
- KN�O�{���1u
- 
- 0 . 0 3 5 % 
- 
- ��te�p
- 
- 0 . 0 4 % 	��S
- 
- 0 0 9 9 4 A 
- 
- KNM�o`g�N0
- 
- - 
- 
- �e�X
- 
- 0 0 9 8 1 6 
- 
- �Q�W�Scp
- 
- T O P 
- 
- 5 0 �
-NM�o`/ /}Mz�W	�j�vǌ
-�0
- 
- # #   [ 2 0 2 6 - 0 5 - 0 5 ]   i n g e s t   |   �e�XwmY�W  E T F   n�U
- 
- -   �^�z�e�{ޞ  [ [ wmY�WE T F n�U] ] 0
- 
- -   6e����cxe�;NL�j�v�0 0 6 4 6   ( S & P   5 0 0 ) 00 0 6 6 2   ( N A S D A Q ) 00 0 7 5 7   ( F A N G + ) 00 0 8 3 0   ( ��JS) 00 0 9 2 4   ( S & P   5 0 0   bw�) 0
- 
- -   �f�e  [ [ i n d e x . m d ] ]   
-}eQ�e�{ޞ0
- 
- # #   [ 2 0 2 6 - 0 5 - 0 5 ]   i n g e s t   |   yb!kR^���f�e  E T F   n�U
- 
- -   ^<P�W��e�X  0 0 6 2 0 4   ( ��cp�R
-k)   �S  0 0 9 1 3   ( vfW�� �) 0
- 
- -   ؚ��o`��e�X  0 0 7 0 1   ( ��)R�|x�)   �S  0 0 9 0 0   ( yrx�ؚ��o`3 0 ) 0
- 
- -   wmY�W��e�X  0 0 7 1 2   ( U S   R E I T s )   �S  0 0 7 7 0   ( S��y�b) 0
- 
- -   Tek�f�ehQ�|Rǌ�e�eg�  2 0 2 6 - 0 5 - 0 5 0
- 
- # #   [ 2 0 2 6 - 0 5 - 0 5 ]   i n g e s t   |   �e�X�ih�ST�W  E T F   n�U
- 
- -   �^�z�e�{ޞ  [ [ �ih�ST�WE T F n�U] ] 0
- 
- -   6e�CQ'Y�Scp  5 0   ck  2   ( 0 0 6 3 1 L )   ��S  1   ( 0 0 6 3 2 R ) 0
- 
- -   �f�e  [ [ i n d e x . m d ] ]   
-}eQ�e�{ޞ0
- 
- -   �ih�ST��e�X  0 0 6 6 3 L   ( W�l��cp�R
-kck2 ) 0
- 
- -   ^<P�W��e�X  0 0 9 4 7   ( �S�e��cp  I C   -��)   ;NL�j�v0
- 
- -   ^<P�W��e�X  0 0 8 8 1   ( W�l�Scp  5 G + ) 0
- 
- -   ؚ��o`��e�X  0 0 7 3 0 00 0 7 3 1 00 0 9 3 0 0
- 
- -   wmY�W��e�X  0 0 9 4 1   ( -N�O
-N8nJS\Ԛ) 0
- 
- 
+
+## [2026-05-05] ingest | 海外型與市值型 ETF 清單與說明
+- **資料彙整**：整理並補齊海外型 ETF（00646, 00662, 00757, 00830, 00924）與市值型 ETF（006204, 00913）之保管費與追蹤指數資訊。
+- **索引更新**：更新 [[index.md]] 並新增對應的清單連結。
+
+## [2026-05-05] ingest | 高股息與海外 REITs ETF 費率整理
+- **資料彙整**：補齊高股息型 ETF（00701, 00900）與海外 REITs 型 ETF（00712, 00770）之保管費率與配息月份。
+- **資料標準化**：更新台灣 ETF 比較清單，確保除息月份與保管費一致。
+
+## [2026-05-05] ingest | 槓桿與反向型 ETF 清單收錄
+- **資料彙整**：收錄台股槓桿型（00631L）與反向型（00632R）等交易工具之費率與風險說明。
+- **索引更新**：於 [[index.md]] 新增「槓桿反向型」區塊。
+
 ## [2026-05-15] maintenance | Directory Reorganization & Refactoring
 - **檔案重整**：建立 bin/ 資料夾，並將 ffmpeg.exe 與 ffprobe.exe 移入，減少根目錄雜亂。
 - **腳本歸納**：將 youtube_to_notes.py 與 yt_notes_server.py 移至 scripts/ 資料夾。

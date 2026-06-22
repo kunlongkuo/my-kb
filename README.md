@@ -42,6 +42,8 @@
 | Chrome 擴充套件 | 瀏覽器一鍵剪輯工具，將網頁內容匯入知識庫 |
 | Gemini KB App | 前後端分離的知識庫查詢應用 |
 | Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP |
+| 規則檔自動同步 | `sync_rules.py` 支援 OS 硬連結 (Hard Link) 偵測之規則同步工具 |
+| 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片製作 SOP |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
 | 智慧搜尋 | `skills/09-smart-search` 提供多維度全文檢索與內容定位指南 |
@@ -208,20 +210,19 @@ git push origin main
 
 ## ⚠️ 已知問題
 
-1. **`log.md` 中段編碼損毀**（約 131-236 行）：部分早期（2026-05 初）的日誌內容出現二進位亂碼（null bytes / BOM 殘留），疑似 Excel 寫入時的編碼衝突。已不影響後續 append，但歷史紀錄可讀性受損。
-2. **YouTube 摘要重複收錄**：`log.md` 中記錄顯示「第一集｜探索 Obsidian」影片被重複 ingest 了 5 次（2026-04-27），疑似腳本冪等性不足。
-3. **`raw/` 與 `bin/` 被 .gitignore 排除**：這些目錄的內容不在版本控管中。若需遷移至新機器，需手動複製或重新取得。
-4. **被動型 ETF 腳本路徑**：`collect_passive_etf_holdings.py` 目前放在 `scripts/` 而非 `skills/` 架構下，與主動型 ETF 的 skill 架構不一致。
-5. **`skills/active-etf-holdings/scripts/__pycache__/`**：Python 快取目錄未被 .gitignore 排除（技能子目錄下），可能被意外提交。
+1. **YouTube 摘要重複收錄**：`log.md` 中記錄顯示「第一集｜探索 Obsidian」影片被重複 ingest 了 5 次（2026-04-27），疑似腳本冪等性不足。
+2. **`raw/` 與 `bin/` 被 .gitignore 排除**：這些目錄的內容不在版本控管中。若需遷移至新機器，需手動複製或重新取得。
+3. **被動型 ETF 腳本路徑**：`collect_passive_etf_holdings.py` 目前放在 `scripts/` 而非 `skills/` 架構下，與主動型 ETF 的 skill架構不一致。
+4. **`skills/active-etf-holdings/scripts/__pycache__/`**：Python 快取目錄未被 .gitignore 排除（技能子目錄下），可能被意外提交。
 
 ---
 
 ## 🔮 下一步規劃
 
 - [ ] 將被動型 ETF 持股追蹤遷移至 `skills/` 架構，與主動型一致
-- [ ] 修復 `log.md` 中段的編碼損毀區段
 - [ ] 為 YouTube 摘要腳本加入冪等性檢查（避免重複收錄）
 - [ ] 考慮將 `.gitignore` 加入 `__pycache__/` 的全域排除規則（目前僅排除根目錄）
+- [ ] 將新增的影片製作工作流技能 `skills/video-production-workflow` 註冊至全域一鍵安裝技能
 - [ ] 完善 `gemini-kb-app` 的文件與啟動說明
 - [ ] 建立 ETF 持股追蹤的自動排程（Windows Task Scheduler / Cron）
 - [ ] 評估 Firebase 同步功能的啟用時機

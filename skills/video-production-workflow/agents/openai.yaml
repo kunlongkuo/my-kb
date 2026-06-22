@@ -1,0 +1,7 @@
+interface:
+  display_name: "影片製作工作流"
+  short_description: "依三類影片規範規劃腳本、分流與製作流程，支援活動、教學與科普影片"
+  default_prompt: "Use $video-production-workflow to classify this video request and draft the correct workflow."
+
+policy:
+  allow_implicit_invocation: true

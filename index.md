@@ -48,9 +48,11 @@
 ### AI 工具 (AI Tools)
 - [LLM Wiki 筆記術 & AI卡片盒工作流](file:///i:/Mark/my-kb/wiki/AI工具/LLM-Wiki-筆記術.md): 整理 Andrej Karpathy 的「LLM Wiki」知識管理方法論，並整合 Esor Huang 的卡片盒筆記法 (Raw -> Card -> Opinions) AI 整理系統實測心得，收錄短影音製作、Agent 系統運維（含 Codex-Ollama 本地串接）、ffmpeg 默片重點萃取、Manus 實戰、Edits 剪輯、Image Extraction 抓圖、OpenCode 地端部署及 NotebookLM+PDNob 簡報高階工作流等實踐案例。
 - [ChatGPT & Gemini 圖片下載腳本](file:///i:/Mark/my-kb/wiki/AI工具/ChatGPT-圖片下載腳本.md): 基於 Tampermonkey 的批次下載工具，可一鍵抓取對話中的 AI 生成圖並自動命名。
+- [AI影音工具彙整](file:///i:/Mark/my-kb/wiki/AI工具/＜AI影音工具彙整＞.md): 各類 AI 影音剪輯、語音合成與圖像生成工具彙整清單。
 
 ### 工具軟體 (Software Tools)
 - [Jason Tools (JTDT)](file:///i:/Mark/my-kb/wiki/工具軟體/Jason-Tools.md): 整合式 PDF / Office 文件處理平台，主打地端自架、資安控管與多功能合一（填單、用印、去識別化、比對等）。
+- [Webwright vs Playwright](file:///i:/Mark/my-kb/wiki/工具軟體/Webwright_vs_Playwright.md): 網頁自動化測試與爬蟲框架對比分析。
 
 ### 烘培食譜 (Baking Recipes)
 - [烘培食品丙級術科](file:///i:/Mark/my-kb/wiki/烘培食譜/烘培食品丙級術科.md): 丙級烘焙證照（西點蛋糕/麵包）術科測驗科目與食譜總覽。
@@ -97,6 +99,7 @@
 - [退休金與老年給付計算](file:///i:/Mark/my-kb/wiki/勞工法規/退休金與老年給付計算.md): 提供勞保老年年金與勞退新制退休金之公式解析、試算範例與增減給付說明。
 - [LLM Wiki Guide](file:///i:/Mark/my-kb/wiki/System/llm-wiki.md): 關於如何與本 Wiki 互動的原始指南。
 - [LLM Wiki 指南 (中文)](file:///i:/Mark/my-kb/wiki/System/llm-wiki-zh.md): Wiki 互動指南的中文翻譯版本。
+- [Anti-Gravity 懶人包 #09](file:///i:/Mark/my-kb/wiki/System/09-AntiGravity專屬懶人包.md): 服務連接（NotebookLM, GitHub, Firebase, Obsidian）與開工/收工/新專案初始化工作流程設定指南。
 
 ## Meta (元數據)
 - [Knowledge Base Schema](file:///i:/Mark/my-kb/schema.md): 本知識庫的操作規範與結構定義。
