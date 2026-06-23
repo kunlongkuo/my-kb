@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主動型 ETF 個股加減碼排行分析</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #151b2c;
+            --card-border: rgba(255, 255, 255, 0.05);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --up-color: #ef4444; /* 台灣習慣紅漲/加碼 */
+            --down-color: #10b981; /* 台灣習慣綠跌/減碼 */
+            --hover-bg: rgba(255, 255, 255, 0.03);
+            --font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            padding: 24px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header Area */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand h1 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 4px;
+        }
+
+        .brand p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Top Controls */
+        .controls-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .selector-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .selector-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .select-input {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            background-color: #1e2538;
+            color: var(--text-primary);
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+        }
+
+        .select-input:focus {
+            border-color: var(--accent-color);
+        }
+
+        /* Search Input in Controls */
+        .search-box {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            background-color: #1e2538;
+            color: var(--text-primary);
+            font-size: 14px;
+            outline: none;
+            width: 240px;
+        }
+
+        /* Main Tabs */
+        .tabs-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+        }
+
+        .tab-btn.active.add {
+            background-color: var(--up-color);
+            color: white;
+            border-color: var(--up-color);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .tab-btn.active.reduce {
+            background-color: var(--down-color);
+            color: white;
+            border-color: var(--down-color);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Dashboard Grid Layout (Chart on left/top, Table/Drilldown below) */
+        .rank-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            .rank-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 420px;
+            width: 100%;
+        }
+
+        /* Drilldown Section */
+        .drilldown-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: 100%;
+        }
+
+        .drilldown-placeholder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 40px;
+            border: 1px dashed rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            min-height: 250px;
+        }
+
+        .drilldown-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+        }
+
+        .drilldown-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .drilldown-subtitle {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .etf-drill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .etf-drill-item:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+
+        /* Full Width Table Card */
+        .table-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+
+        th:hover {
+            color: var(--text-primary);
+        }
+
+        th.sort-asc::after {
+            content: " ↑";
+        }
+
+        th.sort-desc::after {
+            content: " ↓";
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            white-space: nowrap;
+        }
+
+        tr.selectable {
+            cursor: pointer;
+        }
+
+        tr.selectable.selected td {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-bottom-color: rgba(59, 130, 246, 0.2);
+        }
+
+        tr.selectable:hover td {
+            background-color: var(--hover-bg);
+        }
+
+        /* Button design */
+        .action-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .action-link:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+            text-decoration: underline;
+        }
+
+        /* Navigation Button Style */
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 18px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-1px);
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Badge and Values */
+        .value-up {
+            color: var(--up-color);
+            font-weight: 600;
+        }
+
+        .value-down {
+            color: var(--down-color);
+            font-weight: 600;
+        }
+
+        .no-data {
+            padding: 48px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        
+        .error-message {
+            color: var(--up-color);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            .controls-card {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                padding: 16px;
+            }
+
+            .selector-group {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .select-input {
+                flex: 1;
+                max-width: none;
+            }
+
+            #search-input {
+                width: 100%;
+            }
+
+            .tabs-container {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .tab-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 12px;
+            }
+
+            .rank-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            .table-card {
+                padding: 16px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <h1>主動型 ETF 個股加減碼排行分析</h1>
+                <p id="update-time">資料更新時間：--</p>
+            </div>
+            <a href="主動型ETF持股分析.html" class="nav-button">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                回個股歷史分析
+            </a>
+        </header>
+
+        <!-- Controls Area -->
+        <div class="controls-card">
+            <div class="selector-group">
+                <div class="selector-label">加碼日期：</div>
+                <select id="date-select" class="select-input">
+                    <!-- Options populated by JS -->
+                </select>
+            </div>
+            
+            <input type="text" id="search-input" class="search-box" placeholder="搜尋個股代號或名稱...">
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="tabs-container">
+            <button class="tab-btn active add" id="tab-add" data-mode="add">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                今日所有個股加碼排行
+            </button>
+            <button class="tab-btn reduce" id="tab-reduce" data-mode="reduce">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                所有個股減碼排行
+            </button>
+        </div>
+
+        <!-- Dynamic Content -->
+        <div id="main-content" style="display: none;">
+            
+            <!-- Rank Visuals (Chart + Drilldown) -->
+            <div class="rank-grid">
+                <!-- Chart Card -->
+                <div class="panel-card">
+                    <h3 id="chart-title">前 15 名加減碼排行</h3>
+                    <div class="chart-container">
+                        <canvas id="rank-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Drilldown Detail Card -->
+                <div class="panel-card">
+                    <h3>加減碼 ETF 貢獻明細</h3>
+                    <div class="drilldown-container" id="drilldown-container">
+                        <div class="drilldown-placeholder" id="drilldown-placeholder">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            <p style="margin-top: 12px;">請點擊下方表格中的個股<br>以檢視是哪些 ETF 進行了買賣</p>
+                        </div>
+                        <div id="drilldown-content" style="display: none;">
+                            <div class="drilldown-header">
+                                <div class="drilldown-title" id="drill-stock-title">聯電 (2303)</div>
+                                <div class="drilldown-subtitle" id="drill-stock-subtitle">合計加碼：2,974 張 (3 檔 ETF)</div>
+                            </div>
+                            <div id="drilldown-items-list" style="max-height: 320px; overflow-y: auto; padding-right: 4px;">
+                                <!-- Drilldown items populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Card -->
+            <div class="table-card">
+                <h3>完整加減碼排行清單</h3>
+                <div class="table-responsive">
+                    <table id="rank-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="rank">排行</th>
+                                <th data-sort="id">個股代號</th>
+                                <th data-sort="name">個股名稱</th>
+                                <th data-sort="total_change" style="text-align: right;" id="th-change-label">合計加碼張數</th>
+                                <th data-sort="etf_count" style="text-align: right;">變動 ETF 檔數</th>
+                                <th data-sort="close_price" style="text-align: right;">今日收盤價</th>
+                                <th data-sort="market_val_change" style="text-align: right;">估算變動市值 (萬)</th>
+                                <th style="text-align: center;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                    <div id="table-no-data" class="no-data" style="display: none;">今日無符合條件之個股</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading / Error Placeholders -->
+        <div id="error-content" class="no-data error-message" style="display: none;">
+            <h2>找不到數據檔案 dashboard_data.js</h2>
+            <p style="margin-top: 10px;">請先在背景執行數據處理腳本 `python skills/active-etf-holdings/scripts/generate_dashboard_data.py`。</p>
+        </div>
+    </div>
+
+    <!-- Data Import -->
+    <script src="dashboard_data.js" onerror="handleDataLoadError()"></script>
+    
+    <!-- JS Logic -->
+    <script>
+        let currentMode = 'add'; // 'add' (加碼) or 'reduce' (減碼)
+        let currentDate = null;
+        let searchQuery = '';
+        let currentSortColumn = 'total_change';
+        let currentSortDirection = 'desc';
+        let selectedStockId = null;
+        let chartInstance = null;
+        
+        let calculatedRankings = []; // Caches computed list for current date/mode
+
+        function handleDataLoadError() {
+            document.getElementById('error-content').style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof ETF_DASHBOARD_DATA === 'undefined') {
+                handleDataLoadError();
+                return;
+            }
+
+            document.getElementById('update-time').textContent = `資料更新時間：${ETF_DASHBOARD_DATA.update_time || '未知'}`;
+            document.getElementById('main-content').style.display = 'block';
+
+            initDates();
+            initTabs();
+            initSearch();
+            initTableSorting();
+            
+            // Trigger initial calculation
+            calculateAndRender();
+        });
+
+        // Initialize Dates Select
+        function initDates() {
+            const dateSelect = document.getElementById('date-select');
+            
+            // We can collect dates from history of any stock. Let's inspect the first stock.
+            const firstStockId = Object.keys(ETF_DASHBOARD_DATA.stocks)[0];
+            if (!firstStockId) return;
+            
+            // Gather all unique historical dates in the system
+            const allDatesSet = new Set();
+            Object.values(ETF_DASHBOARD_DATA.stocks).forEach(stock => {
+                Object.keys(stock.history).forEach(d => allDatesSet.add(d));
+            });
+            
+            const sortedDates = Array.from(allDatesSet).sort().reverse(); // Newest first
+            
+            sortedDates.forEach((d, idx) => {
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.textContent = formatDateStr(d);
+                if (idx === 0) opt.selected = true;
+                dateSelect.appendChild(opt);
+            });
+            
+            currentDate = dateSelect.value;
+            
+            dateSelect.addEventListener('change', () => {
+                currentDate = dateSelect.value;
+                selectedStockId = null; // Clear selection
+                calculateAndRender();
+            });
+        }
+
+        // Initialize Tabs
+        function initTabs() {
+            const tabAdd = document.getElementById('tab-add');
+            const tabReduce = document.getElementById('tab-reduce');
+            
+            tabAdd.addEventListener('click', () => {
+                if (currentMode === 'add') return;
+                tabAdd.classList.add('active');
+                tabReduce.classList.remove('active');
+                currentMode = 'add';
+                selectedStockId = null;
+                currentSortColumn = 'total_change';
+                currentSortDirection = 'desc';
+                calculateAndRender();
+            });
+            
+            tabReduce.addEventListener('click', () => {
+                if (currentMode === 'reduce') return;
+                tabReduce.classList.add('active');
+                tabAdd.classList.remove('active');
+                currentMode = 'reduce';
+                selectedStockId = null;
+                currentSortColumn = 'total_change';
+                currentSortDirection = 'desc'; // descending absolute change
+                calculateAndRender();
+            });
+        }
+
+        // Initialize Search
+        function initSearch() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', () => {
+                searchQuery = searchInput.value.trim().toLowerCase();
+                renderTableAndChart();
+            });
+        }
+
+        // Initialize sorting headers
+        function initTableSorting() {
+            const headers = document.querySelectorAll('#rank-table th');
+            headers.forEach(th => {
+                if (!th.dataset.sort) return;
+                th.addEventListener('click', () => {
+                    const column = th.dataset.sort;
+                    if (currentSortColumn === column) {
+                        currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        currentSortColumn = column;
+                        currentSortDirection = (column === 'id' || column === 'name' || column === 'rank') ? 'asc' : 'desc';
+                    }
+                    
+                    headers.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                    th.classList.add(currentSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                    
+                    renderTableAndChart();
+                });
+            });
+            
+            const defaultHeader = document.querySelector(`#rank-table th[data-sort="${currentSortColumn}"]`);
+            if (defaultHeader) {
+                defaultHeader.classList.add('sort-desc');
+            }
+        }
+
+        // Core Calculation
+        function calculateAndRender() {
+            calculatedRankings = [];
+            
+            if (!currentDate) return;
+            
+            const stocks = ETF_DASHBOARD_DATA.stocks;
+            
+            for (const stockId in stocks) {
+                const stock = stocks[stockId];
+                const historyData = stock.history[currentDate];
+                
+                if (!historyData) continue;
+                
+                const closePrice = historyData.close_price;
+                const etfs = historyData.etfs;
+                
+                let sumSharesChange = 0;
+                let etfCount = 0;
+                let details = [];
+                
+                Object.entries(etfs).forEach(([etfId, info]) => {
+                    const etfMeta = ETF_DASHBOARD_DATA.etf_info[etfId] || { name: '未知 ETF', issuer: '未知投信' };
+                    
+                    // Filter according to mode (strictly '加碼' or '減碼' signals)
+                    const isMatch = (currentMode === 'add' && info.signal === '加碼') ||
+                                    (currentMode === 'reduce' && info.signal === '減碼');
+                                    
+                    if (isMatch) {
+                        const sharesChange = info.shares_change || 0;
+                        sumSharesChange += sharesChange;
+                        etfCount++;
+                        
+                        details.push({
+                            etfId: etfId,
+                            etfName: etfMeta.name,
+                            issuer: etfMeta.issuer,
+                            sharesChange: sharesChange / 1000,
+                            ratio: info.ratio,
+                            ratioChange: info.ratio_change
+                        });
+                    }
+                });
+                
+                if (etfCount > 0) {
+                    const totalChangeShares = sumSharesChange / 1000; // convert to張數
+                    const absChangeShares = Math.abs(totalChangeShares);
+                    
+                    let marketValChange = null;
+                    if (closePrice) {
+                        marketValChange = (sumSharesChange * closePrice) / 10000; // 萬元
+                    }
+                    
+                    calculatedRankings.push({
+                        id: stockId,
+                        name: stock.name,
+                        total_change: absChangeShares, // Sort by absolute change value
+                        raw_change: totalChangeShares,
+                        etf_count: etfCount,
+                        close_price: closePrice,
+                        market_val_change: marketValChange !== null ? Math.abs(marketValChange) : null,
+                        raw_market_val_change: marketValChange,
+                        details: details
+                    });
+                }
+            }
+            
+            // Apply sorting default (total change desc)
+            calculatedRankings.sort((a, b) => b.total_change - a.total_change);
+            
+            // Assign ranks based on initial sort
+            calculatedRankings.forEach((item, index) => {
+                item.rank = index + 1;
+            });
+            
+            // Style updating labels
+            const modeText = currentMode === 'add' ? '加碼' : '減碼';
+            document.getElementById('th-change-label').textContent = `合計${modeText}張數`;
+            document.getElementById('chart-title').textContent = `前 15 名個股${modeText}排行 (張數)`;
+            
+            renderTableAndChart();
+            updateDrilldown();
+        }
+
+        // Render Table & Chart with searches and sorts applied
+        function renderTableAndChart() {
+            let listData = [...calculatedRankings];
+            
+            // 1. Search Query Filter
+            if (searchQuery) {
+                listData = listData.filter(item => {
+                    return item.id.includes(searchQuery) || item.name.toLowerCase().includes(searchQuery);
+                });
+            }
+            
+            // 2. Sort Logic
+            listData.sort((a, b) => {
+                let valA = a[currentSortColumn];
+                let valB = b[currentSortColumn];
+                
+                if (valA === null || valA === undefined) valA = -999999;
+                if (valB === null || valB === undefined) valB = -999999;
+                
+                if (typeof valA === 'string') {
+                    return currentSortDirection === 'asc' 
+                        ? valA.localeCompare(valB) 
+                        : valB.localeCompare(valA);
+                } else {
+                    return currentSortDirection === 'asc' 
+                        ? valA - valB 
+                        : valB - valA;
+                }
+            });
+
+            // Populate Table
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+            
+            if (listData.length === 0) {
+                document.getElementById('table-no-data').style.display = 'block';
+                // Draw empty chart
+                renderChart([]);
+                return;
+            } else {
+                document.getElementById('table-no-data').style.display = 'none';
+            }
+            
+            listData.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = 'selectable' + (selectedStockId === item.id ? ' selected' : '');
+                tr.dataset.id = item.id;
+                
+                // Keep selected status
+                tr.addEventListener('click', () => {
+                    selectedStockId = item.id;
+                    // Update table row styling
+                    document.querySelectorAll('#rank-table tbody tr').forEach(r => r.classList.remove('selected'));
+                    tr.classList.add('selected');
+                    updateDrilldown();
+                });
+                
+                const changeClass = currentMode === 'add' ? 'value-up' : 'value-down';
+                const changePrefix = currentMode === 'add' ? '+' : '-';
+                
+                const closePriceText = item.close_price ? formatNumber(item.close_price, 2) : '--';
+                const mktValText = item.market_val_change !== null ? formatNumber(item.market_val_change, 0) : '--';
+                
+                tr.innerHTML = `
+                    <td><strong># ${item.rank}</strong></td>
+                    <td>${item.id}</td>
+                    <td><strong>${item.name}</strong></td>
+                    <td class="${changeClass}" style="text-align: right;">${changePrefix}${formatNumber(item.total_change, 0)}</td>
+                    <td style="text-align: right;">${item.etf_count}</td>
+                    <td style="text-align: right;">${closePriceText}</td>
+                    <td class="${changeClass}" style="text-align: right;">${changePrefix}${mktValText}</td>
+                    <td style="text-align: center;">
+                        <a href="主動型ETF持股分析.html?stock=${item.id}" class="action-link" title="檢視個股歷史趨勢">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                            歷史分析
+                        </a>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+            
+            // Draw Chart (Limit to top 15 matches for visualization clarity)
+            const topChartMatches = listData.slice(0, 15);
+            renderChart(topChartMatches);
+        }
+
+        // Horizontal Bar Chart
+        function renderChart(items) {
+            const ctx = document.getElementById('rank-chart').getContext('2d');
+            
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+            
+            if (items.length === 0) {
+                // Clear canvas if no data
+                return;
+            }
+            
+            const labels = items.map(item => `${item.name} (${item.id})`);
+            const data = items.map(item => item.total_change);
+            const color = currentMode === 'add' ? 'rgba(239, 68, 68, 0.85)' : 'rgba(16, 185, 129, 0.85)';
+            const hoverColor = currentMode === 'add' ? '#f43f5e' : '#34d399';
+            const labelText = currentMode === 'add' ? '合計加碼張數' : '合計減碼張數';
+            
+            chartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: labelText,
+                        data: data,
+                        backgroundColor: color,
+                        hoverBackgroundColor: hoverColor,
+                        borderRadius: 6,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // Makes the bar chart horizontal!
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const elementIndex = elements[0].index;
+                            const clickedItem = items[elementIndex];
+                            if (clickedItem) {
+                                selectStockFromChart(clickedItem.id);
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ` ${labelText}：${formatNumber(context.raw, 0)} 張`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.05)'
+                            },
+                            ticks: {
+                                color: '#94a3b8'
+                            },
+                            title: {
+                                display: true,
+                                text: '張數',
+                                color: '#94a3b8'
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#f8fafc',
+                                font: {
+                                    weight: 'bold'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Select stock from Chart click
+        function selectStockFromChart(stockId) {
+            selectedStockId = stockId;
+            
+            // Update table selection styling
+            const rows = document.querySelectorAll('#rank-table tbody tr');
+            rows.forEach(tr => {
+                if (tr.dataset.id === stockId) {
+                    tr.classList.add('selected');
+                    tr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    tr.classList.remove('selected');
+                }
+            });
+            
+            // Update drilldown panel
+            updateDrilldown();
+        }
+
+        // Drilldown Update
+        function updateDrilldown() {
+            const placeholder = document.getElementById('drilldown-placeholder');
+            const content = document.getElementById('drilldown-content');
+            const listContainer = document.getElementById('drilldown-items-list');
+            
+            if (!selectedStockId) {
+                placeholder.style.display = 'flex';
+                content.style.display = 'none';
+                return;
+            }
+            
+            // Find stock in rankings
+            const item = calculatedRankings.find(i => i.id === selectedStockId);
+            if (!item) {
+                placeholder.style.display = 'flex';
+                content.style.display = 'none';
+                return;
+            }
+            
+            placeholder.style.display = 'none';
+            content.style.display = 'block';
+            
+            document.getElementById('drill-stock-title').textContent = `${item.name} (${item.id})`;
+            
+            const modeText = currentMode === 'add' ? '加碼' : '減碼';
+            document.getElementById('drill-stock-subtitle').textContent = `合計${modeText}：${formatNumber(item.total_change, 0)} 張 (共 ${item.etf_count} 檔 ETF)`;
+            
+            listContainer.innerHTML = '';
+            
+            // Sort details by magnitude (desc)
+            const sortedDetails = [...item.details].sort((a, b) => Math.abs(b.sharesChange) - Math.abs(a.sharesChange));
+            
+            sortedDetails.forEach(detail => {
+                const div = document.createElement('div');
+                div.className = 'etf-drill-item';
+                
+                const changeClass = currentMode === 'add' ? 'value-up' : 'value-down';
+                const changePrefix = currentMode === 'add' ? '+' : '-';
+                
+                const ratioChangeText = detail.ratioChange > 0 ? `+${detail.ratioChange.toFixed(2)}%` : (detail.ratioChange < 0 ? `${detail.ratioChange.toFixed(2)}%` : '0.00%');
+                
+                div.innerHTML = `
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <span style="font-weight: 600; font-size: 13px;">${detail.etfName} <span style="font-size: 11px; color: var(--text-secondary); font-weight: normal; margin-left: 4px;">(${detail.etfId})</span></span>
+                        <span style="font-size: 11px; color: var(--text-secondary);">${detail.issuer} · 比率變動: <b class="${changeClass}">${ratioChangeText}</b> (最新 ${detail.ratio.toFixed(2)}%)</span>
+                    </div>
+                    <span class="${changeClass}" style="font-weight: 700; font-size: 14px;">
+                        ${changePrefix}${formatNumber(Math.abs(detail.sharesChange), 0)} 張
+                    </span>
+                `;
+                listContainer.appendChild(div);
+            });
+        }
+
+        // Helpers
+        function formatNumber(num, decimals = 0) {
+            return parseFloat(num).toLocaleString('zh-TW', {
+                minimumFractionDigits: decimals,
+                maximumFractionDigits: decimals
+            });
+        }
+
+        function formatDateStr(dateStr) {
+            if (!dateStr || dateStr.length !== 8) return dateStr;
+            return `${dateStr.substring(0, 4)}/${dateStr.substring(4, 6)}/${dateStr.substring(6, 8)}`;
+        }
+    </script>
+</body>
+</html>

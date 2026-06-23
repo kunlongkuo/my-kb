@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主動型 ETF 個股持股與加減碼分析儀表板</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #151b2c;
+            --card-border: rgba(255, 255, 255, 0.05);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --up-color: #ef4444; /* 台灣習慣紅漲 */
+            --down-color: #10b981; /* 台灣習慣綠跌 */
+            --neutral-color: #64748b;
+            --badge-new: #a855f7;
+            --badge-exit: #f97316;
+            --hover-bg: rgba(255, 255, 255, 0.03);
+            --font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            padding: 24px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header Area */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand h1 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 4px;
+        }
+
+        .brand p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Navigation Button Style */
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 18px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-1px);
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Search Section */
+        .search-container {
+            position: relative;
+            width: 360px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            font-size: 14px;
+            outline: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        .autocomplete-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            max-height: 250px;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .autocomplete-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .autocomplete-item:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .autocomplete-item .stock-name {
+            font-weight: 500;
+        }
+
+        .autocomplete-item .stock-code {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        /* Main Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        /* Stock Summary Card */
+        .stock-header-card {
+            background: linear-gradient(135deg, #151b2c 0%, #1e263d 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .stock-title-info {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .stock-title-info h2 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .stock-title-info .stock-meta-info {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Metrics Cards Row */
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .metric-card {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .metric-card .label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .metric-card .value {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .metric-card .value.up {
+            color: var(--up-color);
+        }
+
+        .metric-card .value.down {
+            color: var(--down-color);
+        }
+
+        /* Chart Section */
+        .chart-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+            width: 100%;
+        }
+
+        /* Detail Section */
+        .detail-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Filters Row */
+        .filters-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+
+        .filter-btn {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .filter-btn:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .filter-btn.active .count {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .filter-btn .count {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        th:hover {
+            color: var(--text-primary);
+        }
+
+        th.sort-asc::after {
+            content: " ↑";
+        }
+
+        th.sort-desc::after {
+            content: " ↓";
+        }
+
+        td {
+            padding: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            white-space: nowrap;
+        }
+
+        tr:hover td {
+            background-color: var(--hover-bg);
+        }
+
+        /* Table Components */
+        .etf-identity {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .etf-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .etf-code {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.bg-up {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: var(--up-color);
+        }
+
+        .badge.bg-down {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--down-color);
+        }
+
+        .badge.bg-new {
+            background-color: rgba(168, 85, 247, 0.1);
+            color: var(--badge-new);
+        }
+
+        .badge.bg-exit {
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--badge-exit);
+        }
+
+        .badge.bg-neutral {
+            background-color: rgba(100, 116, 139, 0.1);
+            color: var(--neutral-color);
+        }
+
+        .value-up {
+            color: var(--up-color);
+            font-weight: 500;
+        }
+
+        .value-down {
+            color: var(--down-color);
+            font-weight: 500;
+        }
+
+        /* Progress Bar for ratio */
+        .ratio-bar-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 120px;
+        }
+
+        .ratio-bar {
+            height: 6px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 3px;
+            flex-grow: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ratio-fill {
+            height: 100%;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .ratio-num {
+            font-size: 13px;
+            font-weight: 500;
+            width: 42px;
+            text-align: right;
+        }
+
+        /* Helper Styles */
+        .no-data {
+            padding: 48px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .card-header-with-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
+            .search-container {
+                width: 100%;
+            }
+            .nav-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <h1>主動型 ETF 個股持股分析儀表板</h1>
+                <p id="update-time">資料更新時間：--</p>
+            </div>
+            
+            <div class="header-controls">
+                <!-- Autocomplete Search -->
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-box" placeholder="搜尋個股代號或名稱（例如：2344, 華邦電）..." autocomplete="off">
+                    <div id="search-dropdown" class="autocomplete-dropdown"></div>
+                </div>
+                
+                <a href="主動型ETF個股加減碼排行.html" class="nav-button">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>
+                    看今日加減碼排行
+                </a>
+            </div>
+        </header>
+
+        <!-- Dynamic Main Grid -->
+        <div id="main-content" class="dashboard-grid" style="display: none;">
+            
+            <!-- Stock Summary Card -->
+            <div class="stock-header-card">
+                <div class="stock-title-info">
+                    <h2 id="stock-name-title">--</h2>
+                    <div id="stock-meta" class="stock-meta-info">--</div>
+                </div>
+                
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <div class="label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            持有 ETF 檔數
+                        </div>
+                        <div class="value" id="metric-etf-count">0</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                            較前日變動張數
+                        </div>
+                        <div class="value" id="metric-change-shares">0</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            較前日變動市值
+                        </div>
+                        <div class="value" id="metric-change-value">0</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="15" y2="17"></line><line x1="9" y1="5" x2="15" y2="5"></line></svg>
+                            合計持有張數
+                        </div>
+                        <div class="value" id="metric-total-shares">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Chart -->
+            <div class="chart-card">
+                <h3>持股與張數變動歷史趨勢</h3>
+                <div class="chart-container">
+                    <canvas id="historical-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Detail Table Card -->
+            <div class="detail-card">
+                <div class="card-header-with-action">
+                    <h3>最新 ETF 持股加減碼明細</h3>
+                    <div id="latest-date-tag" style="font-size: 13px; color: var(--text-secondary);">--</div>
+                </div>
+
+                <!-- Categorized Filter Tabs -->
+                <div class="filters-row" id="filters-row">
+                    <button class="filter-btn active" data-filter="all">全部 <span class="count" id="count-all">0</span></button>
+                    <button class="filter-btn" data-filter="首次買入">首次買入 <span class="count" id="count-new">0</span></button>
+                    <button class="filter-btn" data-filter="加碼">加碼 <span class="count" id="count-up">0</span></button>
+                    <button class="filter-btn" data-filter="持平">持平 <span class="count" id="count-flat">0</span></button>
+                    <button class="filter-btn" data-filter="減碼">減碼 <span class="count" id="count-down">0</span></button>
+                    <button class="filter-btn" data-filter="完全出清">完全出清 <span class="count" id="count-exit">0</span></button>
+                </div>
+
+                <!-- Table -->
+                <div class="table-responsive">
+                    <table id="holdings-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="id">代碼 / 名稱</th>
+                                <th data-sort="signal">關鍵訊號</th>
+                                <th data-sort="ratio_change" style="text-align: right;">比率增減(%)</th>
+                                <th data-sort="ratio" style="padding-left: 24px;">投資比率(%)</th>
+                                <th data-sort="shares_change" style="text-align: right;">張數增減</th>
+                                <th data-sort="shares" style="text-align: right;">持有張數</th>
+                                <th data-sort="market_val" style="text-align: right;">估算市值 (萬)</th>
+                                <th data-sort="issuer">發行公司</th>
+                                <th data-sort="date">資料日期</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- JS Generated Rows -->
+                        </tbody>
+                    </table>
+                    <div id="table-no-data" class="no-data" style="display: none;">無符合條件的持股資料</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Initial Placeholder -->
+        <div id="placeholder-content" class="no-data" style="padding: 100px 20px;">
+            <h2>請先搜尋並選擇股票進行分析</h2>
+            <p style="margin-top: 10px;">請在上方搜尋欄輸入股票代號（例如：2330、2344）或名稱開始。</p>
+        </div>
+        
+        <!-- Error Placeholder (No JSON loaded) -->
+        <div id="error-content" class="no-data" style="display: none; padding: 80px 20px;">
+            <h2 style="color: var(--up-color);">找不到數據檔案 dashboard_data.js</h2>
+            <p style="margin-top: 10px; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                請確認您是否已經執行了後台資料處理腳本：<br>
+                <code style="background: rgba(255,255,255,0.06); padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 8px;">
+                    python skills/active-etf-holdings/scripts/generate_dashboard_data.py
+                </code><br>
+                以產生包含持股數據的 <code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px;">dashboard_data.js</code>。
+            </p>
+        </div>
+    </div>
+
+    <!-- Load data file -->
+    <script src="dashboard_data.js" onerror="handleDataLoadError()"></script>
+    
+    <!-- Application Logic -->
+    <script>
+        let currentStockId = null;
+        let currentFilter = 'all';
+        let currentSortColumn = 'ratio';
+        let currentSortDirection = 'desc';
+        let chartInstance = null;
+
+        // Verify if data loaded
+        function handleDataLoadError() {
+            document.getElementById('placeholder-content').style.display = 'none';
+            document.getElementById('error-content').style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof ETF_DASHBOARD_DATA === 'undefined') {
+                handleDataLoadError();
+                return;
+            }
+
+            // Set update time
+            document.getElementById('update-time').textContent = `資料更新時間：${ETF_DASHBOARD_DATA.update_time || '未知'}`;
+            
+            initSearch();
+            initFilterEvents();
+            initTableSorting();
+            
+            // Default selection if available in URL or default to 2344 if exists
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryStock = urlParams.get('stock');
+            
+            if (queryStock && ETF_DASHBOARD_DATA.stocks[queryStock]) {
+                selectStock(queryStock);
+            } else if (ETF_DASHBOARD_DATA.stocks['2344']) {
+                selectStock('2344');
+            } else {
+                // Otherwise, select the first stock in keys
+                const firstStock = Object.keys(ETF_DASHBOARD_DATA.stocks)[0];
+                if (firstStock) selectStock(firstStock);
+            }
+        });
+
+        // Autocomplete search initialization
+        function initSearch() {
+            const searchInput = document.getElementById('search-input');
+            const searchDropdown = document.getElementById('search-dropdown');
+            
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                if (!query) {
+                    searchDropdown.style.display = 'none';
+                    return;
+                }
+                
+                const matches = [];
+                const stocks = ETF_DASHBOARD_DATA.stocks;
+                
+                for (const stockId in stocks) {
+                    const name = stocks[stockId].name.toLowerCase();
+                    if (stockId.includes(query) || name.includes(query)) {
+                        matches.push({ id: stockId, name: stocks[stockId].name });
+                    }
+                }
+                
+                // Sort matches: starts with query first, then digit contains
+                matches.sort((a, b) => {
+                    const aId = a.id.indexOf(query);
+                    const bId = b.id.indexOf(query);
+                    if (aId !== bId) return aId - bId;
+                    return a.id.localeCompare(b.id);
+                });
+                
+                renderDropdown(matches.slice(0, 10));
+            });
+
+            // Hide dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (e.target !== searchInput && e.target !== searchDropdown) {
+                    searchDropdown.style.display = 'none';
+                }
+            });
+
+            searchInput.addEventListener('focus', () => {
+                if (searchInput.value.trim()) {
+                    searchDropdown.style.display = 'block';
+                }
+            });
+        }
+
+        function renderDropdown(items) {
+            const searchDropdown = document.getElementById('search-dropdown');
+            searchDropdown.innerHTML = '';
+            
+            if (items.length === 0) {
+                searchDropdown.style.display = 'none';
+                return;
+            }
+            
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'autocomplete-item';
+                div.innerHTML = `
+                    <span class="stock-name">${item.name}</span>
+                    <span class="stock-code">${item.id}</span>
+                `;
+                div.addEventListener('click', () => {
+                    selectStock(item.id);
+                    document.getElementById('search-input').value = '';
+                    searchDropdown.style.display = 'none';
+                });
+                searchDropdown.appendChild(div);
+            });
+            
+            searchDropdown.style.display = 'block';
+        }
+
+        // Selection logic
+        function selectStock(stockId) {
+            currentStockId = stockId;
+            const stock = ETF_DASHBOARD_DATA.stocks[stockId];
+            if (!stock) return;
+
+            document.getElementById('placeholder-content').style.display = 'none';
+            document.getElementById('main-content').style.display = 'grid';
+
+            // Set Header information
+            document.getElementById('stock-name-title').textContent = `${stock.name} (${stockId})`;
+            const isUs = stockId.endsWith('.US') || isNaN(stockId);
+            document.getElementById('stock-meta').textContent = isUs ? '美股市場標的' : '台灣股市標的';
+
+            // Process stats and chart
+            updateStatsAndChart(stockId, stock);
+            
+            // Render table
+            currentFilter = 'all';
+            updateActiveFilterButton();
+            renderTable();
+        }
+
+        function updateStatsAndChart(stockId, stock) {
+            const history = stock.history;
+            const sortedDates = Object.keys(history).sort();
+            const latestDate = sortedDates[sortedDates.length - 1];
+            const latestData = history[latestDate];
+            const closePrice = latestData.close_price;
+            
+            document.getElementById('latest-date-tag').textContent = `資料日期：${formatDateStr(latestDate)}`;
+            
+            // 1. Calculate Metrics
+            const etfs = latestData.etfs;
+            const etfIds = Object.keys(etfs);
+            
+            // Filter active holdings (non-exit in latest date)
+            const activeEtfs = etfIds.filter(id => etfs[id].signal !== '完全出清');
+            document.getElementById('metric-etf-count').textContent = activeEtfs.length;
+            
+            let totalShares = 0;
+            let changeShares = 0;
+            
+            activeEtfs.forEach(id => {
+                totalShares += (etfs[id].shares / 1000);
+            });
+            
+            etfIds.forEach(id => {
+                changeShares += (etfs[id].shares_change || 0) / 1000;
+            });
+            
+            document.getElementById('metric-total-shares').textContent = formatNumber(totalShares, 0) + ' 張';
+            
+            const changeSharesVal = document.getElementById('metric-change-shares');
+            changeSharesVal.textContent = (changeShares >= 0 ? '+' : '') + formatNumber(changeShares, 0) + ' 張';
+            changeSharesVal.className = 'value ' + (changeShares > 0 ? 'up' : (changeShares < 0 ? 'down' : ''));
+            
+            // Capital Value
+            const changeValueVal = document.getElementById('metric-change-value');
+            if (closePrice) {
+                const totalChangeValue = changeShares * 1000 * closePrice; // 張數增減*1000*收盤價 (元)
+                const totalChangeValueMillion = totalChangeValue / 1000000; // 百萬元
+                if (Math.abs(totalChangeValueMillion) >= 100) {
+                    const totalChangeValueBillion = totalChangeValueMillion / 100; // 億元
+                    changeValueVal.textContent = (totalChangeValueBillion >= 0 ? '+' : '') + formatNumber(totalChangeValueBillion, 2) + ' 億';
+                } else {
+                    changeValueVal.textContent = (totalChangeValueMillion >= 0 ? '+' : '') + formatNumber(totalChangeValueMillion, 0) + ' 萬';
+                }
+                changeValueVal.className = 'value ' + (totalChangeValueMillion > 0 ? 'up' : (totalChangeValueMillion < 0 ? 'down' : ''));
+            } else {
+                changeValueVal.textContent = '無價格資料';
+                changeValueVal.className = 'value';
+            }
+
+            // 2. Build Chart
+            renderChart(sortedDates, history);
+            
+            // 3. Count filter tags
+            updateFilterCounts(etfs);
+        }
+
+        function updateFilterCounts(etfs) {
+            let counts = { all: 0, new: 0, up: 0, flat: 0, down: 0, exit: 0 };
+            
+            Object.values(etfs).forEach(item => {
+                if (item.signal === '完全出清') {
+                    counts.exit++;
+                } else {
+                    counts.all++; // Total active ETFs
+                    if (item.signal === '首次買入') counts.new++;
+                    else if (item.signal === '加碼') counts.up++;
+                    else if (item.signal === '持平') counts.flat++;
+                    else if (item.signal === '減碼') counts.down++;
+                }
+            });
+            
+            document.getElementById('count-all').textContent = counts.all;
+            document.getElementById('count-new').textContent = counts.new;
+            document.getElementById('count-up').textContent = counts.up;
+            document.getElementById('count-flat').textContent = counts.flat;
+            document.getElementById('count-down').textContent = counts.down;
+            document.getElementById('count-exit').textContent = counts.exit;
+        }
+
+        // Chart Rendering (Mixed Chart)
+        function renderChart(dates, history) {
+            const chartData = {
+                labels: dates.map(d => formatDateStr(d)),
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: '單日買賣張數',
+                        data: dates.map(d => {
+                            let sum = 0;
+                            const etfs = history[d].etfs;
+                            Object.values(etfs).forEach(item => {
+                                sum += (item.shares_change || 0) / 1000;
+                            });
+                            return sum;
+                        }),
+                        backgroundColor: dates.map(d => {
+                            let sum = 0;
+                            const etfs = history[d].etfs;
+                            Object.values(etfs).forEach(item => {
+                                sum += (item.shares_change || 0) / 1000;
+                            });
+                            return sum >= 0 ? 'rgba(239, 68, 68, 0.75)' : 'rgba(16, 185, 129, 0.75)';
+                        }),
+                        yAxisID: 'y1'
+                    },
+                    {
+                        type: 'line',
+                        label: '合計持有張數',
+                        data: dates.map(d => {
+                            let sum = 0;
+                            const etfs = history[d].etfs;
+                            Object.entries(etfs).forEach(([id, item]) => {
+                                if (item.signal !== '完全出清') sum += (item.shares || 0) / 1000;
+                            });
+                            return sum;
+                        }),
+                        borderColor: '#3b82f6',
+                        borderWidth: 2,
+                        fill: false,
+                        yAxisID: 'y2',
+                        pointBackgroundColor: '#3b82f6',
+                        tension: 0.1
+                    }
+                ]
+            };
+
+            // Add stock price line if exists
+            const hasPrices = dates.some(d => history[d].close_price !== null);
+            if (hasPrices) {
+                chartData.datasets.push({
+                    type: 'line',
+                    label: '個股收盤價',
+                    data: dates.map(d => history[d].close_price),
+                    borderColor: '#eab308',
+                    borderWidth: 2,
+                    borderDash: [4, 4],
+                    fill: false,
+                    yAxisID: 'y3',
+                    pointBackgroundColor: '#eab308',
+                    tension: 0.1
+                });
+            }
+
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            const ctx = document.getElementById('historical-chart').getContext('2d');
+            
+            // Set configuration
+            const yAxes = {
+                y1: {
+                    type: 'linear',
+                    position: 'left',
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.05)'
+                    },
+                    ticks: {
+                        color: '#94a3b8'
+                    },
+                    title: {
+                        display: true,
+                        text: '買賣張數 (張)',
+                        color: '#94a3b8'
+                    }
+                },
+                y2: {
+                    type: 'linear',
+                    position: 'right',
+                    grid: {
+                        drawOnChartArea: false // prevent overlaps
+                    },
+                    ticks: {
+                        color: '#3b82f6'
+                    },
+                    title: {
+                        display: true,
+                        text: '總持有量 (張)',
+                        color: '#3b82f6'
+                    }
+                }
+            };
+
+            if (hasPrices) {
+                yAxes.y3 = {
+                    type: 'linear',
+                    position: 'right',
+                    grid: {
+                        drawOnChartArea: false
+                    },
+                    ticks: {
+                        color: '#eab308'
+                    },
+                    title: {
+                        display: true,
+                        text: '股價 (元)',
+                        color: '#eab308'
+                    }
+                };
+            }
+
+            chartInstance = new Chart(ctx, {
+                data: chartData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#e2e8f0'
+                            }
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    },
+                    scales: yAxes
+                }
+            });
+        }
+
+        // Table filters
+        function initFilterEvents() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderTable();
+                });
+            });
+        }
+
+        function updateActiveFilterButton() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                if (btn.dataset.filter === currentFilter) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // Sorting
+        function initTableSorting() {
+            const headers = document.querySelectorAll('#holdings-table th');
+            headers.forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.dataset.sort;
+                    if (currentSortColumn === column) {
+                        currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        currentSortColumn = column;
+                        currentSortDirection = 'desc'; // Default desc for numeric columns
+                    }
+                    
+                    // Style updating
+                    headers.forEach(h => {
+                        h.classList.remove('sort-asc', 'sort-desc');
+                    });
+                    th.classList.add(currentSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                    
+                    renderTable();
+                });
+            });
+            
+            // Set initial class on default sort header
+            const defaultHeader = document.querySelector(`#holdings-table th[data-sort="${currentSortColumn}"]`);
+            if (defaultHeader) {
+                defaultHeader.classList.add('sort-desc');
+            }
+        }
+
+        // Render detailed table
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+            
+            if (!currentStockId) return;
+            
+            const stock = ETF_DASHBOARD_DATA.stocks[currentStockId];
+            const sortedDates = Object.keys(stock.history).sort();
+            const latestDate = sortedDates[sortedDates.length - 1];
+            const historyData = stock.history[latestDate];
+            const closePrice = historyData.close_price;
+            
+            let listData = [];
+            
+            Object.entries(historyData.etfs).forEach(([etfId, item]) => {
+                const info = ETF_DASHBOARD_DATA.etf_info[etfId] || { name: '未知 ETF', issuer: '未知投信' };
+                
+                // Calculate market value
+                let marketVal = null;
+                if (closePrice && item.shares > 0) {
+                    marketVal = (item.shares * closePrice) / 10000; // 萬元
+                }
+                
+                listData.push({
+                    id: etfId,
+                    name: info.name,
+                    issuer: info.issuer,
+                    ratio: item.ratio,
+                    ratio_change: item.ratio_change || 0,
+                    shares: item.shares / 1000, //轉為張數
+                    shares_change: (item.shares_change || 0) / 1000,
+                    signal: item.signal,
+                    consecutive_days: item.consecutive_days || 0,
+                    market_val: marketVal,
+                    date: latestDate
+                });
+            });
+
+            // Filter logic
+            if (currentFilter !== 'all') {
+                listData = listData.filter(item => item.signal === currentFilter);
+            } else {
+                // 'all' filters out 'Exit'
+                listData = listData.filter(item => item.signal !== '完全出清');
+            }
+
+            // Sort logic
+            listData.sort((a, b) => {
+                let valA = a[currentSortColumn];
+                let valB = b[currentSortColumn];
+                
+                if (valA === null || valA === undefined) valA = -999999;
+                if (valB === null || valB === undefined) valB = -999999;
+                
+                if (typeof valA === 'string') {
+                    return currentSortDirection === 'asc' 
+                        ? valA.localeCompare(valB) 
+                        : valB.localeCompare(valA);
+                } else {
+                    return currentSortDirection === 'asc' 
+                        ? valA - valB 
+                        : valB - valA;
+                }
+            });
+
+            // Hide/Show no data indicator
+            if (listData.length === 0) {
+                document.getElementById('table-no-data').style.display = 'block';
+                return;
+            } else {
+                document.getElementById('table-no-data').style.display = 'none';
+            }
+
+            // Populate table rows
+            listData.forEach(item => {
+                const tr = document.createElement('tr');
+                
+                // Signal formatting
+                let signalBadge = '';
+                if (item.signal === '首次買入') {
+                    signalBadge = `<span class="badge bg-new">首次買入</span>`;
+                } else if (item.signal === '加碼') {
+                    signalBadge = `<span class="badge bg-up">加碼 ${item.consecutive_days}天</span>`;
+                } else if (item.signal === '減碼') {
+                    signalBadge = `<span class="badge bg-down">減碼 ${item.consecutive_days}天</span>`;
+                } else if (item.signal === '持平') {
+                    signalBadge = `<span class="badge bg-neutral">持平</span>`;
+                } else if (item.signal === '完全出清') {
+                    signalBadge = `<span class="badge bg-exit">已出清</span>`;
+                }
+
+                // Ratio & shares formatting
+                const ratioChangeClass = item.ratio_change > 0 ? 'value-up' : (item.ratio_change < 0 ? 'value-down' : '');
+                const ratioChangeText = item.ratio_change > 0 ? `+${item.ratio_change.toFixed(2)}` : (item.ratio_change < 0 ? item.ratio_change.toFixed(2) : '0.00');
+
+                const sharesChangeClass = item.shares_change > 0 ? 'value-up' : (item.shares_change < 0 ? 'value-down' : '');
+                const sharesChangeText = item.shares_change > 0 ? `+${formatNumber(item.shares_change, 0)}` : (item.shares_change < 0 ? formatNumber(item.shares_change, 0) : '0');
+
+                // Market value formatting
+                const marketValText = item.market_val !== null ? formatNumber(item.market_val, 0) : '--';
+
+                tr.innerHTML = `
+                    <td>
+                        <div class="etf-identity">
+                            <span class="etf-name">${item.name}</span>
+                            <span class="etf-code">${item.id}</span>
+                        </div>
+                    </td>
+                    <td>${signalBadge}</td>
+                    <td class="${ratioChangeClass}" style="text-align: right;">${ratioChangeText}%</td>
+                    <td>
+                        <div class="ratio-bar-container">
+                            <div class="ratio-bar">
+                                <div class="ratio-fill" style="width: ${Math.min(item.ratio * 3, 100)}%;"></div>
+                            </div>
+                            <span class="ratio-num">${item.ratio.toFixed(2)}%</span>
+                        </div>
+                    </td>
+                    <td class="${sharesChangeClass}" style="text-align: right;">${sharesChangeText}</td>
+                    <td style="text-align: right; font-weight: 500;">${formatNumber(item.shares, 0)}</td>
+                    <td style="text-align: right;">${marketValText}</td>
+                    <td>${item.issuer}</td>
+                    <td>${formatDateStr(item.date)}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Helpers
+        function formatNumber(num, decimals = 0) {
+            return parseFloat(num).toLocaleString('zh-TW', {
+                minimumFractionDigits: decimals,
+                maximumFractionDigits: decimals
+            });
+        }
+
+        function formatDateStr(dateStr) {
+            if (!dateStr || dateStr.length !== 8) return dateStr;
+            return `${dateStr.substring(0, 4)}/${dateStr.substring(4, 6)}/${dateStr.substring(6, 8)}`;
+        }
+    </script>
+</body>
+</html>

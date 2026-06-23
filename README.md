@@ -34,6 +34,9 @@
 | 每日個股合計 | 彙整所有 ETF 對各個股的總張數，逐日比較增減 |
 | 每週加減碼摘要 | Weekly Additions / Weekly Reductions 分頁 |
 | ETF 比較清單同步 | Markdown ↔ Excel 雙向同步（`sync_excel_to_md.py`） |
+| 個股加減碼分析儀表板 | 包含個股歷史趨勢（`主動型ETF持股分析.html`）與每日加減碼排行（`主動型ETF個股加減碼排行.html`），支援搜尋、Chart.js 圖表與投信明細鑽取 |
+
+
 
 ### 自動化工具
 | 功能 | 說明 |
@@ -136,7 +139,33 @@ python skills/active-etf-holdings/scripts/add_daily_stock_total.py
 
 # 每週加減碼摘要（通常週五執行）
 python skills/active-etf-holdings/scripts/add_weekly_summary.py
+
+# 產生個股持股分析儀表板數據 (產出 wiki/金融投資/dashboard_data.js)
+python skills/active-etf-holdings/scripts/generate_dashboard_data.py
+# 接著可直接於瀏覽器開啟以下檔案：
+# - 個股歷史趨勢：wiki/金融投資/主動型ETF持股分析.html
+# - 每日加減碼排行：wiki/金融投資/主動型ETF個股加減碼排行.html
 ```
+
+### 個股加減碼分析儀表板的手機存取與部署方式
+
+本專案儀表板支援完全的手機 RWD 響應式介面，可透過以下兩種方式在手機上執行與檢視：
+
+#### 方案 A：使用本機區域網路伺服器 (即時本機測試)
+1. 確保手機與電腦連接在**同一個 Wi-Fi 網路**下。
+2. 在知識庫根目錄執行以下腳本啟動 Web 服務：
+   ```powershell
+   python scripts/start_mobile_server.py
+   ```
+3. 程式會自動偵測電腦 IP 並在電腦端**打開一個 QR Code 網頁**，直接用手機相機掃描 QR Code 即可連線開啟。
+
+#### 方案 B：啟用 GitHub Pages 雲端託管 (終極推薦)
+1. 進入此 GitHub 倉庫的 `Settings` -> `Pages` 設定。
+2. 將 Build and deployment 中的 Branch 設為 `main`，路徑設為 `/ (root)`，點擊 Save。
+3. 檔案 Push 至 GitHub 後，即可透過以下公開 URL 直接開啟：
+   - **個股歷史趨勢**：`https://kunlongkuo-cloud.github.io/my-kb/wiki/金融投資/主動型ETF持股分析.html`
+   - **個股加減碼排行**：`https://kunlongkuo-cloud.github.io/my-kb/wiki/金融投資/主動型ETF個股加減碼排行.html`
+
 
 ### 執行 ETF 持股更新（被動型）
 
