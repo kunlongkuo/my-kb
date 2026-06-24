@@ -463,6 +463,8 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .header-controls {
@@ -470,6 +472,64 @@
             align-items: center;
             gap: 12px;
             flex-wrap: wrap;
+        }
+
+        /* Date Selector in Detail Card */
+        .date-selector-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .date-selector-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .detail-date-select {
+            padding: 7px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background-color: #1e2538;
+            color: var(--text-primary);
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+            min-width: 130px;
+        }
+
+        .detail-date-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        .date-nav-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .date-nav-btn:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .date-nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
         }
 
         /* Media Queries */
@@ -573,8 +633,15 @@
             <!-- Detail Table Card -->
             <div class="detail-card">
                 <div class="card-header-with-action">
-                    <h3>最新 ETF 持股加減碼明細</h3>
-                    <div id="latest-date-tag" style="font-size: 13px; color: var(--text-secondary);">--</div>
+                    <h3 id="detail-table-title">ETF 持股加減碼明細</h3>
+                    <div class="date-selector-wrap">
+                        <span class="date-selector-label">查詢日期：</span>
+                        <button class="date-nav-btn" id="date-prev-btn" title="上一個交易日" disabled>&#8249;</button>
+                        <select id="detail-date-select" class="detail-date-select">
+                            <!-- Populated by JS -->
+                        </select>
+                        <button class="date-nav-btn" id="date-next-btn" title="下一個交易日" disabled>&#8250;</button>
+                    </div>
                 </div>
 
                 <!-- Categorized Filter Tabs -->
@@ -637,6 +704,7 @@
     <!-- Application Logic -->
     <script>
         let currentStockId = null;
+        let currentDetailDate = null;  // 明細區塊目前選取的日期
         let currentFilter = 'all';
         let currentSortColumn = 'ratio';
         let currentSortDirection = 'desc';
@@ -660,6 +728,7 @@
             initSearch();
             initFilterEvents();
             initTableSorting();
+            initDetailDateSelect();
             
             // Default selection if available in URL or default to 2344 if exists
             const urlParams = new URLSearchParams(window.location.search);
@@ -766,10 +835,98 @@
 
             // Process stats and chart
             updateStatsAndChart(stockId, stock);
+
+            // Populate date selector with this stock's available dates
+            populateDetailDateSelect(stock);
             
-            // Render table
+            // Render table (currentDetailDate is now set by populateDetailDateSelect)
             currentFilter = 'all';
             updateActiveFilterButton();
+            renderTable();
+        }
+
+        // Populate the date selector dropdown for a given stock
+        function populateDetailDateSelect(stock) {
+            const sel = document.getElementById('detail-date-select');
+            const prevBtn = document.getElementById('date-prev-btn');
+            const nextBtn = document.getElementById('date-next-btn');
+            sel.innerHTML = '';
+
+            const dates = Object.keys(stock.history).sort(); // asc
+            // Default to latest date
+            currentDetailDate = dates[dates.length - 1];
+
+            // Fill options newest-first
+            [...dates].reverse().forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.textContent = formatDateStr(d);
+                if (d === currentDetailDate) opt.selected = true;
+                sel.appendChild(opt);
+            });
+
+            // Update nav buttons state
+            updateDateNavButtons(dates);
+        }
+
+        // Initialize detail date select events (called once on DOMContentLoaded)
+        function initDetailDateSelect() {
+            const sel = document.getElementById('detail-date-select');
+            const prevBtn = document.getElementById('date-prev-btn');
+            const nextBtn = document.getElementById('date-next-btn');
+
+            sel.addEventListener('change', () => {
+                currentDetailDate = sel.value;
+                onDetailDateChanged();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (!currentStockId) return;
+                const stock = ETF_DASHBOARD_DATA.stocks[currentStockId];
+                const dates = Object.keys(stock.history).sort();
+                const idx = dates.indexOf(currentDetailDate);
+                if (idx > 0) {
+                    currentDetailDate = dates[idx - 1];
+                    sel.value = currentDetailDate;
+                    onDetailDateChanged();
+                    updateDateNavButtons(dates);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (!currentStockId) return;
+                const stock = ETF_DASHBOARD_DATA.stocks[currentStockId];
+                const dates = Object.keys(stock.history).sort();
+                const idx = dates.indexOf(currentDetailDate);
+                if (idx < dates.length - 1) {
+                    currentDetailDate = dates[idx + 1];
+                    sel.value = currentDetailDate;
+                    onDetailDateChanged();
+                    updateDateNavButtons(dates);
+                }
+            });
+        }
+
+        // Update prev/next button disabled state
+        function updateDateNavButtons(dates) {
+            const prevBtn = document.getElementById('date-prev-btn');
+            const nextBtn = document.getElementById('date-next-btn');
+            const idx = dates.indexOf(currentDetailDate);
+            prevBtn.disabled = (idx <= 0);
+            nextBtn.disabled = (idx >= dates.length - 1);
+        }
+
+        // When user changes the detail date
+        function onDetailDateChanged() {
+            if (!currentStockId) return;
+            const stock = ETF_DASHBOARD_DATA.stocks[currentStockId];
+            const dates = Object.keys(stock.history).sort();
+            updateDateNavButtons(dates);
+
+            // Update metric cards and filter counts for the selected date
+            const histData = stock.history[currentDetailDate];
+            if (!histData) return;
+            updateFilterCounts(histData.etfs);
             renderTable();
         }
 
@@ -779,10 +936,8 @@
             const latestDate = sortedDates[sortedDates.length - 1];
             const latestData = history[latestDate];
             const closePrice = latestData.close_price;
-            
-            document.getElementById('latest-date-tag').textContent = `資料日期：${formatDateStr(latestDate)}`;
-            
-            // 1. Calculate Metrics
+
+            // 1. Calculate Metrics (always based on latest date for summary cards)
             const etfs = latestData.etfs;
             const etfIds = Object.keys(etfs);
             
@@ -810,10 +965,10 @@
             // Capital Value
             const changeValueVal = document.getElementById('metric-change-value');
             if (closePrice) {
-                const totalChangeValue = changeShares * 1000 * closePrice; // 張數增減*1000*收盤價 (元)
-                const totalChangeValueMillion = totalChangeValue / 1000000; // 百萬元
+                const totalChangeValue = changeShares * 1000 * closePrice;
+                const totalChangeValueMillion = totalChangeValue / 1000000;
                 if (Math.abs(totalChangeValueMillion) >= 100) {
-                    const totalChangeValueBillion = totalChangeValueMillion / 100; // 億元
+                    const totalChangeValueBillion = totalChangeValueMillion / 100;
                     changeValueVal.textContent = (totalChangeValueBillion >= 0 ? '+' : '') + formatNumber(totalChangeValueBillion, 2) + ' 億';
                 } else {
                     changeValueVal.textContent = (totalChangeValueMillion >= 0 ? '+' : '') + formatNumber(totalChangeValueMillion, 0) + ' 萬';
@@ -827,7 +982,7 @@
             // 2. Build Chart
             renderChart(sortedDates, history);
             
-            // 3. Count filter tags
+            // 3. Count filter tags for latest date (will be overridden when user picks a date)
             updateFilterCounts(etfs);
         }
 
@@ -838,7 +993,7 @@
                 if (item.signal === '完全出清') {
                     counts.exit++;
                 } else {
-                    counts.all++; // Total active ETFs
+                    counts.all++;
                     if (item.signal === '首次買入') counts.new++;
                     else if (item.signal === '加碼') counts.up++;
                     else if (item.signal === '持平') counts.flat++;
@@ -1051,7 +1206,7 @@
             }
         }
 
-        // Render detailed table
+        // Render detailed table — uses currentDetailDate (set by date selector)
         function renderTable() {
             const tbody = document.getElementById('table-body');
             tbody.innerHTML = '';
@@ -1060,9 +1215,16 @@
             
             const stock = ETF_DASHBOARD_DATA.stocks[currentStockId];
             const sortedDates = Object.keys(stock.history).sort();
-            const latestDate = sortedDates[sortedDates.length - 1];
-            const historyData = stock.history[latestDate];
+
+            // Use the user-selected date, fallback to latest
+            const targetDate = currentDetailDate || sortedDates[sortedDates.length - 1];
+            const historyData = stock.history[targetDate];
+            if (!historyData) return;
+
             const closePrice = historyData.close_price;
+
+            // Update filter counts for the selected date
+            updateFilterCounts(historyData.etfs);
             
             let listData = [];
             
@@ -1081,12 +1243,12 @@
                     issuer: info.issuer,
                     ratio: item.ratio,
                     ratio_change: item.ratio_change || 0,
-                    shares: item.shares / 1000, //轉為張數
+                    shares: item.shares / 1000,
                     shares_change: (item.shares_change || 0) / 1000,
                     signal: item.signal,
                     consecutive_days: item.consecutive_days || 0,
                     market_val: marketVal,
-                    date: latestDate
+                    date: targetDate
                 });
             });
 
