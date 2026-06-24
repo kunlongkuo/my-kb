@@ -487,11 +487,11 @@
         <div class="tabs-container">
             <button class="tab-btn active add" id="tab-add" data-mode="add">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-                今日所有個股加碼排行
+                今日個股淨買超排行
             </button>
             <button class="tab-btn reduce" id="tab-reduce" data-mode="reduce">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-                所有個股減碼排行
+                今日個股淨賣超排行
             </button>
         </div>
 
@@ -697,6 +697,8 @@
         }
 
         // Core Calculation
+        // 修正邏輯：以「每日個股合計」為準，計算所有 ETF 對該個股的淨張數變化
+        // (加碼 + 減碼 + 首次買入 + 完全出清 全部加總 → 淨值正 = 加碼排行，淨值負 = 減碼排行)
         function calculateAndRender() {
             calculatedRankings = [];
             
@@ -713,54 +715,76 @@
                 const closePrice = historyData.close_price;
                 const etfs = historyData.etfs;
                 
-                let sumSharesChange = 0;
-                let etfCount = 0;
-                let details = [];
+                // 計算所有 ETF 對該股的「淨張數變化」（不分方向全部加總）
+                let netSharesChange = 0;  // 單位：股（原始單位，後轉張）
+                let addCount = 0;
+                let reduceCount = 0;
+                let addDetails = [];
+                let reduceDetails = [];
                 
                 Object.entries(etfs).forEach(([etfId, info]) => {
                     const etfMeta = ETF_DASHBOARD_DATA.etf_info[etfId] || { name: '未知 ETF', issuer: '未知投信' };
+                    const sc = info.shares_change || 0;
+                    const sig = info.signal || '';
                     
-                    // Filter according to mode (strictly '加碼' or '減碼' signals)
-                    const isMatch = (currentMode === 'add' && info.signal === '加碼') ||
-                                    (currentMode === 'reduce' && info.signal === '減碼');
-                                    
-                    if (isMatch) {
-                        const sharesChange = info.shares_change || 0;
-                        sumSharesChange += sharesChange;
-                        etfCount++;
+                    // 累加所有有變動的 ETF（含首次買入/完全出清）
+                    if (sig !== '持平' && sc !== 0) {
+                        netSharesChange += sc;
                         
-                        details.push({
+                        const detailObj = {
                             etfId: etfId,
                             etfName: etfMeta.name,
                             issuer: etfMeta.issuer,
-                            sharesChange: sharesChange / 1000,
+                            sharesChange: sc / 1000,  // 轉張
+                            signal: sig,
                             ratio: info.ratio,
                             ratioChange: info.ratio_change
-                        });
+                        };
+                        
+                        if (sc > 0) {
+                            addCount++;
+                            addDetails.push(detailObj);
+                        } else {
+                            reduceCount++;
+                            reduceDetails.push(detailObj);
+                        }
                     }
                 });
                 
-                if (etfCount > 0) {
-                    const totalChangeShares = sumSharesChange / 1000; // convert to張數
-                    const absChangeShares = Math.abs(totalChangeShares);
-                    
-                    let marketValChange = null;
-                    if (closePrice) {
-                        marketValChange = (sumSharesChange * closePrice) / 10000; // 萬元
-                    }
-                    
-                    calculatedRankings.push({
-                        id: stockId,
-                        name: stock.name,
-                        total_change: absChangeShares, // Sort by absolute change value
-                        raw_change: totalChangeShares,
-                        etf_count: etfCount,
-                        close_price: closePrice,
-                        market_val_change: marketValChange !== null ? Math.abs(marketValChange) : null,
-                        raw_market_val_change: marketValChange,
-                        details: details
-                    });
+                const netShares = netSharesChange / 1000; // 轉張
+                
+                // 依淨值方向決定要不要進入對應排行
+                const isNetAdd = netShares > 0;
+                const isNetReduce = netShares < 0;
+                
+                if (currentMode === 'add' && !isNetAdd) continue;
+                if (currentMode === 'reduce' && !isNetReduce) continue;
+                
+                // 排行中顯示的 ETF 明細：加碼模式顯示加碼方向 ETF，減碼模式顯示減碼方向 ETF
+                // 但「合計張數」一律用淨值（才能正確反映實際淨買賣）
+                const modeDetails = currentMode === 'add' ? addDetails : reduceDetails;
+                const modeEtfCount = currentMode === 'add' ? addCount : reduceCount;
+                
+                const absNetShares = Math.abs(netShares);
+                
+                let marketValChange = null;
+                if (closePrice) {
+                    marketValChange = (netSharesChange * closePrice) / 10000; // 萬元
                 }
+                
+                calculatedRankings.push({
+                    id: stockId,
+                    name: stock.name,
+                    total_change: absNetShares,          // 排序用絕對值
+                    raw_change: netShares,               // 帶正負號的淨值（張）
+                    etf_count: modeEtfCount,             // 同方向 ETF 數
+                    all_etf_count_add: addCount,
+                    all_etf_count_reduce: reduceCount,
+                    close_price: closePrice,
+                    market_val_change: marketValChange !== null ? Math.abs(marketValChange) : null,
+                    raw_market_val_change: marketValChange,
+                    details: modeDetails                 // 同方向明細
+                });
             }
             
             // Apply sorting default (total change desc)
@@ -772,7 +796,7 @@
             });
             
             // Style updating labels
-            const modeText = currentMode === 'add' ? '加碼' : '減碼';
+            const modeText = currentMode === 'add' ? '淨買超' : '淨賣超';
             document.getElementById('th-change-label').textContent = `合計${modeText}張數`;
             document.getElementById('chart-title').textContent = `前 15 名個股${modeText}排行 (張數)`;
             
@@ -997,8 +1021,11 @@
             
             document.getElementById('drill-stock-title').textContent = `${item.name} (${item.id})`;
             
-            const modeText = currentMode === 'add' ? '加碼' : '減碼';
-            document.getElementById('drill-stock-subtitle').textContent = `合計${modeText}：${formatNumber(item.total_change, 0)} 張 (共 ${item.etf_count} 檔 ETF)`;
+            const modeText = currentMode === 'add' ? '淨買超' : '淨賣超';
+            const addInfo = item.all_etf_count_add > 0 ? `加碼 ${item.all_etf_count_add} 檔` : '';
+            const reduceInfo = item.all_etf_count_reduce > 0 ? `減碼 ${item.all_etf_count_reduce} 檔` : '';
+            const etfBreakdown = [addInfo, reduceInfo].filter(Boolean).join(' / ');
+            document.getElementById('drill-stock-subtitle').textContent = `合計${modeText}：${formatNumber(item.total_change, 0)} 張（${etfBreakdown}）`;
             
             listContainer.innerHTML = '';
             
