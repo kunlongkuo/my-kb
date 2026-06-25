@@ -4,6 +4,45 @@
 
 ---
 
+## 2026-06-26 ── 新增 SlideMaster 簡報影片化技能
+
+### ✅ 今日完成
+
+1. **SlideMaster 簡報影片化技能安裝 (`skills/12-slidemaster/`)**
+   - 參考 SlideMaster 三步驟概念，設計並建立自訂技能 `skills/12-slidemaster/SKILL.md`。定義了「寫講稿」、「配語音」、「合成影片」三步驟的結構化 SOP。
+   - 在 `skills/12-slidemaster/scripts/` 中建立自動化影片合成 Python 腳本 `merge_video.py`，支援將投影片影像與配音檔案按自然排序批次合成為 MP4 影片，並在完成後自動清理臨時檔案。
+2. **技能安裝註冊與專案文檔更新**
+   - 更新全域安裝技能清單 `skills/00-install-all/SKILL.md`，將其註冊至一鍵安裝列表中。
+   - 更新專案 `README.md`，將新技能的描述與目錄結構加入「🚀 目前功能」與「📂 目錄結構」中。
+   - 於操作日誌 `log.md` 寫入本次更新紀錄。
+
+### 📝 改了哪些重要檔案
+
+| 檔案 | 異動類型 | 說明 |
+|------|----------|------|
+| `skills/12-slidemaster/SKILL.md` | **新建** | SlideMaster 簡報影片化自訂技能檔案 |
+| `skills/12-slidemaster/scripts/merge_video.py` | **新建** | 多影像與多音訊批次合成影片腳本 |
+| `skills/00-install-all/SKILL.md` | **修改** | 將新技能加入一鍵安裝清單 |
+| `README.md` | **修改** | 註冊新技能之功能描述與目錄結構 |
+| `log.md` | **修改** | 追加 SlideMaster 技能安裝與同步日誌 |
+| `docs/PROGRESS.md` | **修改** | 記錄今日開發進度（本檔案） |
+
+### 🧭 做了哪些決策
+
+1. **模組化技能編號**：依序使用編號 `12-slidemaster` 以符合目前專案的命名慣例。
+2. **設計專屬輔助腳本**：為了使 SlideMaster 三步驟中的「合成影片」可落地執行，特別提供 `merge_video.py`，利用 FFmpeg 實現靜態圖片加音軌的批次轉檔與 concat 拼接，提升實用性。
+
+### 🚧 目前卡在哪裡
+
+- 無。所有安裝、註冊與文件同步已完成。
+
+### 👉 下次接手要先看什麼
+
+1. **`skills/12-slidemaster/SKILL.md`**：了解 SlideMaster 三步驟的運作邏輯與 AI 指引方針。
+2. **`skills/12-slidemaster/scripts/merge_video.py`**：查看 FFmpeg 自動合成的實作細節。
+
+---
+
 ## 2026-06-23 ── 主動型 ETF 資料日更與個股加減碼互動分析儀表板建立
 
 ### ✅ 今日完成

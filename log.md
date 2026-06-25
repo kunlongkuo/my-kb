@@ -306,3 +306,9 @@
   - 新增 `skills/10-infographic-builder`（資訊圖表生成）提供結構化圖表設計、Mermaid、SVG 及 AI 生圖渲染之指引。
 - **安裝清單更新**：更新 `skills/00-install-all/SKILL.md`，將新增的自訂技能註冊至一鍵安裝列表中。
 - **懶人包同步**：更新主文件 `09-AntiGravity專屬懶人包.md` 至 v1.6，記錄新技能的加入與版本修訂。
+
+## [2026-06-26] system | 新增 SlideMaster 簡報影片化技能
+- **自訂技能安裝**：
+  - 新增 `skills/12-slidemaster` 技能，協助使用者透過三步驟（寫講稿、配語音、合成影片）將簡報投影片完整轉換為影片。
+  - 在 `skills/12-slidemaster/scripts/` 下建立自動化影片合成腳本 `merge_video.py`，支援多影像與多音訊依自然排序批次合成。
+- **安裝清單更新**：更新 `skills/00-install-all/SKILL.md`，將 SlideMaster 註冊至一鍵安裝列表中。
