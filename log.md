@@ -312,3 +312,11 @@
   - 新增 `skills/12-slidemaster` 技能，協助使用者透過三步驟（寫講稿、配語音、合成影片）將簡報投影片完整轉換為影片。
   - 在 `skills/12-slidemaster/scripts/` 下建立自動化影片合成腳本 `merge_video.py`，支援多影像與多音訊依自然排序批次合成。
 - **安裝清單更新**：更新 `skills/00-install-all/SKILL.md`，將 SlideMaster 註冊至一鍵安裝列表中。
+
+## [2026-06-26] active-etf | 主動型 ETF 第 27 次日更與個股合計、週加減碼同步
+- **數據採集與比對**：成功運行 `collect_active_etf_holdings.py`，從 MoneyDJ 爬取今日（2026/06/26）最新 29 檔主動型與被動型 ETF 持股數據，寫入 `wiki/金融投資/主動型ETF持股明細.xlsx` 中的 `20260626` 工作表，完成增量歷史比對（新增、刪除、加碼、減碼分頁自動更新）。
+- **每週加減碼明細計算**：執行 `add_weekly_summary.py`，順利計算並更新 Excel 中的「Weekly Additions」與「Weekly Reductions」工作表，完成本週五（截至06/26）與上週五（06/18）之持股變動比較分析。
+- **每日個股合計同步**：執行 `add_daily_stock_total.py`，順利在 Excel 中更新「每日個股合計」工作表，累計共 27 個交易日的資料（新增 06/26 數據）。
+- **Dashboard 數據重新產生**：執行 `generate_dashboard_data.py`，根據最新明細檔與 yfinance 爬取的歷史收盤價，重新產生 [dashboard_data.js](file:///i:/Mark/my-kb/wiki/金融投資/dashboard_data.js) 供前端網頁載入。
+- **報告更新**：同步重新生成並更新 [主動型ETF持股彙總.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md) 與 [主動型ETF持股變動.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md)。
+

@@ -4,7 +4,7 @@
 
 ---
 
-## 2026-06-26 ── 新增 SlideMaster 簡報影片化技能
+## 2026-06-26 ── 新增 SlideMaster 簡報影片化技能與主動型 ETF 第 27 次更新
 
 ### ✅ 今日完成
 
@@ -15,6 +15,12 @@
    - 更新全域安裝技能清單 `skills/00-install-all/SKILL.md`，將其註冊至一鍵安裝列表中。
    - 更新專案 `README.md`，將新技能的描述與目錄結構加入「🚀 目前功能」與「📂 目錄結構」中。
    - 於操作日誌 `log.md` 寫入本次更新紀錄。
+3. **主動型 ETF 持股資料日更 (2026-06-26，第 27 次更新)**
+   - 執行 `collect_active_etf_holdings.py` 抓取並追加今日資料至 `wiki/金融投資/主動型ETF持股明細.xlsx` 中的 `20260626` 工作表（累計共 27 個日期分頁）。
+   - 執行 `add_daily_stock_total.py` 更新「每日個股合計」分頁。
+   - 執行 `add_weekly_summary.py` 更新「Weekly Additions」與「Weekly Reductions」分頁（與上週五 2026-06-18 進行週比較）。
+   - 執行 `generate_dashboard_data.py` 重新產生 `dashboard_data.js` 以供網頁儀表板使用。
+   - 同步重新生成 [主動型ETF持股彙總.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md) 與 [主動型ETF持股變動.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md)。
 
 ### 📝 改了哪些重要檔案
 
@@ -24,8 +30,12 @@
 | `skills/12-slidemaster/scripts/merge_video.py` | **新建** | 多影像與多音訊批次合成影片腳本 |
 | `skills/00-install-all/SKILL.md` | **修改** | 將新技能加入一鍵安裝清單 |
 | `README.md` | **修改** | 註冊新技能之功能描述與目錄結構 |
-| `log.md` | **修改** | 追加 SlideMaster 技能安裝與同步日誌 |
-| `docs/PROGRESS.md` | **修改** | 記錄今日開發進度（本檔案） |
+| `wiki/金融投資/主動型ETF持股明細.xlsx` | **修改** | 新增 `20260626` 分頁，並更新每日個股合計與每週加減碼分頁 |
+| `wiki/金融投資/主動型ETF持股彙總.md` | **修改** | 更新至最新主動型 ETF 依加總比例排序彙總資料 |
+| `wiki/金融投資/主動型ETF持股變動.md` | **修改** | 更新今日與昨日 (20260625 -> 20260626) 之持股異動比較 |
+| `wiki/金融投資/dashboard_data.js` | **修改** | 重新產生 JS 全域數據供儀表板網頁讀取 |
+| `log.md` | **修改** | 追加 SlideMaster 技能安裝與主動型 ETF 第 27 次日更日誌 |
+| `docs/PROGRESS.md` | **修改** | 記錄今日開發進度與 ETF 更新進度（本檔案） |
 
 ### 🧭 做了哪些決策
 
