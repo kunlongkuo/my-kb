@@ -390,6 +390,224 @@
             padding: 80px 20px;
         }
 
+        /* ===== ETF 成分股持股排行 Modal ===== */
+        .holdings-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 24px;
+            animation: fadeInOverlay 0.2s ease;
+        }
+
+        .holdings-modal-overlay.open {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        @keyframes fadeInOverlay {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .holdings-modal {
+            background: #151b2c;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 20px;
+            padding: 28px;
+            width: 100%;
+            max-width: 1100px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(139, 92, 246, 0.15);
+            animation: slideUpModal 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes slideUpModal {
+            from { opacity: 0; transform: translateY(32px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .holdings-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .holdings-modal-title {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-close-btn {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-secondary);
+            border-radius: 10px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.2s ease;
+            line-height: 1;
+        }
+
+        .modal-close-btn:hover {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .holdings-modal-controls {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .holdings-modal-controls .selector-label {
+            white-space: nowrap;
+        }
+
+        .holdings-modal-controls .selector-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .holdings-modal-controls .select-input {
+            width: 100%;
+        }
+
+        .holdings-count-badge {
+            margin-left: auto;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: #a78bfa;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .holdings-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        #holdings-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        #holdings-table thead th {
+            background: rgba(139, 92, 246, 0.12);
+            color: #a78bfa;
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+        }
+
+        #holdings-table tbody tr {
+            transition: background 0.15s ease;
+        }
+
+        #holdings-table tbody tr:hover td {
+            background: rgba(139, 92, 246, 0.06);
+        }
+
+        #holdings-table tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            white-space: nowrap;
+        }
+
+        #holdings-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rank-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .rank-badge.top1 { background: rgba(251,191,36,0.2); color: #fbbf24; border: 1px solid rgba(251,191,36,0.4); }
+        .rank-badge.top2 { background: rgba(148,163,184,0.2); color: #94a3b8; border: 1px solid rgba(148,163,184,0.4); }
+        .rank-badge.top3 { background: rgba(205,127,50,0.2); color: #cd7f32; border: 1px solid rgba(205,127,50,0.3); }
+        .rank-badge.normal { background: rgba(255,255,255,0.04); color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.08); }
+
+        .ratio-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 140px;
+        }
+
+        .ratio-bar {
+            flex: 1;
+            height: 6px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .ratio-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #7c3aed, #a78bfa);
+            border-radius: 3px;
+            transition: width 0.4s ease;
+        }
+
+        .ratio-value {
+            font-weight: 700;
+            color: #a78bfa;
+            min-width: 48px;
+            text-align: right;
+        }
+
+        .holdings-no-data {
+            text-align: center;
+            padding: 60px;
+            color: var(--text-secondary);
+        }
+
+        .tab-btn.active.holdings {
+            background-color: #7c3aed;
+            color: white;
+            border-color: #7c3aed;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+        }
+
         /* Mobile Responsive Design */
         @media (max-width: 768px) {
             body {
@@ -454,6 +672,14 @@
             th, td {
                 padding: 10px 8px;
             }
+
+            .holdings-modal {
+                padding: 16px;
+            }
+
+            .holdings-modal-controls {
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -492,6 +718,10 @@
             <button class="tab-btn reduce" id="tab-reduce" data-mode="reduce">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                 今日個股淨賣超排行
+            </button>
+            <button class="tab-btn" id="tab-holdings" onclick="openHoldingsModal()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+                ETF 成分股持股排行
             </button>
         </div>
 
@@ -562,6 +792,61 @@
         </div>
     </div>
 
+    <!-- ===== ETF 成分股持股排行 Modal ===== -->
+    <div class="holdings-modal-overlay" id="holdings-modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="holdings-modal" id="holdings-modal-box">
+            <div class="holdings-modal-header">
+                <div class="holdings-modal-title">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+                    ETF 成分股持股排行
+                </div>
+                <button class="modal-close-btn" onclick="closeHoldingsModal()" title="關閉">✕</button>
+            </div>
+
+            <!-- Controls -->
+            <div class="holdings-modal-controls">
+                <div class="selector-group">
+                    <div class="selector-label">選擇 ETF：</div>
+                    <select id="holdings-etf-select" class="select-input" onchange="renderHoldingsTable()">
+                        <option value="ALL">全部 ETF</option>
+                        <!-- populated by JS -->
+                    </select>
+                </div>
+                <div class="selector-group">
+                    <div class="selector-label">資料日期：</div>
+                    <select id="holdings-date-select" class="select-input" onchange="renderHoldingsTable()">
+                        <!-- populated by JS -->
+                    </select>
+                </div>
+                <span class="holdings-count-badge" id="holdings-count-badge">共 0 筆</span>
+            </div>
+
+            <!-- Table -->
+            <div class="holdings-table-wrap">
+                <table id="holdings-table">
+                    <thead>
+                        <tr>
+                            <th style="width:48px; text-align:center;">排行</th>
+                            <th>ETF 代號</th>
+                            <th>ETF 名稱</th>
+                            <th>持股代號</th>
+                            <th>持股名稱</th>
+                            <th style="min-width:160px;">投資比例</th>
+                            <th style="text-align:right;">持有張數</th>
+                        </tr>
+                    </thead>
+                    <tbody id="holdings-table-body">
+                        <!-- populated by JS -->
+                    </tbody>
+                </table>
+                <div id="holdings-no-data" class="holdings-no-data" style="display:none;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:12px; opacity:0.4;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    <p>目前無持股資料</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Data Import -->
     <script src="dashboard_data.js" onerror="handleDataLoadError()"></script>
     
@@ -576,6 +861,152 @@
         let chartInstance = null;
         
         let calculatedRankings = []; // Caches computed list for current date/mode
+
+        // ===== ETF 成分股持股排行 Modal =====
+        function openHoldingsModal() {
+            const overlay = document.getElementById('holdings-modal-overlay');
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            initHoldingsModal();
+        }
+
+        function closeHoldingsModal() {
+            const overlay = document.getElementById('holdings-modal-overlay');
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function handleOverlayClick(e) {
+            if (e.target === document.getElementById('holdings-modal-overlay')) {
+                closeHoldingsModal();
+            }
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeHoldingsModal();
+        });
+
+        let holdingsModalInitialized = false;
+
+        function initHoldingsModal() {
+            if (typeof ETF_DASHBOARD_DATA === 'undefined') return;
+
+            // Populate ETF select
+            const etfSelect = document.getElementById('holdings-etf-select');
+            if (!holdingsModalInitialized) {
+                // Clear existing options except 'ALL'
+                while (etfSelect.options.length > 1) etfSelect.remove(1);
+
+                const etfInfo = ETF_DASHBOARD_DATA.etf_info;
+                Object.keys(etfInfo).sort().forEach(etfId => {
+                    const opt = document.createElement('option');
+                    opt.value = etfId;
+                    opt.textContent = `${etfId}  ${etfInfo[etfId].name}`;
+                    etfSelect.appendChild(opt);
+                });
+
+                // Populate date select
+                const dateSelect = document.getElementById('holdings-date-select');
+                const allDatesSet = new Set();
+                Object.values(ETF_DASHBOARD_DATA.stocks).forEach(stock => {
+                    Object.keys(stock.history).forEach(d => allDatesSet.add(d));
+                });
+                const sortedDates = Array.from(allDatesSet).sort().reverse();
+                sortedDates.forEach((d, idx) => {
+                    const opt = document.createElement('option');
+                    opt.value = d;
+                    opt.textContent = formatDateStr(d);
+                    if (idx === 0) opt.selected = true;
+                    dateSelect.appendChild(opt);
+                });
+
+                holdingsModalInitialized = true;
+            }
+
+            renderHoldingsTable();
+        }
+
+        function renderHoldingsTable() {
+            if (typeof ETF_DASHBOARD_DATA === 'undefined') return;
+
+            const selectedEtf = document.getElementById('holdings-etf-select').value;
+            const selectedDate = document.getElementById('holdings-date-select').value;
+            const tbody = document.getElementById('holdings-table-body');
+            const noData = document.getElementById('holdings-no-data');
+            tbody.innerHTML = '';
+
+            // Build rows: iterate all stocks, collect entries for chosen ETF(s) on chosen date
+            const rows = [];
+            const stocks = ETF_DASHBOARD_DATA.stocks;
+            const etfInfo = ETF_DASHBOARD_DATA.etf_info;
+
+            for (const stockId in stocks) {
+                const stock = stocks[stockId];
+                const historyOnDate = stock.history[selectedDate];
+                if (!historyOnDate) continue;
+
+                const etfs = historyOnDate.etfs;
+
+                const targets = selectedEtf === 'ALL'
+                    ? Object.keys(etfs)
+                    : (etfs[selectedEtf] ? [selectedEtf] : []);
+
+                targets.forEach(etfId => {
+                    const info = etfs[etfId];
+                    if (!info || info.ratio === undefined) return;
+                    const meta = etfInfo[etfId] || { name: '未知', issuer: '' };
+                    rows.push({
+                        etfId,
+                        etfName: meta.name,
+                        stockId,
+                        stockName: stock.name,
+                        ratio: info.ratio,
+                        shares: info.shares,   // 原始股數
+                    });
+                });
+            }
+
+            // Sort by ratio descending
+            rows.sort((a, b) => b.ratio - a.ratio);
+
+            document.getElementById('holdings-count-badge').textContent = `共 ${rows.length} 筆`;
+
+            if (rows.length === 0) {
+                noData.style.display = 'block';
+                return;
+            }
+            noData.style.display = 'none';
+
+            // Find max ratio for bar scaling
+            const maxRatio = rows[0].ratio || 1;
+
+            rows.forEach((row, idx) => {
+                const rank = idx + 1;
+                const rankClass = rank === 1 ? 'top1' : rank === 2 ? 'top2' : rank === 3 ? 'top3' : 'normal';
+                const barPct = Math.min((row.ratio / maxRatio) * 100, 100).toFixed(1);
+                const sharesText = row.shares != null
+                    ? formatNumber(row.shares / 1000, 0)
+                    : '--';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="text-align:center;"><span class="rank-badge ${rankClass}">${rank}</span></td>
+                    <td><code style="font-size:12px; color:#60a5fa; background:rgba(96,165,250,0.1); padding:2px 6px; border-radius:4px;">${row.etfId}</code></td>
+                    <td style="font-size:13px; color:var(--text-secondary);">${row.etfName}</td>
+                    <td><strong style="font-size:13px;">${row.stockId}</strong></td>
+                    <td><strong>${row.stockName}</strong></td>
+                    <td>
+                        <div class="ratio-bar-wrap">
+                            <div class="ratio-bar"><div class="ratio-bar-fill" style="width:${barPct}%;"></div></div>
+                            <span class="ratio-value">${row.ratio.toFixed(2)}%</span>
+                        </div>
+                    </td>
+                    <td style="text-align:right; font-weight:600;">${sharesText}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
 
         function handleDataLoadError() {
             document.getElementById('error-content').style.display = 'block';
