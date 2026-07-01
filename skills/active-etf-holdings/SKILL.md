@@ -41,13 +41,24 @@ python skills/active-etf-holdings/scripts/add_weekly_summary.py
 python skills/active-etf-holdings/scripts/add_daily_stock_total.py
 ```
 
+> **注意**：`add_daily_stock_total.py` 執行完畢後，會自動呼叫 `draw_holdings_charts.py`，繪製今日加碼 Top 10 與減碼 Top 10 的視覺化圖表並嵌入 `主動型ETF持股變動.md`，無需手動執行。
+
+若要單獨重繪圖表（例如重新設計樣式後），可直接執行：
+
+```powershell
+python skills/active-etf-holdings/scripts/draw_holdings_charts.py
+```
+
 ## 輸出檔案
 
 腳本會建立或更新下列檔案：
 
 - `主動型ETF持股明細.xlsx`：同一個活頁簿每日新增一個分頁，分頁名稱使用 `YYYYMMDD`。同一天重跑時會覆蓋同名分頁。執行 `add_weekly_summary.py` 後，會自動產生 `Weekly Additions` 與 `Weekly Reductions` 分頁，記錄該週各 ETF 加減碼的詳細持股與張數變化。執行 `add_daily_stock_total.py` 後，會自動產生「每日個股合計」分頁，記錄每日所有 ETF 對各支個股的總張數及與前日的增減比較。
 - `主動型ETF持股彙總.md`：包含各 ETF 抓取狀態，以及依「加總投資比例」排序的前 50 名持股。
-- `主動型ETF持股變動.md`：比較 XLSX 中最近兩個 `YYYYMMDD` 分頁，逐檔 ETF 列出新增持股、刪除持股與投資比例變動。
+- `主動型ETF持股變動.md`：比較 XLSX 中最近兩個 `YYYYMMDD` 分頁，逐檔 ETF 列出新增持股、刪除持股與投資比例變動。**文件開頭會自動嵌入今日加碼 Top 10 與減碼 Top 10 橫條圖**。
+- `wiki/金融投資/images/YYYYMMDD_additions.png`：今日主動型 ETF 加碼排行 Top 10 橫條圖（Dark Mode，微軟正黑體）。
+- `wiki/金融投資/images/YYYYMMDD_reductions.png`：今日主動型 ETF 減碼排行 Top 10 橫條圖（Dark Mode，微軟正黑體）。
+- `wiki/金融投資/images/active_etf_top_additions.png` / `active_etf_top_reductions.png`：固定檔名版本，方便在 README 或 Obsidian 中固定引用最新圖表。
 
 XLSX 欄位如下：
 

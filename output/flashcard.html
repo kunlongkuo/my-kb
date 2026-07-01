@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>英文單字翻轉卡 — Flashcards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0f0f1a;
+      --accent:    #7c6aff;
+      --accent2:   #ff6a9e;
+      --gold:      #ffd36a;
+      --star-on:   #ffd36a;
+      --star-off:  #44446a;
+      --card-f:    linear-gradient(135deg, #1e1e3a 0%, #252545 100%);
+      --card-b:    linear-gradient(135deg, #0d2137 0%, #1a3a5c 100%);
+      --t1:        #f0f0ff;
+      --t2:        #9999cc;
+      --t3:        #6666aa;
+      --border:    rgba(124,106,255,.25);
+      --shadow:    0 24px 60px rgba(0,0,0,.6);
+      --glow:      0 0 40px rgba(124,106,255,.3);
+    }
+
+    body {
+      font-family: 'Inter','Noto Sans TC',sans-serif;
+      background: var(--bg);
+      color: var(--t1);
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 36px 20px 64px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content:''; position:fixed; top:-20%; left:-10%;
+      width:600px; height:600px; pointer-events:none; z-index:0;
+      background: radial-gradient(circle, rgba(124,106,255,.12) 0%, transparent 70%);
+    }
+    body::after {
+      content:''; position:fixed; bottom:-20%; right:-10%;
+      width:500px; height:500px; pointer-events:none; z-index:0;
+      background: radial-gradient(circle, rgba(255,106,158,.10) 0%, transparent 70%);
+    }
+
+    /* ── HEADER ── */
+    header { text-align:center; margin-bottom:28px; position:relative; z-index:1; }
+    .badge {
+      display:inline-block;
+      background:rgba(124,106,255,.15); border:1px solid var(--border);
+      color:var(--accent); font-size:11px; font-weight:700;
+      letter-spacing:2px; text-transform:uppercase;
+      padding:6px 14px; border-radius:50px; margin-bottom:14px;
+    }
+    header h1 {
+      font-size: clamp(1.8rem,5vw,2.8rem); font-weight:800;
+      background: linear-gradient(135deg,#f0f0ff,#7c6aff 50%,#ff6a9e);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      line-height:1.2; margin-bottom:8px;
+    }
+    header p { color:var(--t2); font-size:14px; line-height:1.6; }
+
+    /* ── MODE TABS ── */
+    .mode-tabs {
+      display:flex; gap:8px; margin-bottom:22px; position:relative; z-index:1;
+    }
+    .tab-btn {
+      cursor:pointer; font-family:inherit; font-weight:700; font-size:13px;
+      padding:8px 20px; border-radius:50px; border:1px solid transparent;
+      transition: all .2s ease;
+    }
+    .tab-btn.active {
+      background:var(--accent); color:#fff;
+      box-shadow: 0 4px 16px rgba(124,106,255,.45);
+    }
+    .tab-btn:not(.active) {
+      background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:var(--t2);
+    }
+    .tab-btn:not(.active):hover {
+      background:rgba(124,106,255,.12); border-color:var(--accent); color:var(--t1);
+    }
+    .tab-btn .count-badge {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:18px; height:18px; padding:0 5px;
+      background:rgba(255,211,106,.25); color:var(--gold);
+      border-radius:50px; font-size:10px; font-weight:800;
+      margin-left:6px;
+    }
+
+    /* ── PROGRESS ── */
+    .progress-wrap {
+      width:100%; max-width:500px; margin-bottom:24px; position:relative; z-index:1;
+    }
+    .progress-info { display:flex; justify-content:space-between; margin-bottom:7px; }
+    .progress-info span { font-size:12px; color:var(--t2); font-weight:600; }
+    .progress-track { height:5px; background:rgba(255,255,255,.06); border-radius:10px; overflow:hidden; }
+    .progress-bar {
+      height:100%;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      border-radius:10px; transition:width .5s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      display:none; flex-direction:column; align-items:center; gap:16px;
+      padding:48px 24px; text-align:center;
+      background:rgba(255,255,255,.03); border:1px solid var(--border);
+      border-radius:24px; max-width:400px; width:100%;
+      position:relative; z-index:1;
+    }
+    .empty-state .emoji { font-size:48px; }
+    .empty-state h3 { font-size:18px; font-weight:700; color:var(--t1); }
+    .empty-state p { font-size:14px; color:var(--t2); line-height:1.6; }
+    .empty-state.show { display:flex; }
+
+    /* ── CARD SCENE ── */
+    .scene {
+      width:min(480px,90vw); height:300px;
+      perspective:1200px; position:relative; z-index:1;
+      margin-bottom:32px; cursor:pointer; outline:none;
+    }
+    .card {
+      width:100%; height:100%; position:relative;
+      transform-style:preserve-3d;
+      transition:transform .7s cubic-bezier(.4,0,.2,1);
+      border-radius:24px;
+    }
+    .card.flipped { transform:rotateY(180deg); }
+
+    .card-face {
+      position:absolute; inset:0; border-radius:24px;
+      backface-visibility:hidden; -webkit-backface-visibility:hidden;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      padding:32px; border:1px solid var(--border);
+      box-shadow: var(--shadow), var(--glow);
+    }
+    .card-front { background:var(--card-f); }
+    .card-back  { background:var(--card-b); transform:rotateY(180deg); justify-content:flex-start; padding-top:28px; }
+
+    /* 編號 */
+    .word-number {
+      position:absolute; top:18px; left:22px;
+      font-size:11px; font-weight:700; color:var(--t3); letter-spacing:1px;
+    }
+
+    /* ⭐ 收藏按鈕 */
+    .btn-star {
+      position:absolute; top:14px; right:60px;
+      background:none; border:none; cursor:pointer;
+      font-size:22px; line-height:1; padding:4px;
+      transition: transform .2s ease, filter .2s ease;
+      z-index:5;
+    }
+    .btn-star:hover { transform:scale(1.25); }
+    .btn-star.starred { filter:drop-shadow(0 0 6px rgba(255,211,106,.8)); }
+    .btn-star .star-icon { pointer-events:none; }
+
+    /* 🔊 發音按鈕 */
+    .btn-speak {
+      position:absolute; top:14px; right:16px;
+      display:inline-flex; align-items:center; justify-content:center;
+      width:36px; height:36px;
+      background:rgba(255,211,106,.1); border:1px solid rgba(255,211,106,.35);
+      color:var(--gold); border-radius:50%; cursor:pointer;
+      transition:all .2s ease; z-index:5; font-family:inherit;
+    }
+    .btn-speak:hover { background:rgba(255,211,106,.2); transform:scale(1.08); }
+    .btn-speak.speaking {
+      background:rgba(255,211,106,.25);
+      box-shadow:0 0 14px rgba(255,211,106,.5);
+    }
+    .speak-icon { display:flex; align-items:center; gap:1.5px; height:14px; }
+    .speak-icon span {
+      display:inline-block; width:2.5px; border-radius:2px;
+      background:var(--gold); animation:none;
+    }
+    .btn-speak.speaking .speak-icon span { animation:wave-bar .8s ease-in-out infinite; }
+    .speak-icon span:nth-child(1){height:5px;  animation-delay:0s;}
+    .speak-icon span:nth-child(2){height:10px; animation-delay:.15s;}
+    .speak-icon span:nth-child(3){height:6px;  animation-delay:.3s;}
+    .speak-icon span:nth-child(4){height:12px; animation-delay:.1s;}
+
+    @keyframes wave-bar {
+      0%,100% { transform:scaleY(1);   }
+      50%      { transform:scaleY(2.0); }
+    }
+
+    /* 正面內容 */
+    .card-front .hint {
+      position:absolute; bottom:18px;
+      font-size:11px; color:var(--t3);
+      display:flex; align-items:center; gap:5px;
+    }
+    .hint-icon { width:17px; height:17px; border:1.5px solid var(--t3); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:9px; }
+    .word {
+      font-size:clamp(2rem,8vw,3rem); font-weight:800; letter-spacing:-1px;
+      background:linear-gradient(135deg,#fff,#c8c0ff);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      text-align:center; line-height:1.1; margin-bottom:8px;
+    }
+    .phonetic { font-size:14px; color:var(--accent); letter-spacing:1px; font-weight:500; }
+    .pos-tag {
+      margin-top:10px; background:rgba(124,106,255,.15); border:1px solid rgba(124,106,255,.3);
+      color:var(--accent); font-size:10px; font-weight:700;
+      padding:3px 12px; border-radius:50px; letter-spacing:1px; text-transform:uppercase;
+    }
+
+    /* 背面內容 */
+    .back-label  { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--t3); margin-bottom:10px; width:100%; }
+    .chinese     { font-size:clamp(1.5rem,5vw,2rem); font-weight:700; background:linear-gradient(135deg,#ffd36a,#ff9e6a); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:14px; width:100%; }
+    .divider     { width:100%; height:1px; background:rgba(255,255,255,.08); margin-bottom:14px; }
+    .example-label { font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent2); margin-bottom:8px; width:100%; }
+    .example     { font-size:13px; color:var(--t2); line-height:1.7; width:100%; }
+    .example em  { color:#fff; font-style:normal; font-weight:600; border-bottom:1px solid rgba(255,211,106,.5); }
+    .example-zh  { margin-top:6px; font-size:12px; color:var(--t3); line-height:1.6; width:100%; }
+    .back-speak-wrap { margin-top:12px; width:100%; }
+    .btn-speak-sentence {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:0 14px; height:32px;
+      background:rgba(255,211,106,.1); border:1px solid rgba(255,211,106,.35);
+      color:var(--gold); font-size:11px; font-weight:700; border-radius:50px;
+      cursor:pointer; transition:all .2s ease; font-family:inherit;
+    }
+    .btn-speak-sentence:hover { background:rgba(255,211,106,.2); transform:translateY(-1px); }
+    .btn-speak-sentence.speaking {
+      background:rgba(255,211,106,.25); box-shadow:0 0 12px rgba(255,211,106,.4);
+    }
+
+    /* ── CONTROLS ── */
+    .controls { display:flex; gap:12px; align-items:center; position:relative; z-index:1; }
+    .btn-nav {
+      width:50px; height:50px; background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.1); color:var(--t2);
+      font-size:18px; border-radius:50%; cursor:pointer; font-family:inherit;
+      display:flex; align-items:center; justify-content:center;
+      transition:all .2s ease;
+    }
+    .btn-nav:hover:not(:disabled) { background:rgba(124,106,255,.15); border-color:var(--accent); color:var(--t1); transform:scale(1.05); }
+    .btn-nav:disabled { opacity:.25; cursor:not-allowed; }
+    .btn-flip {
+      padding:0 28px; height:50px; cursor:pointer;
+      background:linear-gradient(135deg,var(--accent),#9b6aff);
+      color:#fff; font-size:14px; font-weight:700; font-family:inherit;
+      border:none; border-radius:50px; letter-spacing:.5px;
+      box-shadow:0 8px 24px rgba(124,106,255,.4);
+      transition:all .2s ease;
+    }
+    .btn-flip:hover { transform:translateY(-2px); box-shadow:0 12px 32px rgba(124,106,255,.55); }
+    .btn-flip:active { transform:translateY(0); }
+
+    /* ── DOTS ── */
+    .dots { display:flex; gap:7px; margin-top:24px; position:relative; z-index:1; flex-wrap:wrap; justify-content:center; max-width:300px; }
+    .dot { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.12); transition:all .3s ease; cursor:pointer; }
+    .dot.active { background:var(--accent); box-shadow:0 0 8px rgba(124,106,255,.7); width:22px; border-radius:4px; }
+    .dot.bookmarked { background:var(--gold); }
+    .dot.active.bookmarked { background:var(--gold); box-shadow:0 0 8px rgba(255,211,106,.7); }
+
+    /* ── KEYBOARD HINT ── */
+    .keyboard-hint {
+      display:flex; gap:18px; margin-top:28px;
+      position:relative; z-index:1; flex-wrap:wrap; justify-content:center;
+    }
+    .key-item { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--t3); }
+    .key {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:26px; height:22px; padding:0 7px;
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      border-radius:5px; font-size:10px; color:var(--t2); font-weight:600;
+    }
+
+    /* ── BOOKMARK PANEL ── */
+    .bookmark-info {
+      position:relative; z-index:1;
+      margin-top:20px; font-size:12px; color:var(--t3);
+      display:flex; align-items:center; gap:6px;
+    }
+    .bookmark-info .star-count { color:var(--gold); font-weight:700; }
+
+    @media (max-width:480px) {
+      .keyboard-hint { display:none; }
+      .scene { height:280px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">✦ Flashcards</div>
+    <h1>英文單字翻轉卡</h1>
+    <p>點擊卡片翻轉 ・ 按 ⭐ 收藏需要加強的單字</p>
+  </header>
+
+  <!-- 模式切換 -->
+  <div class="mode-tabs">
+    <button class="tab-btn active" id="tab-all">📚 全部單字</button>
+    <button class="tab-btn" id="tab-practice">⭐ 練習本 <span class="count-badge" id="bookmark-count">0</span></button>
+  </div>
+
+  <!-- 進度條 -->
+  <div class="progress-wrap">
+    <div class="progress-info">
+      <span id="progress-text">第 1 張，共 0 張</span>
+      <span id="flipped-count">已翻閱：0 張</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- 空狀態（練習本為空時） -->
+  <div class="empty-state" id="empty-state">
+    <div class="emoji">⭐</div>
+    <h3>練習本是空的</h3>
+    <p>切換到「全部單字」，按卡片上的 ⭐ 把需要加強的單字加進來！</p>
+  </div>
+
+  <!-- 卡片 -->
+  <div class="scene" id="scene" tabindex="-1">
+    <div class="card" id="card">
+
+      <!-- 正面 -->
+      <div class="card-face card-front">
+        <span class="word-number" id="word-number">01 / 20</span>
+
+        <!-- 收藏 -->
+        <button class="btn-star" id="btn-star-front" aria-label="收藏">
+          <span class="star-icon">☆</span>
+        </button>
+
+        <!-- 發音（正面） -->
+        <button class="btn-speak" id="btn-speak-word" aria-label="唸出單字" title="唸出單字 (P)">
+          <span class="speak-icon"><span></span><span></span><span></span><span></span></span>
+        </button>
+
+        <div class="word" id="word-en"></div>
+        <div class="phonetic" id="word-phonetic"></div>
+        <div class="pos-tag" id="word-pos"></div>
+        <div class="hint"><span class="hint-icon">↺</span>點擊查看中文</div>
+      </div>
+
+      <!-- 背面 -->
+      <div class="card-face card-back">
+        <!-- 收藏 -->
+        <button class="btn-star" id="btn-star-back" aria-label="收藏" style="transform-style:preserve-3d;">
+          <span class="star-icon">☆</span>
+        </button>
+
+        <!-- 發音（背面） -->
+        <button class="btn-speak" id="btn-speak-back" aria-label="唸出單字" title="唸出單字">
+          <span class="speak-icon"><span></span><span></span><span></span><span></span></span>
+        </button>
+
+        <div class="back-label">中文意思</div>
+        <div class="chinese" id="word-zh"></div>
+        <div class="divider"></div>
+        <div class="example-label">例句 Example</div>
+        <div class="example" id="word-example"></div>
+        <div class="example-zh" id="word-example-zh"></div>
+        <div class="back-speak-wrap">
+          <button class="btn-speak-sentence" id="btn-speak-sentence" aria-label="唸出例句">
+            <span class="speak-icon"><span></span><span></span><span></span><span></span></span>
+            唸例句
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 控制按鈕 -->
+  <div class="controls">
+    <button class="btn-nav" id="btn-prev" aria-label="上一張">←</button>
+    <button class="btn-flip" id="btn-flip">翻轉卡片</button>
+    <button class="btn-nav" id="btn-next" aria-label="下一張">→</button>
+  </div>
+
+  <!-- 指示點 -->
+  <div class="dots" id="dots"></div>
+
+  <!-- 書籤資訊 -->
+  <div class="bookmark-info" id="bookmark-info" style="display:none">
+    ⭐ 練習本共收藏 <span class="star-count" id="bm-total">0</span> 個單字
+  </div>
+
+  <!-- 鍵盤提示 -->
+  <div class="keyboard-hint">
+    <div class="key-item"><span class="key">←</span><span class="key">→</span>切換</div>
+    <div class="key-item"><span class="key">Space</span>翻轉</div>
+    <div class="key-item"><span class="key">P</span>發音</div>
+    <div class="key-item"><span class="key">S</span>收藏</div>
+  </div>
+
+  <script>
+  // ════════════════════════════════════════════════
+  //  字庫（20 個國中常用單字）
+  // ════════════════════════════════════════════════
+  const WORD_BANK = [
+    { en:"Adventure",  phonetic:"/ədˈventʃər/",  pos:"n. 名詞",   zh:"冒險；奇遇",    example:"She loves going on <em>adventures</em> in the mountains.",        exampleZh:"她喜歡在山中進行各種冒險。" },
+    { en:"Curious",    phonetic:"/ˈkjʊəriəs/",   pos:"adj. 形容詞", zh:"好奇的；奇特的", example:"The <em>curious</em> cat looked inside every box.",               exampleZh:"那隻好奇的貓往每個箱子裡瞧。" },
+    { en:"Protect",    phonetic:"/prəˈtekt/",     pos:"v. 動詞",   zh:"保護；防護",    example:"We must <em>protect</em> the environment for future generations.", exampleZh:"我們必須為後代保護環境。" },
+    { en:"Generous",   phonetic:"/ˈdʒenərəs/",   pos:"adj. 形容詞", zh:"慷慨的；大方的", example:"It was very <em>generous</em> of him to share his lunch.",        exampleZh:"他把午餐分享出來，真的很大方。" },
+    { en:"Effort",     phonetic:"/ˈefərt/",       pos:"n. 名詞",   zh:"努力；費力",    example:"With enough <em>effort</em>, you can achieve your goals.",          exampleZh:"只要付出足夠的努力，你就能達成目標。" },
+    { en:"Polite",     phonetic:"/pəˈlaɪt/",      pos:"adj. 形容詞", zh:"有禮貌的；客氣的",example:"It's important to be <em>polite</em> to your teachers.",          exampleZh:"對老師有禮貌是很重要的。" },
+    { en:"Comfort",    phonetic:"/ˈkʌmfərt/",     pos:"n./v. 名/動詞",zh:"安慰；舒適",  example:"She gave him a hug to <em>comfort</em> him.",                     exampleZh:"她給了他一個擁抱來安慰他。" },
+    { en:"Nervous",    phonetic:"/ˈnɜːrvəs/",     pos:"adj. 形容詞", zh:"緊張的；焦慮的", example:"He felt very <em>nervous</em> before the exam.",                  exampleZh:"他考試前非常緊張。" },
+    { en:"Prepare",    phonetic:"/prɪˈper/",      pos:"v. 動詞",   zh:"準備；預備",    example:"Please <em>prepare</em> for the test tonight.",                    exampleZh:"請今晚為考試做準備。" },
+    { en:"Delicious",  phonetic:"/dɪˈlɪʃəs/",    pos:"adj. 形容詞", zh:"美味的；可口的", example:"The cake my mom made was absolutely <em>delicious</em>.",          exampleZh:"我媽媽做的蛋糕非常好吃。" },
+    { en:"Honest",     phonetic:"/ˈɑːnɪst/",      pos:"adj. 形容詞", zh:"誠實的；正直的", example:"Always be <em>honest</em> with your friends.",                    exampleZh:"要對朋友誠實。" },
+    { en:"Patient",    phonetic:"/ˈpeɪʃnt/",      pos:"adj. 形容詞", zh:"有耐心的；耐心等待",example:"You need to be <em>patient</em> when learning a new skill.",   exampleZh:"學習新技能時需要有耐心。" },
+    { en:"Courage",    phonetic:"/ˈkɜːrɪdʒ/",     pos:"n. 名詞",   zh:"勇氣；膽量",    example:"It takes <em>courage</em> to speak in front of the class.",        exampleZh:"在全班面前發言需要勇氣。" },
+    { en:"Exciting",   phonetic:"/ɪkˈsaɪtɪŋ/",   pos:"adj. 形容詞", zh:"令人興奮的",   example:"The trip to the amusement park was so <em>exciting</em>!",         exampleZh:"去遊樂園的旅程真是太令人興奮了！" },
+    { en:"Respect",    phonetic:"/rɪˈspekt/",      pos:"n./v. 名/動詞",zh:"尊重；敬重",  example:"We should <em>respect</em> people who are different from us.",     exampleZh:"我們應該尊重與我們不同的人。" },
+    { en:"Imagine",    phonetic:"/ɪˈmædʒɪn/",     pos:"v. 動詞",   zh:"想像；設想",    example:"Can you <em>imagine</em> living on another planet?",                exampleZh:"你能想像住在另一個星球上嗎？" },
+    { en:"Achieve",    phonetic:"/əˈtʃiːv/",       pos:"v. 動詞",   zh:"達成；實現",    example:"You can <em>achieve</em> anything if you work hard.",              exampleZh:"只要努力，你就能實現任何事。" },
+    { en:"Pollute",    phonetic:"/pəˈluːt/",       pos:"v. 動詞",   zh:"污染；弄髒",    example:"Factories that <em>pollute</em> the air harm everyone.",            exampleZh:"污染空氣的工廠傷害每一個人。" },
+    { en:"Gentle",     phonetic:"/ˈdʒentl/",       pos:"adj. 形容詞", zh:"溫和的；輕柔的", example:"She has a very <em>gentle</em> voice that calms everyone.",       exampleZh:"她有一把溫柔的聲音，能讓所有人安靜下來。" },
+    { en:"Collect",    phonetic:"/kəˈlekt/",        pos:"v. 動詞",   zh:"收集；採集",    example:"He likes to <em>collect</em> stamps from different countries.",    exampleZh:"他喜歡收集來自不同國家的郵票。" },
+  ];
+
+  // ════════════════════════════════════════════════
+  //  工具函式
+  // ════════════════════════════════════════════════
+  const shuffle = arr => {
+    const a = [...arr];
+    for (let i = a.length-1; i>0; i--) {
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]] = [a[j],a[i]];
+    }
+    return a;
+  };
+
+  // ════════════════════════════════════════════════
+  //  LocalStorage — 書籤
+  // ════════════════════════════════════════════════
+  const STORAGE_KEY = 'flashcard_bookmarks_v1';
+  let bookmarks = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'));
+
+  const saveBookmarks = () =>
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...bookmarks]));
+
+  const toggleBookmark = (word) => {
+    if (bookmarks.has(word)) bookmarks.delete(word);
+    else bookmarks.add(word);
+    saveBookmarks();
+  };
+
+  // ════════════════════════════════════════════════
+  //  狀態
+  // ════════════════════════════════════════════════
+  let mode       = 'all';       // 'all' | 'practice'
+  let deck       = [];          // 目前顯示的牌組（隨機排列）
+  let current    = 0;
+  let isFlipped  = false;
+  const flippedSet = new Set();
+
+  // ════════════════════════════════════════════════
+  //  DOM
+  // ════════════════════════════════════════════════
+  const $  = id => document.getElementById(id);
+  const card           = $('card');
+  const scene          = $('scene');
+  const wordEn         = $('word-en');
+  const wordPhon       = $('word-phonetic');
+  const wordPos        = $('word-pos');
+  const wordZh         = $('word-zh');
+  const wordEx         = $('word-example');
+  const wordExZh       = $('word-example-zh');
+  const wordNumber     = $('word-number');
+  const btnPrev        = $('btn-prev');
+  const btnNext        = $('btn-next');
+  const btnFlip        = $('btn-flip');
+  const dotsWrap       = $('dots');
+  const progressBar    = $('progress-bar');
+  const progressTxt    = $('progress-text');
+  const flippedCnt     = $('flipped-count');
+  const tabAll         = $('tab-all');
+  const tabPractice    = $('tab-practice');
+  const bookmarkCount  = $('bookmark-count');
+  const bmTotal        = $('bm-total');
+  const bookmarkInfo   = $('bookmark-info');
+  const emptyState     = $('empty-state');
+  const btnStarFront   = $('btn-star-front');
+  const btnStarBack    = $('btn-star-back');
+  const btnSpeakWord   = $('btn-speak-word');
+  const btnSpeakBack   = $('btn-speak-back');
+  const btnSpeakSen    = $('btn-speak-sentence');
+
+  // ════════════════════════════════════════════════
+  //  牌組管理
+  // ════════════════════════════════════════════════
+  function buildDeck() {
+    if (mode === 'all') {
+      deck = shuffle(WORD_BANK);
+    } else {
+      const starred = WORD_BANK.filter(w => bookmarks.has(w.en));
+      deck = shuffle(starred);
+    }
+    current = 0;
+    flippedSet.clear();
+    buildDots();
+  }
+
+  // ════════════════════════════════════════════════
+  //  指示點
+  // ════════════════════════════════════════════════
+  function buildDots() {
+    dotsWrap.innerHTML = '';
+    deck.forEach((w, i) => {
+      const d = document.createElement('div');
+      d.className = 'dot';
+      if (bookmarks.has(w.en)) d.classList.add('bookmarked');
+      if (i === 0) d.classList.add('active');
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+  }
+
+  function updateDots() {
+    const dotEls = dotsWrap.querySelectorAll('.dot');
+    dotEls.forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+      const starred = deck[i] && bookmarks.has(deck[i].en);
+      d.classList.toggle('bookmarked', starred && i !== current);
+    });
+  }
+
+  // ════════════════════════════════════════════════
+  //  書籤 UI 更新
+  // ════════════════════════════════════════════════
+  function updateBookmarkUI() {
+    const count = bookmarks.size;
+    bookmarkCount.textContent = count;
+    bmTotal.textContent = count;
+    bookmarkInfo.style.display = count > 0 ? 'flex' : 'none';
+
+    const isStarred = deck[current] && bookmarks.has(deck[current].en);
+    [btnStarFront, btnStarBack].forEach(btn => {
+      btn.querySelector('.star-icon').textContent = isStarred ? '★' : '☆';
+      btn.classList.toggle('starred', isStarred);
+    });
+
+    updateDots();
+  }
+
+  // ════════════════════════════════════════════════
+  //  渲染
+  // ════════════════════════════════════════════════
+  function render() {
+    if (deck.length === 0) {
+      scene.style.display        = 'none';
+      document.querySelector('.controls').style.display = 'none';
+      dotsWrap.style.display     = 'none';
+      emptyState.classList.add('show');
+      progressTxt.textContent    = '無單字';
+      progressBar.style.width    = '0%';
+      flippedCnt.textContent     = '';
+      bookmarkInfo.style.display = 'none';
+      return;
+    }
+
+    scene.style.display        = '';
+    document.querySelector('.controls').style.display = '';
+    dotsWrap.style.display     = '';
+    emptyState.classList.remove('show');
+
+    const w = deck[current];
+    wordEn.textContent   = w.en;
+    wordPhon.textContent = w.phonetic;
+    wordPos.textContent  = w.pos;
+    wordZh.textContent   = w.zh;
+    wordEx.innerHTML     = w.example;
+    wordExZh.textContent = w.exampleZh;
+
+    const n = current + 1, total = deck.length;
+    wordNumber.textContent  = String(n).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+    progressTxt.textContent = `第 ${n} 張，共 ${total} 張`;
+    progressBar.style.width = (n / total * 100) + '%';
+    flippedCnt.textContent  = `已翻閱：${flippedSet.size} 張`;
+
+    btnPrev.disabled = current === 0;
+    btnNext.disabled = current === deck.length - 1;
+
+    updateBookmarkUI();
+  }
+
+  // ════════════════════════════════════════════════
+  //  翻轉（只在不是按鈕焦點時才處理 Space）
+  // ════════════════════════════════════════════════
+  function flip() {
+    if (deck.length === 0) return;
+    isFlipped = !isFlipped;
+    card.classList.toggle('flipped', isFlipped);
+    if (isFlipped) {
+      flippedSet.add(current);
+      flippedCnt.textContent = `已翻閱：${flippedSet.size} 張`;
+    }
+    btnFlip.textContent = isFlipped ? '翻回正面' : '翻轉卡片';
+  }
+
+  // ════════════════════════════════════════════════
+  //  切換卡片
+  // ════════════════════════════════════════════════
+  function goTo(index) {
+    if (index < 0 || index >= deck.length) return;
+    current = index;
+    stopSpeaking();
+    if (isFlipped) {
+      isFlipped = false;
+      card.classList.remove('flipped');
+      btnFlip.textContent = '翻轉卡片';
+    }
+    card.style.opacity   = '0';
+    card.style.transform = 'scale(0.96)';
+    setTimeout(() => {
+      render();
+      card.style.opacity   = '1';
+      card.style.transform = '';
+    }, 160);
+  }
+
+  // ════════════════════════════════════════════════
+  //  收藏
+  // ════════════════════════════════════════════════
+  function doToggleStar() {
+    if (deck.length === 0) return;
+    const word = deck[current].en;
+    toggleBookmark(word);
+    updateBookmarkUI();
+
+    // 練習本模式收藏後若取消，需移除當前牌
+    if (mode === 'practice' && !bookmarks.has(word)) {
+      deck.splice(current, 1);
+      buildDots();
+      if (deck.length === 0) { render(); return; }
+      if (current >= deck.length) current = deck.length - 1;
+      render();
+    }
+  }
+
+  // ════════════════════════════════════════════════
+  //  TTS
+  // ════════════════════════════════════════════════
+  function stopSpeaking() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    document.querySelectorAll('.btn-speak, .btn-speak-sentence')
+            .forEach(b => b.classList.remove('speaking'));
+  }
+
+  function speak(text, btn) {
+    if (!window.speechSynthesis) {
+      alert('您的瀏覽器不支援語音功能，請使用 Chrome / Edge。');
+      return;
+    }
+    if (btn.classList.contains('speaking')) {
+      stopSpeaking(); return;
+    }
+    stopSpeaking();
+
+    const utter  = new SpeechSynthesisUtterance(text);
+    utter.lang   = 'en-US';
+    utter.rate   = 0.88;
+    utter.pitch  = 1;
+
+    const voices  = window.speechSynthesis.getVoices();
+    const enVoice = voices.find(v => v.lang.startsWith('en') && v.name.toLowerCase().includes('female'))
+                 || voices.find(v => v.lang.startsWith('en-US'))
+                 || voices.find(v => v.lang.startsWith('en'));
+    if (enVoice) utter.voice = enVoice;
+
+    utter.onstart = () => btn.classList.add('speaking');
+    utter.onend   = () => btn.classList.remove('speaking');
+    utter.onerror = () => btn.classList.remove('speaking');
+
+    setTimeout(() => window.speechSynthesis.speak(utter), 80);
+  }
+
+  // ════════════════════════════════════════════════
+  //  模式切換
+  // ════════════════════════════════════════════════
+  function switchMode(m) {
+    mode = m;
+    tabAll.classList.toggle('active', m === 'all');
+    tabPractice.classList.toggle('active', m === 'practice');
+    stopSpeaking();
+    buildDeck();
+    render();
+  }
+
+  // ════════════════════════════════════════════════
+  //  事件綁定
+  // ════════════════════════════════════════════════
+
+  // 翻轉（點擊場景，但排除按鈕）
+  scene.addEventListener('click', e => {
+    if (e.target.closest('button')) return;
+    flip();
+  });
+
+  btnFlip.addEventListener('click', () => flip());
+  btnPrev.addEventListener('click', () => goTo(current - 1));
+  btnNext.addEventListener('click', () => goTo(current + 1));
+
+  // 收藏
+  btnStarFront.addEventListener('click', e => { e.stopPropagation(); doToggleStar(); });
+  btnStarBack.addEventListener('click',  e => { e.stopPropagation(); doToggleStar(); });
+
+  // 發音
+  btnSpeakWord.addEventListener('click', e => {
+    e.stopPropagation();
+    if (deck[current]) speak(deck[current].en, btnSpeakWord);
+  });
+  btnSpeakBack.addEventListener('click', e => {
+    e.stopPropagation();
+    if (deck[current]) speak(deck[current].en, btnSpeakBack);
+  });
+  btnSpeakSen.addEventListener('click', e => {
+    e.stopPropagation();
+    if (deck[current]) {
+      const plain = deck[current].example.replace(/<[^>]+>/g, '');
+      speak(plain, btnSpeakSen);
+    }
+  });
+
+  // 模式切換
+  tabAll.addEventListener('click',      () => switchMode('all'));
+  tabPractice.addEventListener('click', () => switchMode('practice'));
+
+  // ── 鍵盤（關鍵修正：僅在焦點不在按鈕上時，才用 Space 翻轉）
+  document.addEventListener('keydown', e => {
+    const tag = document.activeElement?.tagName;
+    const onButton = (tag === 'BUTTON' || tag === 'INPUT' || tag === 'TEXTAREA');
+
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); goTo(current - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+    if (e.key === ' ' && !onButton) { e.preventDefault(); flip(); }
+    if (e.key === 'p' || e.key === 'P') {
+      if (deck[current]) speak(deck[current].en, btnSpeakWord);
+    }
+    if (e.key === 's' || e.key === 'S') { doToggleStar(); }
+  });
+
+  // 卡片過渡
+  card.style.transition = 'opacity .16s ease, transform .16s ease';
+
+  // ════════════════════════════════════════════════
+  //  初始化
+  // ════════════════════════════════════════════════
+  buildDeck();
+  render();
+  updateBookmarkUI();
+  </script>
+</body>
+</html>

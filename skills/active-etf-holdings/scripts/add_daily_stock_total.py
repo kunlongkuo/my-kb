@@ -30,6 +30,8 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
+import subprocess
 from collections import defaultdict
 from pathlib import Path
 
@@ -352,6 +354,20 @@ def main() -> None:
 
     workbook.save(xlsx_path)
     print(f"已儲存：{xlsx_path}")
+
+    # ─────────────────────────────────────────────────────────────────────────────
+    # 自動調用繪圖與 Markdown 嵌入腳本
+    # ─────────────────────────────────────────────────────────────────────────────
+    try:
+        script_dir = Path(__file__).resolve().parent
+        draw_script = script_dir / "draw_holdings_charts.py"
+        if draw_script.exists():
+            print("自動執行加減碼視覺化繪圖...")
+            subprocess.run([sys.executable, str(draw_script)], check=True)
+        else:
+            print(f"找不到繪圖腳本: {draw_script}")
+    except Exception as exc:
+        print(f"執行繪圖腳本失敗: {exc}")
 
 
 if __name__ == "__main__":
