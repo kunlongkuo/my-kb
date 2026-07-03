@@ -126,7 +126,7 @@ def draw_chart(
         title = f"今日主動型 ETF 加碼排行 Top 10 ({date_str})"
         # 降序排序，取前 10
         sorted_items = sorted([x for x in items if x["delta"] > 0], key=lambda x: x["delta"], reverse=True)[:10]
-        color = "#10B981"  # Emerald 500
+        color = "#EF4444"  # Red 500（台股加碼用紅色）
         x_label = "加碼張數"
     else:
         title = f"今日主動型 ETF 減碼排行 Top 10 ({date_str})"
@@ -134,7 +134,7 @@ def draw_chart(
         sorted_items = sorted([x for x in items if x["delta"] < 0], key=lambda x: x["delta"])[:10]
         for x in sorted_items:
             x["display_delta"] = abs(x["delta"])
-        color = "#EF4444"  # Red 500
+        color = "#10B981"  # Emerald 500（台股減碼用綠色）
         x_label = "減碼張數"
         
     if not sorted_items:
