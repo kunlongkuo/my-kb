@@ -19,6 +19,7 @@
    - 完成專案設定檔 `config.json` 初始化。
    - 執行 `python -m taigi doctor` 通過環境健檢（包含 Python、FFmpeg、環境變數與連線）。
    - 成功以黃金路徑 `.venv\Scripts\python -m taigi generate --case tests/test_materials/test_case_market_001.json --no-media` 進行教材生成測試，在 `output` 底下成功輸出教材結構、Word 講義、考卷、PPT 與離線互動網頁 HTML。
+   - **優化播放按鈕體驗與外觀**：將單字卡及對話發音按鈕中原有的 Emoji 替換為精美 SVG 向量圖示，解決在部分系統或瀏覽器上顯示為損壞的「圖片圖示（即空白框框或缺字符號）」之問題；同時實作無音檔時單字卡喇叭自動灰化禁用、對話播放按鈕自動隱藏之防禦性邏輯，避免點擊時跳出 alert 警告。
 
 ### 📝 改了哪些重要檔案
 
