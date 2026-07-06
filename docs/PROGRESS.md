@@ -4,7 +4,7 @@
 
 ---
 
-## 2026-07-06 ── 主動型 ETF 第 33 次更新
+## 2026-07-06 ── 主動型 ETF 第 33 次更新與臺語教材 AI Agent 安裝
 
 ### ✅ 今日完成
 
@@ -13,6 +13,12 @@
    - 執行 `add_daily_stock_total.py` 更新「每日個股合計」分頁。
    - 執行 `generate_dashboard_data.py` 重新產生 `dashboard_data.js` 以供儀表板網頁讀取。
    - 同步重新生成 [主動型ETF持股彙總.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md) 與 [主動型ETF持股變動.md](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md)（比較區間：`20260703` → `20260706`）。
+2. **臺語教材 AI Agent (taigi-teaching-agent) 的安裝與設定**
+   - 參考 [GitHub 倉庫](https://github.com/mathruffian-dot/taigi-teaching-agent)，將專案 clone 至根目錄。
+   - 設定 `$env:PYTHONUTF8=1` 解決 Windows 下預設 CP950 解碼 `requirements.txt` 造成的 `UnicodeDecodeError` 錯誤，並順利初始化虛擬環境及安裝所有套件。
+   - 完成專案設定檔 `config.json` 初始化。
+   - 執行 `python -m taigi doctor` 通過環境健檢（包含 Python、FFmpeg、環境變數與連線）。
+   - 成功以黃金路徑 `.venv\Scripts\python -m taigi generate --case tests/test_materials/test_case_market_001.json --no-media` 進行教材生成測試，在 `output` 底下成功輸出教材結構、Word 講義、考卷、PPT 與離線互動網頁 HTML。
 
 ### 📝 改了哪些重要檔案
 
@@ -24,6 +30,7 @@
 | `wiki/金融投資/dashboard_data.js` | **修改** | 重新產生 JS 全域數據供儀表板網頁讀取 |
 | `每日筆記/2026-07-06.md` | **新建** | 記錄今日工作細項與成果 |
 | `docs/PROGRESS.md` | **修改** | 記錄今日開發進度與 ETF 更新進度（本檔案） |
+| `.gitignore` | **修改** | 忽略外置的 `taigi-teaching-agent/` 子目錄防止 git 嵌套 |
 
 ### 🧭 做了哪些決策
 
