@@ -48,6 +48,7 @@
 ### AI 工具 (AI Tools)
 - [LLM Wiki 筆記術 & AI卡片盒工作流](file:///i:/Mark/my-kb/wiki/AI工具/LLM-Wiki-筆記術.md): 整理 Andrej Karpathy 的「LLM Wiki」知識管理方法論，並整合 Esor Huang 的卡片盒筆記法 (Raw -> Card -> Opinions) AI 整理系統實測心得，收錄短影音製作、Agent 系統運維（含 Codex-Ollama 本地串接）、ffmpeg 默片重點萃取、Manus 實戰、Edits 剪輯、Image Extraction 抓圖、OpenCode 地端部署及 NotebookLM+PDNob 簡報高階工作流等實踐案例。
 - [ChatGPT & Gemini 圖片下載腳本](file:///i:/Mark/my-kb/wiki/AI工具/ChatGPT-圖片下載腳本.md): 基於 Tampermonkey 的批次下載工具，可一鍵抓取對話中的 AI 生成圖並自動命名。
+- [AI生圖提示詞與視覺版面指南](file:///i:/Mark/my-kb/wiki/AI工具/AI生圖提示詞與視覺版面指南.md): 系統化整理 AI 生圖提示詞的核心架構、高級感控制字典（色調/光影/留白）與 15 大商業與社群特色視覺風格實戰指南（含3D樹脂天氣卡、韓風手帳、雙重曝光側臉剪影等）。
 - [AI影音工具彙整](file:///i:/Mark/my-kb/wiki/AI工具/＜AI影音工具彙整＞.md): 各類 AI 影音剪輯、語音合成與圖像生成工具彙整清單。
 
 ### 工具軟體 (Software Tools)
