@@ -30,8 +30,14 @@
 
 ### 金融投資 (Financial Investment)
 - [主動型 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF清單.md): 整理台灣上市之主動型 ETF 費率、配息與保管銀行比較表。
+- [主動型 ETF 持股彙總](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股彙總.md): 依加總投資比例排序的前 50 名持股，每日自動更新。
+- [主動型 ETF 持股變動](file:///i:/Mark/my-kb/wiki/金融投資/主動型ETF持股變動.md): 最近兩個日期分頁的持股比對，含新增、刪除與加減碼 Top 10 圖表。
 - [市值型 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/市值型ETF清單.md): 整理台灣主流市值型（含 ESG、低碳）ETF 費率、配息與追蹤指數比較表。
+- [市值型 ETF 持股彙總](file:///i:/Mark/my-kb/wiki/金融投資/市值型ETF持股彙總.md): 市值型 ETF 持股依加總比例排序彙總。
+- [市值型 ETF 持股變動](file:///i:/Mark/my-kb/wiki/金融投資/市值型ETF持股變動.md): 市值型 ETF 持股增刪與比例變動比對。
 - [高股息 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/高股息ETF清單.md): 整理台灣熱門高股息（含季配、月配）ETF 費率、配息與選股邏輯比較表。
+- [高股息 ETF 持股彙總](file:///i:/Mark/my-kb/wiki/金融投資/高股息ETF持股彙總.md): 高股息 ETF 持股依加總比例排序彙總。
+- [高股息 ETF 持股變動](file:///i:/Mark/my-kb/wiki/金融投資/高股息ETF持股變動.md): 高股息 ETF 持股增刪與比例變動比對。
 - [海外型 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/海外型ETF清單.md): 整理在台上市之國外股票型（美股指數、主題、產業）ETF 費率與追蹤指數比較表。
 - [槓桿反向型 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/槓桿反向型ETF清單.md): 整理台股槓桿型（正2）與反向型（反1）交易工具之費率與風險說明。
 
@@ -50,6 +56,15 @@
 - [ChatGPT & Gemini 圖片下載腳本](file:///i:/Mark/my-kb/wiki/AI工具/ChatGPT-圖片下載腳本.md): 基於 Tampermonkey 的批次下載工具，可一鍵抓取對話中的 AI 生成圖並自動命名。
 - [AI生圖提示詞與視覺版面指南](file:///i:/Mark/my-kb/wiki/AI工具/AI生圖提示詞與視覺版面指南.md): 系統化整理 AI 生圖提示詞的核心架構、高級感控制字典（色調/光影/留白）與 15 大商業與社群特色視覺風格實戰指南（含3D樹脂天氣卡、韓風手帳、雙重曝光側臉剪影等）。
 - [AI影音工具彙整](file:///i:/Mark/my-kb/wiki/AI工具/＜AI影音工具彙整＞.md): 各類 AI 影音剪輯、語音合成與圖像生成工具彙整清單。
+- [Hermes Desktop GUI](file:///i:/Mark/my-kb/wiki/AI工具/Hermes-Desktop-GUI.md): Windows 一鍵安裝 Hermes Agent 的 Electron 桌面應用，支援 16 種訊息閘道與圖形化 Cron Job。
+- [Manus AI Agent 實戰教學](file:///i:/Mark/my-kb/wiki/AI工具/Manus-AI-Agent實戰教學.md): 任務型 AI Agent 的簡報生成（5 步驟 SOP）與 GitHub Pages 個人網站自動部署實戰。
+- [OpenCode AI Agent 地端部署](file:///i:/Mark/my-kb/wiki/AI工具/OpenCode-AI-Agent地端部署.md): 開源免月費地端 AI Agent 的 8 步驟部署 SOP、ReAct Loop 架構與自訂 Tool-Registry 擴充。
+- [用Agent養Agent](file:///i:/Mark/my-kb/wiki/AI工具/用Agent養Agent.md): 以強 LLM 維護地端 Agent 系統的運維哲學，含 Telegram 遠端修復與多代理存廢思辯。
+- [Codex-Ollama 本地模型串接](file:///i:/Mark/my-kb/wiki/AI工具/Codex-Ollama-本地模型串接.md): 透過 ollama launch 將 Codex 桌面版切換為本地開源模型，實現完全免費、離線的 AI 開發環境。
+- [ffmpeg + AI 默片重點萃取](file:///i:/Mark/my-kb/wiki/AI工具/默片重點萃取-ffmpeg-AI.md): 5 分鐘高效工作流：抽影格 → AI OCR → 結構化筆記，適用無聲字卡快閃影片。
+- [一篇文章到80秒說話卡通片](file:///i:/Mark/my-kb/wiki/AI工具/一篇文章到80秒說話卡通片.md): 整合 Flux 生圖、MiniMax 語音複製、HyperFrames 渲染與 ffmpeg 混音的 AI 短影音自動化 Pipeline。
+- [Edits 影片編輯軟體](file:///i:/Mark/my-kb/wiki/AI工具/Edits-影片編輯軟體.md): Instagram 官方免費影片編輯工具，具備 AI 動畫、智慧字幕、AI 降噪與 Meta 演算法加權優勢。
+- [Image Extraction 抓圖神器](file:///i:/Mark/my-kb/wiki/AI工具/Image-Extraction-抓圖神器.md): 免安裝網頁圖片批次下載服務，貼上 URL 即可一鍵打包無浮水印高解析圖片。
 
 ### 工具軟體 (Software Tools)
 - [Jason Tools (JTDT)](file:///i:/Mark/my-kb/wiki/工具軟體/Jason-Tools.md): 整合式 PDF / Office 文件處理平台，主打地端自架、資安控管與多功能合一（填單、用印、去識別化、比對等）。

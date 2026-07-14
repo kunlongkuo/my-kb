@@ -2,6 +2,11 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-07-14] maintenance | index.md 補齊缺漏 + 9 張 cards 升格為 wiki
+- **index.md 補齊**：金融投資區塊補上 6 個持股彙總/持股變動頁面連結；AI 工具區塊補上 9 個新升格 wiki 頁面連結。
+- **新建 wiki 頁面（9 張 cards 升格）**：`Hermes-Desktop-GUI.md`、`Manus-AI-Agent實戰教學.md`、`OpenCode-AI-Agent地端部署.md`、`用Agent養Agent.md`、`Codex-Ollama-本地模型串接.md`、`默片重點萃取-ffmpeg-AI.md`、`一篇文章到80秒說話卡通片.md`、`Edits-影片編輯軟體.md`、`Image-Extraction-抓圖神器.md`，全部建立於 `wiki/AI工具/`。
+- 各 wiki 頁面均含 YAML Frontmatter（title/category/tags/sources/status/updated）、精煉後的核心內容、相互連結。
+
 ## [2026-07-14] etf-update | 主動型 ETF 第 38 次日更
 - **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260714` 分頁至 `主動型ETF持股明細.xlsx`（累計 38 個歷史日期分頁）。共 29 支 ETF、1,641 筆持股明細。
 - **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 27,530 筆。自動生成加碼/減碼 Top 10 圖表並嵌入 `主動型ETF持股變動.md`。
