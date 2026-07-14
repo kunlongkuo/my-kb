@@ -72,11 +72,11 @@ my-kb/
 ├── cards/                   # 暫時筆記 / Zettelkasten 卡片
 ├── scripts/                 # 自動化腳本
 │   ├── youtube_to_notes.py  # YouTube 影片 → Obsidian 筆記
-│   ├── collect_passive_etf_holdings.py  # 被動型 ETF 持股爬取
 │   ├── sync_excel_to_md.py  # Excel ↔ Markdown 同步
 │   └── ...
 ├── skills/                  # AI Agent 技能包
 │   ├── active-etf-holdings/ # 主動型 ETF 持股追蹤技能
+│   ├── passive-etf-holdings/# 被動型 ETF 持股追蹤技能
 │   ├── 00-install-all/      # 環境安裝
 │   ├── 01-notebooklm/       # NotebookLM 整合
 │   ├── 02-github/           # GitHub 操作
@@ -172,7 +172,7 @@ python skills/active-etf-holdings/scripts/generate_dashboard_data.py
 ### 執行 ETF 持股更新（被動型）
 
 ```powershell
-python scripts/collect_passive_etf_holdings.py
+python skills/passive-etf-holdings/scripts/collect_passive_etf_holdings.py
 ```
 
 ### 執行 Excel ↔ Markdown 同步
@@ -243,14 +243,13 @@ git push origin main
 
 1. **YouTube 摘要重複收錄**：`log.md` 中記錄顯示「第一集｜探索 Obsidian」影片被重複 ingest 了 5 次（2026-04-27），疑似腳本冪等性不足。
 2. **`raw/` 與 `bin/` 被 .gitignore 排除**：這些目錄的內容不在版本控管中。若需遷移至新機器，需手動複製或重新取得。
-3. **被動型 ETF 腳本路徑**：`collect_passive_etf_holdings.py` 目前放在 `scripts/` 而非 `skills/` 架構下，與主動型 ETF 的 skill架構不一致。
-4. **`skills/active-etf-holdings/scripts/__pycache__/`**：Python 快取目錄未被 .gitignore 排除（技能子目錄下），可能被意外提交。
+3. **`skills/active-etf-holdings/scripts/__pycache__/`**：Python 快取目錄未被 .gitignore 排除（技能子目錄下），可能被意外提交。
 
 ---
 
 ## 🔮 下一步規劃
 
-- [ ] 將被動型 ETF 持股追蹤遷移至 `skills/` 架構，與主動型一致
+- [x] 將被動型 ETF 持股追蹤遷移至 `skills/` 架構，與主動型一致
 - [ ] 為 YouTube 摘要腳本加入冪等性檢查（避免重複收錄）
 - [ ] 考慮將 `.gitignore` 加入 `__pycache__/` 的全域排除規則（目前僅排除根目錄）
 - [ ] 將新增的影片製作工作流技能 `skills/video-production-workflow` 註冊至全域一鍵安裝技能

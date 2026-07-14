@@ -42,12 +42,14 @@
 - [槓桿反向型 ETF 清單](file:///i:/Mark/my-kb/wiki/金融投資/槓桿反向型ETF清單.md): 整理台股槓桿型（正2）與反向型（反1）交易工具之費率與風險說明。
 
 ### YouTube 內容摘要 (YouTube Summaries)
-- [39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）](wiki\youtube-notes\39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）_9oh9hGE9LsY.md)
-- [第五集｜Obsidian 外掛應用【AI 工具課】](wiki\youtube-notes\第五集｜Obsidian 外掛應用【AI 工具課】_WqzHXvEQc5g.md)
-- [第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】](wiki\youtube-notes\第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】_tpEo5O3cR_s.md)
-- [第二集｜Markdown 語法入門：簡潔高效的文本格式化工具【AI 工具課】](wiki\youtube-notes\第二集｜Markdown 語法入門：簡潔高效的文本格式化工具【AI 工具課】_TvFcSiT0n1Q.md)
-- [無痛把 Gemini 裝進電腦！Gemini CLI 讓 AI 直接幫你處理所有檔案，無須任何寫程式背景都能用！【欸那個AJ】](wiki\youtube-notes\無痛把 Gemini 裝進電腦！Gemini CLI 讓 AI 直接幫你處理所有檔案，無須任何寫程式_cXEZ50vgDPw.md)
-- [CLAUDE CODE 4小時完整教學：學會Skills / AI 自動工作 / 搜集資料 (2026)](wiki\youtube-notes\CLAUDE CODE 4小時完整教學：學會Skills  AI 自動工作  搜集資料 (2026)_fYuohy6rQ9c.md)
+- [39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）](file:///i:/Mark/my-kb/wiki/youtube-notes/39分鐘上手Obsidian！基礎操作介紹（電腦、平板、手機全面教學）_9oh9hGE9LsY.md): 影片核心功能操作與跨設備配置實戰。
+- [第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】](file:///i:/Mark/my-kb/wiki/youtube-notes/第一集｜探索 Obsidian：打造你的個人知識管理系統【AI 工具課】_tpEo5O3cR_s.md): 數位第二大腦架構與 Zettelkasten 方法論。
+- [第二集｜Markdown 語法入門：簡潔高效的文本格式化工具【AI 工具課】](file:///i:/Mark/my-kb/wiki/youtube-notes/第二集｜Markdown 語法入門：簡潔高效的文本格式化工具【AI 工具課】_TvFcSiT0n1Q.md): 常用 Markdown 標記、代碼塊與引用語法基礎。
+- [第三集｜構建知識網絡：Obsidian 知識點連結的核心理念【AI 工具課】](file:///i:/Mark/my-kb/wiki/youtube-notes/第三集｜構建知識網絡：Obsidian 知識點連結的核心理念【AI 工具課】_PVqmkDToxHE.md): 雙向連結、關係圖譜與原子筆記網絡建構。
+- [第四集｜高效筆記的起點：Obsidian 模板製作與應用【AI 工具課】](file:///i:/Mark/my-kb/wiki/youtube-notes/第四集｜高效筆記的起點：Obsidian 模板製作與應用【AI 工具課】_aAVitJWUqMg.md): 核心外掛 Templates 配置與日常日誌模板實踐。
+- [第五集｜Obsidian 外掛應用【AI 工具課】](file:///i:/Mark/my-kb/wiki/youtube-notes/第五集｜Obsidian 外掛應用【AI 工具課】_WqzHXvEQc5g.md): 主題更換、Dataview 與 Outliner 等高級外掛玩法。
+- [無痛把 Gemini 裝進電腦！Gemini CLI 讓 AI 直接幫你處理所有檔案，無須任何寫程式](file:///i:/Mark/my-kb/wiki/youtube-notes/無痛把 Gemini 裝進電腦！Gemini CLI 讓 AI 直接幫你處理所有檔案，無須任何寫程式_cXEZ50vgDPw.md): 在地端命令列快速呼叫 Gemini API 處理多輪檔案與翻譯。
+- [CLAUDE CODE 4小時完整教學：學會Skills / AI 自動工作 / 搜集資料 (2026)](file:///i:/Mark/my-kb/wiki/youtube-notes/CLAUDE%20CODE%204小時完整教學：學會Skills%20%20AI%20自動工作%20%20搜集資料%20(2026)_fYuohy6rQ9c.md): 詳盡的 Claude Code CLI 工具入門、自訂 Skills 架構與自動化腳本工作流。
 
 
 

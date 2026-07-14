@@ -2,6 +2,11 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-07-14] maintenance | 被動型 ETF 技能化與 YouTube 筆記扁平化
+- **被動型 ETF 遷移**：將 `scripts/collect_passive_etf_holdings.py` 透過 `git mv` 搬移至 `skills/passive-etf-holdings/scripts/`，並在該技能目錄下建立 `SKILL.md` 指南。
+- **YouTube 筆記重構**：將原 `wiki/youtube-notes/Obsidian/` 下的 6 個 Obsidian 教學筆記搬移扁平化至 `wiki/youtube-notes/` 根目錄，並移除空資料夾。
+- **全域索引更新**：在 `index.md` 中將所有 Obsidian 筆記路徑修正，且補齊原本遺漏的「第三集」與「第四集」Obsidian 工具課筆記；同步更新了 `README.md` 中關於被動型 ETF 腳本路徑與已知問題的描述。
+
 ## [2026-07-14] maintenance | index.md 補齊缺漏 + 9 張 cards 升格為 wiki
 - **index.md 補齊**：金融投資區塊補上 6 個持股彙總/持股變動頁面連結；AI 工具區塊補上 9 個新升格 wiki 頁面連結。
 - **新建 wiki 頁面（9 張 cards 升格）**：`Hermes-Desktop-GUI.md`、`Manus-AI-Agent實戰教學.md`、`OpenCode-AI-Agent地端部署.md`、`用Agent養Agent.md`、`Codex-Ollama-本地模型串接.md`、`默片重點萃取-ffmpeg-AI.md`、`一篇文章到80秒說話卡通片.md`、`Edits-影片編輯軟體.md`、`Image-Extraction-抓圖神器.md`，全部建立於 `wiki/AI工具/`。
