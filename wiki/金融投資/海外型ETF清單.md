@@ -1,3 +1,12 @@
+---
+title: 海外型ETF清單
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-23
+---
+
 # 海外型 ETF 比較清單
 
 本頁面整理在台灣上市、投資海外市場（主要是美股）的國外股票型 ETF。這類標的適合想要參與全球成長或特定產業趨勢的投資人。

@@ -1,3 +1,12 @@
+---
+title: ＜AI影音工具彙整＞
+category: METHOD
+tags: ['AI工具']
+sources: []
+status: verified
+updated: 2026-05-17
+---
+
 可以先從這幾個「比較簡單、適合新手、可先免費試用」的 AI 影音工具開始玩，主要可以做圖片生影片、文字生影片、AI短影音。免費額度會依官方政策、地區、帳號狀態變動，建議先用免費版測試，不用一開始就付費。
 
 1. Meta AI／AI Video Generator  

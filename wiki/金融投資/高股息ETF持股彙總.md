@@ -1,3 +1,12 @@
+---
+title: 高股息ETF持股彙總
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-25
+---
+
 # 高股息 ETF 持股彙總
 
 資料來源：MoneyDJ ETF 持股狀況「全部持股」頁；高股息 ETF 依本地清單整理。

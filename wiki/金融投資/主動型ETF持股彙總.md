@@ -1,3 +1,12 @@
+---
+title: 主動型ETF持股彙總
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-07-14
+---
+
 # 主動型 ETF 持股彙總
 
 資料來源：MoneyDJ ETF 持股狀況「全部持股」頁；主動式 ETF 依本地清單整理。

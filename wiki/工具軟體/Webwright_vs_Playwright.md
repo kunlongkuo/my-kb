@@ -1,3 +1,12 @@
+---
+title: Webwright_vs_Playwright
+category: METHOD
+tags: ['工具軟體']
+sources: []
+status: verified
+updated: 2026-05-31
+---
+
 # 別再無腦使用 Playwright 「猜」網頁了，用 Webwright 接上 LLM 「讀」網頁
 
 我們都習慣安裝 Playwright MCP/Skill 來讀取網頁內容並丟入 Context Window 中。事實上，Playwright 原本是為網頁自動化測試而生的產品，你用它讀出來的原始碼還是要給 LLM 「猜」，中間混雜了大量不重要的雜訊，導致有時結果會一直出錯。

@@ -1,3 +1,12 @@
+---
+title: CLAUDE CODE 4小時完整教學：學會Skills  AI 自動工作  搜集資料 (2026)_fYuohy6rQ9c
+category: CONCEPT
+tags: ['youtube-notes']
+sources: []
+status: verified
+updated: 2026-05-17
+---
+
 # [技術精華] Claude Code 4 小時完整教學：從自動化工作流到知識管理全攻略
 
 這是一份針對 **Claude Code** 的深度指南，重點在於如何利用其本地執行權限，結合自定義技能 (Skills) 與 Obsidian 知識庫，打造全自動化的 AI 工作系統。

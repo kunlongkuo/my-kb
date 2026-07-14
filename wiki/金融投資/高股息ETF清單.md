@@ -1,3 +1,12 @@
+---
+title: 高股息ETF清單
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-23
+---
+
 # 台灣高股息 ETF 比較清單
 
 本頁面整理台灣市場熱門的高股息 ETF，這類標的以提供穩定現金流為主要目標，選股邏輯通常聚焦於現金殖利率、歷史配息紀錄或預測未來股利。

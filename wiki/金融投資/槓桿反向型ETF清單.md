@@ -1,3 +1,12 @@
+---
+title: 槓桿反向型ETF清單
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-23
+---
+
 # 槓桿與反向型 ETF 比較清單
 
 本頁面整理在台上市的槓桿型（正 2）與反向型（反 1）ETF。這類標的透過操作期貨達成單日報酬目標，屬於**短期交易與避險工具**，不適合長期持有。

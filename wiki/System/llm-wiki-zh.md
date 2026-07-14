@@ -1,3 +1,12 @@
+---
+title: llm-wiki-zh
+category: METHOD
+tags: ['System']
+sources: []
+status: verified
+updated: 2026-04-15
+---
+
 # LLM Wiki (LLM 維基)
 
 一個使用 LLM 建立個人知識庫的模式。

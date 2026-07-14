@@ -1,3 +1,12 @@
+---
+title: 主動型ETF清單
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-23
+---
+
 # 台灣主動型 ETF 比較清單
 
 本頁面整理台灣目前上市的主動型 ETF 相關資訊，包含代號、保管銀行、配息月份及相關費率。

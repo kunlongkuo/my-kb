@@ -1,3 +1,12 @@
+---
+title: 高股息ETF持股變動
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-25
+---
+
 # 高股息 ETF 持股變動
 
 資料來源：`高股息ETF持股明細.xlsx` 最近兩個日期分頁。

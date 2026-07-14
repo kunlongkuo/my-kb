@@ -2,6 +2,10 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-07-14] maintenance | 批量為 63 個 Wiki 檔案補齊 YAML Frontmatter
+- **工具開發**：撰寫並執行 `scripts/add_yaml_frontmatter.py` 自動化批次處理腳本，偵測並補齊所有缺少 frontmatter 的 markdown 檔案。
+- **補齊 Frontmatter**：為 `wiki/` 目錄下的 63 個 markdown 檔案（包含交通法規、勞工法規、金融投資、烘焙食譜、工具軟體與 System 等子目錄）自動插入 YAML frontmatter，定義 `title`、`category`、`tags`、`status` 與基於檔案最後修改時間推導的 `updated` 欄位。
+
 ## [2026-07-14] maintenance | 被動型 ETF 技能化與 YouTube 筆記扁平化
 - **被動型 ETF 遷移**：將 `scripts/collect_passive_etf_holdings.py` 透過 `git mv` 搬移至 `skills/passive-etf-holdings/scripts/`，並在該技能目錄下建立 `SKILL.md` 指南。
 - **YouTube 筆記重構**：將原 `wiki/youtube-notes/Obsidian/` 下的 6 個 Obsidian 教學筆記搬移扁平化至 `wiki/youtube-notes/` 根目錄，並移除空資料夾。

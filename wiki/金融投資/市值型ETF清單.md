@@ -1,3 +1,12 @@
+---
+title: 市值型ETF清單
+category: CONCEPT
+tags: ['金融投資']
+sources: []
+status: verified
+updated: 2026-06-23
+---
+
 # 台灣市值型 ETF 比較清單
 
 本頁面整理台灣市場主流的市值型 ETF（包含傳統市值型、ESG 市值型、低碳市值型），這類標的通常追蹤大盤表現，適合作為長期投資的核心部位。
