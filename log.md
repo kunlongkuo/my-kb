@@ -2,6 +2,13 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-07-15] etf-update | 主動型 ETF 第 39 次日更與新兵 00408A 納入
+- **新兵納入與設定更新**：在 `台灣ETF比較清單.xlsx` 主動型分頁中新增第一金台股趨勢優股息主動式 ETF（`00408A`）的基礎資料（包括經理人張正中、保管銀行臺灣企銀、季配息頻率、費率等）。執行 `sync_excel_to_md.py` 同步至 `主動型ETF清單.md`。
+- **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260715` 分頁至 `主動型ETF持股明細.xlsx`（包含新掛牌上市的 `00408A`，累計 30 支 ETF、1679 筆持股明細）。
+- **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 28,272 筆，並自動產生加碼/減碼 Top 10 圖表及更新 `主動型ETF持股變動.md`。
+- **看板更新**：執行 `generate_dashboard_data.py`，重新爬取 483 支個股收盤價並產生 `dashboard_data.js`。
+- **今日變動重點**：00401A 新增大立光（1.13%）；00403A 新增漢唐（0.05%）；00990A 新增 Broadcom、Datadog、Snowflake，刪除創意、Veeco、Vicor；00998A 新增 AJG.US，刪除 SNEX.US；全市場中南電（8046）持續被多檔主動型 ETF 加碼。
+
 ## [2026-07-14] maintenance | 批量為 63 個 Wiki 檔案補齊 YAML Frontmatter
 - **工具開發**：撰寫並執行 `scripts/add_yaml_frontmatter.py` 自動化批次處理腳本，偵測並補齊所有缺少 frontmatter 的 markdown 檔案。
 - **補齊 Frontmatter**：為 `wiki/` 目錄下的 63 個 markdown 檔案（包含交通法規、勞工法規、金融投資、烘焙食譜、工具軟體與 System 等子目錄）自動插入 YAML frontmatter，定義 `title`、`category`、`tags`、`status` 與基於檔案最後修改時間推導的 `updated` 欄位。
