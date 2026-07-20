@@ -44,7 +44,7 @@
 | YouTube 影片摘要 | `youtube_to_notes.py` 自動擷取影片逐字稿並生成結構化筆記 |
 | Chrome 擴充套件 | 瀏覽器一鍵剪輯工具，將網頁內容匯入知識庫 |
 | Gemini KB App | 前後端分離的知識庫查詢應用 |
-| Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP |
+| Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP（整合 `handoff.md` 跨電腦交接） |
 | 規則檔自動同步 | `sync_rules.py` 支援 OS 硬連結 (Hard Link) 偵測之規則同步工具 |
 | 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片製作 SOP |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
@@ -228,8 +228,9 @@ git push origin main
 
 在 AI 對話中說「**收工**」會自動觸發：
 1. 敏感檔案安全掃描（防止 API Key 外洩）
-2. `git add .` → 自動生成 commit 訊息 → `git commit` → `git push`
-3. 更新每日筆記的「已完成工作」與「待辦事項」
+2. 更新並全新覆寫根目錄的 `handoff.md`（記錄當前進度、狀態、下一步、最後更新時間與電腦名稱，供跨端無縫交接）
+3. `git add .` → 自動生成包含 handoff 摘要之 commit 訊息 → `git commit` → `git push`
+4. 更新每日筆記的「已完成工作」與「待辦事項」
 
 ### MCP 伺服器（OpenCode 整合）
 
@@ -261,15 +262,16 @@ git push origin main
 
 ## 🤖 AI 交接須知
 
-若你是接手此專案的 AI Agent，請先閱讀以下檔案：
+若你是接手此專案的 AI Agent，請務必先閱讀以下檔案：
 
-1. **[ANTIGRAVITY.md](ANTIGRAVITY.md)**：AI Agent 行為規則與開工/收工 SOP
-2. **[schema.md](schema.md)**：知識庫操作規範（Ingest / Query / Lint 流程）
-3. **[index.md](index.md)**：全域知識節點索引
-4. **[log.md](log.md)**：操作日誌（了解近期做了什麼）
-5. **[每日筆記/](每日筆記/)**：最新一篇可了解「上次做到哪」與「下一步計畫」
-6. **[skills/active-etf-holdings/SKILL.md](skills/active-etf-holdings/SKILL.md)**：ETF 持股追蹤的完整操作指南
-7. **[docs/PROGRESS.md](docs/PROGRESS.md)**：開發進度紀錄
+1. **[handoff.md](handoff.md)**：L1 級別之跨電腦/跨 Agent 接續交接記錄（首要必讀）
+2. **[ANTIGRAVITY.md](ANTIGRAVITY.md)**：AI Agent 行為規則與開工/收工 SOP
+3. **[schema.md](schema.md)**：知識庫操作規範（Ingest / Query / Lint 流程）
+4. **[index.md](index.md)**：全域知識節點索引
+5. **[log.md](log.md)**：操作日誌（了解近期做了什麼）
+6. **[每日筆記/](每日筆記/)**：最新一篇可了解「上次做到哪」與「下一步計畫」
+7. **[skills/active-etf-holdings/SKILL.md](skills/active-etf-holdings/SKILL.md)**：ETF 持股追蹤的完整操作指南
+8. **[docs/PROGRESS.md](docs/PROGRESS.md)**：開發進度紀錄
 
 > ⚠️ **關鍵安全規則**：**絕不可**直接覆蓋 `wiki/金融投資/` 下的 `.xlsx` 檔案。詳見 [ANTIGRAVITY.md](ANTIGRAVITY.md) 中的「主動型 ETF 更新安全規範」。
 
