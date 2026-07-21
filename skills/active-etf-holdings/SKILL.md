@@ -43,6 +43,14 @@ python skills/active-etf-holdings/scripts/add_daily_stock_total.py
 
 > **注意**：`add_daily_stock_total.py` 執行完畢後，會自動呼叫 `draw_holdings_charts.py`，繪製今日加碼 Top 10 與減碼 Top 10 的視覺化圖表並嵌入 `主動型ETF持股變動.md`，無需手動執行。
 
+**（每日必做）** 重新產生 HTML Dashboard 的資料檔，讓 `主動型ETF個股加減碼排行.html` 的日期下拉選單同步更新至今日：
+
+```powershell
+python skills/active-etf-holdings/scripts/generate_dashboard_data.py
+```
+
+> **注意**：若跳過此步驟，HTML 頁面的日期下拉將停留在上次產生日，無法選取最新交易日。yfinance 抓不到已下市個股收盤價屬正常現象，不影響主要功能。
+
 若要單獨重繪圖表（例如重新設計樣式後），可直接執行：
 
 ```powershell
@@ -59,6 +67,7 @@ python skills/active-etf-holdings/scripts/draw_holdings_charts.py
 - `wiki/金融投資/images/YYYYMMDD_additions.png`：今日主動型 ETF 加碼排行 Top 10 橫條圖（Dark Mode，微軟正黑體）。
 - `wiki/金融投資/images/YYYYMMDD_reductions.png`：今日主動型 ETF 減碼排行 Top 10 橫條圖（Dark Mode，微軟正黑體）。
 - `wiki/金融投資/images/active_etf_top_additions.png` / `active_etf_top_reductions.png`：固定檔名版本，方便在 README 或 Obsidian 中固定引用最新圖表。
+- `wiki/金融投資/dashboard_data.js`：**每日必須更新**。供 `主動型ETF個股加減碼排行.html` 讀取的 JavaScript 資料檔，包含所有個股的歷史持倉與增減張數。由 `generate_dashboard_data.py` 產生；若未更新，HTML 頁面日期下拉將停留在上次產生日。
 
 XLSX 欄位如下：
 
@@ -72,9 +81,10 @@ XLSX 欄位如下：
 4. 若 XLSX 至少有兩個日期分頁，查看 `主動型ETF持股變動.md`，回報今日新增股票、刪除股票，以及持股仍在但投資比例變動的股票。
 5. 執行 `add_weekly_summary.py` 產生 `Weekly Additions` 與 `Weekly Reductions`。這兩個分頁除了算出加減碼張數外，還會列出「週原比例」、「加/減碼後比例」及「差異」。若持股已全數賣光出清，減碼後比例會自動補 0，以便算出正確的負向差異。
 6. 執行 `add_daily_stock_total.py` 產生「每日個股合計」分頁。此分頁以個股為單位，彙整所有 ETF 在每個日期的合計持有張數，並逐日計算增減張數（`張數增減`）與增減比例（`增減比例(%)`）。首日或新出現的個股以淺藍底色標示；張數增加以淺綠、減少以淺橘底色標示。
-7. 若 XLSX 少於兩個日期分頁，說明缺少基準日，尚無法判斷新增、刪除與比例變動。
-8. 回報沒有資料的 ETF，特別是抓取狀態為 `無日期` 或筆數為 `0` 的標的。
-9. 說明「加總比例」是同一持股在不同 ETF 中投資比例的直接加總，適合觀察重疊熱度，不代表全市場加權曝險。
+7. **（每日必做）** 執行 `generate_dashboard_data.py` 重新產生 `dashboard_data.js`，讓 `主動型ETF個股加減碼排行.html` 的日期下拉選單同步更新至今日。yfinance 抓不到已下市個股的收盤價屬正常現象，不影響主要功能。
+8. 若 XLSX 少於兩個日期分頁，說明缺少基準日，尚無法判斷新增、刪除與比例變動。
+9. 回報沒有資料的 ETF，特別是抓取狀態為 `無日期` 或筆數為 `0` 的標的。
+10. 說明「加總比例」是同一持股在不同 ETF 中投資比例的直接加總，適合觀察重疊熱度，不代表全市場加權曝險。
 
 ## 資料來源注意事項
 
