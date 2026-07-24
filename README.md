@@ -53,6 +53,16 @@
 | 資訊圖表生成 | `skills/10-infographic-builder` 輔助 Mermaid、SVG 與生圖設計 |
 | SlideMaster 簡報影片化 | `skills/12-slidemaster` 透過寫講稿、配語音、合成影片三步驟，將簡報轉為影片 |
 
+### 共用 Agent 技能包
+| 功能 | 說明 |
+|------|------|
+| 共用技能來源 | `skills/` 為單一來源，內容更新以這裡為準 |
+| OpenCode 鏡像 | `.opencode/skills/` 提供 OpenCode 直接讀取 |
+| 其他 Agent 鏡像 | `.agents/skills/` 提供 AntiGravity 與其他 Agent 共用 |
+| 技能同步說明 | [`docs/AGENT_SHARED_SKILLS.md`](docs/AGENT_SHARED_SKILLS.md) 說明目前同步狀態與使用順序 |
+
+> 短影音相關技能目前以 `video-production-workflow` 負責規劃、`video-autopilot` 負責執行，兩者都已同步到 OpenCode 與 `.agents` 共用區。
+
 ---
 
 ## 📂 目錄結構

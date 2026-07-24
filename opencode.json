@@ -3,7 +3,11 @@
   "permission": {
     "edit": "allow",
     "bash": "ask",
-    "run_command": "ask"
+    "run_command": "ask",
+    "skill": {
+      "video-production-workflow": "allow",
+      "video-autopilot": "allow"
+    }
   },
   "mcp": {
     "notebooklm": {
