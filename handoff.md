@@ -1,10 +1,11 @@
 # Handoff
 
 ## 目前做到哪
-- 完成了第 46 次主動型 ETF 日更（20260724）。
-- 順利完成本週加減碼週彙總（`add_weekly_summary.py`），已將本週增減持股明細寫入 Excel 分頁（`Weekly Additions` / `Weekly Reductions`）。
-- 更新了 Dashboard 的資料檔（`dashboard_data.js`）與對應的加減碼排行視覺化圖表。
-- 整理了共用 Agent 技能鏡像（`.agents/` 與 `.opencode/` 鏡像中關於 `video-production-workflow` 及 `video-autopilot`）。
+- 完成了第 47、48 次主動型 ETF 日更（20260727、20260728）。
+- 更新了主動型 ETF 明細 Excel，包含新增 `20260727`、`20260728` 日期分頁與更新「每日個股合計」工作表。
+- 繪製並嵌入最新加減碼排行視覺化圖表至 `主動型ETF持股變動.md`，包含 `20260727` 與 `20260728` 兩日之加碼與減碼 Top 10 圖表。
+- 重新產生網頁端 HTML Dashboard 的資料檔 `dashboard_data.js`，確保日期選單同步至 `2026-07-28`。
+- 新增與更新 Obsidian 每日筆記（`2026-07-27.md` 與 `2026-07-28.md`）。
 
 ## 目前狀態
 - 是否可運行：是
@@ -16,6 +17,6 @@
 2. 設定 chezmoi 備份 Agent 技能與個人設定檔。
 
 ## 最後更新
-- 日期時間：2026-07-24 21:30
+- 日期時間：2026-07-28 19:51
 - 更新者：Antigravity @ DESKTOP-JT9ET4L
 - Git push 狀態：已推送
