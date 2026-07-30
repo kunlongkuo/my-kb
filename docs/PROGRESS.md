@@ -4,6 +4,51 @@
 
 ---
 
+## 2026-07-30 ── 主動型 ETF 第 50 次日更 + chezmoi 備份設定
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20260730，第 50 次更新）**
+   - 抓取 30 檔主動型 ETF，共 1,667 筆持股，寫入 `主動型ETF持股明細.xlsx` 的 `20260730` 分頁。
+   - 比較 20260729→20260730 持股變動，更新 `主動型ETF持股變動.md`。
+   - 每日個股合計累計 **36,484 筆**（50 個交易日）。
+   - 生成今日加減碼圖表：`20260730_additions.png` / `20260730_reductions.png`，並同步覆蓋固定檔名圖表。
+   - 更新 `dashboard_data.js`，HTML 日期下拉選單同步至 20260730（497 檔個股）。
+   - 週更（`add_weekly_summary.py`）因非週末自動跳過。
+
+2. **chezmoi 備份設定初始化**
+   - 建立 `C:\Users\Mark\.config\chezmoi\chezmoi.toml`，sourceDir 指向 `I:/Mark/my-kb/.chezmoi`。
+   - 將全域 Agent 設定與技能備份至 `.chezmoi/` 目錄：
+     - `AGENTS.md`、`config.json`（全域規則與設定）
+     - 5 個技能：`startup`、`shutdown`、`browser-use`、`project-init`、`rdq-skill`
+     - `.gitconfig`
+   - 建立 `.chezmoi/.chezmoiignore` 排除技能資料夾中的 `dot_git` 物件目錄，保持備份乾淨。
+
+### 📝 重要改動檔案
+
+- `.chezmoi/` (新建目錄) — chezmoi 備份源
+- `.chezmoi/.chezmoiignore` — 排除 dot_git 物件
+- `wiki/金融投資/主動型ETF持股明細.xlsx` — 新增 20260730 分頁
+- `wiki/金融投資/主動型ETF持股變動.md` — 比較 20260729→20260730
+- `wiki/金融投資/dashboard_data.js` — 更新至 20260730
+- `wiki/金融投資/images/20260730_additions.png` / `20260730_reductions.png` — 新增
+
+### 🔧 決策紀錄
+
+- chezmoi 整合至知識庫：選擇以 `my-kb/.chezmoi` 作為 sourceDir，不另開 repo，方便單一 Git 管理與多端同步。
+- `.chezmoiignore` 策略：排除 `*/dot_git` 而非整個 `rdq-skill`，保留技能文件（SKILL.md 等）。
+
+### 🚧 卡關 / 待解
+
+- 無
+
+### 👀 下次接手先看
+
+- 繼續每日主動型 ETF 日更
+- 若新增技能或修改 AGENTS.md，需重新執行 `chezmoi re-add` 更新備份
+
+---
+
 ## 2026-07-29 ── 主動型 ETF 第 49 次日更
 
 ### ✅ 今日完成
