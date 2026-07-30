@@ -1,0 +1,35 @@
+{
+  "userSettings": {
+    "globalPermissionGrants": {
+      "allow": [
+        "read_url(raw.githubusercontent.com)",
+        "command(git clone)",
+        "command(git status;)",
+        "command(git diff)",
+        "command(git add)",
+        "command(git commit)",
+        "command(git status)",
+        "command(git log)",
+        "command(git status)",
+        "command(powershell)",
+        "command(.\\.venv\\Scripts\\python.exe)",
+        "command(.\\.venv\\Scripts\\python.exe)",
+        "command(.\\.venv\\Scripts\\python.exe)",
+        "command(.\\.venv\\Scripts\\python.exe)",
+        "command(copy)",
+        "command(.venv\\Scripts\\python)",
+        "command(.venv\\Scripts\\pip)",
+        "command(.venv\\Scripts\\python)",
+        "command(uv)",
+        "command(.venv\\Scripts\\python)",
+        "command(.venv\\Scripts\\python)",
+        "command(Copy-Item)",
+        "command(.venv\\Scripts\\python.exe)",
+        "command(Get-Process)",
+        "command(Get-CimInstance)",
+        "command(.venv\\Scripts\\python)",
+        "command(.venv\\Scripts\\python.exe)"
+      ]
+    }
+  }
+}
