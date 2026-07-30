@@ -1,0 +1,3 @@
+# 排除各技能資料夾中的 dot_git 目錄（由 chezmoi 將 .git 改名的備份）
+# 這些 Git 物件檔案不需要備份，改為只備份技能的程式碼與文件
+dot_gemini/config/skills/*/dot_git
