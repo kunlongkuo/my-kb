@@ -47,3 +47,6 @@ skills/voxcpm2-voice-cloner/
 
 # Taigi Teaching Agent
 taigi-teaching-agent/
+
+# chezmoi - 排除技能資料夾中 chezmoi 重命名的 .git 物件目錄
+.chezmoi/dot_gemini/config/skills/*/dot_git/
