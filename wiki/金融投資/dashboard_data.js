@@ -1,5 +1,5 @@
 const ETF_DASHBOARD_DATA = {
-  "update_time": "2026-08-07 06:45:05",
+  "update_time": "2026-08-07 20:13:43",
   "etf_info": {
     "00400A": {
       "name": "主動國泰動能高息",
@@ -10055,6 +10055,203 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 2370.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 8.33,
+              "shares": 1025000,
+              "ratio_change": 0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 14.1,
+              "shares": 178000,
+              "ratio_change": 0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 17.14,
+              "shares": 12680000,
+              "ratio_change": 0.45,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 22.05,
+              "shares": 324000,
+              "ratio_change": 0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.42,
+              "shares": 179000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 8.18,
+              "shares": 991000,
+              "ratio_change": 0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 6.59,
+              "shares": 45999,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 8.23,
+              "shares": 663000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 9.63,
+              "shares": 12134000,
+              "ratio_change": 0.35,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 8.22,
+              "shares": 1794000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 3.66,
+              "shares": 150000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 13.87,
+              "shares": 588000,
+              "ratio_change": 0.23,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 8.52,
+              "shares": 22000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 8.34,
+              "shares": 90000,
+              "ratio_change": 0.56,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 3.1,
+              "shares": 750000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 3.5,
+              "shares": 576000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 14.12,
+              "shares": 5200000,
+              "ratio_change": -0.16,
+              "shares_change": -200000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00992A": {
+              "ratio": 7.87,
+              "shares": 1406000,
+              "ratio_change": 0.16,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 12.46,
+              "shares": 518000,
+              "ratio_change": 0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 14.97,
+              "shares": 314999,
+              "ratio_change": 0.27,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 9.06,
+              "shares": 189000,
+              "ratio_change": 0.43,
+              "shares_change": 3000,
+              "signal": "加碼",
+              "consecutive_days": 2
+            },
+            "00996A": {
+              "ratio": 9.71,
+              "shares": 179000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.2,
+              "shares": 135000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 4.95,
+              "shares": 265000,
+              "ratio_change": -0.14,
+              "shares_change": -11000,
+              "signal": "減碼",
+              "consecutive_days": 2
+            }
+          }
         }
       }
     },
@@ -19453,6 +19650,195 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 3.94,
               "shares": 129000,
               "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 3900.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 6.28,
+              "shares": 470000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 6.59,
+              "shares": 50600,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 4.45,
+              "shares": 2000000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 6.55,
+              "shares": 58500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 6.25,
+              "shares": 480000,
+              "ratio_change": 0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 6.47,
+              "shares": 476000,
+              "ratio_change": 0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 4.48,
+              "shares": 19000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 5.7,
+              "shares": 279000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 7.11,
+              "shares": 5448000,
+              "ratio_change": 0.21,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 6.62,
+              "shares": 872000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.6,
+              "shares": 40000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.94,
+              "shares": 50000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 0.64,
+              "shares": 1000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 4.88,
+              "shares": 32000,
+              "ratio_change": 0.3,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 3.04,
+              "shares": 445000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.47,
+              "shares": 245000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 5.14,
+              "shares": 1150000,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 3.74,
+              "shares": 406000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 4.79,
+              "shares": 121000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 7.27,
+              "shares": 93001,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 5.84,
+              "shares": 74000,
+              "ratio_change": 0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 7.28,
+              "shares": 81000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 3.96,
+              "shares": 129000,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -28965,6 +29351,195 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 5240.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 5.23,
+              "shares": 291000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.87,
+              "shares": 10686,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 4.47,
+              "shares": 1495000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 2.56,
+              "shares": 17000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.71,
+              "shares": 212000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 4.91,
+              "shares": 269000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 4.44,
+              "shares": 14000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 4.17,
+              "shares": 152000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 8.53,
+              "shares": 4863000,
+              "ratio_change": 0.19,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 3.36,
+              "shares": 327000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.72,
+              "shares": 32000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.71,
+              "shares": 52000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 6.97,
+              "shares": 34000,
+              "ratio_change": 0.38,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 4.12,
+              "shares": 445000,
+              "ratio_change": 0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.47,
+              "shares": 181000,
+              "ratio_change": 0.56,
+              "shares_change": 37000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00991A": {
+              "ratio": 8.58,
+              "shares": 1430000,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 5.77,
+              "shares": 466000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 4.68,
+              "shares": 88000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 7.99,
+              "shares": 76000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 8.49,
+              "shares": 80000,
+              "ratio_change": 0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 6.21,
+              "shares": 51000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.53,
+              "shares": 42000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 4.09,
+              "shares": 99000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -37440,6 +38015,155 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1650.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.52,
+              "shares": 446000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 3.31,
+              "shares": 60000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 2.86,
+              "shares": 3040000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.95,
+              "shares": 20000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.62,
+              "shares": 294000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 3.28,
+              "shares": 570000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 3.39,
+              "shares": 34000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 3.49,
+              "shares": 404000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.7,
+              "shares": 6706000,
+              "ratio_change": 0.17,
+              "shares_change": 201000,
+              "signal": "加碼",
+              "consecutive_days": 2
+            },
+            "00985A": {
+              "ratio": 0.49,
+              "shares": 30000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 0.94,
+              "shares": 320000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.9,
+              "shares": 441000,
+              "ratio_change": -0.45,
+              "shares_change": -124000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00992A": {
+              "ratio": 1.17,
+              "shares": 300000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.92,
+              "shares": 174000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.47,
+              "shares": 74499,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 3.67,
+              "shares": 110000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 4.43,
+              "shares": 115000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 3.08,
+              "shares": 237000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -45843,6 +46567,187 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 955.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 4.84,
+              "shares": 1479000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.36,
+              "shares": 74000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 4.61,
+              "shares": 8460000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.26,
+              "shares": 46000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 5.01,
+              "shares": 1570000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 4.36,
+              "shares": 1310000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 3.58,
+              "shares": 62000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.82,
+              "shares": 563000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 6.46,
+              "shares": 20210000,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.6,
+              "shares": 61000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.52,
+              "shares": 160000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 7.1,
+              "shares": 190000,
+              "ratio_change": 0.35,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 4.41,
+              "shares": 2600000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.87,
+              "shares": 1146000,
+              "ratio_change": 0.42,
+              "shares_change": 146000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00991A": {
+              "ratio": 5.47,
+              "shares": 5000000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 5.63,
+              "shares": 2497000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.74,
+              "shares": 386000,
+              "ratio_change": 0.03,
+              "shares_change": 5000,
+              "signal": "加碼",
+              "consecutive_days": 4
+            },
+            "00994A": {
+              "ratio": 6.4,
+              "shares": 334001,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 4.49,
+              "shares": 232000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.7,
+              "shares": 121000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.61,
+              "shares": 240000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.47,
+              "shares": 195000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -53094,6 +53999,139 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 2030.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 3.76,
+              "shares": 541000,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.9,
+              "shares": 28000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.04,
+              "shares": 897000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.28,
+              "shares": 22000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.89,
+              "shares": 267000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.82,
+              "shares": 23000,
+              "ratio_change": 0.11,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.57,
+              "shares": 148000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.39,
+              "shares": 572000,
+              "ratio_change": 0.09,
+              "shares_change": 100000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00982A": {
+              "ratio": 3.2,
+              "shares": 837000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.88,
+              "shares": 42000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.1,
+              "shares": 5000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.79,
+              "shares": 87000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.16,
+              "shares": 53000,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.07,
+              "shares": 26000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.13,
+              "shares": 25000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.41,
+              "shares": 88000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -59729,6 +60767,147 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 6100.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 3.89,
+              "shares": 186000,
+              "ratio_change": -0.41,
+              "shares_change": -17000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00401A": {
+              "ratio": 2.18,
+              "shares": 10714,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.74,
+              "shares": 500000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.97,
+              "shares": 195000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 4.36,
+              "shares": 205000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 4.43,
+              "shares": 12000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.66,
+              "shares": 52000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 5.53,
+              "shares": 2708000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 6.19,
+              "shares": 510000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.63,
+              "shares": 10000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.61,
+              "shares": 43000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.98,
+              "shares": 570000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 1.11,
+              "shares": 77000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.1,
+              "shares": 50000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.57,
+              "shares": 21000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 5.31,
+              "shares": 43000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.63,
+              "shares": 34000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -64730,6 +65909,123 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -5000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 11110.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 4.3,
+              "shares": 113000,
+              "ratio_change": 0.44,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.32,
+              "shares": 1000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.56,
+              "shares": 42000,
+              "ratio_change": 0.18,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.71,
+              "shares": 70000,
+              "ratio_change": 0.3,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.02,
+              "shares": 3000,
+              "ratio_change": 0.21,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 5.3,
+              "shares": 91000,
+              "ratio_change": 0.52,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 3.62,
+              "shares": 185000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 4.69,
+              "shares": 41000,
+              "ratio_change": 0.47,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.76,
+              "shares": 25000,
+              "ratio_change": -0.31,
+              "shares_change": -6000,
+              "signal": "減碼",
+              "consecutive_days": 2
+            },
+            "00991A": {
+              "ratio": 6.36,
+              "shares": 500000,
+              "ratio_change": 0.71,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 7.69,
+              "shares": 293000,
+              "ratio_change": 0.83,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.72,
+              "shares": 33000,
+              "ratio_change": 0.39,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 4.68,
+              "shares": 21001,
+              "ratio_change": 0.5,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 4.38,
+              "shares": 50000,
+              "ratio_change": -0.11,
+              "shares_change": -7000,
+              "signal": "減碼",
+              "consecutive_days": 2
             }
           }
         }
@@ -73519,6 +74815,179 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 2215.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.72,
+              "shares": 227000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.52,
+              "shares": 34053,
+              "ratio_change": -0.19,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 2.91,
+              "shares": 2307000,
+              "ratio_change": -0.18,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.45,
+              "shares": 7000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.92,
+              "shares": 529000,
+              "ratio_change": -0.22,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 3.17,
+              "shares": 411000,
+              "ratio_change": -0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.61,
+              "shares": 12000,
+              "ratio_change": -2.27,
+              "shares_change": -15000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00980A": {
+              "ratio": 1.71,
+              "shares": 147000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 4.76,
+              "shares": 6419000,
+              "ratio_change": -0.24,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 3.81,
+              "shares": 817000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.75,
+              "shares": 33000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.73,
+              "shares": 124000,
+              "ratio_change": -0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.43,
+              "shares": 28000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 4.57,
+              "shares": 1800000,
+              "ratio_change": -0.28,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 5.65,
+              "shares": 1080000,
+              "ratio_change": -0.39,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.95,
+              "shares": 131000,
+              "ratio_change": -0.21,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 3.64,
+              "shares": 82000,
+              "ratio_change": -1.44,
+              "shares_change": -25000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00995A": {
+              "ratio": 4.93,
+              "shares": 110000,
+              "ratio_change": -0.3,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.49,
+              "shares": 27000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.79,
+              "shares": 108000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.8,
+              "shares": 103000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -80885,6 +82354,139 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.44,
               "shares": 11000,
               "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 16345.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.94,
+              "shares": 52400,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.16,
+              "shares": 2131,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.72,
+              "shares": 184500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 2.27,
+              "shares": 4840,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.98,
+              "shares": 36300,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.99,
+              "shares": 34900,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.57,
+              "shares": 18300,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 2.49,
+              "shares": 454900,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.97,
+              "shares": 29900,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.87,
+              "shares": 5200,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 0.19,
+              "shares": 300,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 2.26,
+              "shares": 120500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.92,
+              "shares": 23600,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.6,
+              "shares": 7920,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 2.91,
+              "shares": 8800,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.42,
+              "shares": 11000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -89077,6 +90679,171 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 2785.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 4.65,
+              "shares": 487000,
+              "ratio_change": -0.19,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 5.48,
+              "shares": 3450000,
+              "ratio_change": -0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.04,
+              "shares": 13000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 7.47,
+              "shares": 803000,
+              "ratio_change": -0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 4.11,
+              "shares": 424000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 3.71,
+              "shares": 22000,
+              "ratio_change": -0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.95,
+              "shares": 134000,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 5.41,
+              "shares": 5801000,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.32,
+              "shares": 407000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 3000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.89,
+              "shares": 68000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 6.32,
+              "shares": 58000,
+              "ratio_change": -2.92,
+              "shares_change": -28000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00988A": {
+              "ratio": 1.1,
+              "shares": 215000,
+              "ratio_change": 0.56,
+              "shares_change": 100000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00991A": {
+              "ratio": 3.83,
+              "shares": 1200000,
+              "ratio_change": -0.11,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 6.59,
+              "shares": 1002000,
+              "ratio_change": -0.24,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.46,
+              "shares": 87000,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 5.61,
+              "shares": 100500,
+              "ratio_change": -0.21,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 4.51,
+              "shares": 80000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.74,
+              "shares": 11000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.23,
+              "shares": 56000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -92219,6 +93986,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.61,
               "shares": 78000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 394.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.4,
+              "shares": 1034000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.71,
+              "shares": 345000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.62,
+              "shares": 78000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -99603,6 +101399,99 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 982.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.3,
+              "shares": 9000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.7,
+              "shares": 1127000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.84,
+              "shares": 538000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.26,
+              "shares": 38000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.02,
+              "shares": 393000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 1.64,
+              "shares": 5000000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 2000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.96,
+              "shares": 98000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.47,
+              "shares": 74000,
+              "ratio_change": -0.18,
+              "shares_change": -11000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00996A": {
+              "ratio": 0.32,
+              "shares": 14000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 2.17,
+              "shares": 280000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -102625,6 +104514,67 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.83,
               "shares": 180000,
               "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 211.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.67,
+              "shares": 2309000,
+              "ratio_change": 0.18,
+              "shares_change": 421000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00408A": {
+              "ratio": 0.81,
+              "shares": 63000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.27,
+              "shares": 1147000,
+              "ratio_change": -0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.09,
+              "shares": 2404000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.52,
+              "shares": 238000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.66,
+              "shares": 788000,
+              "ratio_change": -0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.76,
+              "shares": 180000,
+              "ratio_change": -0.07,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -111521,6 +113471,187 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 6100.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 4.98,
+              "shares": 238000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.26,
+              "shares": 11074,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 3.65,
+              "shares": 1050000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.14,
+              "shares": 6500,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 5.56,
+              "shares": 273000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.7,
+              "shares": 127000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.29,
+              "shares": 3500,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.43,
+              "shares": 76000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 4.99,
+              "shares": 2443000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 3.75,
+              "shares": 307000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.25,
+              "shares": 20000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.3,
+              "shares": 5000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 6.44,
+              "shares": 27000,
+              "ratio_change": 0.23,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.53,
+              "shares": 230000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.21,
+              "shares": 75000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 5.03,
+              "shares": 720000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 4.65,
+              "shares": 323000,
+              "ratio_change": -0.11,
+              "shares_change": -3000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00993A": {
+              "ratio": 6.75,
+              "shares": 109000,
+              "ratio_change": -0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 5.13,
+              "shares": 41901,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 4.45,
+              "shares": 36000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.74,
+              "shares": 19000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.63,
+              "shares": 34000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -116775,6 +118906,107 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 6.21,
               "shares": 562000,
               "ratio_change": -0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 473.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 2.04,
+              "shares": 129000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.4,
+              "shares": 5200000,
+              "ratio_change": -0.25,
+              "shares_change": -954000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00407A": {
+              "ratio": 1.69,
+              "shares": 1028000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.83,
+              "shares": 335000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.27,
+              "shares": 1682000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.97,
+              "shares": 3178000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.97,
+              "shares": 200000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.09,
+              "shares": 443000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 1.12,
+              "shares": 1000000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.41,
+              "shares": 43000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.02,
+              "shares": 107000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 6.21,
+              "shares": 562000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -123351,6 +125583,123 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 540.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.43,
+              "shares": 24000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 2.46,
+              "shares": 8000000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.68,
+              "shares": 44000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.01,
+              "shares": 1070000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.98,
+              "shares": 345000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 4.6,
+              "shares": 25437000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.78,
+              "shares": 708000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.99,
+              "shares": 185000,
+              "ratio_change": -0.88,
+              "shares_change": -149000,
+              "signal": "減碼",
+              "consecutive_days": 2
+            },
+            "00988A": {
+              "ratio": 1.54,
+              "shares": 1550000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 4.76,
+              "shares": 7700000,
+              "ratio_change": -0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.89,
+              "shares": 344000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 1.51,
+              "shares": 139000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.97,
+              "shares": 180000,
+              "ratio_change": -0.17,
+              "shares_change": -10000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00996A": {
+              "ratio": 5.88,
+              "shares": 450000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -128224,6 +130573,123 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -60000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 457.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.75,
+              "shares": 1119000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.3,
+              "shares": 849000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.71,
+              "shares": 1076000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.11,
+              "shares": 40000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.49,
+              "shares": 1039000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.14,
+              "shares": 940000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.84,
+              "shares": 391000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.03,
+              "shares": 447000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 4.29,
+              "shares": 240000,
+              "ratio_change": 0.27,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 7.33,
+              "shares": 14000000,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.04,
+              "shares": 654000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.88,
+              "shares": 314000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 3.12,
+              "shares": 296000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.75,
+              "shares": 487000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -133269,6 +135735,75 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1115.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.63,
+              "shares": 168000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.62,
+              "shares": 417000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.81,
+              "shares": 139000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.93,
+              "shares": 2497000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 22000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.97,
+              "shares": 43000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.27,
+              "shares": 45000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.98,
+              "shares": 112000,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -135632,6 +138167,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 817.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.34,
+              "shares": 49000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.12,
+              "shares": 43000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.85,
+              "shares": 101000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.56,
+              "shares": 242000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00400A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -1.33,
+              "shares_change": -481000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -137732,6 +140312,35 @@ const ETF_DASHBOARD_DATA = {
             },
             "00984A": {
               "ratio": 0.57,
+              "shares": 225000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 233.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.58,
+              "shares": 203000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.05,
+              "shares": 350000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.54,
               "shares": 225000,
               "ratio_change": -0.03,
               "shares_change": 0,
@@ -140358,6 +142967,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 344.0,
+          "etfs": {
+            "00407A": {
+              "ratio": 0.69,
+              "shares": 575000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.18,
+              "shares": 105000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.25,
+              "shares": 694000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.71,
+              "shares": 1073000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.54,
+              "shares": 152000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 3.48,
+              "shares": 1015000,
+              "ratio_change": -0.47,
+              "shares_change": -155000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -141972,6 +144634,43 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.28,
               "shares": 18000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1545.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.01,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.27,
+              "shares": 422000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.27,
+              "shares": 528000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.28,
+              "shares": 18000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -145204,6 +147903,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 2
             }
           }
+        },
+        "20260807": {
+          "close_price": 146.5,
+          "etfs": {
+            "00985A": {
+              "ratio": 1.49,
+              "shares": 1019000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -148253,6 +150965,67 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -30000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 872.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.72,
+              "shares": 911000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.32,
+              "shares": 2646000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.13,
+              "shares": 5000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.32,
+              "shares": 110000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.92,
+              "shares": 1134000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.09,
+              "shares": 10000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -151717,6 +154490,83 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.53,
               "shares": 2926000,
               "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 67.69999694824219,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.4,
+              "shares": 6026000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.57,
+              "shares": 251000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.36,
+              "shares": 699000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.28,
+              "shares": 2128420,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.78,
+              "shares": 1122000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 0.47,
+              "shares": 6100000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.86,
+              "shares": 2712000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.68,
+              "shares": 493000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.56,
+              "shares": 2926000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -159061,6 +161911,147 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 2200.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.67,
+              "shares": 354000,
+              "ratio_change": -0.16,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.51,
+              "shares": 1200000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 6.36,
+              "shares": 865000,
+              "ratio_change": -0.3,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.87,
+              "shares": 374000,
+              "ratio_change": -0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.66,
+              "shares": 20000,
+              "ratio_change": -0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.37,
+              "shares": 32336,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.4,
+              "shares": 4616848,
+              "ratio_change": -0.53,
+              "shares_change": -514000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00985A": {
+              "ratio": 0.94,
+              "shares": 43000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 4.3,
+              "shares": 50000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.15,
+              "shares": 520000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.97,
+              "shares": 160000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 1.92,
+              "shares": 760000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 6.03,
+              "shares": 1161000,
+              "ratio_change": -0.35,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 2.16,
+              "shares": 49000,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 3.61,
+              "shares": 81000,
+              "ratio_change": -0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.16,
+              "shares": 3000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.13,
+              "shares": 65000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -162019,6 +165010,67 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.57,
               "shares": 885000,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 65.5999984741211,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.87,
+              "shares": 3875000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.75,
+              "shares": 798000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 0.95,
+              "shares": 240000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.28,
+              "shares": 3711000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.78,
+              "shares": 1160000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.2,
+              "shares": 306000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.59,
+              "shares": 885000,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -166147,6 +169199,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 298.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.68,
+              "shares": 664000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.83,
+              "shares": 184000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.54,
+              "shares": 987000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.04,
+              "shares": 6000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.04,
+              "shares": 443500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -167660,6 +170765,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -99000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 653.0,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 660,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -171089,6 +174207,67 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 2305.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 1.22,
+              "shares": 158400,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.87,
+              "shares": 237600,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.9,
+              "shares": 83000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 3.41,
+              "shares": 37800,
+              "ratio_change": 2.99,
+              "shares_change": 33000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00993A": {
+              "ratio": 1.24,
+              "shares": 53000,
+              "ratio_change": 0.57,
+              "shares_change": 25000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00994A": {
+              "ratio": 0.05,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.83,
+              "shares": 100700,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -173234,6 +176413,59 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 122.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.84,
+              "shares": 524000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.93,
+              "shares": 260000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.38,
+              "shares": 5678000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.56,
+              "shares": 443000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.49,
+              "shares": 395000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.2,
+              "shares": 1245000,
+              "ratio_change": 0.14,
+              "shares_change": 166000,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -177055,6 +180287,75 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1130.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.31,
+              "shares": 596000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.73,
+              "shares": 19305,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.75,
+              "shares": 198000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.5,
+              "shares": 1334000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.21,
+              "shares": 91000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.94,
+              "shares": 261000,
+              "ratio_change": -0.74,
+              "shares_change": -58000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00992A": {
+              "ratio": 2.14,
+              "shares": 801000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.62,
+              "shares": 27000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -180494,6 +183795,83 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 188.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.4,
+              "shares": 615000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.11,
+              "shares": 1000000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.17,
+              "shares": 32000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.54,
+              "shares": 830000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.38,
+              "shares": 2416000,
+              "ratio_change": 0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.34,
+              "shares": 1212000,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 2.42,
+              "shares": 5445000,
+              "ratio_change": 0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.49,
+              "shares": 255000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.4,
+              "shares": 341000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -182961,6 +186339,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 208.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.79,
+              "shares": 1107336,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.47,
+              "shares": 210356,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.38,
+              "shares": 90000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -185375,6 +188790,51 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.12,
               "shares": 5000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1150.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.16,
+              "shares": 250000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.74,
+              "shares": 25000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.23,
+              "shares": 104000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.02,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.12,
+              "shares": 5000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -188303,6 +191763,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 2385.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.38,
+              "shares": 4730,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.77,
+              "shares": 222000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.16,
+              "shares": 49000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.29,
+              "shares": 6000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.6,
+              "shares": 11000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -190858,6 +194363,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 799.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.36,
+              "shares": 133000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.57,
+              "shares": 205000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.05,
+              "shares": 252000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.32,
+              "shares": 39000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.03,
+              "shares": 164000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.1,
+              "shares_change": -13000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -192168,6 +195726,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.86,
               "shares": 498000,
               "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 156.0,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.17,
+              "shares": 3250000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.73,
+              "shares": 2310000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.86,
+              "shares": 498000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -193854,6 +197441,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -50000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 809.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.26,
+              "shares": 95000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.1,
+              "shares": 5086,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -195726,6 +199334,59 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.79,
               "shares": 198000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 499.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.34,
+              "shares": 200000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.55,
+              "shares": 108000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.17,
+              "shares": 99000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.75,
+              "shares": 58000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.3,
+              "shares": 58000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.78,
+              "shares": 198000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -199206,6 +202867,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 127.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.74,
+              "shares": 1699000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.01,
+              "shares": 474000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 250,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.19,
+              "shares": 154000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.74,
+              "shares": 572000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.06,
+              "shares": 20000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -200873,6 +204587,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 373.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.23,
+              "shares": 178000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 22000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.08,
+              "shares": 366000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -201040,6 +204783,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 192000,
               "signal": "加碼",
               "consecutive_days": 3
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 66.19999694824219,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.06,
+              "shares": 1500000,
+              "ratio_change": 0.01,
+              "shares_change": 250000,
+              "signal": "加碼",
+              "consecutive_days": 4
             }
           }
         }
@@ -201973,6 +205729,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 333.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.16,
+              "shares": 140000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -202755,6 +206524,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.29,
               "shares": 271000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 306.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.28,
+              "shares": 271000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -204073,6 +207855,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 101.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.12,
+              "shares": 338000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 73000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -204879,6 +208682,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.25,
               "shares": 52000,
               "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1120.0,
+          "etfs": {
+            "00987A": {
+              "ratio": 2.28,
+              "shares": 52000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -211013,6 +214829,131 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -11000,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 6320.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.74,
+              "shares": 34000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.53,
+              "shares": 12000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.72,
+              "shares": 200000,
+              "ratio_change": -0.22,
+              "shares_change": -60000,
+              "signal": "減碼",
+              "consecutive_days": 2
+            },
+            "00405A": {
+              "ratio": 2.53,
+              "shares": 120000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.72,
+              "shares": 4500,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.42,
+              "shares": 73000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.17,
+              "shares": 93000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.24,
+              "shares": 19000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.13,
+              "shares": 18000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.47,
+              "shares": 10000,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 2.9,
+              "shares": 400000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.93,
+              "shares": 30000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 1.39,
+              "shares": 11000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 2.82,
+              "shares": 22000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 2.54,
+              "shares": 51000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -219202,6 +223143,171 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 585.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.22,
+              "shares": 608000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.13,
+              "shares": 109000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 2.5,
+              "shares": 7500000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 3.46,
+              "shares": 206000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.63,
+              "shares": 323000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.32,
+              "shares": 1138000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.23,
+              "shares": 400000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.42,
+              "shares": 17439000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.17,
+              "shares": 1016000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.14,
+              "shares": 189000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.73,
+              "shares": 125000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 1.87,
+              "shares": 1800000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.98,
+              "shares": 641000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.08,
+              "shares": 4600000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 2.25,
+              "shares": 1629000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.51,
+              "shares": 422000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 3.06,
+              "shares": 261002,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 2.45,
+              "shares": 207000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.23,
+              "shares": 90000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 3.28,
+              "shares": 712000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -221256,6 +225362,43 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.44,
               "shares": 446000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.06,
+              "shares": 25000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 99.4000015258789,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.11,
+              "shares": 334000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.79,
+              "shares": 775000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.45,
+              "shares": 446000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -224320,6 +228463,75 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 242.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.36,
+              "shares": 1644000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.06,
+              "shares": 7250,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.67,
+              "shares": 832650,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.92,
+              "shares": 11295450,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.65,
+              "shares": 1008000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.02,
+              "shares": 4000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.4,
+              "shares": 80850,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.04,
+              "shares": 6300,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -225353,6 +229565,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -14000,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 750.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.28,
+              "shares": 51000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.74,
+              "shares": 282000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -226937,6 +231170,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.47,
               "shares": 66000,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 691.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.53,
+              "shares": 23000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.47,
+              "shares": 66000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -229188,6 +233442,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.58,
               "shares": 988000,
               "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1235.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.73,
+              "shares": 42000,
+              "ratio_change": -0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.4,
+              "shares": 92000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.58,
+              "shares": 988000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -235356,6 +239639,139 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 116.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.02,
+              "shares": 54000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.91,
+              "shares": 234000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 5.23,
+              "shares": 79000000,
+              "ratio_change": -0.11,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 2.82,
+              "shares": 847000,
+              "ratio_change": -0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.03,
+              "shares": 78000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.01,
+              "shares": 4976000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 0.91,
+              "shares": 130000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.41,
+              "shares": 87718000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.14,
+              "shares": 9109000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.36,
+              "shares": 1140000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.01,
+              "shares": 872000,
+              "ratio_change": -0.48,
+              "shares_change": -379000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00988A": {
+              "ratio": 0.53,
+              "shares": 2500000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.82,
+              "shares": 2612000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.93,
+              "shares": 1635000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.58,
+              "shares": 250000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 2.11,
+              "shares": 900000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -236791,6 +241207,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 207.5,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.07,
+              "shares": 155000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.74,
+              "shares": 345000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.53,
+              "shares": 742000,
+              "ratio_change": 1.53,
+              "shares_change": 742000,
+              "signal": "首次買入",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -238197,6 +242642,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.94,
               "shares": 3184000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 38.150001525878906,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.95,
+              "shares": 1530000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.87,
+              "shares": 4362622,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.96,
+              "shares": 3184000,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -239800,6 +244274,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.13,
               "shares": 3695000,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 30.850000381469727,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.61,
+              "shares": 1557000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.16,
+              "shares": 3695000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -242251,6 +246746,51 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.4,
               "shares": 295000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 137.5,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.92,
+              "shares": 201000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.57,
+              "shares": 3277000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.89,
+              "shares": 630000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 3.54,
+              "shares": 2587000,
+              "ratio_change": 0.58,
+              "shares_change": 384000,
+              "signal": "加碼",
+              "consecutive_days": 3
+            },
+            "00993A": {
+              "ratio": 0.41,
+              "shares": 295000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -245347,6 +249887,75 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 143.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.66,
+              "shares": 1351000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.33,
+              "shares": 277000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.1,
+              "shares": 211000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.21,
+              "shares": 629000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.99,
+              "shares_change": -2498000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            },
+            "00408A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.45,
+              "shares_change": -50000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -248238,6 +252847,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 103.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.87,
+              "shares": 254000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.29,
+              "shares": 810000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.5,
+              "shares": 474000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 3.56,
+              "shares": 3474000,
+              "ratio_change": 0.57,
+              "shares_change": 486000,
+              "signal": "加碼",
+              "consecutive_days": 3
+            },
+            "00993A": {
+              "ratio": 0.43,
+              "shares": 414000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.99,
+              "shares": 1226000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -249428,6 +254090,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.64,
               "shares": 44000,
               "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 465.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.68,
+              "shares": 44000,
+              "ratio_change": 0.04,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -252460,6 +257135,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 2695.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.7,
+              "shares": 7747,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 2.21,
+              "shares": 245000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.24,
+              "shares": 261000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00400A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.31,
+              "shares_change": -32000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -253482,6 +258194,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.58,
               "shares": 5894360,
               "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 35.150001525878906,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.08,
+              "shares": 922160,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.03,
+              "shares": 32150,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.63,
+              "shares": 5894360,
+              "ratio_change": 0.05,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -254664,6 +259405,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -540000,
               "signal": "減碼",
               "consecutive_days": 1
+            },
+            "00984A": {
+              "ratio": 0.02,
+              "shares": 18840,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 109.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.16,
+              "shares": 44920,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.03,
+              "shares": 10800,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             },
             "00984A": {
               "ratio": 0.02,
@@ -258200,6 +262970,91 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.17,
               "shares": 64000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.21,
+              "shares": 40000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.05,
+              "shares": 9000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 260.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.86,
+              "shares": 960000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.71,
+              "shares": 82000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.47,
+              "shares": 3200000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.75,
+              "shares": 175000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.14,
+              "shares": 1569000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.46,
+              "shares": 547000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.17,
+              "shares": 64000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -264616,6 +269471,115 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 6760.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.49,
+              "shares": 21000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.25,
+              "shares": 5512,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.29,
+              "shares": 1500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.52,
+              "shares": 23000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.39,
+              "shares": 59000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.95,
+              "shares": 55000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.05,
+              "shares": 23000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.12,
+              "shares": 8000,
+              "ratio_change": 0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.67,
+              "shares": 42000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.82,
+              "shares": 41000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 1.08,
+              "shares": 8000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.78,
+              "shares": 13000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.92,
+              "shares": 36000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -270219,6 +275183,139 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 4380.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 3.71,
+              "shares": 247000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 1.12,
+              "shares": 7653,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 2.57,
+              "shares": 1030000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.25,
+              "shares": 2000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 6.25,
+              "shares": 427000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.32,
+              "shares": 5000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.58,
+              "shares": 69000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.48,
+              "shares": 2375000,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.4,
+              "shares": 32000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 3.08,
+              "shares": 18000,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 1.63,
+              "shares": 325000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.47,
+              "shares": 33000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 1.14,
+              "shares": 13000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 2.66,
+              "shares": 30000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.04,
+              "shares": 20000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 2.59,
+              "shares": 75000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -272558,6 +277655,67 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 2725.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.14,
+              "shares": 122000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 0.73,
+              "shares": 8000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.16,
+              "shares": 2000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.04,
+              "shares": 215000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.93,
+              "shares": 65000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.48,
+              "shares": 93000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.27,
+              "shares": 10000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -274193,6 +279351,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 542.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.25,
+              "shares": 14000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.58,
+              "shares": 37000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.68,
+              "shares": 361000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.76,
+              "shares": 136000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -274919,6 +280114,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.09,
               "shares": 135000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 771.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.51,
+              "shares": 19800,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.07,
+              "shares": 135000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -276517,6 +281733,67 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 3341000,
               "signal": "加碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 50.900001525878906,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.63,
+              "shares": 959000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 3.11,
+              "shares": 2130000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.68,
+              "shares": 870000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.09,
+              "shares": 3993000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.1,
+              "shares": 100000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 3.7,
+              "shares": 9222000,
+              "ratio_change": 0.44,
+              "shares_change": 896000,
+              "signal": "加碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -278722,6 +283999,91 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 183.5,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.4,
+              "shares": 66000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.0,
+              "shares": 90000,
+              "ratio_change": -2.5,
+              "shares_change": -220000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00980A": {
+              "ratio": 1.0,
+              "shares": 1041000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.03,
+              "shares": 91000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.35,
+              "shares": 327000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 1.89,
+              "shares": 9000000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 3.32,
+              "shares": 7662000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.37,
+              "shares": 198000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.19,
+              "shares": 51000,
+              "ratio_change": -0.75,
+              "shares_change": -200000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00400A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.9,
+              "shares_change": -1401000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -280405,6 +285767,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 75.69999694824219,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.33,
+              "shares": 129000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 0.09,
+              "shares": 20000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.98,
+              "shares": 1303000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -281470,6 +286861,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.65,
               "shares": 730000,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 87.0999984741211,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.34,
+              "shares": 118000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.65,
+              "shares": 730000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -282780,6 +288192,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -13000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 221.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.3,
+              "shares": 41000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -285201,6 +290626,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 500.0,
+          "etfs": {
+            "00982A": {
+              "ratio": 1.51,
+              "shares": 1505000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.27,
+              "shares": 27000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.3,
+              "shares": 25000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -286495,6 +291949,43 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.21,
               "shares": 4017780,
               "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 38.95000076293945,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.31,
+              "shares": 238920,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 0.04,
+              "shares": 36500,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.23,
+              "shares": 3102220,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.23,
+              "shares": 4017780,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -288551,6 +294042,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 395.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.28,
+              "shares": 21000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.01,
+              "shares": 10000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 2.33,
+              "shares": 2501000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.38,
+              "shares": 144000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.71,
+              "shares_change": -166000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -289632,6 +295168,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 115.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 68000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -290303,6 +295852,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 84.30000305175781,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.02,
+              "shares": 8000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 84.9000015258789,
           "etfs": {
             "00401A": {
               "ratio": 0.02,
@@ -291077,6 +296639,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.07,
               "shares": 41000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.24,
+              "shares": 429000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 55.79999923706055,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.08,
+              "shares": 41000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -296251,6 +301834,99 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 163.5,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.17,
+              "shares": 215000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 3.94,
+              "shares": 42300000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.22,
+              "shares": 5896000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.63,
+              "shares": 2853000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.38,
+              "shares": 140000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.99,
+              "shares": 1153000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.99,
+              "shares": 611000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.05,
+              "shares": 1235000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.82,
+              "shares": 250000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.89,
+              "shares": 270000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 3.51,
+              "shares": 895000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -300314,6 +305990,67 @@ const ETF_DASHBOARD_DATA = {
               "shares": 0,
               "ratio_change": -1.21,
               "shares_change": -23000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 2020.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.01,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.13,
+              "shares": 19000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 2.31,
+              "shares": 218000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.07,
+              "shares": 53000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.01,
+              "shares": 1300000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -1.72,
+              "shares_change": -366000,
               "signal": "完全出清",
               "consecutive_days": 1
             }
@@ -306345,6 +312082,139 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 1080.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.96,
+              "shares": 260000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.08,
+              "shares": 1750000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 3.75,
+              "shares": 1039000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 2.11,
+              "shares": 560000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.35,
+              "shares": 36000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.15,
+              "shares": 203000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 3.44,
+              "shares": 9519000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.03,
+              "shares": 93000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.52,
+              "shares": 48000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 3.84,
+              "shares": 91000,
+              "ratio_change": 0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.71,
+              "shares": 3000000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.03,
+              "shares": 185000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 5.11,
+              "shares": 236000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 3.72,
+              "shares": 170000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.89,
+              "shares": 114000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -309428,6 +315298,67 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1910.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 1.35,
+              "shares": 1240000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.01,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.91,
+              "shares": 136000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.13,
+              "shares": 13000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.41,
+              "shares": 72000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.09,
+              "shares": 2000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -311525,6 +317456,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 121.5,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.52,
+              "shares": 7498000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.39,
+              "shares": 1343000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.24,
+              "shares_change": -181000,
+              "signal": "完全出清",
+              "consecutive_days": 1
             }
           }
         }
@@ -316170,6 +322130,83 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 1045.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.95,
+              "shares": 1600000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.98,
+              "shares": 282000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.39,
+              "shares": 106000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.99,
+              "shares": 181000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.25,
+              "shares": 712000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.84,
+              "shares": 382000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.17,
+              "shares": 112000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 4.02,
+              "shares": 1630000,
+              "ratio_change": -0.27,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.68,
+              "shares": 32000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -318475,6 +324512,51 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1325.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.51,
+              "shares": 112000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.17,
+              "shares": 225000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.31,
+              "shares": 70000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.26,
+              "shares": 38000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 1.95,
+              "shares": 148000,
+              "ratio_change": -1.59,
+              "shares_change": -107000,
+              "signal": "減碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -324592,6 +330674,131 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 4545.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.96,
+              "shares": 190000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.32,
+              "shares": 510000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.17,
+              "shares": 9000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 5.07,
+              "shares": 334000,
+              "ratio_change": 0.21,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.85,
+              "shares": 117000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.4,
+              "shares": 59000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.01,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.19,
+              "shares": 4000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 6.76,
+              "shares": 38000,
+              "ratio_change": 0.54,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 2.27,
+              "shares": 211000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.62,
+              "shares": 35000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 1.74,
+              "shares": 19050,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.46,
+              "shares": 5000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.67,
+              "shares": 26000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -327515,6 +333722,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 352.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.26,
+              "shares": 1312000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 1.57,
+              "shares": 114000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.14,
+              "shares": 20000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.47,
+              "shares_change": -120000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -329500,6 +335760,51 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 693.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.36,
+              "shares": 900000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.63,
+              "shares": 274000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.65,
+              "shares": 1158000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.24,
+              "shares": 147000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.6,
+              "shares": 114000,
+              "ratio_change": 0.38,
+              "shares_change": 30000,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -334279,6 +340584,83 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1670.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.67,
+              "shares": 700000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.56,
+              "shares": 101000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.98,
+              "shares": 341000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.47,
+              "shares": 54000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 1.15,
+              "shares": 2053000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 3.2,
+              "shares": 49000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.43,
+              "shares": 109000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.3,
+              "shares": 9000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.51,
+              "shares": 115000,
+              "ratio_change": 0.07,
+              "shares_change": 10000,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -341284,6 +347666,147 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 1440.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 1.03,
+              "shares": 208000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 1.38,
+              "shares": 1680000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.47,
+              "shares": 306000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 3.23,
+              "shares": 643000,
+              "ratio_change": -0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.65,
+              "shares": 19000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.41,
+              "shares": 187000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 2.65,
+              "shares": 5499000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.33,
+              "shares": 450000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.67,
+              "shares": 45000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 4.22,
+              "shares": 75000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.0,
+              "shares": 255000,
+              "ratio_change": 1.0,
+              "shares_change": 255000,
+              "signal": "首次買入",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.79,
+              "shares": 2300000,
+              "ratio_change": -0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 3.5,
+              "shares": 239000,
+              "ratio_change": -0.08,
+              "shares_change": 5000,
+              "signal": "加碼",
+              "consecutive_days": 2
+            },
+            "00994A": {
+              "ratio": 4.56,
+              "shares": 158000,
+              "ratio_change": -0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 1.98,
+              "shares": 68000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.84,
+              "shares": 24000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.24,
+              "shares": 109000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -342447,6 +348970,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 598.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.17,
+              "shares": 500000,
+              "ratio_change": -0.03,
+              "shares_change": -80000,
+              "signal": "減碼",
+              "consecutive_days": 3
+            },
+            "00981A": {
+              "ratio": 0.03,
+              "shares": 140000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.86,
+              "shares": 140000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -343374,6 +349926,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 338.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.64,
+              "shares": 549000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.39,
+              "shares": 2000000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.21,
+              "shares": 30000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -344296,6 +350877,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.3,
               "shares": 1874000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 488.0,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.31,
+              "shares": 1874000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -346936,6 +353530,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 366.0,
+          "etfs": {
+            "00982A": {
+              "ratio": 3.16,
+              "shares": 4276000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.54,
+              "shares": 149000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -349275,6 +355890,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 387.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.22,
+              "shares": 1010000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.65,
+              "shares": 163000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.67,
+              "shares": 175000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.13,
+              "shares_change": -1080000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -350322,6 +356974,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -154000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 133.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.08,
+              "shares": 1100000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 5000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -353047,6 +359720,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 364.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.36,
+              "shares": 112000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.07,
+              "shares": 336000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.92,
+              "shares": 205000,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 2.37,
+              "shares": 2753000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.74,
+              "shares": 101000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -354288,6 +361006,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -35000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 662.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.57,
+              "shares": 1500000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.65,
+              "shares": 95000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -356091,6 +362830,43 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 5000,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 637.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.53,
+              "shares": 250000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.61,
+              "shares": 182000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.38,
+              "shares": 300000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.87,
+              "shares": 191000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -360328,6 +367104,83 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 823.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 1.99,
+              "shares": 4250000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.8,
+              "shares": 185000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.64,
+              "shares": 194000,
+              "ratio_change": 0.21,
+              "shares_change": 29000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00985A": {
+              "ratio": 0.02,
+              "shares": 2000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 3.39,
+              "shares": 3600000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 1.63,
+              "shares": 840013,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 2.78,
+              "shares": 333000,
+              "ratio_change": 0.02,
+              "shares_change": 10000,
+              "signal": "加碼",
+              "consecutive_days": 3
+            },
+            "00995A": {
+              "ratio": 0.52,
+              "shares": 31000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.64,
+              "shares": 84000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -362491,6 +369344,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.65,
+              "shares": 27000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.79,
+              "shares": 41000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 1.18,
+              "shares": 312450,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.3,
+              "shares": 40000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.0,
+              "shares": 177000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -363409,6 +370307,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.59,
               "shares": 2231000,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 550.0,
+          "etfs": {
+            "00992A": {
+              "ratio": 2.9,
+              "shares": 2231000,
+              "ratio_change": 0.31,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -365069,6 +371980,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.9,
               "shares": 391000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 224.0,
+          "etfs": {
+            "00408A": {
+              "ratio": 0.27,
+              "shares": 20000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.9,
+              "shares": 391000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -369165,6 +376097,91 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 207.5,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.08,
+              "shares": 700000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.84,
+              "shares": 309000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 0.02,
+              "shares": 34000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.71,
+              "shares": 650000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.1,
+              "shares": 1508000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.96,
+              "shares": 4780000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 115000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.04,
+              "shares": 72000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.3,
+              "shares": 616000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.45,
+              "shares": 107000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -371156,6 +378173,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 241.0,
+          "etfs": {
+            "00999A": {
+              "ratio": 1.06,
+              "shares": 560000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.05,
+              "shares_change": -10000,
+              "signal": "完全出清",
+              "consecutive_days": 1
             }
           }
         }
@@ -373737,6 +380775,99 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 4385.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 2.31,
+              "shares": 154000,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00401A": {
+              "ratio": 2.05,
+              "shares": 14000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.65,
+              "shares": 260000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00405A": {
+              "ratio": 1.48,
+              "shares": 101000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.83,
+              "shares": 36000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.22,
+              "shares": 248000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.03,
+              "shares": 45000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.4,
+              "shares": 55000,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 5.39,
+              "shares": 520000,
+              "ratio_change": -0.19,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 1.2,
+              "shares": 27000,
+              "ratio_change": 0.0,
+              "shares_change": 1000,
+              "signal": "加碼",
+              "consecutive_days": 2
+            }
+          }
         }
       }
     },
@@ -374767,6 +381898,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.48,
               "shares": 280000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 86.30000305175781,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.49,
+              "shares": 280000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -376623,6 +383775,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 441.5,
+          "etfs": {
+            "00401A": {
+              "ratio": 0.65,
+              "shares": 44000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.08,
+              "shares": 300000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.34,
+              "shares": 220000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.03,
+              "shares": 6000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.41,
+              "shares": 138000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -377320,6 +384517,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 84.9000015258789,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.11,
+              "shares": 3988000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 83.5,
           "etfs": {
             "00981A": {
               "ratio": 0.11,
@@ -378349,6 +385559,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 184.5,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.11,
+              "shares": 1741000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -379241,6 +386464,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 19.0,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.03,
+              "shares": 5163000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 19.049999237060547,
           "etfs": {
             "00981A": {
               "ratio": 0.03,
@@ -380403,6 +387639,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 85.9000015258789,
+          "etfs": {
+            "00992A": {
+              "ratio": 1.27,
+              "shares": 6277000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -380748,6 +387997,19 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
+          "close_price": 80.19999694824219,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
           "close_price": 80.19999694824219,
           "etfs": {
             "00981A": {
@@ -383186,6 +390448,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 3715.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.01,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00981A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 1.89,
+              "shares": 215000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.51,
+              "shares": 18000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.29,
+              "shares_change": -8000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -384750,6 +392057,43 @@ const ETF_DASHBOARD_DATA = {
             },
             "00995A": {
               "ratio": 0.25,
+              "shares": 12000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1060.0,
+          "etfs": {
+            "00407A": {
+              "ratio": 1.56,
+              "shares": 423000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 7.74,
+              "shares": 3736000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.58,
+              "shares": 53000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.26,
               "shares": 12000,
               "ratio_change": 0.01,
               "shares_change": 0,
@@ -387152,6 +394496,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 802.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.25,
+              "shares": 11000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 6.11,
+              "shares": 3775000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.96,
+              "shares": 359000,
+              "ratio_change": 0.28,
+              "shares_change": 45000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00992A": {
+              "ratio": 0.47,
+              "shares": 250000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.31,
+              "shares": 19000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -388630,6 +396019,43 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.66,
               "shares": 312000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.21,
+              "shares": 103000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 199.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.38,
+              "shares": 66000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.93,
+              "shares": 4821000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.64,
+              "shares": 312000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -390758,6 +398184,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 229.5,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.71,
+              "shares": 1535000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 107000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.75,
+              "shares": 162000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 3.46,
+              "shares": 633000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -391708,6 +399171,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.98,
               "shares": 4384000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 114.5,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.98,
+              "shares": 4384000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -392916,6 +400392,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 310.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.24,
+              "shares": 139000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.36,
+              "shares": 2270000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -393613,6 +401110,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 162.5,
+          "etfs": {
+            "00982A": {
+              "ratio": 1.09,
+              "shares": 3471000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 159.5,
           "etfs": {
             "00982A": {
               "ratio": 1.09,
@@ -395176,6 +402686,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 5000,
               "signal": "加碼",
               "consecutive_days": 3
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 93.4000015258789,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.06,
+              "shares": 1100000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.69,
+              "shares": 730000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -398245,6 +405776,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 951.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.37,
+              "shares": 43000,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 1.56,
+              "shares": 472000,
+              "ratio_change": 0.11,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 2.51,
+              "shares": 1440000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.23,
+              "shares": 126000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.25,
+              "shares": 13000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.94,
+              "shares": 94000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -400032,6 +407616,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1500.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.3,
+              "shares": 7000,
+              "ratio_change": 0.3,
+              "shares_change": 7000,
+              "signal": "首次買入",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.17,
+              "shares": 32000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.99,
+              "shares": 64000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.35,
+              "shares": 98000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.61,
+              "shares": 40000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.67,
+              "shares": 22000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -400911,6 +408548,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio_change": 0.58,
               "shares_change": 118000,
               "signal": "首次買入",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.77,
+              "shares": 2316000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.27,
+              "shares": 155000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 170.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.58,
+              "shares": 118000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
               "consecutive_days": 0
             },
             "00982A": {
@@ -402072,6 +409738,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.46,
               "shares": 290000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 153.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.81,
+              "shares": 413000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 1.69,
+              "shares": 5678000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.46,
+              "shares": 290000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -403608,6 +411303,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 297.0,
+          "etfs": {
+            "00407A": {
+              "ratio": 0.17,
+              "shares": 161000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.3,
+              "shares": 521000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.07,
+              "shares": 457000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -404305,6 +412029,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 47.79999923706055,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.02,
+              "shares": 194350,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 48.79999923706055,
           "etfs": {
             "00982A": {
               "ratio": 0.02,
@@ -405017,6 +412754,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 381.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.25,
+              "shares": 98000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -405714,6 +413464,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 193.5,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 4000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 190.5,
           "etfs": {
             "00982A": {
               "ratio": 0.0,
@@ -407413,6 +415176,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 211,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 7.84,
+              "shares": 8645,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.63,
+              "shares": 3386,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -410610,6 +418394,67 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 5.48,
+              "shares": 24600,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 5.43,
+              "shares": 3903,
+              "ratio_change": -0.44,
+              "shares_change": -419,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00986A": {
+              "ratio": 3.1,
+              "shares": 1200,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 5.08,
+              "shares": 184500,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.64,
+              "shares": 2220,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.96,
+              "shares": 72879,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 5.74,
+              "shares": 52840,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -412509,6 +420354,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.36,
+              "shares": 19100,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.8,
+              "shares": 4066,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.5,
+              "shares": 1330,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.49,
+              "shares": 37800,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.99,
+              "shares": 28598,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -413688,6 +421578,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.04,
+              "shares": 11344,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.28,
+              "shares": 1826,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -414390,6 +422301,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.07,
               "shares": 4893,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.02,
+              "shares": 4893,
+              "ratio_change": -0.05,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -416367,6 +424291,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.89,
+              "shares": 5100,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 0.66,
+              "shares": 600,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 1.19,
+              "shares": 55000,
+              "ratio_change": 0.43,
+              "shares_change": 20000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00990A": {
+              "ratio": 0.97,
+              "shares": 30320,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.49,
+              "shares": 29121,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -417874,6 +425843,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.5,
+              "shares": 7500,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 7.21,
+              "shares": 17206,
+              "ratio_change": -0.18,
+              "shares_change": -959,
+              "signal": "減碼",
+              "consecutive_days": 1
+            },
+            "00989A": {
+              "ratio": 2.1,
+              "shares": 5872,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.06,
+              "shares": 168500,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -418579,6 +426585,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -3492,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 4.17,
+              "shares": 32169,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -420046,6 +428065,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 70,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.43,
+              "shares": 7500,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 3.61,
+              "shares": 3035,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.14,
+              "shares": 1124,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -422867,6 +430915,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 8.96,
+              "shares": 89900,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.7,
+              "shares": 2727,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 6.02,
+              "shares": 5200,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 4.0,
+              "shares": 7524,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.6,
+              "shares": 87900,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.53,
+              "shares": 52118,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -423574,6 +431675,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.45,
+              "shares": 31605,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -424276,6 +432390,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 4.23,
               "shares": 28627,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 4.2,
+              "shares": 28627,
+              "ratio_change": -0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -426724,6 +434851,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 4.46,
+              "shares": 36000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 3.64,
+              "shares": 4709,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 4.03,
+              "shares": 2800,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.09,
+              "shares": 1642,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.7,
+              "shares": 28072,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -1.28,
+              "shares_change": -57700,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -427863,6 +436043,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.31,
+              "shares": 10275,
+              "ratio_change": -0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.75,
+              "shares": 3923,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -428738,6 +436939,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.05,
+              "shares": 108,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -429443,6 +437657,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 4.7,
+              "shares": 15159,
+              "ratio_change": -0.47,
+              "shares_change": -771,
+              "signal": "減碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -430168,6 +438395,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.91,
+              "shares": 3760,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.49,
+              "shares": 2347,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -430873,6 +439121,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -143,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.14,
+              "shares": 2834,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -432862,6 +441123,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.82,
+              "shares": 10500,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.18,
+              "shares": 702,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.68,
+              "shares": 1872,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.3,
+              "shares": 17531,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -434041,6 +442339,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 3.75,
+              "shares": 14529,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.15,
+              "shares": 9739,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -434743,6 +443062,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 3.9,
               "shares": 6919,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 3.81,
+              "shares": 6919,
+              "ratio_change": -0.09,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -437718,7 +446050,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
-          "close_price": 420.56500244140625,
+          "close_price": 420.57000732421875,
           "etfs": {
             "00402A": {
               "ratio": 2.66,
@@ -437759,6 +446091,59 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.7,
+              "shares": 14100,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 2.11,
+              "shares": 1761,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 5.33,
+              "shares": 2400,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 4.22,
+              "shares": 4126,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.02,
+              "shares": 29320,
+              "ratio_change": 1.02,
+              "shares_change": 29320,
+              "signal": "首次買入",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.55,
+              "shares": 27342,
+              "ratio_change": 0.53,
+              "shares_change": 5376,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -438177,6 +446562,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.03,
               "shares": 15322,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.0,
+              "shares": 15322,
+              "ratio_change": -0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -439547,6 +447945,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 3.09,
+              "shares": 23579,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.77,
+              "shares": 6837,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -440249,6 +448668,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.43,
               "shares": 828,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.45,
+              "shares": 828,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -442457,6 +450889,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 3.47,
+              "shares": 21300,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.77,
+              "shares": 1741,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 6.99,
+              "shares": 3700,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 3.17,
+              "shares": 39899,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -1.14,
+              "shares_change": -38440,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -442876,6 +451353,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.18,
+              "shares": 22656,
+              "ratio_change": 0.18,
+              "shares_change": 3456,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -443580,6 +452070,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.08,
               "shares": 8293,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.09,
+              "shares": 8293,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -444447,6 +452950,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.6,
               "shares": 10400,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.6,
+              "shares": 10400,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -445606,6 +454122,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.3,
+              "shares": 40577,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -446306,6 +454835,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00983A": {
               "ratio": 0.4,
+              "shares": 62549,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.41,
               "shares": 62549,
               "ratio_change": 0.01,
               "shares_change": 0,
@@ -447964,6 +456506,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 111.5,
+          "etfs": {
+            "00408A": {
+              "ratio": 3.31,
+              "shares": 491000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -448452,6 +457007,43 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 2659000,
               "signal": "加碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 44.400001525878906,
+          "etfs": {
+            "00404A": {
+              "ratio": 2.72,
+              "shares": 2134000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.75,
+              "shares": 650000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.1,
+              "shares": 4602000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 2.7,
+              "shares": 7723800,
+              "ratio_change": 0.37,
+              "shares_change": 950000,
+              "signal": "加碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -451301,6 +459893,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 535.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 1.04,
+              "shares": 580000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00980A": {
+              "ratio": 0.38,
+              "shares": 134000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.72,
+              "shares": 131000,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00991A": {
+              "ratio": 1.65,
+              "shares": 2700000,
+              "ratio_change": -0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.9,
+              "shares": 213000,
+              "ratio_change": -0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -451452,6 +460089,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 37.29999923706055,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.57,
+              "shares": 1503000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 36.54999923706055,
           "etfs": {
             "00984A": {
               "ratio": 0.57,
@@ -451738,6 +460388,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00984A": {
               "ratio": 1.2,
+              "shares": 3396000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 33.849998474121094,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.18,
               "shares": 3396000,
               "ratio_change": -0.02,
               "shares_change": 0,
@@ -453220,6 +461883,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 44.400001525878906,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.14,
+              "shares": 112000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.56,
+              "shares": 1243000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.33,
+              "shares": 956000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -453766,6 +462458,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 231.0,
+          "etfs": {
+            "00995A": {
+              "ratio": 0.7,
+              "shares": 150000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -454235,6 +462940,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.29,
               "shares": 330000,
               "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 64.0,
+          "etfs": {
+            "00408A": {
+              "ratio": 1.28,
+              "shares": 330000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -455732,6 +464450,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -40000,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1385.0,
+          "etfs": {
+            "00992A": {
+              "ratio": 0.88,
+              "shares": 270000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -457690,6 +466421,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 2
             }
           }
+        },
+        "20260807": {
+          "close_price": 91.69999694824219,
+          "etfs": {
+            "00982A": {
+              "ratio": 0.0,
+              "shares": 1400,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.53,
+              "shares": 2114000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -458549,6 +467301,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 187.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.35,
+              "shares": 182000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -459230,6 +467995,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 88.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 104000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -459672,6 +468450,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.59,
               "shares": 267000,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 237.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.65,
+              "shares": 267000,
+              "ratio_change": 0.06,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -460526,6 +469317,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 671.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.03,
+              "shares": 13300,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -460953,6 +469757,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 58.900001525878906,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.07,
+              "shares": 1771000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.48,
+              "shares": 400000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -461308,6 +470133,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 278000,
               "signal": "加碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 117.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.44,
+              "shares": 131000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.19,
+              "shares": 983000,
+              "ratio_change": 0.14,
+              "shares_change": 148000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00999A": {
+              "ratio": 1.13,
+              "shares": 1219000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -461726,6 +470580,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.43,
               "shares": 236000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 168.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.41,
+              "shares": 236000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -463441,6 +472308,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.73,
               "shares": 460000,
               "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 205.5,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.74,
+              "shares": 460000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -467684,6 +476564,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 86.69999694824219,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.04,
+              "shares": 39300,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -468095,6 +476988,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 37.849998474121094,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 212000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 38.04999923706055,
           "etfs": {
             "00984A": {
               "ratio": 0.08,
@@ -470119,6 +479025,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 67.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 125000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -470912,6 +479831,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 30.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 257000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 30.25,
           "etfs": {
             "00984A": {
               "ratio": 0.08,
@@ -473574,6 +482506,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 634.0,
+          "etfs": {
+            "00407A": {
+              "ratio": 1.79,
+              "shares": 811000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 2.11,
+              "shares": 55000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 0.32,
+              "shares": 50000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.46,
+              "shares": 71000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.25,
+              "shares": 251000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -476086,6 +485063,59 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -208000,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 262.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.93,
+              "shares": 1030000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00403A": {
+              "ratio": 0.8,
+              "shares": 5330000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.06,
+              "shares": 67000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00982A": {
+              "ratio": 0.37,
+              "shares": 710000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00994A": {
+              "ratio": 0.92,
+              "shares": 175000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 2.05,
+              "shares": 331000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -478846,6 +487876,59 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 4.56,
               "shares": 23302,
               "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 6.34,
+              "shares": 15800,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 3.72,
+              "shares": 800,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 6.13,
+              "shares": 123569,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.77,
+              "shares": 360,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 3.39,
+              "shares": 46405,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 4.56,
+              "shares": 23302,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -481614,6 +490697,59 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.68,
+              "shares": 4400,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 3.45,
+              "shares": 780,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 4.34,
+              "shares": 92000,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.62,
+              "shares": 797,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 6.74,
+              "shares": 96992,
+              "ratio_change": 0.2,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.94,
+              "shares": 15819,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -482628,6 +491764,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.67,
               "shares": 500,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.49,
+              "shares": 2188,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 2.64,
+              "shares": 500,
+              "ratio_change": -0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -484399,6 +493556,43 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.63,
               "shares": 57213,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.39,
+              "shares": 14700,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 4.11,
+              "shares": 3752,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 3.16,
+              "shares": 6278,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.63,
+              "shares": 57213,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -486575,6 +495769,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 3.56,
+              "shares": 25600,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 2.75,
+              "shares": 1700,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.12,
+              "shares": 2858,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 0.94,
+              "shares": 37200,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.59,
+              "shares": 38116,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -488602,6 +497841,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.19,
+              "shares": 14400,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 2.3,
+              "shares": 1300,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.1,
+              "shares": 75705,
+              "ratio_change": 1.07,
+              "shares_change": 37360,
+              "signal": "加碼",
+              "consecutive_days": 2
+            },
+            "00997A": {
+              "ratio": 0.7,
+              "shares": 9415,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -490222,6 +499498,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.38,
               "shares": 37278,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 2.6,
+              "shares": 1700,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.4,
+              "shares": 37278,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -492238,6 +501535,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 4.35,
+              "shares": 19100,
+              "ratio_change": 0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 2.64,
+              "shares": 1000,
+              "ratio_change": 0.08,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 3.26,
+              "shares": 2687,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 4.71,
+              "shares": 113798,
+              "ratio_change": 0.18,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.79,
+              "shares": 7136,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -492945,6 +502287,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 2.37,
+              "shares": 1000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -493645,6 +503000,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00986A": {
               "ratio": 1.37,
+              "shares": 300,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 1.36,
               "shares": 300,
               "ratio_change": -0.01,
               "shares_change": 0,
@@ -494789,6 +504157,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 241,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 1.8,
+              "shares": 1200,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.68,
+              "shares": 3871,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -496075,6 +505464,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 3.06,
               "shares": 550,
               "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 3.0,
+              "shares": 550,
+              "ratio_change": -0.06,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -498515,6 +507917,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 1.33,
+              "shares": 200,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 1.98,
+              "shares": 28000,
+              "ratio_change": -0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.49,
+              "shares": 159,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.78,
+              "shares": 17063,
+              "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.48,
+              "shares": 5284,
+              "ratio_change": -0.59,
+              "shares_change": -1701,
+              "signal": "減碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -498801,6 +508248,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.04,
               "shares": 50000,
               "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1005.0,
+          "etfs": {
+            "00987A": {
+              "ratio": 1.97,
+              "shares": 50000,
+              "ratio_change": -0.07,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -500121,6 +509581,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 582.0,
+          "etfs": {
+            "00987A": {
+              "ratio": 2.11,
+              "shares": 92729,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 1.25,
+              "shares": 90000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -501239,6 +510720,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.19,
               "shares": 218000,
               "ratio_change": -0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 254.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.75,
+              "shares": 889000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 2.17,
+              "shares": 218000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -503151,6 +512653,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 2.7,
+              "shares": 210000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.09,
+              "shares": 1960,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 3.29,
+              "shares": 173500,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -504920,6 +514451,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -1200,
               "signal": "完全出清",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.97,
+              "shares": 2004,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.08,
+              "shares": 12103,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -507021,6 +516573,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.51,
+              "shares": 15700,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.43,
+              "shares": 205000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.29,
+              "shares": 131000,
+              "ratio_change": 0.53,
+              "shares_change": 29000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            },
+            "00997A": {
+              "ratio": 3.3,
+              "shares": 70533,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -508920,6 +518509,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.51,
+              "shares": 12200,
+              "ratio_change": -0.35,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.67,
+              "shares": 105000,
+              "ratio_change": -0.35,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.37,
+              "shares": 63342,
+              "ratio_change": -0.31,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.92,
+              "shares": 19121,
+              "ratio_change": -1.26,
+              "shares_change": -8833,
+              "signal": "減碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -510334,6 +519960,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.84,
               "shares": 4874,
               "ratio_change": -0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.86,
+              "shares": 4874,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -513694,6 +523333,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 3.52,
+              "shares": 21700,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.34,
+              "shares": 1323,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 4.41,
+              "shares": 5089,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -515345,6 +525013,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.3,
+              "shares": 28700,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 2.96,
+              "shares": 12186,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.98,
+              "shares": 89602,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -516370,6 +526067,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 401,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.54,
+              "shares": 5100,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 3.63,
+              "shares": 6429,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -517727,6 +527445,51 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 3.39,
+              "shares": 20700,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.53,
+              "shares": 125000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 4.28,
+              "shares": 4901,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.51,
+              "shares": 84400,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.11,
+              "shares": 26490,
+              "ratio_change": 0.3,
+              "shares_change": 3750,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -518888,6 +528651,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 26,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.63,
+              "shares": 2100,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.71,
+              "shares": 412,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -520302,6 +530086,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.52,
+              "shares": 7966,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -521071,6 +530868,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 108,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.98,
+              "shares": 4216,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -521916,6 +531726,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.32,
+              "shares": 3792,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -522623,6 +532446,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 2.1,
+              "shares": 8519,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -523328,6 +533164,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 305,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.45,
+              "shares": 4893,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -524837,6 +534686,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.26,
+              "shares": 17800,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.52,
+              "shares": 2243,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.32,
+              "shares": 5111,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -525542,6 +535420,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 141,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.78,
+              "shares": 2264,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -526251,6 +536142,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.08,
+              "shares": 1473,
+              "ratio_change": 0.14,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -526865,6 +536769,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 162.60000610351562,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.17,
+              "shares": 2300,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
           "etfs": {
             "00402A": {
               "ratio": 0.17,
@@ -528758,6 +538675,67 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.96,
+              "shares": 6600,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.58,
+              "shares": 1745,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 1.85,
+              "shares": 1100,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.06,
+              "shares": 115000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 3.14,
+              "shares": 4067,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 3.04,
+              "shares": 115200,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.04,
+              "shares": 28877,
+              "ratio_change": 0.55,
+              "shares_change": 7480,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -529791,6 +539769,27 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 74,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.84,
+              "shares": 10700,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.08,
+              "shares": 1182,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -530932,6 +540931,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.84,
+              "shares": 1024,
+              "ratio_change": -0.19,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.25,
+              "shares": 3300,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -531639,6 +541659,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.73,
+              "shares": 5547,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -532344,6 +542377,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 549,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.08,
+              "shares": 8808,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -533813,6 +543859,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.82,
+              "shares": 11800,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.96,
+              "shares": 1162,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.3,
+              "shares": 4032,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -534784,6 +544859,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.8,
+              "shares": 1511,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -535489,6 +545577,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 35,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.74,
+              "shares": 560,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -536359,6 +546460,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.32,
+              "shares": 35298,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -537064,6 +547178,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 652,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.73,
+              "shares": 10465,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -537773,6 +547900,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.81,
+              "shares": 6397,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -538478,6 +548618,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 50,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.86,
+              "shares": 803,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -539187,6 +549340,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.89,
+              "shares": 26030,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -539892,6 +550058,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 373,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.62,
+              "shares": 5983,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -540862,7 +551041,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
-          "close_price": 136.35499572753906,
+          "close_price": 136.36000061035156,
           "etfs": {
             "00989A": {
               "ratio": 0.6,
@@ -540871,6 +551050,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 118,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.63,
+              "shares": 1898,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -541578,6 +551770,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 674,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.71,
+              "shares": 10814,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -543506,6 +553711,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.45,
+              "shares": 4672,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -544573,6 +554791,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.66,
+              "shares": 1098,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.18,
+              "shares": 350,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -545198,6 +555437,35 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.86,
               "shares": 107800,
               "ratio_change": -0.25,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 0.71,
+              "shares": 600,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.36,
+              "shares": 186825,
+              "ratio_change": 0.17,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.01,
+              "shares": 107800,
+              "ratio_change": 0.15,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -546462,6 +556730,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.48,
+              "shares": 3800,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.98,
+              "shares": 10486,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -546795,6 +557084,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.77,
               "shares": 140344,
               "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 0.79,
+              "shares": 140344,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -547268,6 +557570,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.02,
               "shares": 103200,
               "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00990A": {
+              "ratio": 1.15,
+              "shares": 103200,
+              "ratio_change": 0.13,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -550560,6 +560875,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 416.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.37,
+              "shares": 31000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.17,
+              "shares": 115000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.35,
+              "shares": 358000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -552043,6 +562387,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 389.0,
+          "etfs": {
+            "00980A": {
+              "ratio": 0.98,
+              "shares": 482000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.53,
+              "shares": 383000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.39,
+              "shares": 50000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.4,
+              "shares": 46000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -553306,6 +563687,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 318.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 2.24,
+              "shares": 245000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.19,
+              "shares": 365000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.73,
+              "shares": 113000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -554229,6 +564639,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 2330.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.97,
+              "shares": 122000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.57,
+              "shares": 12000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -554926,6 +565357,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 147.0,
+          "etfs": {
+            "00995A": {
+              "ratio": 0.41,
+              "shares": 140000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 145.0,
           "etfs": {
             "00995A": {
               "ratio": 0.41,
@@ -556287,6 +566731,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -30000,
               "signal": "減碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 625.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.3,
+              "shares": 146000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.3,
+              "shares": 138000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.18,
+              "shares": 12000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -557747,6 +568220,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 65.5,
+          "etfs": {
+            "00996A": {
+              "ratio": 1.46,
+              "shares": 958000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -558236,6 +568722,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.53,
               "shares": 398000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 167.5,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.53,
+              "shares": 398000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -559236,6 +569735,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 1400.0,
+          "etfs": {
+            "00996A": {
+              "ratio": 0.71,
+              "shares": 22000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -559943,6 +570455,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 503.0,
+          "etfs": {
+            "00996A": {
+              "ratio": 0.35,
+              "shares": 30000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -560557,6 +571082,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 16000,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 527.0,
+          "etfs": {
+            "00996A": {
+              "ratio": 1.16,
+              "shares": 94000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -561536,6 +572074,27 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 54.599998474121094,
+          "etfs": {
+            "00985A": {
+              "ratio": 0.21,
+              "shares": 393000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.11,
+              "shares": 90000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 53.099998474121094,
           "etfs": {
             "00985A": {
               "ratio": 0.21,
@@ -563016,6 +573575,51 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 4.18,
               "shares": 35718,
               "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 1.67,
+              "shares": 600,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 4.01,
+              "shares": 135000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 0.74,
+              "shares": 576,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 4.14,
+              "shares": 94706,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 4.18,
+              "shares": 35718,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -564568,6 +575172,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 7.67,
+              "shares": 53900,
+              "ratio_change": 0.1,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 0.99,
+              "shares": 600,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.79,
+              "shares": 40258,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -565273,6 +575906,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 1.41,
+              "shares": 37178,
+              "ratio_change": 0.38,
+              "shares_change": 9971,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -566633,6 +577279,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 0.13,
+              "shares": 103,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 2.92,
+              "shares": 225000,
+              "ratio_change": 0.12,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 2.17,
+              "shares": 113500,
+              "ratio_change": 0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.54,
+              "shares": 30137,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -567820,6 +578503,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 2.16,
+              "shares": 24500,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.16,
+              "shares": 27056,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -568991,6 +579695,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.81,
+              "shares": 9300,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.37,
+              "shares": 85900,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.69,
+              "shares": 39666,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -570002,6 +580735,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.99,
               "shares": 23747,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 1.97,
+              "shares": 23747,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -572707,6 +583453,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.31,
+              "shares": 25000,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -573409,6 +584168,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.62,
               "shares": 58000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 2.58,
+              "shares": 58000,
+              "ratio_change": -0.04,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -574324,6 +585096,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 8000,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.05,
+              "shares": 48000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -576766,6 +587551,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 60.900001525878906,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.9,
+              "shares": 514000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.26,
+              "shares": 408000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.16,
+              "shares": 2419000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -578034,6 +588848,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 3
             }
           }
+        },
+        "20260807": {
+          "close_price": 268.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 28000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.0,
+              "shares": 0,
+              "ratio_change": -0.13,
+              "shares_change": -61000,
+              "signal": "完全出清",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -578739,6 +589574,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 202000,
               "signal": "加碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 84.30000305175781,
+          "etfs": {
+            "00999A": {
+              "ratio": 1.51,
+              "shares": 2270000,
+              "ratio_change": 0.13,
+              "shares_change": 101000,
+              "signal": "加碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -579467,6 +590315,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.25,
               "shares": 2069000,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 78.4000015258789,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.23,
+              "shares": 284000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.28,
+              "shares": 2069000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -581156,6 +592025,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 150.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.31,
+              "shares": 592000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.43,
+              "shares": 363000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -581858,6 +592748,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.13,
               "shares": 647000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 236.0,
+          "etfs": {
+            "00999A": {
+              "ratio": 1.2,
+              "shares": 647000,
+              "ratio_change": 0.07,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -582594,6 +593497,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 3
             }
           }
+        },
+        "20260807": {
+          "close_price": 42.099998474121094,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.24,
+              "shares": 563000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.45,
+              "shares": 1346000,
+              "ratio_change": -0.1,
+              "shares_change": -336000,
+              "signal": "減碼",
+              "consecutive_days": 4
+            }
+          }
         }
       }
     },
@@ -583273,6 +594197,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -218000,
               "signal": "減碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 70.0999984741211,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.2,
+              "shares": 357000,
+              "ratio_change": -0.08,
+              "shares_change": -153000,
+              "signal": "減碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -584148,6 +595085,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -991000,
               "signal": "減碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 50.79999923706055,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.12,
+              "shares": 297000,
+              "ratio_change": -0.27,
+              "shares_change": -693000,
+              "signal": "減碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -585226,6 +596176,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 3
             }
           }
+        },
+        "20260807": {
+          "close_price": 66.80000305175781,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.13,
+              "shares": 246000,
+              "ratio_change": -0.05,
+              "shares_change": -105000,
+              "signal": "減碼",
+              "consecutive_days": 4
+            }
+          }
         }
       }
     },
@@ -585928,6 +596891,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.94,
               "shares": 2276000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 54.0,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.97,
+              "shares": 2276000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -587088,6 +598064,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 144.5,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.09,
+              "shares": 180000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 1.01,
+              "shares": 886000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -588215,6 +599212,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 113.5,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.79,
+              "shares": 886000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -589239,6 +600249,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 218.0,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.48,
+              "shares": 277000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -589246,7 +600269,7 @@ const ETF_DASHBOARD_DATA = {
       "name": "iShares Investment Grade Corpora",
       "history": {
         "20260520": {
-          "close_price": 23.226747512817383,
+          "close_price": 23.22674560546875,
           "etfs": {
             "00983D": {
               "ratio": 7.12,
@@ -589272,7 +600295,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260522": {
-          "close_price": 23.258953094482422,
+          "close_price": 23.258955001831055,
           "etfs": {
             "00983D": {
               "ratio": 7.11,
@@ -589311,7 +600334,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260527": {
-          "close_price": 23.356557846069336,
+          "close_price": 23.35655975341797,
           "etfs": {
             "00983D": {
               "ratio": 7.1,
@@ -589324,7 +600347,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260528": {
-          "close_price": 23.434640884399414,
+          "close_price": 23.434642791748047,
           "etfs": {
             "00983D": {
               "ratio": 7.1,
@@ -589337,7 +600360,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260529": {
-          "close_price": 23.473682403564453,
+          "close_price": 23.47368049621582,
           "etfs": {
             "00983D": {
               "ratio": 7.11,
@@ -589350,7 +600373,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260601": {
-          "close_price": 23.473682403564453,
+          "close_price": 23.47368049621582,
           "etfs": {
             "00983D": {
               "ratio": 7.11,
@@ -589907,6 +600930,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983D": {
+              "ratio": 7.33,
+              "shares": 100000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -589927,7 +600963,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260521": {
-          "close_price": 21.396869659423828,
+          "close_price": 21.396867752075195,
           "etfs": {
             "00983D": {
               "ratio": 6.2,
@@ -589940,7 +600976,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260522": {
-          "close_price": 21.499481201171875,
+          "close_price": 21.499479293823242,
           "etfs": {
             "00983D": {
               "ratio": 6.21,
@@ -589979,7 +601015,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260527": {
-          "close_price": 21.636293411254883,
+          "close_price": 21.636295318603516,
           "etfs": {
             "00983D": {
               "ratio": 6.23,
@@ -590018,7 +601054,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260601": {
-          "close_price": 21.77311134338379,
+          "close_price": 21.773109436035156,
           "etfs": {
             "00983D": {
               "ratio": 6.25,
@@ -590031,7 +601067,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260602": {
-          "close_price": 21.780019760131836,
+          "close_price": 21.780017852783203,
           "etfs": {
             "00983D": {
               "ratio": 6.26,
@@ -590057,7 +601093,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260604": {
-          "close_price": 21.780019760131836,
+          "close_price": 21.780017852783203,
           "etfs": {
             "00983D": {
               "ratio": 6.26,
@@ -590083,7 +601119,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260608": {
-          "close_price": 21.641857147216797,
+          "close_price": 21.64185905456543,
           "etfs": {
             "00983D": {
               "ratio": 6.27,
@@ -590161,7 +601197,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260616": {
-          "close_price": 21.9675235748291,
+          "close_price": 21.96752166748047,
           "etfs": {
             "00983D": {
               "ratio": 7.17,
@@ -590187,7 +601223,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260618": {
-          "close_price": 22.095813751220703,
+          "close_price": 22.09581184387207,
           "etfs": {
             "00983D": {
               "ratio": 7.26,
@@ -590239,7 +601275,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260625": {
-          "close_price": 22.209300994873047,
+          "close_price": 22.20930290222168,
           "etfs": {
             "00983D": {
               "ratio": 7.33,
@@ -590252,7 +601288,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260626": {
-          "close_price": 22.22410774230957,
+          "close_price": 22.224105834960938,
           "etfs": {
             "00983D": {
               "ratio": 7.34,
@@ -590570,6 +601606,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 7.23,
               "shares": 108000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983D": {
+              "ratio": 7.22,
+              "shares": 108000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -592128,6 +603177,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 493.5,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.0,
+              "shares": 1000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00404A": {
+              "ratio": 1.73,
+              "shares": 122000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.12,
+              "shares": 221000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -592895,6 +603973,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 192.0,
+          "etfs": {
+            "00981A": {
+              "ratio": 0.14,
+              "shares": 2224000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 193.5,
           "etfs": {
             "00981A": {
               "ratio": 0.14,
@@ -594117,6 +605208,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.05,
               "shares": 8500,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.11,
+              "shares": 8500,
+              "ratio_change": 0.06,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -596079,6 +607183,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 3375.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 2.13,
+              "shares": 189000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.49,
+              "shares": 14000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00992A": {
+              "ratio": 0.45,
+              "shares": 56000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -597514,6 +608647,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 168.0,
+          "etfs": {
+            "00996A": {
+              "ratio": 1.48,
+              "shares": 371000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -598785,6 +609931,43 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 1240.0,
+          "etfs": {
+            "00407A": {
+              "ratio": 2.32,
+              "shares": 537191,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 2.34,
+              "shares": 183424,
+              "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00985A": {
+              "ratio": 2.37,
+              "shares": 192000,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.46,
+              "shares": 36228,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -600035,6 +611218,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.01,
+              "shares": 14000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -600873,6 +612069,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 43.45000076293945,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.02,
+              "shares": 14230,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00408A": {
+              "ratio": 1.47,
+              "shares": 558200,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.01,
+              "shares": 27800,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -601690,6 +612915,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.28,
               "shares": 561000,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 47.54999923706055,
+          "etfs": {
+            "00993A": {
+              "ratio": 0.27,
+              "shares": 561000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -602813,6 +614051,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 62000,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 173.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.72,
+              "shares": 406000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -604575,6 +615826,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 293.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.55,
+              "shares": 181000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -606033,6 +617297,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.75,
               "shares": 518000,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 137.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.73,
+              "shares": 518000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -607652,6 +618929,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 188.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 44000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -608531,6 +619821,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 236.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.48,
+              "shares": 196000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00987A": {
+              "ratio": 1.34,
+              "shares": 145000,
+              "ratio_change": -0.3,
+              "shares_change": -26000,
+              "signal": "減碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -608961,6 +620272,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.1,
               "shares": 90800,
               "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 0.36,
+              "shares": 300,
+              "ratio_change": -0.09,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00990A": {
+              "ratio": 1.73,
+              "shares": 90800,
+              "ratio_change": -0.37,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -609772,6 +621104,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.25,
+              "shares": 4700,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00988A": {
+              "ratio": 1.78,
+              "shares": 270000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00989A": {
+              "ratio": 1.51,
+              "shares": 5304,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -609980,6 +621341,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.13,
               "shares": 2406,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.14,
+              "shares": 2406,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -610375,6 +621749,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.5,
               "shares": 6280,
               "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.43,
+              "shares": 6280,
+              "ratio_change": -0.07,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -610957,6 +622344,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 2.4,
+              "shares": 5287,
+              "ratio_change": -0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -611467,6 +622867,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 502,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.17,
+              "shares": 1816,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -612007,6 +623420,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.12,
+              "shares": 33200,
+              "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -612545,6 +623971,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.1,
+              "shares": 10400,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -613078,6 +624517,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.0,
               "shares": 6100,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.87,
+              "shares": 6100,
+              "ratio_change": -0.13,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -614081,6 +625533,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 218.0,
+          "etfs": {
+            "00405A": {
+              "ratio": 0.05,
+              "shares": 72000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -614851,6 +626316,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 2.02,
+              "shares": 595,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00986A": {
+              "ratio": 2.83,
+              "shares": 450,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -615533,6 +627019,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 0.9,
+              "shares": 100000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 2.53,
+              "shares": 71192,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -616162,6 +627669,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 1.11,
+              "shares": 6600,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00998A": {
+              "ratio": 1.93,
+              "shares": 6200,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -616682,6 +628210,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.81,
               "shares": 24100,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.81,
+              "shares": 24100,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -617212,6 +628753,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.95,
+              "shares": 4000,
+              "ratio_change": -0.15,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -617737,6 +629291,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.26,
+              "shares": 1200,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -618257,6 +629824,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.73,
               "shares": 4300,
               "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.72,
+              "shares": 4300,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -618961,6 +630541,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.71,
+              "shares": 7500,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -618968,7 +630561,7 @@ const ETF_DASHBOARD_DATA = {
       "name": "Silicon Motion",
       "history": {
         "20260609": {
-          "close_price": 259.75,
+          "close_price": 259.22344970703125,
           "etfs": {
             "00402A": {
               "ratio": 0.37,
@@ -618981,7 +630574,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260610": {
-          "close_price": 251.67999267578125,
+          "close_price": 251.1697998046875,
           "etfs": {
             "00402A": {
               "ratio": 0.52,
@@ -618994,7 +630587,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260611": {
-          "close_price": 274.3399963378906,
+          "close_price": 273.78387451171875,
           "etfs": {
             "00402A": {
               "ratio": 0.5,
@@ -619007,7 +630600,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260612": {
-          "close_price": 280.489990234375,
+          "close_price": 279.92138671875,
           "etfs": {
             "00402A": {
               "ratio": 0.52,
@@ -619020,7 +630613,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260615": {
-          "close_price": 276.3999938964844,
+          "close_price": 275.8396911621094,
           "etfs": {
             "00402A": {
               "ratio": 0.54,
@@ -619033,7 +630626,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260616": {
-          "close_price": 282.67999267578125,
+          "close_price": 282.1069641113281,
           "etfs": {
             "00402A": {
               "ratio": 0.52,
@@ -619046,7 +630639,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260617": {
-          "close_price": 307.1199951171875,
+          "close_price": 306.4974060058594,
           "etfs": {
             "00402A": {
               "ratio": 0.55,
@@ -619059,7 +630652,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260618": {
-          "close_price": 321.6600036621094,
+          "close_price": 321.0079345703125,
           "etfs": {
             "00402A": {
               "ratio": 0.6,
@@ -619072,7 +630665,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260622": {
-          "close_price": 336.8999938964844,
+          "close_price": 336.217041015625,
           "etfs": {
             "00402A": {
               "ratio": 0.62,
@@ -619085,7 +630678,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260623": {
-          "close_price": 319.0,
+          "close_price": 318.35333251953125,
           "etfs": {
             "00402A": {
               "ratio": 0.66,
@@ -619098,7 +630691,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260624": {
-          "close_price": 321.6600036621094,
+          "close_price": 321.0079345703125,
           "etfs": {
             "00402A": {
               "ratio": 0.66,
@@ -619111,7 +630704,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260625": {
-          "close_price": 325.260009765625,
+          "close_price": 324.60064697265625,
           "etfs": {
             "00402A": {
               "ratio": 0.66,
@@ -619124,7 +630717,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260626": {
-          "close_price": 305.2799987792969,
+          "close_price": 304.6611633300781,
           "etfs": {
             "00402A": {
               "ratio": 0.67,
@@ -619137,7 +630730,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260629": {
-          "close_price": 331.94000244140625,
+          "close_price": 331.2671203613281,
           "etfs": {
             "00402A": {
               "ratio": 0.65,
@@ -619150,7 +630743,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260630": {
-          "close_price": 333.3299865722656,
+          "close_price": 332.6542663574219,
           "etfs": {
             "00402A": {
               "ratio": 0.69,
@@ -619163,7 +630756,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260701": {
-          "close_price": 316.9800109863281,
+          "close_price": 316.3374328613281,
           "etfs": {
             "00402A": {
               "ratio": 0.68,
@@ -619176,7 +630769,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260702": {
-          "close_price": 300.7099914550781,
+          "close_price": 300.10040283203125,
           "etfs": {
             "00402A": {
               "ratio": 0.68,
@@ -619202,7 +630795,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260706": {
-          "close_price": 318.8599853515625,
+          "close_price": 318.2135925292969,
           "etfs": {
             "00402A": {
               "ratio": 0.68,
@@ -619215,7 +630808,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260707": {
-          "close_price": 294.8999938964844,
+          "close_price": 294.30218505859375,
           "etfs": {
             "00402A": {
               "ratio": 0.87,
@@ -619228,7 +630821,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260708": {
-          "close_price": 313.29998779296875,
+          "close_price": 312.6648864746094,
           "etfs": {
             "00402A": {
               "ratio": 0.83,
@@ -619241,7 +630834,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260709": {
-          "close_price": 324.260009765625,
+          "close_price": 323.6026916503906,
           "etfs": {
             "00402A": {
               "ratio": 0.88,
@@ -619254,7 +630847,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260713": {
-          "close_price": 299.510009765625,
+          "close_price": 298.9028625488281,
           "etfs": {
             "00402A": {
               "ratio": 0.89,
@@ -619267,7 +630860,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260714": {
-          "close_price": 308.4100036621094,
+          "close_price": 307.7848205566406,
           "etfs": {
             "00402A": {
               "ratio": 0.85,
@@ -619280,7 +630873,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260715": {
-          "close_price": 293.3999938964844,
+          "close_price": 292.80523681640625,
           "etfs": {
             "00402A": {
               "ratio": 0.87,
@@ -619293,7 +630886,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260716": {
-          "close_price": 272.45001220703125,
+          "close_price": 271.897705078125,
           "etfs": {
             "00402A": {
               "ratio": 0.85,
@@ -619306,7 +630899,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260717": {
-          "close_price": 264.3299865722656,
+          "close_price": 263.7941589355469,
           "etfs": {
             "00402A": {
               "ratio": 0.81,
@@ -619319,7 +630912,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260720": {
-          "close_price": 252.61000061035156,
+          "close_price": 252.09791564941406,
           "etfs": {
             "00402A": {
               "ratio": 0.8,
@@ -619332,7 +630925,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260721": {
-          "close_price": 278.1700134277344,
+          "close_price": 277.6061096191406,
           "etfs": {
             "00402A": {
               "ratio": 0.76,
@@ -619345,7 +630938,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260722": {
-          "close_price": 281.67999267578125,
+          "close_price": 281.1089782714844,
           "etfs": {
             "00402A": {
               "ratio": 0.81,
@@ -619358,7 +630951,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260723": {
-          "close_price": 289.0799865722656,
+          "close_price": 288.4939880371094,
           "etfs": {
             "00402A": {
               "ratio": 0.83,
@@ -619371,7 +630964,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260724": {
-          "close_price": 270.8999938964844,
+          "close_price": 270.350830078125,
           "etfs": {
             "00402A": {
               "ratio": 0.86,
@@ -619384,7 +630977,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260727": {
-          "close_price": 244.4499969482422,
+          "close_price": 243.95445251464844,
           "etfs": {
             "00402A": {
               "ratio": 0.82,
@@ -619397,7 +630990,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260728": {
-          "close_price": 221.4199981689453,
+          "close_price": 220.9711456298828,
           "etfs": {
             "00402A": {
               "ratio": 0.75,
@@ -619410,7 +631003,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260729": {
-          "close_price": 209.67999267578125,
+          "close_price": 209.25494384765625,
           "etfs": {
             "00402A": {
               "ratio": 0.7,
@@ -619423,7 +631016,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260730": {
-          "close_price": 255.10000610351562,
+          "close_price": 254.5828857421875,
           "etfs": {
             "00402A": {
               "ratio": 0.68,
@@ -619436,7 +631029,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260803": {
-          "close_price": 251.52000427246094,
+          "close_price": 251.0101318359375,
           "etfs": {
             "00402A": {
               "ratio": 0.78,
@@ -619449,7 +631042,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260804": {
-          "close_price": 268.489990234375,
+          "close_price": 267.9457092285156,
           "etfs": {
             "00402A": {
               "ratio": 0.76,
@@ -619462,7 +631055,7 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260805": {
-          "close_price": 246.64999389648438,
+          "close_price": 246.14999389648438,
           "etfs": {
             "00402A": {
               "ratio": 0.78,
@@ -619481,6 +631074,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.73,
               "shares": 6600,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.8,
+              "shares": 6600,
+              "ratio_change": 0.07,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -620004,6 +631610,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00402A": {
               "ratio": 0.28,
+              "shares": 3000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.29,
               "shares": 3000,
               "ratio_change": 0.01,
               "shares_change": 0,
@@ -620536,6 +632155,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.46,
+              "shares": 14200,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -621056,6 +632688,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.39,
               "shares": 33100,
               "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.34,
+              "shares": 33100,
+              "ratio_change": -0.05,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -622672,6 +634317,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 46.599998474121094,
+          "etfs": {
+            "00985A": {
+              "ratio": 4.8,
+              "shares": 10341000,
+              "ratio_change": 0.13,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00993A": {
+              "ratio": 0.43,
+              "shares": 908000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -623301,6 +634967,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.97,
               "shares": 34000,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 1710.0,
+          "etfs": {
+            "00401A": {
+              "ratio": 1.94,
+              "shares": 34000,
+              "ratio_change": -0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -624130,6 +635809,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 0.9,
+              "shares": 310000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -624622,6 +636314,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00998A": {
               "ratio": 2.28,
+              "shares": 17000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 2.27,
               "shares": 17000,
               "ratio_change": -0.01,
               "shares_change": 0,
@@ -625710,6 +637415,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 3.44,
+              "shares": 65000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -626607,6 +638325,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.59,
+              "shares": 11300,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00983A": {
+              "ratio": 1.82,
+              "shares": 5581,
+              "ratio_change": 0.18,
+              "shares_change": 197,
+              "signal": "加碼",
+              "consecutive_days": 3
+            },
+            "00989A": {
+              "ratio": 0.62,
+              "shares": 2228,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -627410,6 +639157,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.51,
+              "shares": 7621,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -627985,6 +639745,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.73,
               "shares": 9000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 1.51,
+              "shares": 800,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00998A": {
+              "ratio": 2.7,
+              "shares": 9000,
+              "ratio_change": -0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -628725,6 +640506,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 101.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.48,
+              "shares": 459000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00996A": {
+              "ratio": 0.42,
+              "shares": 170000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -629220,6 +641022,35 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 4040000,
               "signal": "加碼",
               "consecutive_days": 2
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 35.54999923706055,
+          "etfs": {
+            "00404A": {
+              "ratio": 3.1,
+              "shares": 3038000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.79,
+              "shares": 4903000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 3.04,
+              "shares": 10857000,
+              "ratio_change": 0.39,
+              "shares_change": 1261000,
+              "signal": "加碼",
+              "consecutive_days": 3
             }
           }
         }
@@ -629763,6 +641594,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 276.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.36,
+              "shares": 46000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00999A": {
+              "ratio": 0.8,
+              "shares": 368000,
+              "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -630192,6 +642044,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.81,
               "shares": 3964000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 26.75,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.84,
+              "shares": 3964000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -630629,6 +642494,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": -3554,
               "signal": "減碼",
               "consecutive_days": 3
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 1.57,
+              "shares": 15365,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -631626,6 +643504,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 0.63,
+              "shares": 8418,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -632071,6 +643962,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 1.38,
+              "shares": 18000,
+              "ratio_change": 0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.56,
+              "shares": 1850,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -632492,6 +644404,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 0.88,
+              "shares": 32626,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -632877,6 +644802,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.5,
               "shares": 7215,
               "ratio_change": -0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00990A": {
+              "ratio": 0.93,
+              "shares": 34000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.53,
+              "shares": 7215,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -633338,6 +645284,27 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.48,
               "shares": 8482,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.97,
+              "shares": 1537,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 0.49,
+              "shares": 8482,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -633927,6 +645894,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 141.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.39,
+              "shares": 97000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00407A": {
+              "ratio": 0.09,
+              "shares": 175000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -634330,6 +646318,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.71,
               "shares": 13816,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.71,
+              "shares": 13816,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -635192,6 +647193,19 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
+          "close_price": 25.799999237060547,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.48,
+              "shares": 1808000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
           "close_price": 25.799999237060547,
           "etfs": {
             "00984A": {
@@ -636263,6 +648277,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 31.399999618530273,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.27,
+              "shares": 844000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -636562,6 +648589,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.08,
               "shares": 323000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 25.950000762939453,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 323000,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -637415,6 +649455,19 @@ const ETF_DASHBOARD_DATA = {
           "etfs": {
             "00984A": {
               "ratio": 0.52,
+              "shares": 1679000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 30.850000381469727,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.53,
               "shares": 1679000,
               "ratio_change": 0.01,
               "shares_change": 0,
@@ -638295,6 +650348,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 80.80000305175781,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 305000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -638599,6 +650665,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 22.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.55,
+              "shares": 2396000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -638892,6 +650971,19 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
+          "close_price": 183.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.05,
+              "shares": 25000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
           "close_price": 183.5,
           "etfs": {
             "00984A": {
@@ -639207,6 +651299,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 1.95,
+              "shares": 179867,
+              "ratio_change": 0.23,
+              "shares_change": 25335,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -639511,6 +651616,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.88,
+              "shares": 35000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -639784,6 +651902,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.5,
               "shares": 155000,
               "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 312.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.5,
+              "shares": 155000,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -640558,6 +652689,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 1.54,
+              "shares": 48433,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -640821,6 +652965,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00997A": {
+              "ratio": 1.83,
+              "shares": 37035,
+              "ratio_change": 0.61,
+              "shares_change": 12083,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
@@ -641160,6 +653317,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.23,
+              "shares": 13400,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00997A": {
+              "ratio": 1.14,
+              "shares": 133951,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -641407,6 +653585,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.3,
               "shares": 33889,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.31,
+              "shares": 33889,
+              "ratio_change": 0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -641928,6 +654119,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 71.0,
+          "etfs": {
+            "00400A": {
+              "ratio": 0.73,
+              "shares": 2995000,
+              "ratio_change": 0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -642123,6 +654327,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 2.84,
               "shares": 75300,
               "ratio_change": -0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00990A": {
+              "ratio": 2.73,
+              "shares": 75300,
+              "ratio_change": -0.11,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -642354,6 +654571,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00402A": {
+              "ratio": 0.91,
+              "shares": 13900,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -642567,6 +654797,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.06,
+              "shares": 5000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -642765,6 +655008,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 99000,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 49.900001525878906,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.84,
+              "shares": 1286000,
+              "ratio_change": 0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -643154,6 +655410,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 735.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 2.83,
+              "shares": 134000,
+              "ratio_change": 0.07,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -643541,6 +655810,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 251.5,
+          "etfs": {
+            "00999A": {
+              "ratio": 0.87,
+              "shares": 437000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -643715,6 +655997,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00998A": {
+              "ratio": 1.94,
+              "shares": 20000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -643876,6 +656171,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 1.39,
+              "shares": 2818,
+              "ratio_change": -0.31,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644024,6 +656332,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.33,
+              "shares": 22076,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644157,6 +656478,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 953,
               "signal": "加碼",
               "consecutive_days": 1
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.48,
+              "shares": 4866,
+              "ratio_change": 0.06,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
             }
           }
         }
@@ -644357,6 +656691,35 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 1
             }
           }
+        },
+        "20260807": {
+          "close_price": 477.0,
+          "etfs": {
+            "00403A": {
+              "ratio": 0.38,
+              "shares": 1400000,
+              "ratio_change": 0.05,
+              "shares_change": 200000,
+              "signal": "加碼",
+              "consecutive_days": 5
+            },
+            "00984A": {
+              "ratio": 0.65,
+              "shares": 133000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00995A": {
+              "ratio": 0.39,
+              "shares": 40000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644466,6 +656829,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00983A": {
+              "ratio": 0.63,
+              "shares": 3849,
+              "ratio_change": 0.29,
+              "shares_change": 1668,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -644549,6 +656925,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00988A": {
+              "ratio": 1.25,
+              "shares": 38000,
+              "ratio_change": 0.03,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644624,6 +657013,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00986A": {
+              "ratio": 0.91,
+              "shares": 300,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644676,6 +657078,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.18,
               "shares": 1086,
               "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": null,
+          "etfs": {
+            "00989A": {
+              "ratio": 0.18,
+              "shares": 1086,
+              "ratio_change": 0.0,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -644749,6 +657164,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 23.149999618530273,
+          "etfs": {
+            "00408A": {
+              "ratio": 0.86,
+              "shares": 615000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 1.55,
+              "shares": 6526175,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644788,6 +657224,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.64,
               "shares": 6166000,
               "ratio_change": -0.05,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 26.200000762939453,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.66,
+              "shares": 6166000,
+              "ratio_change": 0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -644837,6 +657286,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 16.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.38,
+              "shares": 8101940,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644876,6 +657338,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.26,
               "shares": 6702846,
               "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 18.649999618530273,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.29,
+              "shares": 6702846,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -644925,6 +657400,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 72.4000015258789,
+          "etfs": {
+            "00984A": {
+              "ratio": 1.15,
+              "shares": 1545000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -644958,6 +657446,19 @@ const ETF_DASHBOARD_DATA = {
           }
         },
         "20260806": {
+          "close_price": 24.549999237060547,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.53,
+              "shares": 2112000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
           "close_price": 24.549999237060547,
           "etfs": {
             "00984A": {
@@ -645021,6 +657522,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 235.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.79,
+              "shares": 117000,
+              "ratio_change": -0.04,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.55,
+              "shares": 228000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645073,6 +657595,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 373.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.76,
+              "shares": 164000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            },
+            "00984A": {
+              "ratio": 0.27,
+              "shares": 71000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645107,6 +657650,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 47.849998474121094,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.26,
+              "shares": 530000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 47.04999923706055,
           "etfs": {
             "00984A": {
               "ratio": 0.26,
@@ -645161,6 +657717,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 15.75,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.27,
+              "shares": 1695000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645200,6 +657769,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.25,
               "shares": 200000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 117.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.24,
+              "shares": 200000,
+              "ratio_change": -0.01,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -645249,6 +657831,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 47.150001525878906,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 522000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645283,6 +657878,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 188.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 128000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 192.5,
           "etfs": {
             "00984A": {
               "ratio": 0.25,
@@ -645337,6 +657945,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 117.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.24,
+              "shares": 196000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645381,6 +658002,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 39.099998474121094,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.24,
+              "shares": 585000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645415,6 +658049,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 127.5,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.25,
+              "shares": 194000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 125.5,
           "etfs": {
             "00984A": {
               "ratio": 0.25,
@@ -645469,6 +658116,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 90.0999984741211,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.22,
+              "shares": 241000,
+              "ratio_change": -0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645503,6 +658163,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 27.600000381469727,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.22,
+              "shares": 790000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 27.25,
           "etfs": {
             "00984A": {
               "ratio": 0.22,
@@ -645557,6 +658230,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 59.900001525878906,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.27,
+              "shares": 440000,
+              "ratio_change": 0.04,
+              "shares_change": 66000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -645591,6 +658277,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 100.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.17,
+              "shares": 163000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 99.0999984741211,
           "etfs": {
             "00984A": {
               "ratio": 0.17,
@@ -645645,6 +658344,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 70.0999984741211,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.24,
+              "shares": 326972,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645679,6 +658391,19 @@ const ETF_DASHBOARD_DATA = {
         },
         "20260806": {
           "close_price": 64.19999694824219,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.09,
+              "shares": 140000,
+              "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 64.0,
           "etfs": {
             "00984A": {
               "ratio": 0.09,
@@ -645733,6 +658458,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 65.80000305175781,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.08,
+              "shares": 113000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645777,6 +658515,27 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 22.5,
+          "etfs": {
+            "00985A": {
+              "ratio": 1.53,
+              "shares": 6826000,
+              "ratio_change": 1.53,
+              "shares_change": 6826000,
+              "signal": "首次買入",
+              "consecutive_days": 1
+            },
+            "00993A": {
+              "ratio": 0.33,
+              "shares": 1463000,
+              "ratio_change": 0.01,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645790,6 +658549,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 1.74,
               "shares": 242000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 247.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.72,
+              "shares": 242000,
+              "ratio_change": -0.02,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -645813,6 +658585,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 52.70000076293945,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.74,
+              "shares": 1147000,
+              "ratio_change": 0.25,
+              "shares_change": 200000,
+              "signal": "加碼",
+              "consecutive_days": 1
+            }
+          }
         }
       }
     },
@@ -645826,6 +658611,19 @@ const ETF_DASHBOARD_DATA = {
               "ratio": 0.98,
               "shares": 343000,
               "ratio_change": 0.0,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 103.0,
+          "etfs": {
+            "00404A": {
+              "ratio": 1.01,
+              "shares": 343000,
+              "ratio_change": 0.03,
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
@@ -645849,6 +658647,19 @@ const ETF_DASHBOARD_DATA = {
               "consecutive_days": 0
             }
           }
+        },
+        "20260807": {
+          "close_price": 224.5,
+          "etfs": {
+            "00404A": {
+              "ratio": 0.79,
+              "shares": 122000,
+              "ratio_change": -0.02,
+              "shares_change": 0,
+              "signal": "持平",
+              "consecutive_days": 0
+            }
+          }
         }
       }
     },
@@ -645865,6 +658676,19 @@ const ETF_DASHBOARD_DATA = {
               "shares_change": 0,
               "signal": "持平",
               "consecutive_days": 0
+            }
+          }
+        },
+        "20260807": {
+          "close_price": 104.0,
+          "etfs": {
+            "00984A": {
+              "ratio": 0.8,
+              "shares": 752000,
+              "ratio_change": 0.35,
+              "shares_change": 325000,
+              "signal": "加碼",
+              "consecutive_days": 1
             }
           }
         }
