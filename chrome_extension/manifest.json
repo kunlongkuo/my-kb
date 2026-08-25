@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YT to Obsidian Notes",
+  "name": "YT 轉 Obsidian 筆記助手",
   "version": "1.0",
-  "description": "Convert YouTube videos to Obsidian notes with one click.",
+  "description": "一鍵將 YouTube 影片轉換為 Obsidian 筆記。",
   "permissions": ["activeTab", "clipboardWrite"],
   "host_permissions": ["http://127.0.0.1:8000/*"],
   "content_scripts": [

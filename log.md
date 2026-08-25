@@ -2,6 +2,16 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-08-25] etf-update | 主動型 ETF 第 66 次日更與資料生成
+- **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260825` 分頁至 `主動型ETF持股明細.xlsx`（累計 66 個歷史日期分頁，1,752 筆持股明細）。
+- **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 48,682 筆，並自動產生加碼/減碼 Top 10 圖表及更新 `主動型ETF持股變動.md`。
+- **看板更新**：執行 `generate_dashboard_data.py`，重新產生 `dashboard_data.js`（545 檔個股）。
+
+## [2026-08-24] etf-update | 主動型 ETF 第 65 次日更（補登）
+- **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260824` 分頁至 `主動型ETF持股明細.xlsx`（累計 65 個歷史日期分頁，1,756 筆持股明細）。
+- **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」工作表，自動產生加碼/減碼 Top 10 圖表及更新 `主動型ETF持股變動.md`。
+- **看板更新**：執行 `generate_dashboard_data.py`，更新 `dashboard_data.js`。
+
 ## [2026-07-15] etf-update | 主動型 ETF 第 39 次日更與新兵 00408A 納入
 - **新兵納入與設定更新**：在 `台灣ETF比較清單.xlsx` 主動型分頁中新增第一金台股趨勢優股息主動式 ETF（`00408A`）的基礎資料（包括經理人張正中、保管銀行臺灣企銀、季配息頻率、費率等）。執行 `sync_excel_to_md.py` 同步至 `主動型ETF清單.md`。
 - **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260715` 分頁至 `主動型ETF持股明細.xlsx`（包含新掛牌上市的 `00408A`，累計 30 支 ETF、1679 筆持股明細）。

@@ -11,14 +11,14 @@ function injectButton() {
         <polyline points="7 10 12 15 17 10"></polyline>
         <line x1="12" y1="15" x2="12" y2="3"></line>
       </svg>
-      Obsidian Notes
+      Obsidian 筆記
     `;
     
     btn.onclick = async () => {
       if (btn.classList.contains("loading")) return;
       
       btn.classList.add("loading");
-      btn.innerText = "Processing...";
+      btn.innerText = "處理中...";
       
       try {
         const response = await fetch("http://127.0.0.1:8000/summarize", {
@@ -32,18 +32,18 @@ function injectButton() {
         if (data.status === "success") {
           // Trigger download
           downloadMarkdown(data.content, "video_summary.md");
-          btn.innerText = "Done!";
+          btn.innerText = "完成！";
           setTimeout(() => {
             btn.innerHTML = `...`; // Restore SVG and text
             injectButton(); // Lazy way to restore original innerHTML
           }, 3000);
         } else {
-          alert("Error: " + data.detail);
-          btn.innerText = "Failed";
+          alert("錯誤：" + data.detail);
+          btn.innerText = "失敗";
         }
       } catch (err) {
-        alert("Server not running. Please start yt_notes_server.py");
-        btn.innerText = "Error";
+        alert("伺服器未啟動，請先執行 yt_notes_server.py");
+        btn.innerText = "錯誤";
       } finally {
         btn.classList.remove("loading");
       }
