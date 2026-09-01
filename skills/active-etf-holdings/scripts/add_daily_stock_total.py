@@ -185,6 +185,11 @@ def build_all_days(workbook) -> list[tuple[str, dict[str, dict]]]:
 # 寫入分頁
 # ─────────────────────────────────────────────────────────────────────────────
 
+ALIGN_CENTER = Alignment(horizontal="center", vertical="center")
+ALIGN_LEFT = Alignment(horizontal="left", vertical="center")
+ALIGN_RIGHT = Alignment(horizontal="right", vertical="center")
+
+
 def write_output_sheet(workbook, all_days: list[tuple[str, dict]]) -> None:
     """將彙總結果寫入「每日個股合計」分頁。"""
 
@@ -266,7 +271,12 @@ def write_output_sheet(workbook, all_days: list[tuple[str, dict]]) -> None:
             def write_cell(col: int, value, h_align: str = "center", fmt: str | None = None):
                 c = ws.cell(row=row_idx, column=col, value=value)
                 c.font = FONT_BODY
-                c.alignment = Alignment(horizontal=h_align, vertical="center")
+                if h_align == "center":
+                    c.alignment = ALIGN_CENTER
+                elif h_align == "left":
+                    c.alignment = ALIGN_LEFT
+                elif h_align == "right":
+                    c.alignment = ALIGN_RIGHT
                 c.border = THIN
                 if fill:
                     c.fill = fill
@@ -338,22 +348,26 @@ def main() -> None:
     if not xlsx_path.exists():
         raise FileNotFoundError(f"找不到 XLSX 檔案：{xlsx_path}")
 
-    print(f"讀取：{xlsx_path}")
+    print(f"讀取：{xlsx_path}", flush=True)
     workbook = load_workbook(xlsx_path)
+    print("Workbook 載入完成。", flush=True)
 
     date_sheets = [n for n in workbook.sheetnames if is_date_sheet(n)]
     if not date_sheets:
-        print("未找到任何 YYYYMMDD 格式的日期分頁，程式結束。")
+        print("未找到任何 YYYYMMDD 格式的日期分頁，程式結束。", flush=True)
         return
 
-    print(f"找到 {len(date_sheets)} 個日期分頁：{', '.join(date_sheets)}")
+    print(f"找到 {len(date_sheets)} 個日期分頁。", flush=True)
 
+    print("彙總每日個股數據中...", flush=True)
     all_days = build_all_days(workbook)
+    print("寫入每日個股合計分頁...", flush=True)
     write_output_sheet(workbook, all_days)
     reorder_sheets(workbook)
 
+    print(f"儲存 XLSX：{xlsx_path}...", flush=True)
     workbook.save(xlsx_path)
-    print(f"已儲存：{xlsx_path}")
+    print(f"已儲存：{xlsx_path}", flush=True)
 
     # ─────────────────────────────────────────────────────────────────────────────
     # 自動調用繪圖與 Markdown 嵌入腳本
@@ -362,12 +376,12 @@ def main() -> None:
         script_dir = Path(__file__).resolve().parent
         draw_script = script_dir / "draw_holdings_charts.py"
         if draw_script.exists():
-            print("自動執行加減碼視覺化繪圖...")
+            print("自動執行加減碼視覺化繪圖...", flush=True)
             subprocess.run([sys.executable, str(draw_script)], check=True)
         else:
-            print(f"找不到繪圖腳本: {draw_script}")
+            print(f"找不到繪圖腳本: {draw_script}", flush=True)
     except Exception as exc:
-        print(f"執行繪圖腳本失敗: {exc}")
+        print(f"執行繪圖腳本失敗: {exc}", flush=True)
 
 
 if __name__ == "__main__":

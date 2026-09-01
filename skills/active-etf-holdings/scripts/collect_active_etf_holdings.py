@@ -368,6 +368,11 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
     font_regular = Font(name="微軟正黑體", size=10)
     fill_header = PatternFill(start_color="4F81BD", end_color="4F81BD", fill_type="solid")
     
+    align_center = Alignment(horizontal="center")
+    align_left = Alignment(horizontal="left")
+    align_right = Alignment(horizontal="right")
+    align_header = Alignment(horizontal="center", vertical="center")
+
     def write_diff_sheet(sheet_title, headers, data_list):
         is_add_dec_sheet = sheet_title in ("加碼張數", "減碼張數")
         
@@ -387,8 +392,8 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                     continue
                 existing_rows.append(r)
                 
-            # 完全清空工作表的所有列以利重新排列
-            ws_diff.delete_rows(1, ws_diff.max_row)
+            del workbook[sheet_title]
+            ws_diff = workbook.create_sheet(sheet_title)
         else:
             ws_diff = workbook.create_sheet(sheet_title)
             existing_rows = [headers]
@@ -401,22 +406,22 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                 if next_row == 1:
                     cell.font = font_header
                     cell.fill = fill_header
-                    cell.alignment = Alignment(horizontal="center", vertical="center")
+                    cell.alignment = align_header
                 else:
                     cell.font = font_regular
                     if col_idx in (1, 2, 4):
-                        cell.alignment = Alignment(horizontal="center")
+                        cell.alignment = align_center
                     elif col_idx in (3, 5):
-                        cell.alignment = Alignment(horizontal="left")
+                        cell.alignment = align_left
                     elif col_idx in (6, 7, 8):
-                        cell.alignment = Alignment(horizontal="right")
+                        cell.alignment = align_right
                         if isinstance(val, (int, float)):
                             if isinstance(val, float) and not val.is_integer():
                                 cell.number_format = '#,##0.00'
                             else:
                                 cell.number_format = '#,##0'
                     elif col_idx == 9 and is_add_dec_sheet:
-                        cell.alignment = Alignment(horizontal="right")
+                        cell.alignment = align_right
                         if isinstance(val, (int, float)):
                             cell.number_format = '0.00%'
                 cell.border = thin_border
@@ -428,16 +433,16 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
             
         # 寫入本次新變動的資料
         for item in data_list:
-            ws_diff.cell(row=next_row, column=1, value=item["date"]).alignment = Alignment(horizontal="center")
-            ws_diff.cell(row=next_row, column=2, value=item["etf_code"]).alignment = Alignment(horizontal="center")
-            ws_diff.cell(row=next_row, column=3, value=item["etf_name"]).alignment = Alignment(horizontal="left")
-            ws_diff.cell(row=next_row, column=4, value=item["stock_code"]).alignment = Alignment(horizontal="center")
-            ws_diff.cell(row=next_row, column=5, value=item["stock_name"]).alignment = Alignment(horizontal="left")
+            ws_diff.cell(row=next_row, column=1, value=item["date"]).alignment = align_center
+            ws_diff.cell(row=next_row, column=2, value=item["etf_code"]).alignment = align_center
+            ws_diff.cell(row=next_row, column=3, value=item["etf_name"]).alignment = align_left
+            ws_diff.cell(row=next_row, column=4, value=item["stock_code"]).alignment = align_center
+            ws_diff.cell(row=next_row, column=5, value=item["stock_name"]).alignment = align_left
             
             if is_add_dec_sheet:
                 # Column F: 原張數
                 cell_prev = ws_diff.cell(row=next_row, column=6, value=item["lots_prev"])
-                cell_prev.alignment = Alignment(horizontal="right")
+                cell_prev.alignment = align_right
                 if isinstance(item["lots_prev"], float) and not item["lots_prev"].is_integer():
                     cell_prev.number_format = '#,##0.00'
                 else:
@@ -445,7 +450,7 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                 
                 # Column G: 加碼後張數 / 減碼後張數
                 cell_new = ws_diff.cell(row=next_row, column=7, value=item["lots_new"])
-                cell_new.alignment = Alignment(horizontal="right")
+                cell_new.alignment = align_right
                 if isinstance(item["lots_new"], float) and not item["lots_new"].is_integer():
                     cell_new.number_format = '#,##0.00'
                 else:
@@ -457,13 +462,13 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
                 else:
                     formula_diff = f"=F{next_row}-G{next_row}"
                 cell_amount = ws_diff.cell(row=next_row, column=8, value=formula_diff)
-                cell_amount.alignment = Alignment(horizontal="right")
+                cell_amount.alignment = align_right
                 cell_amount.number_format = '#,##0.00'
                 
                 # Column I: 加碼比例 / 減碼比例 (Formula)
                 formula_pct = f"=IF(F{next_row}=0,0,H{next_row}/F{next_row})"
                 cell_pct = ws_diff.cell(row=next_row, column=9, value=formula_pct)
-                cell_pct.alignment = Alignment(horizontal="right")
+                cell_pct.alignment = align_right
                 cell_pct.number_format = '0.00%'
                 
                 max_cols = 9
@@ -516,7 +521,9 @@ def update_comparison_sheets(workbook, normalized_name: str, rows: list[dict[str
 def write_xlsx_sheet(path: Path, rows: list[dict[str, object]], sheet_name: str) -> str:
     normalized_name = normalize_sheet_name(sheet_name)
     if path.exists():
+        print(f"Loading existing workbook: {path}...", flush=True)
         workbook = load_workbook(path)
+        print("Workbook loaded successfully.", flush=True)
     else:
         workbook = Workbook()
     had_date_sheets = any(re.fullmatch(r"\d{8}", title) for title in workbook.sheetnames)
@@ -539,27 +546,28 @@ def write_xlsx_sheet(path: Path, rows: list[dict[str, object]], sheet_name: str)
     worksheet.freeze_panes = "A2"
     worksheet.auto_filter.ref = worksheet.dimensions
 
-    for column_cells in worksheet.columns:
-        max_length = max(len(str(cell.value or "")) for cell in column_cells)
-        column_letter = column_cells[0].column_letter
-        worksheet.column_dimensions[column_letter].width = min(max(max_length + 2, 10), 80)
+    col_widths = ["A:12", "B:30", "C:12", "D:12", "E:25", "F:12", "G:15", "H:15", "I:50"]
+    for cw in col_widths:
+        col_letter, w = cw.split(":")
+        worksheet.column_dimensions[col_letter].width = int(w)
 
-    for worksheet_to_check in list(workbook.worksheets):
-        if worksheet_to_check.max_row == 1 and worksheet_to_check.max_column == 1:
-            if worksheet_to_check["A1"].value is None and len(workbook.worksheets) > 1:
-                del workbook[worksheet_to_check.title]
-        elif worksheet_to_check.title in LEGACY_XLSX_SHEETS:
-            del workbook[worksheet_to_check.title]
-        elif not had_date_sheets and worksheet_to_check.title != normalized_name:
-            del workbook[worksheet_to_check.title]
+    for title in list(workbook.sheetnames):
+        if title in ("Sheet", "Sheet1") or title in LEGACY_XLSX_SHEETS:
+            if len(workbook.sheetnames) > 1:
+                del workbook[title]
+        elif not had_date_sheets and title != normalized_name:
+            del workbook[title]
 
     # Automatically compute and write the four difference comparison sheets
     try:
+        print("Updating comparison sheets...", flush=True)
         update_comparison_sheets(workbook, normalized_name, rows)
     except Exception as exc:
-        print(f"Error updating comparison sheets: {exc}")
+        print(f"Error updating comparison sheets: {exc}", flush=True)
 
+    print(f"Saving workbook to {path}...", flush=True)
     workbook.save(path)
+    print("Workbook saved successfully.", flush=True)
     return normalized_name
 
 
@@ -800,7 +808,8 @@ def main() -> None:
 
     rows: list[dict[str, object]] = []
     statuses: list[tuple[str, str, int, str]] = []
-    for ticker in tickers:
+    for idx, ticker in enumerate(tickers, 1):
+        print(f"[{idx}/{len(tickers)}] Fetching {ticker}...", flush=True)
         try:
             ticker_rows, status = parse_moneydj(ticker)
             rows.extend(ticker_rows)
@@ -812,16 +821,20 @@ def main() -> None:
     detail_path = args.output_dir / "主動型ETF持股明細.xlsx"
     summary_path = args.output_dir / "主動型ETF持股彙總.md"
     changes_path = args.output_dir / "主動型ETF持股變動.md"
+    print("Writing XLSX sheet...", flush=True)
     sheet_name = write_xlsx_sheet(detail_path, rows, args.sheet_date)
+    print("Writing Markdown summary...", flush=True)
     write_markdown(summary_path, statuses, aggregate(rows), detail_path.name, args.top)
+    print("Writing Changes Markdown...", flush=True)
     compared_sheets = write_changes_markdown(changes_path, detail_path, args.change_threshold)
 
     comparison_xlsx_path = args.output_dir / "台灣ETF比較清單.xlsx"
     if args.input_list and args.input_list.exists() and comparison_xlsx_path.exists():
         try:
+            print("Updating comparison Excel...", flush=True)
             update_comparison_xlsx(args.input_list, comparison_xlsx_path)
         except Exception as exc:
-            print(f"Error updating comparison Excel: {exc}")
+            print(f"Error updating comparison Excel: {exc}", flush=True)
 
     print(f"ETF count: {len(tickers)}")
     print(f"Holding rows: {len(rows)}")
