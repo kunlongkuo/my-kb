@@ -2,6 +2,40 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-09-11 ── 主動型 ETF 第 77 次日更與週統計更新（週五）
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20260911，第 77 次更新）**
+   - 抓取 30 檔主動型 ETF，共 1,729 筆持股，寫入 `主動型ETF持股明細.xlsx` 的 `20260911` 分頁。
+   - 比較 20260910 → 20260911 持股變動，更新 `主動型ETF持股變動.md` 與 `主動型ETF持股彙總.md`。
+   - 每日個股合計累計 **57,844 筆**（78 個交易日，20260520～20260911）。
+   - 週五成功執行 `add_weekly_summary.py` 比對 20260904 → 20260911，更新每週加減碼明細與週卡統計。
+   - 生成今日加減碼圖表：`20260911_additions.png` / `20260911_reductions.png`，並同步覆蓋固定檔名圖表。
+   - 重新產生 `dashboard_data.js`，HTML 日期下拉選單同步至 20260911（561 檔個股與 yfinance 股價數據）。
+
+### 📁 重要改動檔案
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（新增 `20260911` 分頁，更新 Weekly Additions/Reductions 與每日個股合計）
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/dashboard_data.js`
+- `wiki/金融投資/images/20260911_additions.png`
+- `wiki/金融投資/images/20260911_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png`
+- `wiki/金融投資/images/active_etf_top_reductions.png`
+- `handoff.md`
+
+### 決策紀錄
+- 例行週五更新，完整跑完日更、週加減碼統計、個股合計、排行圖表繪製及 Web Dashboard JavaScript 資料庫匯出。
+
+### 卡關 / 待解
+- 無
+
+### 下次接手先看
+- 繼續每日主動型 ETF 持股日更（下次：20260914，週一）
+
+---
+
 ## 2026-09-01 ── 主動型 ETF 第 70 次日更與台灣 ETF 比較清單全量超連結更新（週二）
 
 ### ✅ 今日完成
