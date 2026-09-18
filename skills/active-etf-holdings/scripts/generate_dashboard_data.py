@@ -13,6 +13,7 @@ import pandas as pd
 
 # Define file paths
 EXCEL_PATH = Path("wiki/金融投資/主動型ETF持股明細.xlsx")
+LIST_EXCEL_PATH = Path("wiki/金融投資/台灣ETF比較清單.xlsx")
 OUTPUT_JS_PATH = Path("wiki/金融投資/dashboard_data.js")
 
 def get_close_price(df, ticker, date_str):
@@ -50,6 +51,28 @@ def main():
         print(f"Error: Excel file '{EXCEL_PATH}' does not exist.")
         return
 
+    stock_data = {}
+    etf_info = {}
+    
+    # Pre-populate etf_info from 台灣ETF比較清單.xlsx if available
+    if LIST_EXCEL_PATH.exists():
+        try:
+            list_wb = openpyxl.load_workbook(LIST_EXCEL_PATH, data_only=True)
+            if "主動型" in list_wb.sheetnames:
+                ws_list = list_wb["主動型"]
+                for row in list(ws_list.iter_rows(values_only=True))[1:]:
+                    if row and row[0]:
+                        e_id = str(row[0]).strip()
+                        e_name = str(row[1]).strip() if len(row) > 1 and row[1] else e_id
+                        issuer = "未知投信"
+                        for kw in ["富邦", "元大", "復華", "摩根", "台新", "國泰", "群益", "統一", "兆豐", "第一金", "野村", "凱基", "中信", "保德信", "日盛"]:
+                            if kw in e_name:
+                                issuer = kw + "投信"
+                                break
+                        etf_info[e_id] = {"name": e_name, "issuer": issuer}
+        except Exception as e:
+            print(f"Warning: Could not pre-populate etf_info from LIST_EXCEL_PATH: {e}")
+
     print("Loading active ETF workbook...")
     wb = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
     
@@ -65,9 +88,6 @@ def main():
         return
         
     print(f"Found {len(dates)} date sheets: {dates}")
-    
-    stock_data = {}
-    etf_info = {}
     
     # 1. Parse Excel data
     print("Parsing Excel sheets...")
