@@ -797,6 +797,13 @@ def update_comparison_xlsx(input_list_path: Path, xlsx_path: Path) -> None:
         ws.append(["證券代號", "基金簡稱", "經理人", "保管銀行", "配息頻率 (月份)", "經理費 (年率)", "保管費 (年率)", "最近除息日期"])
     for r in table_rows:
         ws.append(r)
+    for row_idx in range(2, ws.max_row + 1):
+        cell = ws.cell(row=row_idx, column=1)
+        code = str(cell.value or "").strip().replace("'", "").replace("*", "")
+        if code:
+            url = f"https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid={code}.TW"
+            cell.hyperlink = url
+            cell.font = Font(color="0563C1", underline="single")
     wb.save(xlsx_path)
     print(f"Updated '{sheet_name}' sheet in: {xlsx_path} with {len(table_rows)} ETFs.")
 

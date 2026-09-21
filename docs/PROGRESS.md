@@ -652,6 +652,41 @@
 
 ---
 
+## 2026-09-21 ── 主動型 ETF 持股日更 (20260921) 與比較清單連結修復
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更 (20260921)**
+   - 抓取 31 檔主動型 ETF 共 1,801 筆持股，寫入 `主動型ETF持股明細.xlsx` 的 `20260921` 工作表。
+   - 完成「每日個股合計」分頁更新（累計 62,389 筆歷史統計紀錄）。
+   - 自動繪製 Top 10 加減碼趨勢圖表，並嵌入 `主動型ETF持股變動.md`。
+   - 重新生成 `dashboard_data.js`，HTML 儀表板選單同步至 2026-09-21。
+2. **台灣ETF比較清單.xlsx 代號連結修復**
+   - 修正 `collect_active_etf_holdings.py` 的 `update_comparison_xlsx` 函式，自動添加 MoneyDJ 超連結與藍色底線字型樣式。
+   - 補齊 `台灣ETF比較清單.xlsx` 的「主動型」分頁全數 31 檔標的證券代號超連結。
+
+### 📝 重要改動檔案
+
+- `skills/active-etf-holdings/scripts/collect_active_etf_holdings.py` — 新增 `update_comparison_xlsx` 超連結樣式寫入邏輯
+- `wiki/金融投資/台灣ETF比較清單.xlsx` — 恢復「主動型」分頁證券代號超連結
+- `wiki/金融投資/主動型ETF持股明細.xlsx` — 新增 `20260921` 分頁與個股合計
+- `wiki/金融投資/主動型ETF持股變動.md` / `主動型ETF持股彙總.md` — 更新變動紀錄與彙總
+- `wiki/金融投資/dashboard_data.js` — 更新儀表板數據檔
+
+### 🔍 決策紀錄
+
+- `update_comparison_xlsx` 在每次重新產生「主動型」分頁時，必須對 column 1 套用 `cell.hyperlink` 與 `Font(color="0563C1", underline="single")`，防止日更重新寫入清單時清除既有樣式。
+
+### ⚠️ 卡關 / 待解
+
+- 無
+
+### 📌 下次接手先看
+
+- 繼續每日 ETF 日更流程（`collect_active_etf_holdings.py` → `add_daily_stock_total.py` → `generate_dashboard_data.py`）
+
+---
+
 ## 2026-07-30 ── 主動型 ETF 第 50 次日更 + chezmoi 備份設定
 
 ### ✅ 今日完成
