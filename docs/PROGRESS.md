@@ -2,7 +2,50 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-09-23 ── 主動型 ETF 第 86 次持股日更 + video-use-editor Skill 整合（週三）
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20260923，第 86 次更新）**
+   - 執行 `collect_active_etf_holdings.py` 成功抓取 31 檔主動型 ETF 共 1,796 筆持股，寫入 [`主動型ETF持股明細.xlsx`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E6%98%8E%E7%B4%B0.xlsx) 之 `20260923` 工作表（歷史累計 86 個交易日）。
+   - 執行 `add_daily_stock_total.py`，「每日個股合計」工作表累計至 **63,917 筆**。自動繪製 Top 10 加碼 / 減碼圖表並嵌入 `主動型ETF持股變動.md`（比較區間：`20260922` → `20260923`）。
+   - 執行 `generate_dashboard_data.py` 重新產出 `dashboard_data.js`，HTML 儀表板同步至 2026-09-23。
+
+2. **短影音 Skill 整合：video-use-editor**
+   - Clone [browser-use/video-use](https://github.com/browser-use/video-use) 至 `skills/video-use/`，安裝 Python deps（`librosa`, `PIL`, `numpy`）。
+   - 新增 Skill `.agents/skills/video-use-editor/SKILL.md`（Antigravity 入口，含環境確認、快速進場流程、Helpers 速查、Hard Rules）。
+   - 更新 `video-production-workflow` SKILL.md：加入路徑 F（AI 對話式精剪）分流決策說明。
+   - 更新 `video-autopilot` SKILL.md：加入「路徑 F 轉介」章節。
+   - 設定 ElevenLabs API Key 至 `skills/video-use/.env`（`.gitignore` 已保護）。
+   - 將 `skills/video-use/SKILL.md` 改寫為繁體中文完整說明（15 章節）。
+
+### 📁 重要異動檔案
+
+- `.agents/skills/video-use-editor/SKILL.md` ← 新增
+- `.agents/skills/video-autopilot/SKILL.md` ← 更新
+- `.agents/skills/video-production-workflow/SKILL.md` ← 更新
+- `skills/video-use/` ← 新增（整個 repo）
+- `wiki/金融投資/主動型ETF持股明細.xlsx` ← 更新（+20260923 工作表）
+- `wiki/金融投資/dashboard_data.js` ← 更新
+- `wiki/金融投資/images/20260923_additions.png` ← 新增
+- `wiki/金融投資/images/20260923_reductions.png` ← 新增
+- `每日筆記/2026-09-23.md` ← 新增
+
+### 🔍 決策紀錄
+
+- `video-use-editor` 定位為「口播 / 逐字稿驅動」路徑，與 `video-autopilot`（CapCut/ffmpeg GUI）互補，不衝突。
+- ElevenLabs API Key 僅存於 `skills/video-use/.env`，由 repo 的 `.gitignore` 第 2 行保護，不會被 commit。
+- `skills/video-use/SKILL.md` 選擇完全中文化而非雙語，避免維護兩份說明的成本。
+
+### 📋 下次接手先看
+
+- 繼續每日 ETF 日更（20260924，週四）
+- `video-use-editor` 已備妥，下次有口播影片素材可直接使用
+
+---
+
 ## 2026-09-22 ── 主動型 ETF 第 85 次持股日更與儀表板同步（週二）
+
 
 ### ✅ 今日完成
 
