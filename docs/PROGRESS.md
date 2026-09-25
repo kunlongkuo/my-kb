@@ -2,6 +2,37 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-09-25 ── GitHub 帳號確認與收工同步（週五）
+
+### ✅ 今日完成
+
+1. **GitHub 帳號驗證與環境狀態檢查**
+   - 透過 `gh auth status` 確認當前 GitHub CLI 連接帳號為 `kunlongkuo-cloud`。
+   - 確認 Git 設定使用者名稱 `Mark` 與 Email `kunlongkuo@gmail.com`。
+2. **收工流程 SOP 執行**
+   - 執行敏感資訊掃描通過。
+   - 更新 `handoff.md`。
+   - 更新 `docs/PROGRESS.md`。
+   - 更新 Obsidian 今日筆記。
+   - 執行 Git commit & push。
+
+### 📁 重要異動檔案
+
+- `handoff.md` ← 更新
+- `docs/PROGRESS.md` ← 更新
+- `每日筆記/2026-09-25.md` ← 更新 / 新增
+
+### 🔍 決策紀錄
+
+- 確認目前 GitHub 帳號權限與設定正常，可順利推送專案至 `kunlongkuo-cloud` 倉庫。
+
+### 📋 下次接手先看
+
+- 繼續每日主動型 ETF 持股追蹤與日更
+- 定期備份專案與 Obsidian 筆記
+
+---
+
 ## 2026-09-23 ── 主動型 ETF 第 86 次持股日更 + video-use-editor Skill 整合（週三）
 
 ### ✅ 今日完成
