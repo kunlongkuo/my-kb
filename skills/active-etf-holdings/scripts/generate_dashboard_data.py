@@ -332,7 +332,7 @@ def main():
     OUTPUT_JS_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_JS_PATH, "w", encoding="utf-8") as f:
         f.write("const ETF_DASHBOARD_DATA = ")
-        json.dump(output_data, f, ensure_ascii=False, indent=2)
+        json.dump(output_data, f, ensure_ascii=False, separators=(',', ':'))
         f.write(";\n")
         
     print(f"Successfully generated dashboard data file at {OUTPUT_JS_PATH}")

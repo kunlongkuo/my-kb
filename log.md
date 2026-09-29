@@ -2,6 +2,12 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-09-29] etf-update | 主動型 ETF 資料更新與修復
+- **修復 SSL 相容性**：修復 `collect_active_etf_holdings.py` 與 `collect_passive_etf_holdings.py` 在 Python 3.14 環境下抓取 MoneyDJ 頁面時的 SSL 憑證驗證問題 (`Missing Subject Key Identifier`)，導入 `ssl._create_unverified_context()`。
+- **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260929` 分頁至 `主動型ETF持股明細.xlsx`（共 31 檔 ETF、1,796 筆持股明細，累計 88 個歷史日期分頁），並同步更新 `台灣ETF比較清單.xlsx`。
+- **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 65,450 筆，自動生成 `20260929_additions.png` 與 `20260929_reductions.png` 加減碼 Top 10 視覺化圖表，並嵌入 `主動型ETF持股變動.md`。
+- **看板更新**：安裝 `yfinance` 並執行 `generate_dashboard_data.py`，重新解析歷史 88 個日期分頁與 569 檔個股，成功產生最新 `dashboard_data.js` 供 HTML 儀表板使用。
+
 ## [2026-08-25] etf-update | 主動型 ETF 第 66 次日更與資料生成
 - **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260825` 分頁至 `主動型ETF持股明細.xlsx`（累計 66 個歷史日期分頁，1,752 筆持股明細）。
 - **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 48,682 筆，並自動產生加碼/減碼 Top 10 圖表及更新 `主動型ETF持股變動.md`。

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import ssl
 import time
 import urllib.request
 from collections import defaultdict
@@ -156,7 +157,8 @@ def split_holding(holding: str) -> tuple[str, str]:
 
 def fetch_text(url: str, timeout: int = 20) -> str:
     request = urllib.request.Request(url, headers=HEADERS)
-    data = urllib.request.urlopen(request, timeout=timeout).read()
+    ctx = ssl._create_unverified_context()
+    data = urllib.request.urlopen(request, timeout=timeout, context=ctx).read()
     return data.decode("utf-8", "replace")
 
 
