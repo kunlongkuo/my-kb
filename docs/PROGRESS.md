@@ -2,6 +2,34 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-10-07 ── 主動型 ETF 持股日更與儀表板同步（週三）
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20261007，第 94 次更新）**
+   - 執行 `collect_active_etf_holdings.py` 成功抓取 31 檔主動型 ETF 共 1,786 筆持股，寫入 [`主動型ETF持股明細.xlsx`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E6%98%8E%E7%B4%B0.xlsx) 之 `20261007` 工作表（歷史累計 94 個交易日分頁）。
+   - 執行 `add_daily_stock_total.py` 更新「每日個股合計」工作表（累計 94 日，共 69,978 筆數據）。
+   - 自動調用 `draw_holdings_charts.py` 更新今日 Top 10 加減碼視覺化圖表 (`20261007_additions.png` / `20261007_reductions.png`) 與 [`主動型ETF持股變動.md`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E8%AE%8A%E5%8B%95.md)（比較區間：`20261006` → `20261007`）。
+   - 解決 Python 3.14 環境下 `pandas` DLL 相依問題，優化 `generate_dashboard_data.py` 與 `add_weekly_summary.py`，成功更新 `dashboard_data.js` 儀表板資料庫與週加減碼工作表（比較區間：`20261002` → `20261007`）。
+
+### 📁 重要改動檔案
+
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（新增 `20261007` 工作表、Weekly Additions/Reductions、每日個股合計）
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `wiki/金融投資/dashboard_data.js`
+- `wiki/金融投資/images/20261007_additions.png` / `20261007_reductions.png`
+- `skills/active-etf-holdings/scripts/generate_dashboard_data.py`
+- `skills/active-etf-holdings/scripts/add_weekly_summary.py`
+- `handoff.md`
+- `每日筆記/2026-10-07.md`
+
+### 📋 下次接手先看
+
+- 繼續每日主動型 ETF 持股追蹤與日更（下個交易日：20261008，週四）
+
+---
+
 ## 2026-10-02 ── 主動型 ETF 持股日更與週統計及儀表板同步（週五）
 
 ### ✅ 今日完成

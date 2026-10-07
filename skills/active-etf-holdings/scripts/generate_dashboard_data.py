@@ -8,8 +8,14 @@ import json
 import datetime
 from pathlib import Path
 import openpyxl
-import yfinance as yf
-import pandas as pd
+
+try:
+    import yfinance as yf
+    import pandas as pd
+except Exception as e:
+    print(f"Warning: pandas/yfinance unavailable ({e}). Close prices will be omitted.")
+    yf = None
+    pd = None
 
 # Define file paths
 EXCEL_PATH = Path("wiki/金融投資/主動型ETF持股明細.xlsx")
@@ -18,9 +24,11 @@ OUTPUT_JS_PATH = Path("wiki/金融投資/dashboard_data.js")
 
 def get_close_price(df, ticker, date_str):
     """Safely extract close price for a ticker on or near a target date (handling weekends/holidays)."""
+    if df is None or pd is None:
+        return None
     # date_str is YYYYMMDD -> convert to YYYY-MM-DD
     target_date = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
-    if df.empty:
+    if hasattr(df, 'empty') and df.empty:
         return None
     try:
         timestamp = pd.Timestamp(target_date)
@@ -270,47 +278,51 @@ def main():
             # Skip indices / futures / other complex derivatives
             pass
             
-    print(f"Downloading historical close prices for {len(tickers_to_download)} tickers from {start_str} to {end_str}...")
-    try:
-        df = yf.download(tickers_to_download, start=start_str, end=end_str, group_by="ticker")
-    except Exception as e:
-        print(f"yfinance download failed: {e}")
-        df = pd.DataFrame()
-
-    # Retry missing Taiwan tickers with .TWO (Overs-The-Counter)
-    two_tickers = []
-    two_ticker_to_stock_id = {}
-    
-    for ticker in tickers_to_download:
-        stock_id = ticker_to_stock_id[ticker]
-        if ticker.endswith(".TW"):
-            has_data = False
-            if not df.empty:
-                if len(tickers_to_download) == 1:
-                    has_data = not df["Close"].dropna().empty
-                else:
-                    if ticker in df.columns.levels[0]:
-                        has_data = not df[ticker]["Close"].dropna().empty
-            
-            if not has_data:
-                two_ticker = f"{stock_id}.TWO"
-                two_tickers.append(two_ticker)
-                two_ticker_to_stock_id[two_ticker] = stock_id
-                
-    if two_tickers:
-        print(f"Retrying {len(two_tickers)} OTC tickers with .TWO suffix...")
+    df = None
+    if yf is not None and pd is not None:
+        print(f"Downloading historical close prices for {len(tickers_to_download)} tickers from {start_str} to {end_str}...")
         try:
-            df_two = yf.download(two_tickers, start=start_str, end=end_str, group_by="ticker")
-            if not df_two.empty:
-                if df.empty:
-                    df = df_two
-                else:
-                    df = pd.concat([df, df_two], axis=1)
-                for t_two, sid in two_ticker_to_stock_id.items():
-                    stock_id_to_ticker[sid] = t_two
-                    ticker_to_stock_id[t_two] = sid
+            df = yf.download(tickers_to_download, start=start_str, end=end_str, group_by="ticker")
         except Exception as e:
-            print(f"yfinance download with .TWO suffix failed: {e}")
+            print(f"yfinance download failed: {e}")
+            df = pd.DataFrame()
+
+        # Retry missing Taiwan tickers with .TWO (Overs-The-Counter)
+        two_tickers = []
+        two_ticker_to_stock_id = {}
+        
+        for ticker in tickers_to_download:
+            stock_id = ticker_to_stock_id[ticker]
+            if ticker.endswith(".TW"):
+                has_data = False
+                if df is not None and hasattr(df, 'empty') and not df.empty:
+                    if len(tickers_to_download) == 1:
+                        has_data = not df["Close"].dropna().empty
+                    else:
+                        if ticker in df.columns.levels[0]:
+                            has_data = not df[ticker]["Close"].dropna().empty
+                
+                if not has_data:
+                    two_ticker = f"{stock_id}.TWO"
+                    two_tickers.append(two_ticker)
+                    two_ticker_to_stock_id[two_ticker] = stock_id
+                    
+        if two_tickers:
+            print(f"Retrying {len(two_tickers)} OTC tickers with .TWO suffix...")
+            try:
+                df_two = yf.download(two_tickers, start=start_str, end=end_str, group_by="ticker")
+                if not df_two.empty:
+                    if df is None or df.empty:
+                        df = df_two
+                    else:
+                        df = pd.concat([df, df_two], axis=1)
+                    for t_two, sid in two_ticker_to_stock_id.items():
+                        stock_id_to_ticker[sid] = t_two
+                        ticker_to_stock_id[t_two] = sid
+            except Exception as e:
+                print(f"yfinance download with .TWO suffix failed: {e}")
+    else:
+        print("Skipping yfinance download as yfinance/pandas is unavailable.")
 
     # Map prices to stock data
     print("Mapping close prices to data structure...")
