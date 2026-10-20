@@ -2,6 +2,47 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-10-20 ── 主動型 ETF 持股日更與 FreeTWAI 影片技能整合（週二，第 102 次更新）
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20261020，第 102 次更新）**
+   - 執行 `collect_active_etf_holdings.py` 成功抓取 31 檔主動型 ETF 共 1,783 筆持股，寫入 [`主動型ETF持股明細.xlsx`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E6%98%8E%E7%B4%B0.xlsx) 之 `20261020` 工作表（歷史累計 102 個交易日分頁）。
+   - 執行 `add_weekly_summary.py` 更新週加減碼明細 `Weekly Additions` 與 `Weekly Reductions` 工作表（比較區間：`20261016` → `20261020`）。
+   - 執行 `add_daily_stock_total.py` 更新「每日個股合計」工作表（累計 102 日，共 75,972 筆數據）。
+   - 自動調用 `draw_holdings_charts.py` 更新今日 Top 10 加減碼視覺化圖表 (`20261020_additions.png` / `20261020_reductions.png` 及固定名稱最新圖檔) 與 [`主動型ETF持股變動.md`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E8%AE%8A%E5%8B%95.md)（比較區間：`20261019` → `20261020`）。
+   - 執行 `generate_dashboard_data.py` 更新 `dashboard_data.js` 儀表板資料庫至 2026-10-20（584 檔標的歷史收盤價與持倉信號，`主動型ETF個股加減碼排行.html` 下拉選單同步更新）。
+2. **整合自由工坊開源專案 `FreeTWAI/video-autopilot-kit`（v0.23.0 / 架構 7.0）**
+   - 確立 **Editkin v4** 唯一剪輯合約，新增參考文件 `editkin-v4-contract.md`、`mechanical-gates-and-teardown.md` 與 `unified-filter-library.md`。
+   - 規範三條同構生產線（教學長片、直式短影音、線上訪談）與機械閘門（Fail-Closed Gates）。
+   - 將升級後的 `video-autopilot` 同步鏡像至 `skills/`、`.agents/skills/` 與 `.opencode/skills/`。
+   - 同步鏡像 `video-use-editor` 至 `.opencode/skills/`，並在 `opencode.json` 中配置允許權限，使 OpenCode、AntiGravity 等跨 Agent 能調用完整的短影音技能群。
+   - 同步更新 `docs/AGENT_SHARED_SKILLS.md` 與 `.agents/README.md`。
+
+### 📁 重要改動檔案
+
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（新增 `20261020` 工作表、Weekly Additions/Reductions、每日個股合計）
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `wiki/金融投資/images/20261020_additions.png` / `20261020_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png` / `active_etf_top_reductions.png`
+- `wiki/金融投資/dashboard_data.js`
+- `skills/video-autopilot/SKILL.md` 及 `references/` 三份新規範文件
+- `.agents/skills/video-autopilot/` 與 `.opencode/skills/video-autopilot/`
+- `.opencode/skills/video-use-editor/`
+- `opencode.json`
+- `docs/AGENT_SHARED_SKILLS.md`
+- `.agents/README.md`
+- `每日筆記/2026-10-20.md`
+- `handoff.md`
+
+### 🔍 下次接手要先看
+
+- 下個交易日：**20261021（週三）**，執行標準主動型 ETF 日更流程即可。
+- 短影音若有剪輯需求，依類型分流調用：`video-production-workflow`（策略）➔ `video-autopilot`（Editkin v4）或 `video-use-editor`（語音精剪）。
+
+---
+
 ## 2026-10-19 ── 主動型 ETF 持股日更與儀表板同步（週一，第 101 次更新）
 
 ### ✅ 今日完成

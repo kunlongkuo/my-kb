@@ -10,13 +10,15 @@
 
 ## 已同步的技能
 
-1. `video-production-workflow`
-2. `video-autopilot`
+1. `video-production-workflow`（前期策略與類型分類）
+2. `video-autopilot`（Editkin v4、CapCut/ffmpeg 剪輯落地與機械閘門）
+3. `video-use-editor`（對話式 AI 逐字稿精剪與贅詞消除）
 
 ## 使用方式
 
 - 先看 `video-production-workflow`：用來判斷影片類型、平台、長度、字幕風格與剪輯策略。
-- 再看 `video-autopilot`：用來實際執行剪輯、自動化與輸出。
+- 再看 `video-autopilot`：用來實際執行剪輯、自動化與輸出（Editkin v4 唯一合約）。
+- 如為口播/訪談/教學等說話素材：可調用 `video-use-editor` 進行逐字稿精準精剪。
 - 如果需要更快上手，先讀各技能底下的 `references/` 文件，再回到 `SKILL.md`。
 
 ## 維護原則
@@ -28,8 +30,8 @@
 
 ## OpenCode 設定
 
-`opencode.json` 已加入這兩個技能的允許設定，讓 OpenCode 可以直接載入與使用。
+`opencode.json` 已加入這三個技能的允許設定（`allow`），讓 OpenCode 可以直接載入與使用。
 
 ## 給其他 Agent 的一句話
 
-這份共用包的核心原則是「先規劃，再執行」。`video-production-workflow` 負責定義策略，`video-autopilot` 負責落地執行。
+這份共用包的核心原則是「先規劃，再執行」。`video-production-workflow` 負責定義策略，`video-autopilot` 與 `video-use-editor` 負責落地執行。

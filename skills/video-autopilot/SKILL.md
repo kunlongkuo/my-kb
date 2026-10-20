@@ -1,66 +1,61 @@
 ---
 name: video-autopilot
-description: 在策略已確定後，執行短影音製作流程，包含 `CapCut`、`JSON` 直接編輯與 `ffmpeg`。適用於使用者要落地、輸出、QA、紀錄或發布自動化，並建議搭配 `video-production-workflow` 先完成規劃。
+description: 依據 Editkin v4 剪輯合約與機械閘門，執行短影音與長片製作落地流程，整合 CapCut JSON 原子編輯、ffmpeg 處理、統一濾鏡庫與發布 QA。適用於策略確認後的影片落地、輸出、審片與迭代自動化。
 ---
 
-# 短影音自動執行
+# 短影音與長片自動執行（Video Autopilot）
 
-這個技能只負責執行，不負責決定故事怎麼講。
-如果需求仍然不夠明確，請先停下來，只問最必要的補充資訊，不要直接開始剪。
+本技能依據 `FreeTWAI/video-autopilot-kit`（v0.23.0 / 架構 7.0）標準，以 **Editkin v4 唯一合約** 與 **機械閘門（Fail-Closed Gates）** 為核心，負責將前期策略企劃與素材證據轉化為高完成度的發布套件。
 
-## 如何使用
+本技能負責「精密執行與品質把關」，不代替使用者臆造未經證實的故事；若策略或素材不明確，先由 `video-production-workflow` 釐清，不硬切盲剪。
 
-1. 先讓 `video-production-workflow` 幫你判斷影片類型與 preset。
-2. 再決定要走 `CapCut`、`JSON` 直接編輯，還是 `ffmpeg` 路徑。
-3. 如果任務還沒講清楚，先補最少必要資訊，不要急著動剪。
-4. 完成輸出後，記得做 QA 和結果紀錄。
+---
 
-## 這個技能負責的事
+## 🧭 四大核心運作原則（Operating Contract）
 
-- 執行 `CapCut` GUI 工作流程。
-- 視情況進行 `JSON` 直接編輯。
-- 使用 `ffmpeg` 做裁切、合成、混音與備援輸出。
-- 處理預覽、QA、輸出、紀錄與模式迭代。
+1. **證據為先（Evidence-First）**：
+   - 畫面陳述的任何數據、價格、功能與論點，必有客觀來源（Citation-First）。
+   - 缺乏素材證據時，退回乾淨切鏡（Clean Cut）或定格，不憑空捏造。
+2. **唯一剪輯合約（Editkin v4）**：
+   - 標準流程：`素材證據查核 → 企劃編譯 (edit-plan/v4) → 機械閘門審查 (Gate Audit) → 原子套用 (Atomic Apply) → 渲染輸出`。
+3. **機械閘門嚴控（Fail-Closed Gates）**：
+   - 閘門不合規即刻攔截（Exit != 0），絕不靜默出片。
+4. **統一濾鏡與視覺調色（Color & Filter Rule）**：
+   - 全片調色（LUT / Purity）在流程中僅套用一次，且**必須先於字幕、圖卡與貼圖**。
+   - 轉場必須具備敘事動機（章節翻頁、話題轉換），無動機則維持自然跳切。
 
-## 這個技能不負責的事
+---
 
-- 不負責決定內容類型。
-- 不取代 `video-production-workflow`。
-- 不會在需求不清楚時偷偷切換路徑。
+## 🏭 三條同構生產線
 
-## 工作橋接
+| 生產線 | 專屬閘門 | 檢核核心 |
+| :--- | :--- | :--- |
+| **教學長片** (`longform_maker`) | `script_gate` | 觀眾語言過濾（行話/生僻詞攔截）、留存率節奏波形預檢。 |
+| **直式 Shorts / Reels** (`shorts_autopilot`) | `shorts_gate` | 9 條結構硬規則、平台感知片長帶（YT 甜蜜帶不生搬至 IG）、換句÷剪點節奏。 |
+| **線上訪談** (`interview_autopilot`) | `interview_gate` | I-A～I-E 數據來源審核：未經官方查證的來賓數據不上鏡。 |
 
-1. 先用 `video-production-workflow` 分類需求並選 preset。
-2. 策略確定後，再交給 `video-autopilot` 執行。
-3. 如果是發布型任務，輸出後要補紀錄。
+---
 
-詳見 [video-autopilot-workflow.md](references/video-autopilot-workflow.md) 的模式與路徑摘要。
+## 🛠️ 作業模式與落地路徑
 
-## 核心規則
+### 作業模式
+- **模式 A（Plan）**：依主題或頻道目標，由素材證據出發，產出腳本、分鏡、剪輯計畫與發布包。
+- **模式 B（Log Outcome）**：發布後記錄播放成效、留存曲線與觀眾回饋。
+- **模式 C（Optimize Patterns）**：自歷史數據學習，提煉最佳 Title/縮圖框架與節奏模式。
 
-- 需要 GUI 視覺樣式時，字幕、貼圖、動態文字盡量留在 `CapCut`。
-- `ffmpeg` 用於裁切、串接、縮放、混音與字幕燒錄備援。
-- 遇到付費牆、上傳步驟或每日限制時，必須明確取得使用者同意。
-- 如果動作跨過安全、預算或工具邊界，要停下並回報。
+### 落地工具鏈
+- **CapCut JSON 原子編輯**：字幕、花字樣式、貼圖圖層原生處理。
+- **ffmpeg & ffprobe**：影格抽檢、音訊測量（-14 LUFS）、格式轉碼與純剪備援。
+- **競品量化拆解（Teardown）**：精準計算競品之每分鐘刀數、換句率與視覺切換節奏。
 
-## 作業模式
+---
 
-- 模式 A：從主題或頻道目標規劃發布包。
-- 模式 B：發布後記錄結果。
-- 模式 C：依歷史結果優化模式。
+## 📚 參考指引
 
-## 路徑對照
-
-- 路徑 A：只輸出。
-- 路徑 B：字幕或模板加輸出。
-- 路徑 C：更深度的樣式處理加輸出。
-- 路徑 D：`JSON` 直接編輯後再以 GUI 輸出。
-- 路徑 E：純 `ffmpeg`。
-
-## 建議起手式
-
-1. 先用 `video-production-workflow` 分類任務。
-2. 選擇對應的模式與路徑。
-3. 產出剪輯結果或輸出檔。
-4. 驗證輸出。
-5. 如果是發布型任務，再補上紀錄。
+- [Editkin v4 剪輯合約規範](references/editkin-v4-contract.md)
+- [機械閘門與競品拆解規範](references/mechanical-gates-and-teardown.md)
+- [統一濾鏡庫與畫面美學規範](references/unified-filter-library.md)
+- [CapCut 自動化 SOP](references/capcut-automation-sop.md)
+- [CapCut JSON 直接編輯指南](references/capcut-json-direct-edit.md)
+- [CapCut Agent Brief 模板](references/capcut-agent-brief-template.md)
+- [工作流程摘要](references/video-autopilot-workflow.md)

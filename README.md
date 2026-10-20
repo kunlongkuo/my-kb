@@ -46,7 +46,9 @@
 | Gemini KB App | 前後端分離的知識庫查詢應用 |
 | Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP（整合 `handoff.md` 跨電腦交接） |
 | 規則檔自動同步 | `sync_rules.py` 支援 OS 硬連結 (Hard Link) 偵測之規則同步工具 |
-| 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片製作 SOP |
+| 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片前期策略與分鏡 SOP |
+| 影片自動執行 | `skills/video-autopilot` 整合 Editkin v4 唯一剪輯合約、機械閘門與 CapCut/ffmpeg 落地 |
+| AI 語音精剪 | `skills/video-use` 對話驅動之 AI 自動逐字稿與口播贅詞/死空間精剪 |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
 | 智慧搜尋 | `skills/09-smart-search` 提供多維度全文檢索與內容定位指南 |
@@ -57,11 +59,11 @@
 | 功能 | 說明 |
 |------|------|
 | 共用技能來源 | `skills/` 為單一來源，內容更新以這裡為準 |
-| OpenCode 鏡像 | `.opencode/skills/` 提供 OpenCode 直接讀取 |
+| OpenCode 鏡像 | `.opencode/skills/` 提供 OpenCode 直接讀取與授權調用 |
 | 其他 Agent 鏡像 | `.agents/skills/` 提供 AntiGravity 與其他 Agent 共用 |
 | 技能同步說明 | [`docs/AGENT_SHARED_SKILLS.md`](docs/AGENT_SHARED_SKILLS.md) 說明目前同步狀態與使用順序 |
 
-> 短影音相關技能目前以 `video-production-workflow` 負責規劃、`video-autopilot` 負責執行，兩者都已同步到 OpenCode 與 `.agents` 共用區。
+> 短影音與影片製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）與 `video-use-editor`（AI 語音逐字稿精剪），三者皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
 
 ---
 
