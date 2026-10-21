@@ -31,6 +31,7 @@
 - `opencode.json`
 - `docs/AGENT_SHARED_SKILLS.md`
 - `.agents/README.md`
+- `README.md`
 - `每日筆記/2026-10-21.md`
 - `handoff.md`
 

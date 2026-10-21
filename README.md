@@ -49,6 +49,7 @@
 | 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片前期策略與分鏡 SOP |
 | 影片自動執行 | `skills/video-autopilot` 整合 Editkin v4 唯一剪輯合約、機械閘門與 CapCut/ffmpeg 落地 |
 | AI 語音精剪 | `skills/video-use` 對話驅動之 AI 自動逐字稿與口播贅詞/死空間精剪 |
+| 原理解說動畫 | `skills/motion-explainer` 系列（HyperFrames 動畫、授權照片證據卡、H3 AI 影片、品味規範與審查） |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
 | 智慧搜尋 | `skills/09-smart-search` 提供多維度全文檢索與內容定位指南 |
@@ -63,7 +64,7 @@
 | 其他 Agent 鏡像 | `.agents/skills/` 提供 AntiGravity 與其他 Agent 共用 |
 | 技能同步說明 | [`docs/AGENT_SHARED_SKILLS.md`](docs/AGENT_SHARED_SKILLS.md) 說明目前同步狀態與使用順序 |
 
-> 短影音與影片製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）與 `video-use-editor`（AI 語音逐字稿精剪），三者皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
+> 影片與動畫製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）、`video-use-editor`（AI 語音逐字稿精剪）與 `motion-explainer` 系列（HyperFrames 原理解說動畫與 AI 影片），皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
 
 ---
 
