@@ -7,7 +7,12 @@
     "skill": {
       "video-production-workflow": "allow",
       "video-autopilot": "allow",
-      "video-use-editor": "allow"
+      "video-use-editor": "allow",
+      "motion-explainer": "allow",
+      "motion-explainer-images": "allow",
+      "motion-explainer-video": "allow",
+      "motion-design": "allow",
+      "review-loop": "allow"
     }
   },
   "mcp": {

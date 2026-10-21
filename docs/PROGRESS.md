@@ -12,6 +12,11 @@
    - 執行 `add_daily_stock_total.py` 更新「每日個股合計」工作表（累計 103 日，共 76,714 筆數據）。
    - 自動調用 `draw_holdings_charts.py` 更新今日 Top 10 加減碼視覺化圖表 (`20261021_additions.png` / `20261021_reductions.png` 及固定名稱最新圖檔) 與 [`主動型ETF持股變動.md`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E8%AE%8A%E5%8B%95.md)（比較區間：`20261020` → `20261021`）。
    - 執行 `generate_dashboard_data.py` 更新 `dashboard_data.js` 儀表板資料庫至 2026-10-21（584 檔標的歷史收盤價與持倉信號，`主動型ETF個股加減碼排行.html` 下拉選單同步更新）。
+2. **引進 mathruffian-dot 之 `claude-motion-explainer` 原理解說動畫技能群**
+   - 引進 5 個核心技能：`motion-explainer`（基本版）、`motion-explainer-images`（圖片加強版）、`motion-explainer-video`（H3 AI 影片加強版）、`motion-design`（動畫品味規則）、`review-loop`（自我審查迴圈）。
+   - 完成跨 Agent 三重鏡像（`skills/`、`.agents/skills/` 與 `.opencode/skills/`）。
+   - 在 `opencode.json` 中配置允許權限，確保 OpenCode、AntiGravity 等跨 Agent 平台均能調用。
+   - 同步更新 `docs/AGENT_SHARED_SKILLS.md`、`.agents/README.md`。
 
 ### 📁 重要改動檔案
 
@@ -21,6 +26,11 @@
 - `wiki/金融投資/images/20261021_additions.png` / `20261021_reductions.png`
 - `wiki/金融投資/images/active_etf_top_additions.png` / `active_etf_top_reductions.png`
 - `wiki/金融投資/dashboard_data.js`
+- `skills/motion-explainer/`、`skills/motion-explainer-images/`、`skills/motion-explainer-video/`、`skills/motion-design/`、`skills/review-loop/`
+- `.agents/skills/` 與 `.opencode/skills/` 同步鏡像
+- `opencode.json`
+- `docs/AGENT_SHARED_SKILLS.md`
+- `.agents/README.md`
 - `每日筆記/2026-10-21.md`
 - `handoff.md`
 
