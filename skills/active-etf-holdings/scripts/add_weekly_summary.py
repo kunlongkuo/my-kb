@@ -86,7 +86,9 @@ def main():
         return
 
     print(f"Loading workbook: {EXCEL_PATH}...")
-    wb = load_workbook(EXCEL_PATH, data_only=True)
+    # NOTE: do NOT use data_only=True here — loading with data_only then saving
+    # causes openpyxl to drop shared strings & drawing refs, corrupting the ZIP.
+    wb = load_workbook(EXCEL_PATH)
     date_sheets = load_date_sheets(wb)
     if not date_sheets:
         print("Error: No dated sheets found.")
@@ -277,9 +279,15 @@ def main():
             else:
                 cell.alignment = align_right
 
+    # Atomic write: save to a temp file first, then replace the original.
+    # This prevents leaving a half-written (corrupted) XLSX if save() crashes.
+    import tempfile, shutil
+    tmp_path = EXCEL_PATH.with_suffix(".tmp.xlsx")
     print(f"Saving updated workbook to {EXCEL_PATH}...")
-    wb.save(EXCEL_PATH)
-    print("Successfully updated weekly summary sheets!")
+    wb.save(tmp_path)
+    shutil.move(str(tmp_path), str(EXCEL_PATH))
+    print(f"Weekly Additions written: {len(additions)} rows")
+    print(f"Weekly Reductions written: {len(reductions)} rows")
 
 if __name__ == "__main__":
     main()

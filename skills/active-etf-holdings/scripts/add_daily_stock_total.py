@@ -366,7 +366,11 @@ def main() -> None:
     reorder_sheets(workbook)
 
     print(f"儲存 XLSX：{xlsx_path}...", flush=True)
-    workbook.save(xlsx_path)
+    # Atomic write: save to .tmp first to avoid half-written corruption
+    import shutil as _shutil
+    tmp_path = xlsx_path.with_suffix(".tmp.xlsx")
+    workbook.save(tmp_path)
+    _shutil.move(str(tmp_path), str(xlsx_path))
     print(f"已儲存：{xlsx_path}", flush=True)
 
     # ─────────────────────────────────────────────────────────────────────────────

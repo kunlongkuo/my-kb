@@ -847,8 +847,10 @@
         </div>
     </div>
 
-    <!-- Data Import -->
-    <script src="dashboard_data.js" onerror="handleDataLoadError()"></script>
+    <!-- Data Import (帶時間戳杜絕 GitHub Pages / 瀏覽器快取) -->
+    <script>
+        document.write('<script src="dashboard_data.js?v=' + Date.now() + '" onerror="handleDataLoadError()"><\/script>');
+    </script>
     
     <!-- JS Logic -->
     <script>

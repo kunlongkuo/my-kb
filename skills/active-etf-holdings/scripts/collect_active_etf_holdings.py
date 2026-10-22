@@ -568,7 +568,11 @@ def write_xlsx_sheet(path: Path, rows: list[dict[str, object]], sheet_name: str)
         print(f"Error updating comparison sheets: {exc}", flush=True)
 
     print(f"Saving workbook to {path}...", flush=True)
-    workbook.save(path)
+    # Atomic write: save to .tmp first to avoid half-written corruption
+    import shutil as _shutil
+    tmp_path = path.with_suffix(".tmp.xlsx")
+    workbook.save(tmp_path)
+    _shutil.move(str(tmp_path), str(path))
     print("Workbook saved successfully.", flush=True)
     return normalized_name
 
