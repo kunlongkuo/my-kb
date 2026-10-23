@@ -50,7 +50,7 @@
 | 影片自動執行 | `skills/video-autopilot` 整合 Editkin v4 唯一剪輯合約、機械閘門與 CapCut/ffmpeg 落地 |
 | AI 語音精剪 | `skills/video-use` 對話驅動之 AI 自動逐字稿與口播贅詞/死空間精剪 |
 | 原理解說動畫 | `skills/motion-explainer` 系列（HyperFrames 動畫、授權照片證據卡、H3 AI 影片、品味規範與審查） |
-| AI 短劇編劇 | `skills/shanshiba-drama` 16:9 橫式 MiniMax H3 短劇劇本創作、台詞反轉與單鏡 ≤12 秒拆鏡契約 |
+| AI 短劇編劇 | `skills/shanshiba-drama` 預設 9:16 直式 Shorts / 指定 16:9 橫式 MiniMax H3 短劇創作、試映讀本、drama-hooks 與單鏡 ≤12 秒拆鏡契約 |
 | 3D 空間預演 | `skills/blender-previs` Blender 白模鎖定機位、空間防漂移、布置圖檢查與運鏡交付包 |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |

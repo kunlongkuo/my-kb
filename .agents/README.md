@@ -14,7 +14,7 @@
 2. `video-autopilot`（Editkin v4、CapCut/ffmpeg 剪輯落地與機械閘門）
 3. `video-use-editor`（對話式 AI 逐字稿精剪與贅詞消除）
 4. `motion-explainer` 系列（原理解說動畫、圖片加強版、H3 AI 影片加強版、`motion-design`、`review-loop`）
-5. `shanshiba-drama`（AI 短劇編劇，16:9 橫式、MiniMax H3 鏡表與劇本創作）
+5. `shanshiba-drama`（AI 短劇編劇，預設 9:16 直式 Shorts / 指定 16:9 橫式、MiniMax H3、試映讀本與鏡表創作）
 6. `blender-previs`（Blender 預演與交付包，3D 白模鎖定機位與空間運鏡）
 
 ## 使用方式

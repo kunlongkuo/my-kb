@@ -8,11 +8,12 @@
 
 1. **市場與日更狀態確認**：
    - 今日因颱風假台股全日休市未開盤，主動型 ETF 持股日更暫停一日，累計歷史分頁維持 104 次更新（最新交易日仍為 `20261022`）。
-2. **引進 mathruffian-dot 之 `shanshiba-workflow-colab` 短劇製作技能群**：
-   - 完整匯入 2 個短劇創作與 3D 空間預演核心技能：
-     - `shanshiba-drama`：AI 短劇編劇（16:9 橫式、MiniMax H3 單鏡 ≤12 秒、角色外觀引用、劇本與鏡表拆解）。
+2. **引進 mathruffian-dot 短劇製作技能群並完成 4 Repo 跨版本驗證升級**：
+   - 跨 Repo 比對官方 4 個版本（32G+64G、16G+64G、16G+32G、Colab 雲端版），確認 4 者之 `agent/skills/` 於今日更新後達到 100% 同步一致。
+   - 完整同步升級至今日最新版（2026-10-23 版）：
+     - `shanshiba-drama`：升級為預設 9:16 直式 Shorts / 指定 16:9 橫式、MiniMax H3 單鏡 ≤12 秒，補齊 `drama-hooks.md`（四種落差、20 種抓馬模式、0–3 秒節奏）與 `table-read.md`（16 宮格讀本試映）。
      - `blender-previs`：Blender 3D 白模空間預演與交付包（鎖定機位、空間防漂移、布置圖檢查、運鏡契約）。
-   - 完成跨 Agent 三重鏡像（`skills/`、`.agents/skills/` 與 `.opencode/skills/`）。
+   - 完成跨 Agent 三重鏡像（`skills/`、`.agents/skills/` 與 `.opencode/skills/`，共 15 個技能檔案 100% 吻合）。
    - 在 `opencode.json` 中配置允許調用權限（`allow`），確保 OpenCode 原生支援。
 3. **建立全域 Agent 技能指引（Skills Index）**：
    - 在 `core_rules.md`、`agents.md`、`claude.md`、`ANTIGRAVITY.md` 增加專用技能庫導引章節，指引 Codex、Claude Code、Cursor 等通用 Agent 在承接短劇創作、Blender 預演、原理解說動畫、短影音剪輯時，主動讀取對應技能之 `SKILL.md` 與 `references/` 規範。

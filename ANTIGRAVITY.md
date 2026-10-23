@@ -43,7 +43,7 @@
 任何 AI Agent（包含 Codex、Claude Code、OpenCode、Antigravity 等），當接獲相關領域任務時，**務必先主動讀取對應目錄下的 `SKILL.md` 與其 `references/` 規範**：
 
 1. **AI 短劇創作與 3D 空間預演**：
-   - `skills/shanshiba-drama/SKILL.md`：AI 短劇編劇（16:9 橫式、MiniMax H3 單鏡 ≤12 秒、角色外觀引用、劇本與鏡表拆解）。寫劇本、改台詞、拆鏡頭必讀。
+   - `skills/shanshiba-drama/SKILL.md`：AI 短劇編劇（預設 9:16 直式 Shorts / 指定 16:9 橫式、MiniMax H3 單鏡 ≤12 秒、試映讀本、drama-hooks 20 種模式、劇本與鏡表拆解）。寫劇本、改台詞、拆鏡頭必讀。
    - `skills/blender-previs/SKILL.md`：Blender 3D 白模空間預演與交付包（鎖定機位、空間防漂移、布置圖檢查、運鏡契約）。
 2. **原理解說動畫與視覺動態**：
    - `skills/motion-explainer/SKILL.md`（含 `-images`、`-video`）：HyperFrames 原理解說動畫影片、中文旁白與字幕流程。
