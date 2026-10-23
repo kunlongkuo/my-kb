@@ -14,11 +14,15 @@
 2. `video-autopilot`（Editkin v4、CapCut/ffmpeg 剪輯落地與機械閘門）
 3. `video-use-editor`（對話式 AI 逐字稿精剪與贅詞消除）
 4. `motion-explainer` 系列（原理解說動畫、圖片加強版、H3 AI 影片加強版、`motion-design`、`review-loop`）
+5. `shanshiba-drama`（AI 短劇編劇，16:9 橫式、MiniMax H3 鏡表與劇本創作）
+6. `blender-previs`（Blender 預演與交付包，3D 白模鎖定機位與空間運鏡）
 
 ## 使用方式
 
 - 先看 `video-production-workflow`：用來判斷影片類型、平台、長度、字幕風格與剪輯策略。
 - 原理解說與動畫製作：調用 `motion-explainer` / `motion-explainer-images` / `motion-explainer-video`。
+- 短劇劇情創作與拆鏡：調用 `shanshiba-drama`。
+- 3D 空間機位與運鏡預演：調用 `blender-previs`。
 - 實際剪輯與輸出：調用 `video-autopilot` 執行自動化（Editkin v4 唯一合約）。
 - 如為口播/訪談/教學等說話素材：可調用 `video-use-editor` 進行逐字稿精準精剪。
 - 如果需要更快上手，先讀各技能底下的 `references/` 文件，再回到 `SKILL.md`。

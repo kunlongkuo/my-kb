@@ -38,3 +38,21 @@
 - **標準執行流程**：
   - 務必在**知識庫根目錄**執行，且指定 `--output-dir wiki/金融投資` 參數（現行腳本已改寫為優先自動尋找此路徑）。
   - 這會使腳本讀取現有歷史 Excel，在保留所有舊日期分頁的前提下，無縫追加今日分頁並完成增量歷史比對（新增、刪除、加碼、減碼四大歷史異動分頁自動累加）。
+
+## 🛠️ 可用專用技能庫（Skills 指引）
+任何 AI Agent（包含 Codex、Claude Code、OpenCode、Antigravity 等），當接獲相關領域任務時，**務必先主動讀取對應目錄下的 `SKILL.md` 與其 `references/` 規範**：
+
+1. **AI 短劇創作與 3D 空間預演**：
+   - `skills/shanshiba-drama/SKILL.md`：AI 短劇編劇（16:9 橫式、MiniMax H3 單鏡 ≤12 秒、角色外觀引用、劇本與鏡表拆解）。寫劇本、改台詞、拆鏡頭必讀。
+   - `skills/blender-previs/SKILL.md`：Blender 3D 白模空間預演與交付包（鎖定機位、空間防漂移、布置圖檢查、運鏡契約）。
+2. **原理解說動畫與視覺動態**：
+   - `skills/motion-explainer/SKILL.md`（含 `-images`、`-video`）：HyperFrames 原理解說動畫影片、中文旁白與字幕流程。
+   - `skills/motion-design/SKILL.md`：動態設計時間軸、緩動、節奏與繁中排版規範。
+   - `skills/review-loop/SKILL.md`：動畫視覺自我審查與 contact sheet 檢查機制。
+3. **影片剪輯自動化與對話精剪**：
+   - `skills/video-production-workflow/SKILL.md`：短影音前期策略與類型分類。
+   - `skills/video-autopilot/SKILL.md`：Editkin v4 剪輯合約、CapCut JSON / ffmpeg 自動化剪輯落地。
+   - `skills/video-use-editor/SKILL.md`：對話式 AI 逐字稿精剪、贅詞消除與靜音切除。
+4. **需求探索與其他技能**：
+   - `skills/rdq-skill/SKILL.md`：RDQ 需求探索四象限結構化訪談法。
+

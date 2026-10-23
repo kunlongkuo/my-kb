@@ -12,7 +12,9 @@
       "motion-explainer-images": "allow",
       "motion-explainer-video": "allow",
       "motion-design": "allow",
-      "review-loop": "allow"
+      "review-loop": "allow",
+      "shanshiba-drama": "allow",
+      "blender-previs": "allow"
     }
   },
   "mcp": {
