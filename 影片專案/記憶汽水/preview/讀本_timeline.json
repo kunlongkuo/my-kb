@@ -1,0 +1,133 @@
+{
+  "total": 99.5,
+  "shots": [
+    {
+      "shot": "S01",
+      "start": 0.0,
+      "dur": 5.5,
+      "table_sec": 5.5,
+      "chars": 7,
+      "h3_sec": 5.5
+    },
+    {
+      "shot": "S02",
+      "start": 5.5,
+      "dur": 5.0,
+      "table_sec": 5,
+      "chars": 7,
+      "h3_sec": 5.0
+    },
+    {
+      "shot": "S03",
+      "start": 10.5,
+      "dur": 2.0,
+      "table_sec": 2,
+      "chars": 0,
+      "h3_sec": 2.0
+    },
+    {
+      "shot": "S04",
+      "start": 12.5,
+      "dur": 7.0,
+      "table_sec": 7,
+      "chars": 8,
+      "h3_sec": 7.0
+    },
+    {
+      "shot": "S05",
+      "start": 19.5,
+      "dur": 8.5,
+      "table_sec": 8.5,
+      "chars": 14,
+      "h3_sec": 8.5
+    },
+    {
+      "shot": "S06",
+      "start": 28.0,
+      "dur": 7.0,
+      "table_sec": 7,
+      "chars": 12,
+      "h3_sec": 7.0
+    },
+    {
+      "shot": "S07",
+      "start": 35.0,
+      "dur": 6.0,
+      "table_sec": 6,
+      "chars": 0,
+      "h3_sec": 6.0
+    },
+    {
+      "shot": "S08",
+      "start": 41.0,
+      "dur": 6.0,
+      "table_sec": 6,
+      "chars": 7,
+      "h3_sec": 6.0
+    },
+    {
+      "shot": "S09",
+      "start": 47.0,
+      "dur": 6.0,
+      "table_sec": 6,
+      "chars": 10,
+      "h3_sec": 6.0
+    },
+    {
+      "shot": "S10",
+      "start": 53.0,
+      "dur": 6.0,
+      "table_sec": 6,
+      "chars": 7,
+      "h3_sec": 6.0
+    },
+    {
+      "shot": "S11",
+      "start": 59.0,
+      "dur": 5.0,
+      "table_sec": 5,
+      "chars": 0,
+      "h3_sec": 5.0
+    },
+    {
+      "shot": "S12",
+      "start": 64.0,
+      "dur": 7.0,
+      "table_sec": 7,
+      "chars": 11,
+      "h3_sec": 7.0
+    },
+    {
+      "shot": "S13",
+      "start": 71.0,
+      "dur": 5.0,
+      "table_sec": 5,
+      "chars": 6,
+      "h3_sec": 5.0
+    },
+    {
+      "shot": "S14",
+      "start": 76.0,
+      "dur": 8.0,
+      "table_sec": 8,
+      "chars": 15,
+      "h3_sec": 8.0
+    },
+    {
+      "shot": "S15",
+      "start": 84.0,
+      "dur": 7.5,
+      "table_sec": 7.5,
+      "chars": 14,
+      "h3_sec": 7.5
+    },
+    {
+      "shot": "S16",
+      "start": 91.5,
+      "dur": 8.0,
+      "table_sec": 8,
+      "chars": 8,
+      "h3_sec": 8.0
+    }
+  ]
+}

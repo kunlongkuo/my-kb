@@ -1,0 +1,21 @@
+{
+  "cast": "Keep the same two original Taiwanese schoolchildren across all panels: A-Cheng, a 12-year-old boy with a round childlike face, short black hair and one small cowlick, white short-sleeved school shirt and dark navy bottoms; A-Xia, a 12-year-old girl with a neat ear-length bob, a small yellow hair clip, white short-sleeved school shirt and navy pleated skirt. Realistic cinematic Taiwanese school short film, warm natural light, horizontal 16:9 composition. No readable text, no logos, no watermark.",
+  "shots": [
+    {"id":"S01","sec":5.5,"panel":"medium shot in a Taiwanese school corridor: A-Xia holds half a rice ball and looks shocked at A-Cheng, who does not recognize her","visual_zh":"現在：阿夏拿著半顆飯糰，震驚地看著阿澄。","lines":[{"text":"你真的把我忘了？","caption":"阿夏：你真的把我忘了？"}]},
+    {"id":"S02","sec":5,"panel":"close-up of A-Cheng looking confused and taking a small step back from A-Xia","visual_zh":"阿澄困惑地看著她，微微後退。","lines":[{"text":"不好意思，妳是誰？","caption":"阿澄：不好意思，妳是誰？"}]},
+    {"id":"S03","sec":2,"panel":"a quiet empty school corridor, simple title-card composition with empty space","visual_zh":"字卡：十分鐘前。","lines":[{"caption":"十分鐘前"}]},
+    {"id":"S04","sec":7,"panel":"A-Cheng stands beside a vending machine holding a returned test paper with red correction marks and two small star doodles on the back, no legible writing","visual_zh":"阿澄看著有紅色批改痕跡、背面畫著兩顆星的舊考卷。","lines":[{"text":"我想忘掉那次考試。","caption":"阿澄：我想忘掉那次考試。"}]},
+    {"id":"S05","sec":8.5,"panel":"A-Xia walks up beside A-Cheng and points toward one softly glowing unlabeled soda bottle inside the vending machine","visual_zh":"阿夏指向販賣機裡發亮、沒有標籤的汽水。","lines":[{"text":"這瓶會讓你忘掉那整天，不只考卷。","caption":"阿夏：這瓶會讓你忘掉那整天，不只考卷。"}]},
+    {"id":"S06","sec":7,"panel":"A-Cheng looks at A-Xia, then reaches toward the glowing bottle with a stubborn expression","visual_zh":"阿澄看著阿夏，仍伸手拿汽水。","lines":[{"text":"我只想忘掉考卷，不會忘掉妳。","caption":"阿澄：我只想忘掉考卷，不會忘掉妳。"}]},
+    {"id":"S07","sec":6,"panel":"A-Cheng drinks from a plain unlabeled soda bottle; a soft amber glint crosses the frame and the two-star doodle on the paper falls out of focus","visual_zh":"阿澄喝下汽水，暖色光閃過，考卷上的兩顆星失焦。","lines":[{"caption":"（汽水氣泡聲）"}]},
+    {"id":"S08","sec":6,"panel":"warm memory in the same corridor: A-Xia breaks a rice ball in half and offers one half to a downcast A-Cheng","visual_zh":"回憶：阿夏把飯糰掰成兩半，遞給垂頭喪氣的阿澄。","lines":[{"text":"考差了？先吃一半。","caption":"阿夏：考差了？先吃一半。"}]},
+    {"id":"S09","sec":6,"panel":"A-Cheng accepts half the rice ball and looks up at A-Xia with a shy smile","visual_zh":"阿澄接過半顆飯糰，抬頭看阿夏。","lines":[{"text":"妳不怕我把衰運分給妳？","caption":"阿澄：妳不怕我把衰運分給妳？"}]},
+    {"id":"S10","sec":6,"panel":"A-Xia points at the rice ball and tries not to laugh","visual_zh":"阿夏忍笑，指指飯糰。","lines":[{"text":"我比較怕你餓昏。","caption":"阿夏：我比較怕你餓昏。"}]},
+    {"id":"S11","sec":5,"panel":"close-up of two hands drawing two small stars on the back of the test paper beside the shared rice ball; the warm memory gently fades","visual_zh":"特寫：兩人在考卷背面畫下兩顆星；回憶慢慢淡去。","lines":[{"caption":"（回憶淡去）"}]},
+    {"id":"S12","sec":7,"panel":"back in the present corridor, A-Xia offers half a rice ball again and introduces herself kindly","visual_zh":"回到現在：阿夏重新遞出半顆飯糰。","lines":[{"text":"那我再介紹一次，我叫阿夏。","caption":"阿夏：那我再介紹一次，我叫阿夏。"}]},
+    {"id":"S13","sec":5,"panel":"A-Cheng accepts the rice ball and gives A-Xia a polite nod","visual_zh":"阿澄接過飯糰，禮貌地點頭。","lines":[{"text":"你好，我叫阿澄。","caption":"阿澄：你好，我叫阿澄。"}]},
+    {"id":"S14","sec":8,"panel":"A-Xia points at the two-star doodle on the back of the test paper and smiles softly","visual_zh":"阿夏指向考卷背面的兩顆星。","lines":[{"text":"這兩顆星，是我們第一次見面的記號。","caption":"阿夏：這兩顆星，是我們第一次見面的記號。"}]},
+    {"id":"S15","sec":7.5,"panel":"A-Cheng looks from the two stars to A-Xia and smiles with tentative warmth","visual_zh":"阿澄看看兩顆星，再看向阿夏。","lines":[{"text":"我不記得那天，但我想重新認識妳。","caption":"阿澄：我不記得那天，但我想重新認識妳。"}]},
+    {"id":"S16","sec":8,"panel":"A-Xia shares the remaining half of the rice ball; the two walk side by side down the sunlit corridor","visual_zh":"阿夏把飯糰分他一半；兩人並肩走出走廊。","lines":[{"text":"好，飯糰先分你一半。","caption":"阿夏：好，飯糰先分你一半。"}]}
+  ]
+}

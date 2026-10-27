@@ -2,6 +2,14 @@
 
 这是一份 append-only 的操作日誌。這份日誌可以提供知識庫演進的時間序列，並幫助 LLM 暸解近期執行過哪些操作。
 
+## [2026-10-27] etf-update | 主動型 ETF 第 105 次日更與資料生成
+- **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20261027` 分頁至 `主動型ETF持股明細.xlsx`（31 檔 ETF、1,771 筆持股，累計 105 個歷史日期分頁），比對區間 `20261022` → `20261027`。
+- **週加減碼明細**：執行 `add_weekly_summary.py`，更新 `Weekly Additions`（80 筆）與 `Weekly Reductions`（35 筆）。
+- **每日個股合計**：執行 `add_daily_stock_total.py`，更新「每日個股合計」至 78,190 筆（累計 105 個交易日）。
+- **視覺化圖表**：自動生成 `20261027_additions.png` 與 `20261027_reductions.png` 及固定名稱圖檔，動態嵌入 `主動型ETF持股變動.md`。
+- **儀表板更新**：執行 `generate_dashboard_data.py`，重新產生 `dashboard_data.js`（585 檔標的歷史收盤價與持倉信號），`主動型ETF個股加減碼排行.html` 下拉選單同步更新至最新日期。
+- **今日異動亮點**：加碼榜首 1815 富喬 (+3,200 張)、1303 南亞 (+2,124 張)、3711 日月光投控 (+2,122 張)；減碼榜首 2303 聯電 (-2,800 張)、LENOVO GROUP LTD (-694 張)。
+
 ## [2026-09-29] etf-update | 主動型 ETF 資料更新與修復
 - **修復 SSL 相容性**：修復 `collect_active_etf_holdings.py` 與 `collect_passive_etf_holdings.py` 在 Python 3.14 環境下抓取 MoneyDJ 頁面時的 SSL 憑證驗證問題 (`Missing Subject Key Identifier`)，導入 `ssl._create_unverified_context()`。
 - **資料更新**：執行 `collect_active_etf_holdings.py` 抓取並追加 `20260929` 分頁至 `主動型ETF持股明細.xlsx`（共 31 檔 ETF、1,796 筆持股明細，累計 88 個歷史日期分頁），並同步更新 `台灣ETF比較清單.xlsx`。

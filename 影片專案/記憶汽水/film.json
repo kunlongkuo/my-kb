@@ -1,0 +1,169 @@
+{
+  "_comment": "依 mathruffian-dot/shanshiba-workflow-colab 的 template_local 格式；需複製到該 repo 的 pipeline/記憶汽水 後執行。",
+  "title": "記憶汽水",
+  "repo_dir": "../..",
+  "voice_mode": "h3_ref",
+  "cine": "A cinematic horizontal 16:9 film still from a Taiwanese school fantasy comedy, shot on Kodak Vision3 500T film with a natural 50mm lens at f/2.8. Warm late-afternoon window light, soft amber highlights and gentle teal shadows, shallow depth of field, subtle film grain, realistic Taiwanese live-action composition. Full-frame image, NO black letterbox bars.",
+  "set_sentence": "Use the same school corridor from <image{n}> as the set, preserving the vending machine, classroom doors, windows and their positions.",
+  "frame_suffix": " No readable text, no letters, no logos, no watermark, no captions. Keep the same corridor layout and window direction.",
+  "h3": {
+    "style": "A realistic cinematic live-action Taiwanese school fantasy-comedy, horizontal 16:9, warm natural late-afternoon light, subtle 35mm film grain, believable child performances.",
+    "setting": "A quiet Taiwanese middle-school corridor beside a classroom and a plain vending machine, late afternoon.",
+    "soundscape": "Quiet school corridor room tone, faint distant birds outside, subtle clothing and paper movement; no extra voices.",
+    "camera": "The camera holds a locked-off static shot on a tripod; no pan, no zoom.",
+    "constraints": [
+      "Only the subjects defined for this shot may appear; no new students or adults enter.",
+      "No readable text, subtitles, labels, logos or watermarks; all paper marks are abstract red marks or simple star doodles.",
+      "Keep the corridor, vending machine, classroom doors and window positions consistent with the first frame.",
+      "LOCKED-OFF STATIC CAMERA on a tripod."
+    ]
+  },
+  "chars": {
+    "cheng": {
+      "name": "阿澄",
+      "look": "A-Cheng, an original 12-year-old Taiwanese schoolboy with a clearly childlike round face, short black hair with one small cowlick, expressive dark eyes, wearing a white short-sleeved school shirt with a dark navy collar and dark navy school shorts; never a teenager.",
+      "voice_design": "A bright, natural 12-year-old Taiwanese boy voice, slightly cheeky but gentle, clear Taiwan Mandarin pronunciation.",
+      "voice_sample": "我叫阿澄，今天考得不太好，不過我還是會把事情做好。",
+      "h3_voice": "A bright, natural child boy voice with a soft Taiwanese Mandarin accent.",
+      "edge_voice": "zh-TW-HsiaoChenNeural",
+      "sub_color": "&H00A0E8FF"
+    },
+    "xia": {
+      "name": "阿夏",
+      "look": "A-Xia, an original 12-year-old Taiwanese schoolgirl with a clearly childlike face, neat ear-length black bob hair and one small yellow hair clip on her left side, wearing a white short-sleeved school shirt and a dark navy pleated skirt; never a teenager.",
+      "voice_design": "A warm, quick-witted 12-year-old Taiwanese girl voice, friendly and direct, clear Taiwan Mandarin pronunciation.",
+      "voice_sample": "我是阿夏，飯糰可以分你一半，但是星星要畫兩顆才公平。",
+      "h3_voice": "A warm, quick-witted child girl voice with a soft Taiwanese Mandarin accent.",
+      "edge_voice": "zh-TW-HsiaoYuNeural",
+      "sub_color": "&H00FFE6B4"
+    }
+  },
+  "masters": {
+    "hall": "A cinematic wide horizontal film still of an empty Taiwanese middle-school corridor in late afternoon. A plain, unbranded vending machine stands beside a classroom door on the RIGHT side of the corridor; large windows run along the LEFT wall and cast warm amber sunlight across the floor. A few simple classroom doors, clean tiled floor, no posters, no signs, no people, no readable text, no logos, no watermark. Realistic, uncluttered, consistent architecture, full-frame 16:9 composition."
+  },
+  "shots": [
+    {
+      "id": "S01", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 5.5,
+      "line": {"who": "xia", "text": "你真的把我忘了？", "at": 0.6},
+      "frame": "Medium two-shot in the corridor: A-Xia stands in the foreground holding exactly one half of a rice ball, staring at A-Cheng with startled, hurt eyes. A-Cheng stands a few steps away, confused and unable to place her. The vending machine remains behind them near the classroom door; windows are on the left side of frame.",
+      "action": "Starting from <Picture 1>, A-Xia keeps the half rice ball steady in both hands and looks directly at A-Cheng. Her eyebrows lift, then draw together; she leans forward a few centimeters and asks her short question with a caught, worried voice. A-Cheng stays still and searches her face without recognition. After the line, A-Xia lowers the rice ball slightly and waits, visibly hoping he will remember. Keep the corridor background quiet and unchanged."
+    },
+    {
+      "id": "S02", "refs": ["cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 5,
+      "line": {"who": "cheng", "text": "不好意思，妳是誰？", "at": 0.6},
+      "frame": "Close-up of A-Cheng in the same corridor, looking toward A-Xia just off camera. His eyebrows pinch with sincere confusion; the soft blurred vending machine and warm window light stay in the background.",
+      "action": "Starting from <Picture 1>, A-Cheng blinks once, tilts his head slightly and studies A-Xia just off camera. He takes one small step backward, raises his open right hand in a polite apologetic gesture, then asks who she is in a careful, genuinely confused voice. His mouth closes after the sentence. He keeps his shoulders tense and waits for her answer; do not turn his expression into a joke or a smirk. The camera stays fixed."
+    },
+    {
+      "id": "S03", "refs": [], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 5, "cut_out": 2,
+      "line": null,
+      "frame": "A clean, empty view down the same school corridor, vending machine and classroom door visible, warm window light on the floor, no people and no text; leave clear negative space in the center for a post-production time card.",
+      "action": "Starting from <Picture 1>, the empty school corridor remains completely still. Late-afternoon sunlight shifts only very subtly across the floor while the vending machine and classroom door stay fixed. No people enter, no door moves, and no object appears or disappears. Hold the quiet composition with the open center visible for a later simple time-card overlay. Do not generate any writing, signs, captions, or symbols. The camera remains locked on its tripod for the whole shot."
+    },
+    {
+      "id": "S04", "refs": ["cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 7,
+      "line": {"who": "cheng", "text": "我想忘掉那次考試。", "at": 0.6},
+      "frame": "Waist-up view of A-Cheng beside the vending machine, holding one folded old test paper with abstract red correction marks and two small star doodles on the back; absolutely no readable writing or numbers. He looks down at the paper, shoulders slumped.",
+      "action": "Starting from <Picture 1>, A-Cheng holds the single folded test paper with both hands at chest height. He unfolds it carefully, looks at the red marks, and lets his shoulders sink. His right thumb traces the two small star doodles on the blank back. He exhales through his nose, raises his eyes toward the vending machine, and says he wants to forget that exam in a tired, embarrassed voice. He keeps the paper in his hands throughout; it never changes or disappears."
+    },
+    {
+      "id": "S05", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 8.5,
+      "line": {"who": "xia", "text": "這瓶會讓你忘掉那整天，不只考卷。", "at": 0.6},
+      "frame": "A-Xia stands beside A-Cheng and points to exactly one softly glowing, unlabeled amber soda bottle inside the vending machine. A-Cheng still holds the folded test paper with two star doodles; both faces are visible, with A-Xia speaking.",
+      "action": "Starting from <Picture 1>, A-Xia steps beside A-Cheng and points once toward the single glowing bottle behind the vending-machine glass. She turns her face toward him and warns him clearly that the drink removes the whole day, not just the test paper. A-Cheng looks from her face to the bottle without moving his feet. A-Xia lowers her pointing hand and holds his gaze, serious and concerned. The paper, bottle, and vending machine remain in their original positions; no text appears."
+    },
+    {
+      "id": "S06", "refs": ["cheng", "xia"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 7,
+      "line": {"who": "cheng", "text": "我只想忘掉考卷，不會忘掉妳。", "at": 0.6},
+      "frame": "A-Cheng faces A-Xia beside the vending machine, one hand still holding the folded paper while his other hand reaches toward the glowing bottle; A-Xia watches him with concern.",
+      "action": "Starting from <Picture 1>, A-Cheng gives A-Xia a small reassuring smile and says he will not forget her. As he speaks, he keeps the folded paper tucked against his chest and slowly extends his free hand toward the vending-machine slot. A-Xia's concern remains visible; she does not touch him or the machine. A-Cheng presses one button and waits. The bottle stays visible behind the glass until the machine releases it. Keep each movement deliberate and easy to read."
+    },
+    {
+      "id": "S07", "refs": ["cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 6,
+      "line": null,
+      "frame": "Close medium shot of A-Cheng holding one plain unlabeled amber soda bottle beside the vending machine; the folded test paper with two stars rests safely in his other hand.",
+      "action": "Starting from <Picture 1>, A-Cheng lifts the single amber bottle with his right hand, opens it, and takes one careful drink. He lowers the bottle, swallows, and closes his eyes for a brief beat. A soft warm glint moves across the frame as a subtle post-production effect; his face and body remain stable. The folded test paper stays in his left hand and its two-star doodle becomes softly out of focus. The bottle remains in his hand. He does not speak."
+    },
+    {
+      "id": "S08", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 6,
+      "line": {"who": "xia", "text": "考差了？先吃一半。", "at": 0.6},
+      "frame": "Warm memory in the same corridor: A-Xia offers one half of a rice ball to a younger-looking but still clearly 12-year-old A-Cheng, who sits with his head lowered beside the wall; no other students appear.",
+      "action": "Starting from <Picture 1>, A-Xia holds one rice ball in both hands and breaks it cleanly into two halves. She extends exactly one half toward A-Cheng and asks if he did poorly on the test. A-Cheng keeps his eyes lowered, then notices the offered food. A-Xia waits patiently without moving closer or touching him. Use a warm, soft memory look but preserve both children's faces, uniforms, and the corridor layout. The second half remains in A-Xia's hand."
+    },
+    {
+      "id": "S09", "refs": ["cheng", "xia"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 6,
+      "line": {"who": "cheng", "text": "妳不怕我把衰運分給妳？", "at": 0.6},
+      "frame": "A-Cheng accepts one half of the rice ball from A-Xia in the same warm memory; he looks up at her with a shy, slightly surprised smile.",
+      "action": "Starting from <Picture 1>, A-Cheng reaches out with his right hand and accepts the offered half rice ball. He looks from the food to A-Xia, lifts one eyebrow, and asks whether she is afraid of catching his bad luck. He gives a small, self-conscious smile at the end of the line. A-Xia remains still and listens. Each child holds only one half of the same rice ball; neither half changes size or vanishes. Keep the warm memory lighting and fixed camera."
+    },
+    {
+      "id": "S10", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 6,
+      "line": {"who": "xia", "text": "我比較怕你餓昏。", "at": 0.6},
+      "frame": "A-Xia points gently at A-Cheng's rice-ball half and tries not to laugh; A-Cheng looks back at her, still holding the food.",
+      "action": "Starting from <Picture 1>, A-Xia glances at the half rice ball in A-Cheng's hand, then points toward it with one finger. She gives her dry, practical reply about being more worried that he will faint from hunger. Her eyes narrow with a restrained smile, and she lowers her hand after speaking. A-Cheng's embarrassed expression softens into a small smile. He keeps the rice ball in his right hand. Let the pause after the joke land before the memory advances."
+    },
+    {
+      "id": "S11", "refs": [], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 5,
+      "line": null,
+      "frame": "Close-up of two children's hands and the back of one test paper; two small star doodles are visible beside the shared rice ball, with no words or numbers.",
+      "action": "Starting from <Picture 1>, two pairs of small child-sized hands rest beside one folded test paper and the two rice-ball halves. One hand draws exactly two simple stars on the blank back of the paper with a pencil; the other hand points to the second star. The hands pause together, then the warm memory image gently softens and fades at the edges as a post-production transition. No faces, extra objects, text, or numbers appear. Keep the paper and food in place until the fade."
+    },
+    {
+      "id": "S12", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 7,
+      "line": {"who": "xia", "text": "那我再介紹一次，我叫阿夏。", "at": 0.6},
+      "frame": "Present-day corridor. A-Xia gently offers one half of a rice ball to A-Cheng again; A-Cheng looks uncertain but listens. The vending machine remains behind them.",
+      "action": "Starting from <Picture 1>, A-Xia takes one small step toward A-Cheng and extends one half rice ball with an open palm. She introduces herself again in a gentle, steady voice and waits without rushing him. A-Cheng's eyes move from her face to the food, but he does not recognize her yet. A-Xia keeps her expression warm and patient. The corridor returns to its neutral late-afternoon color after the warm memory. Keep the camera fixed and do not add any other students."
+    },
+    {
+      "id": "S13", "refs": ["cheng", "xia"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 5,
+      "line": {"who": "cheng", "text": "你好，我叫阿澄。", "at": 0.6},
+      "frame": "A-Cheng accepts the half rice ball and gives A-Xia a polite nod; he remains cautious but no longer steps away.",
+      "action": "Starting from <Picture 1>, A-Cheng reaches forward and accepts the half rice ball from A-Xia with his right hand. He gives her a small, polite nod and introduces himself by name. His shoulders relax slightly as he speaks, and he keeps his eyes on her face. A-Xia listens quietly and does not interrupt. The rice ball remains visible in his hand. Close his lips after the line and hold one brief, comfortable beat."
+    },
+    {
+      "id": "S14", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 8,
+      "line": {"who": "xia", "text": "這兩顆星，是我們第一次見面的記號。", "at": 0.6},
+      "frame": "A-Xia points to the two small star doodles on the back of the test paper, which A-Cheng is holding; she smiles softly while he studies the drawing.",
+      "action": "Starting from <Picture 1>, A-Xia points once to the two star doodles on the back of A-Cheng's test paper and explains that they mark the day they first met. A-Cheng follows her finger with his eyes, then studies the stars carefully. A-Xia lowers her hand and watches his reaction with a hopeful but restrained expression. The paper remains steady between them, with only two stars and abstract red correction marks visible. Do not generate handwriting, digits, or extra doodles."
+    },
+    {
+      "id": "S15", "refs": ["cheng", "xia"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 7.5,
+      "line": {"who": "cheng", "text": "我不記得那天，但我想重新認識妳。", "at": 0.6},
+      "frame": "A-Cheng looks from the two stars back to A-Xia; his expression shifts from confusion to a tentative, sincere smile.",
+      "action": "Starting from <Picture 1>, A-Cheng holds the test paper still, looks at the two stars, then raises his eyes to A-Xia. He admits that he cannot remember that day, but says he wants to get to know her again. His expression changes from uncertainty to a small, sincere smile. A-Xia listens without moving, letting his choice land. A-Cheng lowers the paper slightly but keeps the two stars visible between them. Finish with a quiet pause, not a sudden emotional outburst."
+    },
+    {
+      "id": "S16", "refs": ["xia", "cheng"], "scene": ["hall", [0.0, 0.0, 1.0, 1.0]], "dur": 8,
+      "line": {"who": "xia", "text": "好，飯糰先分你一半。", "at": 0.6},
+      "frame": "A-Xia shares the remaining half of the rice ball with A-Cheng; they stand side by side in the sunlit corridor, ready to walk together.",
+      "action": "Starting from <Picture 1>, A-Xia smiles, breaks the remaining rice ball cleanly into two pieces, and gives one half to A-Cheng. She says they can start again, beginning with the rice ball. A-Cheng accepts it and turns to walk beside her. They take three easy steps down the corridor together, shoulder to shoulder but not touching, and exchange a small relieved smile. Keep both children in frame, preserve the same clothes and faces, and hold the warm sunlight on the floor as they leave."
+    }
+  ],
+  "seeds": {
+    "char_cheng": 2601,
+    "char_xia": 2602,
+    "master_hall": 2603,
+    "frame_S01": 2611,
+    "frame_S04": 2614,
+    "frame_S07": 2617,
+    "h3_S01": 2701,
+    "h3_S08": 2708,
+    "h3_S16": 2716
+  },
+  "music": {
+    "caption": "Genre: gentle Taiwanese school fantasy-comedy underscore, purely instrumental, playful and curious at first, warm and heartfelt during the memory, then lightly hopeful. BPM 92, key G major. Vocal: NONE. No singing, no humming, no choir. Arrangement: pizzicato strings, marimba, soft piano, warm bass, subtle brushed percussion.",
+    "seeds": [7, 23, 51]
+  },
+  "mix": {"say_lead": 0.2, "default_tail": 0.55, "music_under_lines": 0.25, "music_bed_rms": 0.035, "target_lufs": -15.5},
+  "ending": {
+    "closeups": ["S14", "S16"],
+    "header": "本片使用的 AI 工具（本機執行）",
+    "title": "記憶汽水",
+    "card_dur": 3.0,
+    "title_dur": 4.0,
+    "cards": [
+      [["MiniMax H3", "影片生成"], ["Qwen-Image 2.1／Edit 2511", "角色與首幀"], ["MiniMax Music 3", "配樂生成"]],
+      [["Google Colab G4", "雲端運算"], ["FFmpeg", "剪接與混音"], ["本片畫面與配樂皆由 AI 生成", ""]]
+    ]
+  }
+}
