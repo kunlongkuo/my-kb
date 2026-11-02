@@ -1,0 +1,9 @@
+{
+  "host": "localhost",
+  "user": "",
+  "password": "",
+  "database": "mydb",
+  "port": 3306,
+  "charset": "utf8mb4",
+  "autocommit": false
+}

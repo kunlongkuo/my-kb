@@ -44,6 +44,7 @@
 | YouTube 影片摘要 | `youtube_to_notes.py` 自動擷取影片逐字稿並生成結構化筆記 |
 | Chrome 擴充套件 | 瀏覽器一鍵剪輯工具，將網頁內容匯入知識庫 |
 | Gemini KB App | 前後端分離的知識庫查詢應用 |
+| 多檔案 RAG 查詢 | `.opencode/skills/skill-rag` 將文字文件切成 chunks，建立本機 JSON 索引並可匯出 MySQL SQL |
 | Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP（整合 `handoff.md` 跨電腦交接） |
 | 規則檔自動同步 | `sync_rules.py` 支援 OS 硬連結 (Hard Link) 偵測之規則同步工具 |
 | 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片前期策略與分鏡 SOP |
@@ -108,6 +109,8 @@ my-kb/
 ├── gemini-kb-app/           # Gemini 知識庫查詢應用
 │   ├── backend/             # 後端 API
 │   └── frontend/            # 前端 UI
+├── rag-data/                # RAG 文件來源（待查文字檔放在 sources/）
+│   └── sources/
 ├── templates/               # Obsidian 頁面模板
 ├── 每日筆記/                # 每日工作紀錄（開工/收工日誌）
 ├── Clippings/               # 網頁剪輯暫存（待收錄）
@@ -122,6 +125,89 @@ my-kb/
 ├── .env                     # 環境變數（已加入 .gitignore）
 └── .gitignore               # Git 排除規則
 ```
+
+---
+
+## 🔎 多檔案文件查詢（RAG）快速入門
+
+### 文字檔放置位置
+
+把要查詢的文件放在知識庫根目錄的 `rag-data/sources/`，例如：
+
+```text
+rag-data/
+└── sources/
+    ├── 操作手冊.md
+    ├── 常見問題.txt
+    └── 商品資料.docx
+```
+
+支援 `.md`、`.markdown`、`.txt`、`.json`、`.yaml`、`.yml`、`.sql`、`.docx` 及 `.pdf`。PDF 必須有可選取的文字；影像掃描 PDF 要先 OCR。來源文字可能含私人資訊，請確認適合存放及納入索引。
+
+### 設定與建立索引
+
+首次使用前，安裝 RAG 工具依賴；若私有設定檔尚不存在，再複製範本（此寫法會保留已存在的設定檔）：
+
+```powershell
+python -m pip install -r .opencode\skills\skill-rag\requirements.txt
+$setup = ".opencode\skills\skill-rag\setup.json"
+if (-not (Test-Path -LiteralPath $setup)) {
+    Copy-Item -LiteralPath .opencode\skills\skill-rag\templates\setup.example.json -Destination $setup
+}
+```
+
+編輯 `.opencode/skills/skill-rag/setup.json`，填入 MySQL 設定及 API key。此私有檔已排除於 Git；雖然目前腳本要求 API key 欄位存在，但索引及查詢流程不會呼叫 OpenAI 或產生 embedding。
+
+在知識庫根目錄執行以下命令建立索引：
+
+```powershell
+$skill = ".opencode\skills\skill-rag"
+python "$skill\scripts\skill_rag.py" --setup "$skill\setup.json" scan --root ".\rag-data" --output "$skill\build\index.json" --sql-output "$skill\build\index.sql"
+```
+
+輸出檔案：
+
+- `.opencode/skills/skill-rag/build/index.json`：供本機查詢使用的索引。
+- `.opencode/skills/skill-rag/build/index.sql`：可匯入 MySQL 的資料 SQL；產生此檔不代表已寫入資料庫。
+
+### 查詢文件
+
+建立索引後，使用命令列查詢：
+
+```powershell
+$skill = ".opencode\skills\skill-rag"
+python "$skill\scripts\skill_rag.py" query --index "$skill\build\index.json" --question "如何重設設備？" --top-k 5
+```
+
+也可以在 OpenCode 對話中要求「用 `skill-rag` 查詢 `rag-data/sources/` 裡的文件，回答時附上來源檔名」。查詢會回報匹配文件與 chunk。排序依關鍵詞重疊及標題加權，不是語意向量搜尋。
+
+### 建立 MySQL 資料表並匯入索引
+
+MySQL 資料表是可選的。`skill-rag` 的一般查詢讀取 `index.json`，不會連線 MySQL。若要另外保存索引資料，第一次需用 MySQL Workbench 執行 `.opencode/skills/skill-rag/templates/sql-schema.sql`，建立 `mydb`、`rag_sources`、`rag_chunks` 及全文索引；再用 `mysql` 命令列工具匯入 `index.sql`：
+
+```cmd
+mysql -h 127.0.0.1 -P 3306 -u user1 -p < .opencode\skills\skill-rag\templates\sql-schema.sql
+mysql -h 127.0.0.1 -P 3306 -u user1 -p mydb < .opencode\skills\skill-rag\build\index.sql
+```
+
+將 `user1` 換成有權限的 MySQL 帳號；`-p` 會提示輸入密碼。以上命令請在 **cmd.exe** 執行，或改用 MySQL Workbench。schema 範本只建立不存在的資料表，不會清除資料；匯入前仍須確認連線目標。後續掃描會重建 JSON 並產生可更新既有資料列的 SQL，但不會自動清除已刪除來源留下的舊資料列。
+
+如需直接檢查 MySQL 中的資料，可使用 `skill-db`：
+
+```powershell
+python .opencode\skills\skill-db\scripts\mysql_skill.py schema
+python .opencode\skills\skill-db\scripts\mysql_skill.py run --sql "SELECT COUNT(*) AS chunk_count FROM rag_chunks"
+```
+
+若資料已匯入且已建立範本中的 FULLTEXT 索引，可直接做 MySQL 全文檢索：
+
+```powershell
+python .opencode\skills\skill-db\scripts\mysql_skill.py run --sql "SELECT s.source_name, c.chunk_index, c.chunk_content FROM rag_chunks AS c JOIN rag_sources AS s ON s.id = c.source_id WHERE MATCH(c.chunk_title, c.summary, c.keywords, c.tags, c.content, c.chunk_content) AGAINST ('搜尋關鍵字' IN NATURAL LANGUAGE MODE) ORDER BY c.chunk_index LIMIT 5"
+```
+
+這個 SQL 查詢使用 MySQL 的 FULLTEXT 索引，與 `skill-rag query` 讀取 JSON 索引是兩條不同的查詢路徑；結果會受 MySQL 版本及文字切詞方式影響。
+
+完整設定、更新步驟與限制請參閱 [skill-rag 使用說明](.opencode/skills/skill-rag/README.md)。
 
 ---
 

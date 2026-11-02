@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "database": "mydb",
+  "description": "skill-db 的表格與欄位說明草稿，之後可持續修改。",
+  "rules": {
+    "allow_transactions": true,
+    "require_confirmation_before_write": false,
+    "allow_select": true,
+    "allow_insert": true,
+    "allow_update": true,
+    "allow_delete": true,
+    "disallow_drop_database": true,
+    "disallow_drop_table": true,
+    "disallow_table_delete": true
+  },
+  "tables": [
+    {
+      "name": "customers",
+      "meaning": "顧客主檔。",
+      "description": "保存顧客基本資料與註冊時間。",
+      "fields": [
+        { "name": "customer_id", "type": "int", "meaning": "顧客主鍵", "required": true, "editable": false, "notes": "auto_increment" },
+        { "name": "customer_name", "type": "varchar", "meaning": "顧客名稱", "required": true, "editable": true, "notes": "" },
+        { "name": "email", "type": "varchar", "meaning": "電子郵件", "required": true, "editable": true, "notes": "唯一值" },
+        { "name": "phone", "type": "varchar", "meaning": "聯絡電話", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "city", "type": "varchar", "meaning": "所在城市", "required": true, "editable": true, "notes": "" },
+        { "name": "registered_at", "type": "datetime", "meaning": "註冊時間", "required": true, "editable": false, "notes": "建立時間" }
+      ]
+    },
+    {
+      "name": "orders",
+      "meaning": "訂單主檔。",
+      "description": "保存訂單與金額、狀態、下單時間。",
+      "fields": [
+        { "name": "order_id", "type": "int", "meaning": "訂單主鍵", "required": true, "editable": false, "notes": "auto_increment" },
+        { "name": "order_number", "type": "varchar", "meaning": "訂單編號", "required": true, "editable": true, "notes": "唯一值" },
+        { "name": "customer_id", "type": "int", "meaning": "顧客編號", "required": true, "editable": true, "notes": "對應 customers.customer_id" },
+        { "name": "product_id", "type": "int", "meaning": "商品編號", "required": true, "editable": true, "notes": "對應 products.product_id" },
+        { "name": "quantity", "type": "int", "meaning": "數量", "required": true, "editable": true, "notes": "" },
+        { "name": "unit_price", "type": "decimal", "meaning": "單價", "required": true, "editable": true, "notes": "下單當下單價" },
+        { "name": "total_amount", "type": "decimal", "meaning": "總金額", "required": false, "editable": false, "notes": "generated column" },
+        { "name": "order_status", "type": "enum", "meaning": "訂單狀態", "required": true, "editable": true, "notes": "例如 pending / paid / shipped / done" },
+        { "name": "ordered_at", "type": "datetime", "meaning": "下單時間", "required": true, "editable": true, "notes": "" }
+      ]
+    },
+    {
+      "name": "products",
+      "meaning": "商品主檔。",
+      "description": "保存商品資訊、分類、售價與庫存。",
+      "fields": [
+        { "name": "product_id", "type": "int", "meaning": "商品主鍵", "required": true, "editable": false, "notes": "auto_increment" },
+        { "name": "product_code", "type": "varchar", "meaning": "商品代碼", "required": true, "editable": true, "notes": "唯一值" },
+        { "name": "product_name", "type": "varchar", "meaning": "商品名稱", "required": true, "editable": true, "notes": "" },
+        { "name": "category", "type": "varchar", "meaning": "商品分類", "required": true, "editable": true, "notes": "" },
+        { "name": "unit_price", "type": "decimal", "meaning": "售價", "required": true, "editable": true, "notes": "" },
+        { "name": "stock_quantity", "type": "int", "meaning": "庫存數量", "required": true, "editable": true, "notes": "預設 0" },
+        { "name": "is_active", "type": "tinyint", "meaning": "是否啟用", "required": true, "editable": true, "notes": "1=啟用, 0=停用" }
+      ]
+    },
+    {
+      "name": "rag_chunks",
+      "meaning": "文件切片索引。",
+      "description": "保存來源文件切片、摘要、關鍵詞與嵌入相關資訊。",
+      "fields": [
+        { "name": "id", "type": "bigint", "meaning": "切片主鍵", "required": true, "editable": false, "notes": "auto_increment" },
+        { "name": "source_id", "type": "bigint", "meaning": "來源編號", "required": true, "editable": true, "notes": "對應 rag_sources.id" },
+        { "name": "chunk_index", "type": "int", "meaning": "切片序號", "required": true, "editable": true, "notes": "" },
+        { "name": "chunk_title", "type": "varchar", "meaning": "切片標題", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "content", "type": "longtext", "meaning": "原始內容", "required": true, "editable": true, "notes": "" },
+        { "name": "chunk_content", "type": "longtext", "meaning": "切片內容", "required": true, "editable": true, "notes": "" },
+        { "name": "summary", "type": "text", "meaning": "摘要", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "keywords", "type": "text", "meaning": "關鍵字", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "tags", "type": "text", "meaning": "標籤", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "rag_model", "type": "varchar", "meaning": "RAG 模型名稱", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "embedding_model", "type": "varchar", "meaning": "嵌入模型名稱", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "score", "type": "decimal", "meaning": "相似度分數", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "status", "type": "varchar", "meaning": "狀態", "required": true, "editable": true, "notes": "預設 active" },
+        { "name": "created_at", "type": "datetime", "meaning": "建立時間", "required": true, "editable": false, "notes": "current_timestamp()" },
+        { "name": "updated_at", "type": "datetime", "meaning": "更新時間", "required": true, "editable": false, "notes": "on update current_timestamp()" }
+      ]
+    },
+    {
+      "name": "rag_sources",
+      "meaning": "文件來源主檔。",
+      "description": "保存來源路徑、名稱、類型與掃描狀態。",
+      "fields": [
+        { "name": "id", "type": "bigint", "meaning": "來源主鍵", "required": true, "editable": false, "notes": "auto_increment" },
+        { "name": "source_path", "type": "varchar", "meaning": "來源路徑", "required": true, "editable": true, "notes": "唯一值" },
+        { "name": "source_name", "type": "varchar", "meaning": "來源名稱", "required": true, "editable": true, "notes": "" },
+        { "name": "doc_type", "type": "varchar", "meaning": "文件類型", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "title", "type": "varchar", "meaning": "標題", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "source_hash", "type": "char", "meaning": "來源雜湊", "required": true, "editable": true, "notes": "用於去重" },
+        { "name": "status", "type": "varchar", "meaning": "狀態", "required": true, "editable": true, "notes": "預設 active" },
+        { "name": "last_scanned_at", "type": "datetime", "meaning": "最後掃描時間", "required": false, "editable": true, "notes": "可空值" },
+        { "name": "created_at", "type": "datetime", "meaning": "建立時間", "required": true, "editable": false, "notes": "current_timestamp()" },
+        { "name": "updated_at", "type": "datetime", "meaning": "更新時間", "required": true, "editable": false, "notes": "on update current_timestamp()" }
+      ]
+    }
+  ]
+}

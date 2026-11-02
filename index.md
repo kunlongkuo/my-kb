@@ -105,6 +105,8 @@
 #### 其他特色點心 (Specialty Snacks)
 - [鳳梨酥](file:///i:/Mark/my-kb/wiki/烘培食譜/鳳梨酥.md)
 - [牛軋糖](file:///i:/Mark/my-kb/wiki/烘培食譜/牛軋糖.md)
+- [肉鬆雪Q餅](file:///i:/Mark/my-kb/wiki/烘培食譜/肉鬆雪Q餅食譜筆記.md): 棉花糖、奇福餅乾、肉鬆與夏威夷豆製作的免烤點心。
+- [黑糖麻糬蛋塔](file:///i:/Mark/my-kb/wiki/烘培食譜/黑糖麻糬蛋塔食譜筆記.md): 黑糖蛋塔液搭配麻糬餡，約可製作 16 個。
 
 ## Concepts (概念與主題)
 *(包含理論、概念、方法論等)*
@@ -121,6 +123,5 @@
 
 ## Meta (元數據)
 - [Knowledge Base Schema](file:///i:/Mark/my-kb/schema.md): 本知識庫的操作規範與結構定義。
-
 
 
