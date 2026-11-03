@@ -2,6 +2,35 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-11-03 ── 主動型 ETF 持股日更與儀表板同步（週二，第 110 次更新）
+
+### ✅ 今日完成
+
+1. **主動型 ETF 持股資料日更（20261103，第 110 次更新）**
+   - 執行 `collect_active_etf_holdings.py` 成功抓取 31 檔主動型 ETF 共 1,766 筆持股，寫入 [`主動型ETF持股明細.xlsx`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E6%98%8E%E7%B4%B0.xlsx) 之 `20261103` 工作表（歷史累計 110 個交易日分頁）。
+   - 比對區間：`20261102` → `20261103`。
+   - 執行 `add_weekly_summary.py` 更新週加減碼明細 `Weekly Additions`（118 筆）與 `Weekly Reductions`（65 筆）工作表。
+   - 執行 `add_daily_stock_total.py` 更新「每日個股合計」工作表（累計 110 日，共 81,815 筆數據）。
+   - 自動調用 `draw_holdings_charts.py` 更新今日 Top 10 加減碼視覺化圖表 (`20261103_additions.png` / `20261103_reductions.png` 及固定名稱最新圖檔) 與 [`主動型ETF持股變動.md`](file:///i:/Mark/my-kb/wiki/%E9%87%91%E8%9E%8D%E6%8A%95%E8%B3%87/%E4%B8%BB%E5%8B%95%E5%9E%8BETF%E6%8C%81%E8%82%A1%E8%AE%8A%E5%8B%95.md)。
+   - 執行 `generate_dashboard_data.py` 更新 `dashboard_data.js` 儀表板資料庫至 2026-11-03（588 檔標的，`主動型ETF個股加減碼排行.html` 下拉選單同步更新至 `20261103`）。
+2. **今日加減碼重點追蹤**：
+   - 加碼榜首為 1802 台玻（+8,479 張，00981A 統一台股增長大舉進場）、2330 台積電（+736 張）、Eurobank SA（+400 張）、2308 台達電（+150 張）、2059 川湖（+35 張）。
+   - 減碼榜首為 3376 新日興（-300 張）、國民西敏集團（-240 張）、8210 勤誠（-100 張）、BMNR.US（-2.4 張）、BLSH.US（-1.5 張）、HOOD.US（-1.1 張）。
+   - 00981A 新進 1802 台玻（8,479 張，0.23%）；今日無持股全數出清之剔除標的。
+
+### 📁 重要改動檔案
+
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（新增 `20261103` 工作表、Weekly Additions/Reductions、每日個股合計）
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `wiki/金融投資/images/20261103_additions.png` / `20261103_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png` / `active_etf_top_reductions.png`
+- `wiki/金融投資/dashboard_data.js`
+- `每日筆記/2026-11-03.md`
+- `handoff.md`
+
+---
+
 ## 2026-11-02 ── 主動型 ETF 持股日更與儀表板同步（週一，第 109 次更新）
 
 ### ✅ 今日完成
