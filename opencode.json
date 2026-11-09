@@ -14,7 +14,8 @@
       "motion-design": "allow",
       "review-loop": "allow",
       "shanshiba-drama": "allow",
-      "blender-previs": "allow"
+      "blender-previs": "allow",
+      "social-post": "allow"
     }
   },
   "mcp": {

@@ -5,6 +5,10 @@ description: 依據 Editkin v4 剪輯合約與機械閘門，執行短影音與�
 
 # 短影音與長片自動執行（Video Autopilot）
 
+## 已安裝的官方版本（優先）
+
+本機已安裝 Hao0321 `video-autopilot-kit` v0.26.0，位於 `I:\Mark\my-kb\bin\video-autopilot-kit`。執行此套件的工作時，先讀取該目錄的 `codex-skill/video-autopilot/SKILL.md` 與相關 references，並以官方文件及合約為準；Python 媒體依賴安裝於該目錄的 `.venv`。實際剪輯與渲染需已連接的 Editkin MCP。以下內容為原有 v0.23.0 工作指引，與官方新版衝突時不適用於新版流程。
+
 本技能依據 `FreeTWAI/video-autopilot-kit`（v0.23.0 / 架構 7.0）標準，以 **Editkin v4 唯一合約** 與 **機械閘門（Fail-Closed Gates）** 為核心，負責將前期策略企劃與素材證據轉化為高完成度的發布套件。
 
 本技能負責「精密執行與品質把關」，不代替使用者臆造未經證實的故事；若策略或素材不明確，先由 `video-production-workflow` 釐清，不硬切盲剪。

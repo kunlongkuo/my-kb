@@ -53,6 +53,7 @@
 | 原理解說動畫 | `skills/motion-explainer` 系列（HyperFrames 動畫、授權照片證據卡、H3 AI 影片、品味規範與審查） |
 | AI 短劇編劇 | `skills/shanshiba-drama` 預設 9:16 直式 Shorts / 指定 16:9 橫式 MiniMax H3 短劇創作、試映讀本、drama-hooks 與單鏡 ≤12 秒拆鏡契約 |
 | 3D 空間預演 | `skills/blender-previs` Blender 白模鎖定機位、空間防漂移、布置圖檢查與運鏡交付包 |
+| 社群平台貼文 | `skills/social-post` 社群內容規劃、依授權樣本校準語氣、平台化撰稿與審慎成效檢視 |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
 | 智慧搜尋 | `skills/09-smart-search` 提供多維度全文檢索與內容定位指南 |
@@ -68,6 +69,8 @@
 | 技能同步說明 | [`docs/AGENT_SHARED_SKILLS.md`](docs/AGENT_SHARED_SKILLS.md) 說明目前同步狀態與使用順序 |
 
 > 影片與動畫製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）、`video-use-editor`（AI 語音逐字稿精剪）、`motion-explainer` 系列（HyperFrames 原理解說動畫與 AI 影片）、`shanshiba-drama`（AI 短劇編劇）與 `blender-previs`（Blender 空間預演），皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
+
+社群文案由 `skills/social-post` 負責；規劃、撰稿及成效分析不代表已連接社群帳號或可自動發布。
 
 ---
 

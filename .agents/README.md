@@ -10,6 +10,7 @@
 
 ## 已同步的技能
 
+0. `social-post`（社群平台貼文規劃、撰寫、修訂與審慎成效分析）
 1. `video-production-workflow`（前期策略與類型分類）
 2. `video-autopilot`（Editkin v4、CapCut/ffmpeg 剪輯落地與機械閘門）
 3. `video-use-editor`（對話式 AI 逐字稿精剪與贅詞消除）
@@ -19,6 +20,7 @@
 
 ## 使用方式
 
+- 社群平台貼文：使用 `social-post`；依授權樣本校準個人語氣，草稿與發布分開，沒有當輪確認與可用工具時不執行發布。
 - 先看 `video-production-workflow`：用來判斷影片類型、平台、長度、字幕風格與剪輯策略。
 - 原理解說與動畫製作：調用 `motion-explainer` / `motion-explainer-images` / `motion-explainer-video`。
 - 短劇劇情創作與拆鏡：調用 `shanshiba-drama`。

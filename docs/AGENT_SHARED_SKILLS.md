@@ -14,8 +14,13 @@
 - `.opencode/skills/` 已建立鏡像，供 OpenCode 讀取。
 - `.agents/skills/` 已建立鏡像，供其他 Agent 共用。
 - `opencode.json` 已加入技能權限設定。
+- `social-post` 為社群貼文技能，涵蓋規劃、依授權樣本校準語氣、撰稿與審慎成效分析；不宣稱具備自動發布能力。
 
 ## 技能分工
+
+### `social-post`
+
+負責 Facebook、Instagram、Threads、YouTube、X 等社群內容的規劃、撰稿、修稿與成效檢視。個人語氣只依使用者可讀取且授權的樣本校準；樣本少或資料不足時標示不確定性，不推論保證觸及的公式。發布及留言操作須有可用工具、明確範圍與當輪確認。
 
 ### `video-production-workflow`
 
