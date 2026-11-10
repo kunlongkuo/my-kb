@@ -58,6 +58,14 @@
 - **`motion-design`**：動畫品味規則（緩動、節奏、停留、中文排版、三色配色數值化）。
 - **`review-loop`**：自我審查迴圈（Contact sheet 截圖拼接檢查表）。
 
+### `blender-previs`（3D 空間預演）
+
+山獅霸 AI 短劇的 Blender 預演與交付包，專注於鏡位契約、白模空間防漂移、布置圖檢查與相機軌道運鏡規範。
+
+### `hunyuan-browser-3d-animation`（圖片轉 3D 角色建模與動畫）
+
+以 Browser Use 操作騰訊混元 3D 官網（`3d.hunyuan.tencent.com`），將單張人物圖片製成 3D 模型，接續 Mixamo 綁骨、套動作與 Blender 修整匯出。預設將繁重建模工作派給 subagent，主對話只派工與驗收成果。
+
 ## 建議使用順序
 
 1. 先讀 `video-production-workflow`：決定影片類型、平台、長度、受眾與策略。

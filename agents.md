@@ -45,6 +45,7 @@
 1. **AI 短劇創作與 3D 空間預演**：
    - `skills/shanshiba-drama/SKILL.md`：AI 短劇編劇（預設 9:16 直式 Shorts / 指定 16:9 橫式、MiniMax H3 單鏡 ≤12 秒、試映讀本、drama-hooks 20 種模式、劇本與鏡表拆解）。寫劇本、改台詞、拆鏡頭必讀。
    - `skills/blender-previs/SKILL.md`：Blender 3D 白模空間預演與交付包（鎖定機位、空間防漂移、布置圖檢查、運鏡契約）。
+   - `skills/hunyuan-browser-3d-animation/SKILL.md`：混元網頁 3D 角色建模與動畫（Browser Use 操作混元官網、Mixamo 綁骨、Blender 修整、subagent 派工）。
 2. **原理解說動畫與視覺動態**：
    - `skills/motion-explainer/SKILL.md`（含 `-images`、`-video`）：HyperFrames 原理解說動畫影片、中文旁白與字幕流程。
    - `skills/motion-design/SKILL.md`：動態設計時間軸、緩動、節奏與繁中排版規範。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "混元網頁建模與角色動畫"
+  short_description: "由子代理操作混元網頁建模，接續 Mixamo 綁骨與 Blender 修整驗收"
+  default_prompt: "使用 $hunyuan-browser-3d-animation，將指定角色圖片交給子代理完成混元網頁建模、Mixamo 動畫與成果驗收，主對話只回報摘要。"

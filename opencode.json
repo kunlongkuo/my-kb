@@ -15,7 +15,8 @@
       "review-loop": "allow",
       "shanshiba-drama": "allow",
       "blender-previs": "allow",
-      "social-post": "allow"
+      "social-post": "allow",
+      "hunyuan-browser-3d-animation": "allow"
     }
   },
   "mcp": {

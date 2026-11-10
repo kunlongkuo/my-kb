@@ -2,6 +2,53 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-11-10 ── 引進「混元 3D 角色動畫」技能與主動型 ETF 日更（第 114 次）
+
+### ✅ 完成
+
+1. **安裝與鏡像同步 `hunyuan-browser-3d-animation` 技能**：
+   - 來源：[奕鈞老師教學網站](https://ijun-ai.com/media/hunyuan-3d-skill/)。
+   - 完整解壓縮並部署至：
+     - `skills/hunyuan-browser-3d-animation/`（主技能庫）
+     - `.agents/skills/hunyuan-browser-3d-animation/`（跨 Agent 鏡像區）
+     - `.opencode/skills/hunyuan-browser-3d-animation/`（OpenCode 鏡像區）
+     - `~/.codex/skills/hunyuan-browser-3d-animation/`（Codex 全域技能區）
+   - 包含子代理派工契約（`references/delegation.md`）、除錯與踩坑指引（`references/pitfalls.md`）、模型驗證腳本（`scripts/inspect_glb.py`）與代理設定檔（`agents/openai.yaml`）。
+2. **跨 Agent 設定與文檔整合**：
+   - 更新 `opencode.json`：開放 `"hunyuan-browser-3d-animation": "allow"` 權限。
+   - 更新 `.agents/README.md`、`docs/AGENT_SHARED_SKILLS.md`、`AGENTS.md` 與 `README.md`，納入 3D 角色動畫與建模流水線說明。
+3. **主動型 ETF 持股日更（20261110，第 114 次）**：
+   - `collect_active_etf_holdings.py` 抓取 31 檔主動型 ETF，共 1,732 筆，寫入 `20261110` 工作表，與 `20261109` 比對完成。
+   - `add_weekly_summary.py`：週加碼 237 筆、週減碼 65 筆（20261106→20261110）。
+   - `add_daily_stock_total.py`：每日個股合計更新至 18,475 列，自動產生 Top 10 圖表（`20261110_additions.png`、`20261110_reductions.png`）。
+   - `generate_dashboard_data.py`：25 個日期分頁解析完成，`dashboard_data.js` 重新生成。
+4. **今日加減碼亮點**：
+   - 加碼 Top 10：聯電 (+2,046 張)、富喬 (+1,300 張)、南亞 (+1,148 張)、台積電 (+870 張)、愛普* (+858 張)、臻鼎-KY (+437 張)、緯創 (+332 張)、玉山金 (+306 張)、強茂 (+300 張)、鴻海 (+285 張)。
+   - 減碼部分：台塑化 (-3,091 張)、南亞科 (-2,139 張)、南俊國際 (-363 張)、志聖 (-334 張)、國巨* (-300 張)、辛耘 (-183 張)。
+   - 新增剔除部分：00992A 新進世芯-KY（130 張）；00994A 出清信驊（6.42 張）並進光寶科；00406A 新進中華化（750 張）；00991A 新進富世達（215 張）。
+
+### 📁 重要異動檔案
+
+- `skills/hunyuan-browser-3d-animation/`
+- `.agents/skills/hunyuan-browser-3d-animation/`
+- `.opencode/skills/hunyuan-browser-3d-animation/`
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（+1 日期分頁 `20261110`，共 25 日）
+- `wiki/金融投資/dashboard_data.js`
+- `wiki/金融投資/images/20261110_additions.png`
+- `wiki/金融投資/images/20261110_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png`
+- `wiki/金融投資/images/active_etf_top_reductions.png`
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `每日筆記/2026-11-10.md`
+- `opencode.json`
+- `AGENTS.md`
+- `README.md`
+- `.agents/README.md`
+- `docs/AGENT_SHARED_SKILLS.md`
+
+---
+
 ## 2026-11-09 ── 主動型 ETF 持股日更（第 113 次）
 
 ### ✅ 完成
