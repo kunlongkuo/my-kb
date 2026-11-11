@@ -1,0 +1,45 @@
+{
+  "root": "C:/path/to/你的專案資料夾",
+  "work_dir": "Codex/anim_work",
+  "scenes_py": "Codex/anim/scenes.py",
+  "voice_timing": "Codex/anim/voice_timing.json",
+  "voice_dir": "Codex/配音/audio",
+  "veo_dir": "Codex/video/veo",
+  "parts_dir": "Codex/video/parts",
+  "bgm": "Codex/audio/bgm.mp3",
+  "output": "Codex/video/嘉義市數位學習成果_完整版.mp4",
+  "xfade": 0.3,
+  "tail": 0.2,
+  "bgm_volume": 0.30,
+  "loudness": -15,
+  "bgm_join": {"a_end": 62.0, "crossfade": 4.0},
+  "scenes": [
+    {"id": "s01", "dur": 9.0,  "delay": 0.6, "voice": "n01"},
+    {"id": "s02", "dur": 10.6, "delay": 0.4, "voice": "n02"},
+    {"id": "s03", "dur": 9.8,  "delay": 0.4, "voice": "n03"},
+    {"id": "s04", "dur": 8.7,  "delay": 0.4, "voice": "n04"},
+    {"id": "s05", "dur": 8.6,  "delay": 0.4, "voice": "n05"},
+    {"id": "s06", "dur": 11.2, "delay": 0.4, "voice": "n06", "interp": "dup"},
+    {"id": "s07", "dur": 9.7,  "delay": 0.4, "voice": "n07"},
+    {"id": "s08", "dur": 12.0, "delay": 0.4, "voice": "n08"},
+    {"id": "s09", "dur": 11.0, "delay": 0.4, "voice": "n09"},
+    {"id": "s10", "dur": 10.2, "delay": 0.4, "voice": "n10"}
+  ],
+  "credits": {
+    "dur": 16,
+    "bg": "Codex/anim_work/last_frame.png",
+    "rows": [
+      ["h1", "115年教育部推動教育AI及數位學習績優徵選"],
+      ["h1", "嘉義市獲獎名單"],
+      ["gap", ""],
+      ["h2", "領航獎"], ["p", "嘉義市西區北園國民小學"],
+      ["h2", "卓越獎"], ["p", "蔡邦居（嘉義市立民生國民中學）"], ["p", "梁益榮（嘉義市西區港坪國民小學）"],
+      ["h2", "特優"],
+      ["s", "蔡邦居｜民生國中"], ["p", "《Code出數學力──AI數學遊戲DIY × NotebookLM跨域全攻略》"],
+      ["s", "黃菁華、曾永祥｜嘉義國中"], ["p", "《AI大導演：我的創意廣告工作室》"],
+      ["gap", ""],
+      ["h1", "恭喜所有獲獎學校與教育夥伴"],
+      ["p", "嘉義市政府教育處智慧教育中心　賀"]
+    ]
+  }
+}

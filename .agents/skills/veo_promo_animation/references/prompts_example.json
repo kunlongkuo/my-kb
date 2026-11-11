@@ -1,0 +1,13 @@
+{
+  "style": "Style: warm, polished flat vector illustration with soft gradients and subtle paper grain, like a premium Taiwanese education promo animation. Palette: cream/ivory background, deep navy blue, crimson red, and shining gold accents (gold laurel leaves, thin glowing gold circuit lines). 16:9 landscape, 1920x1080 composition, cinematic depth with clear foreground / midground / background layers. The illustration should fill the whole frame edge to edge; leave only a soft, less busy band in the lower 20% for subtitles (still illustrated, not a blank panel). ABSOLUTELY NO text, letters, numbers, words, logos or signage anywhere in the image. People are friendly stylized cartoon characters (Taiwanese teachers and students) with simple cute faces: dot eyes and gentle smiles. This is Chiayi City, Taiwan: low-rise townscape only, NO skyscrapers, NO Taipei 101.",
+  "scenes": {
+    "s01": "Dawn over Chiayi City, Taiwan: a gentle skyline of low-rise city buildings, a round traffic fountain plaza in the center, Alishan mountains with a sea of clouds far behind. Golden sunrise light rays rise from the horizon. Floating in the sky: a glowing tablet with a soft blue AI chip symbol (no letters) and an open book releasing tiny sparkles. Gold circuit lines trail across the sky like ribbons.",
+    "s03": "A large shining gold trophy cup at the center on a navy pedestal, surrounded by a gold laurel wreath. Around it in a gentle arc float five round award medallion badges of different designs (crown, star, ribbon, flower, shield) without any text. Red and navy ribbons swirl, gold confetti sparkles, cream background with soft radial glow."
+  },
+  "veo_motion_common": "Animate this exact illustration as a shot of a warm 2D animated promo film. Keep the art style, composition, colors and characters exactly as in the image (flat illustrated, not photorealistic). ... No text, no numbers, no captions, no logos, no new characters, no dialogue, no speech, no music.",
+  "veo_motion_examples": {
+    "推鏡人物場景": "Camera: slow smooth push-in toward <主體>. Motion: <人物動作>, <物件漂浮/閃光>, <環境：雲、樹、水>.",
+    "資訊鏡（要疊標籤）": "IMPORTANT: locked-off static camera, absolutely no camera movement, no zoom, no pan; the <物件> stay exactly in place and keep their size. Motion only inside the scene: ...",
+    "結尾城市": "IMPORTANT: nearly static camera with only a very slight slow push-in; keep the same framing the whole time. Do not add any new buildings, no skyscrapers, no towers, no new people ..."
+  }
+}

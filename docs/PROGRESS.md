@@ -2,6 +2,54 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-11-11 ── 引進「Flow/Veo 宣傳動畫」技能與主動型 ETF 日更（第 115 次）
+
+### ✅ 完成
+
+1. **安裝與鏡像同步 `veo_promo_animation` 技能**：
+   - 來源：[奕鈞老師教學網站](https://ijun-ai.com/media/veo-promo-animation/)。
+   - 完整解壓縮並部署至：
+     - `skills/veo_promo_animation/`（主技能庫）
+     - `.agents/skills/veo_promo_animation/`（跨 Agent 鏡像區）
+     - `.opencode/skills/veo_promo_animation/`（OpenCode 鏡像區）
+     - `~/.codex/skills/veo_promo_animation/`（Codex 全域技能區）
+     - `~/.claude/skills/veo_promo_animation/`（Claude Code 技能區）
+   - 包含分鏡腳本規範（`SKILL.md`）、Codex 無字插圖生成（`scripts/storyboard_images.py`）、旁白對齊與停頓偵測（`scripts/voice_timing.py`）、影片鏡頭匹配（`scripts/identify_clips.py`）、金色光帶轉場與標題字幕渲染（`scripts/fxlib.py`、`render_overlay.py`、`render_clip.py`）、片尾捲動名單與音訊混音串接（`scripts/credits.py`、`assemble.py`）與瀏覽器操作輔助腳本（`scripts/veo_browser.js`）。
+2. **跨 Agent 設定與文檔整合**：
+   - 更新 `opencode.json`：開放 `"veo_promo_animation": "allow"` 權限。
+   - 更新 `.agents/README.md`、`docs/AGENT_SHARED_SKILLS.md`、`AGENTS.md` 與 `README.md`，納入 Flow/Veo 成果影片流水線說明。
+3. **主動型 ETF 持股日更（20261111，第 115 次）**：
+   - `collect_active_etf_holdings.py` 抓取 31 檔主動型 ETF，共 1,740 筆，寫入 `20261111` 工作表，與 `20261110` 比對完成。
+   - `add_weekly_summary.py`：週加碼 397 筆、週減碼 158 筆（20261106→20261111）。
+   - `add_daily_stock_total.py`：每日個股合計更新至 19,196 列，自動產生 Top 10 圖表（`20261111_additions.png`、`20261111_reductions.png`）。
+   - `generate_dashboard_data.py`：26 個日期分頁解析完成，`dashboard_data.js` 重新生成。
+4. **今日加減碼亮點**：
+   - 加碼 Top 10：南亞 (+3,145 張)、日月光投控 (+1,879 張)、台玻 (+1,200 張)、啟碁 (+1,054 張)、愛普* (+950 張)、智邦 (+848 張)、台積電 (+845 張)、華邦電 (+842 張)、健鼎 (+758 張)、友達 (+675 張)。
+   - 減碼部分：台泥 (-4,074 張)、遠東新 (-3,771 張)、華航 (-3,535 張)、彰銀 (-3,514 張)、台新新光金 (-3,220 張)、凱基金 (-2,848 張)、南亞科 (-2,581 張)、永豐金 (-2,529 張)。
+   - 換股亮點：00404A 大幅換股（新進東和鋼鐵、微星、長榮等；出清台達電、智邦）；00984A 換股（新進聯強、中華電、盟立等；出清中再保、統一證、中信金）；00408A 與 00994A 同步回補聯亞與世芯-KY。
+
+### 📁 重要異動檔案
+
+- `skills/veo_promo_animation/`
+- `.agents/skills/veo_promo_animation/`
+- `.opencode/skills/veo_promo_animation/`
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（+1 日期分頁 `20261111`，共 26 日）
+- `wiki/金融投資/dashboard_data.js`
+- `wiki/金融投資/images/20261111_additions.png`
+- `wiki/金融投資/images/20261111_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png`
+- `wiki/金融投資/images/active_etf_top_reductions.png`
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `每日筆記/2026-11-11.md`
+- `opencode.json`
+- `AGENTS.md`
+- `README.md`
+- `.agents/README.md`
+- `docs/AGENT_SHARED_SKILLS.md`
+
+---
+
 ## 2026-11-10 ── 引進「混元 3D 角色動畫」技能與主動型 ETF 日更（第 114 次）
 
 ### ✅ 完成

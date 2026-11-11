@@ -54,6 +54,7 @@
    - `skills/video-production-workflow/SKILL.md`：短影音前期策略與類型分類。
    - `skills/video-autopilot/SKILL.md`：Editkin v4 剪輯合約、CapCut JSON / ffmpeg 自動化剪輯落地。
    - `skills/video-use-editor/SKILL.md`：對話式 AI 逐字稿精剪、贅詞消除與靜音切除。
+   - `skills/veo_promo_animation/SKILL.md`：Flow/Veo 宣傳動畫影片工作流（貼文海報轉影片、分鏡腳本、Codex 無字插圖、Google Flow/Veo 片段、旁白對齊字幕與金色轉場）。
 4. **需求探索與其他技能**：
    - `skills/rdq-skill/SKILL.md`：RDQ 需求探索四象限結構化訪談法。
 

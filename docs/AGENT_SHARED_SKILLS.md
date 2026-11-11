@@ -66,11 +66,16 @@
 
 以 Browser Use 操作騰訊混元 3D 官網（`3d.hunyuan.tencent.com`），將單張人物圖片製成 3D 模型，接續 Mixamo 綁骨、套動作與 Blender 修整匯出。預設將繁重建模工作派給 subagent，主對話只派工與驗收成果。
 
+### `veo_promo_animation`（Flow/Veo 宣傳動畫影片工作流）
+
+將得獎貼文、活動海報一條龍轉為 1080p 成果影片與社群版。分鏡腳本 → Codex 無字構圖圖 → Gemini 背景音樂與 TTS 旁白 → Google Flow / Gemini Veo 圖生影片 → 程式疊加金字標題、資訊標籤與對齊字幕 → 金色光帶轉場與片尾捲動名單。嚴格落實「每一步先確認才做」與「插圖不含文字」。
+
 ## 建議使用順序
 
 1. 先讀 `video-production-workflow`：決定影片類型、平台、長度、受眾與策略。
 2. 依任務類型分流執行：
    - 原理解說動畫、三色教學片、公式原理展示 ➔ 調用 **`motion-explainer`** 系列（可依需求選基本版、圖片版或 H3 影片版）
+   - 得獎公告、活動海報轉 1080p 宣傳短片（使用者指定「使用flow」或「使用veo」） ➔ 調用 **`veo_promo_animation`**
    - 需要範本花字、貼圖、CapCut/ffmpeg 剪輯、Editkin v4 自動化或無說話素材 ➔ 調用 **`video-autopilot`**
    - 說話口播、訪談、教學且需依逐字稿自動精剪贅詞與死空間 ➔ 調用 **`video-use-editor`**
 3. 若要交給其他 Agent，先看 `.agents/README.md`

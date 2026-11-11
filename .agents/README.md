@@ -18,10 +18,12 @@
 5. `shanshiba-drama`（AI 短劇編劇，預設 9:16 直式 Shorts / 指定 16:9 橫式、MiniMax H3、試映讀本與鏡表創作）
 6. `blender-previs`（Blender 預演與交付包，3D 白模鎖定機位與空間運鏡）
 7. `hunyuan-browser-3d-animation`（混元網頁建模與角色動畫，Browser Use 圖片轉 3D、Mixamo 綁骨、Blender 修整）
+8. `veo_promo_animation`（Flow/Veo 宣傳動畫影片工作流，貼文海報轉 1080p 影片、Google Flow / Gemini Veo 片段生成）
 
 ## 使用方式
 
 - 社群平台貼文：使用 `social-post`；依授權樣本校準個人語氣，草稿與發布分開，沒有當輪確認與可用工具時不執行發布。
+- 貼文／海報轉宣傳影片：明確提到「使用flow」或「使用veo」時調用 `veo_promo_animation`（分鏡確認、無字插圖、圖生影片、金色光帶轉場、片尾捲動名單）。
 - 先看 `video-production-workflow`：用來判斷影片類型、平台、長度、字幕風格與剪輯策略。
 - 原理解說與動畫製作：調用 `motion-explainer` / `motion-explainer-images` / `motion-explainer-video`。
 - 短劇劇情創作與拆鏡：調用 `shanshiba-drama`。

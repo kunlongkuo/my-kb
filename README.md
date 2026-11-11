@@ -54,6 +54,7 @@
 | AI 短劇編劇 | `skills/shanshiba-drama` 預設 9:16 直式 Shorts / 指定 16:9 橫式 MiniMax H3 短劇創作、試映讀本、drama-hooks 與單鏡 ≤12 秒拆鏡契約 |
 | 3D 空間預演 | `skills/blender-previs` Blender 白模鎖定機位、空間防漂移、布置圖檢查與運鏡交付包 |
 | 圖片轉 3D 角色動畫 | `skills/hunyuan-browser-3d-animation` 混元網頁 Browser Use 建模、Mixamo 綁骨與 Blender 修整 |
+| Flow/Veo 宣傳動畫 | `skills/veo_promo_animation` 得獎貼文與活動海報轉 1080p 影片、Google Flow / Veo 片段生成 |
 | 社群平台貼文 | `skills/social-post` 社群內容規劃、依授權樣本校準語氣、平台化撰稿與審慎成效檢視 |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |
@@ -69,7 +70,7 @@
 | 其他 Agent 鏡像 | `.agents/skills/` 提供 AntiGravity 與其他 Agent 共用 |
 | 技能同步說明 | [`docs/AGENT_SHARED_SKILLS.md`](docs/AGENT_SHARED_SKILLS.md) 說明目前同步狀態與使用順序 |
 
-> 影片與動畫製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）、`video-use-editor`（AI 語音逐字稿精剪）、`motion-explainer` 系列（HyperFrames 原理解說動畫與 AI 影片）、`shanshiba-drama`（AI 短劇編劇）、`blender-previs`（Blender 空間預演）與 `hunyuan-browser-3d-animation`（混元網頁 3D 角色建模與動畫），皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
+> 影片與動畫製作技能體系包含：`video-production-workflow`（前期策略）、`video-autopilot`（Editkin v4 剪輯合約與落地）、`video-use-editor`（AI 語音逐字稿精剪）、`motion-explainer` 系列（HyperFrames 原理解說動畫與 AI 影片）、`shanshiba-drama`（AI 短劇編劇）、`blender-previs`（Blender 空間預演）、`hunyuan-browser-3d-animation`（混元網頁 3D 角色建模）與 `veo_promo_animation`（Flow/Veo 貼文宣傳動畫），皆已全數同步至 OpenCode 與 `.agents` 鏡像區。
 
 社群文案由 `skills/social-post` 負責；規劃、撰稿及成效分析不代表已連接社群帳號或可自動發布。
 
