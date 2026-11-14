@@ -55,6 +55,7 @@
 | 3D 空間預演 | `skills/blender-previs` Blender 白模鎖定機位、空間防漂移、布置圖檢查與運鏡交付包 |
 | 圖片轉 3D 角色動畫 | `skills/hunyuan-browser-3d-animation` 混元網頁 Browser Use 建模、Mixamo 綁骨與 Blender 修整 |
 | Flow/Veo 宣傳動畫 | `skills/veo_promo_animation` 得獎貼文與活動海報轉 1080p 影片、Google Flow / Veo 片段生成 |
+| AI 旅遊 Vlog 剪輯 | `skills/ai-vlog` 旅遊照片與影片丟給 AI，用講的剪成 9:16 直式 Vlog（滿版裁切、細字排版、HEIC/HDR 防灰、預覽圖自檢、FFmpeg 成片） |
 | 社群平台貼文 | `skills/social-post` 社群內容規劃、依授權樣本校準語氣、平台化撰稿與審慎成效檢視 |
 | 技能製造機 | `skills/07-skill-creator` 輔助引導自訂技能設計與生成 |
 | 技能搜尋員 | `skills/08-find-skills` 列出與說明已安裝的技能 |

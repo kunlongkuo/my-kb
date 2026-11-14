@@ -55,6 +55,7 @@
    - `skills/video-autopilot/SKILL.md`：Editkin v4 剪輯合約、CapCut JSON / ffmpeg 自動化剪輯落地。
    - `skills/video-use-editor/SKILL.md`：對話式 AI 逐字稿精剪、贅詞消除與靜音切除。
    - `skills/veo_promo_animation/SKILL.md`：Flow/Veo 宣傳動畫影片工作流（貼文海報轉影片、分鏡腳本、Codex 無字插圖、Google Flow/Veo 片段、旁白對齊字幕與金色轉場）。
+   - `skills/ai-vlog/SKILL.md`：旅遊照片與影片丟給 AI，用講的剪成 Vlog（直式 9:16、滿版裁切、細字排版、HEIC/HDR 色彩轉檔防灰、Contact Sheet 預覽圖與 400px 手機尺寸自檢、FFmpeg 一鍵剪輯成片）。
 4. **需求探索與其他技能**：
    - `skills/rdq-skill/SKILL.md`：RDQ 需求探索四象限結構化訪談法。
 

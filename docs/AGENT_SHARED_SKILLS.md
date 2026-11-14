@@ -70,6 +70,10 @@
 
 將得獎貼文、活動海報一條龍轉為 1080p 成果影片與社群版。分鏡腳本 → Codex 無字構圖圖 → Gemini 背景音樂與 TTS 旁白 → Google Flow / Gemini Veo 圖生影片 → 程式疊加金字標題、資訊標籤與對齊字幕 → 金色光帶轉場與片尾捲動名單。嚴格落實「每一步先確認才做」與「插圖不含文字」。
 
+### `ai-vlog`（AI 自動剪旅遊 Vlog）
+
+旅遊照片與影片丟給 AI，用講的剪成直式 9:16 高質感旅遊 Vlog。支援 iPhone HEIC 照片與 HDR 影片色彩校正（tonemap 至 BT.709 防灰）、中心滿版裁切、細手寫/黑體字幕排版、黑色陰影、安全邊界檢查、場景帶字 Contact Sheet 總覽預覽與 400px 手機尺寸自檢，確認後一鍵透過 FFmpeg 剪輯輸出。包含 `check_env.py`、`heic_hdr_converter.py`、`vlog_builder.py` 輔助工具。
+
 ## 建議使用順序
 
 1. 先讀 `video-production-workflow`：決定影片類型、平台、長度、受眾與策略。

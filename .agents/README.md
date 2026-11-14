@@ -19,6 +19,7 @@
 6. `blender-previs`（Blender 預演與交付包，3D 白模鎖定機位與空間運鏡）
 7. `hunyuan-browser-3d-animation`（混元網頁建模與角色動畫，Browser Use 圖片轉 3D、Mixamo 綁骨、Blender 修整）
 8. `veo_promo_animation`（Flow/Veo 宣傳動畫影片工作流，貼文海報轉 1080p 影片、Google Flow / Gemini Veo 片段生成）
+9. `ai-vlog`（AI 自動剪旅遊 Vlog，相簿照片與影片丟進去，用講的剪成 9:16 直式滿版 Vlog、細字排版、HEIC/HDR 防灰、預覽圖自檢、FFmpeg 一鍵輸出）
 
 ## 使用方式
 

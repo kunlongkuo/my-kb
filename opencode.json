@@ -17,7 +17,8 @@
       "blender-previs": "allow",
       "social-post": "allow",
       "hunyuan-browser-3d-animation": "allow",
-      "veo_promo_animation": "allow"
+      "veo_promo_animation": "allow",
+      "ai-vlog": "allow"
     }
   },
   "mcp": {

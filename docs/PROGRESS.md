@@ -2,6 +2,69 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-11-14 ── 建立 AI-Vlog 旅遊照片影片自動剪輯技能
+
+### ✅ 完成
+
+1. **AI-Vlog 專用技能建置 (`skills/ai-vlog`)**：
+   - 參考實測驗證之「AI 自動剪旅遊 Vlog 懶人包」（Notion 頁面：照片丟進去，用講的，AI 幫你剪成旅遊 Vlog）。
+   - 訂定直式 9:16（1080×1920 30fps）、中心滿版裁切、細字排版、黑色陰影、安全邊界檢查、手機寬度 400px 自檢機制等 9 大核心剪輯規則。
+   - 建立輔助腳本庫：
+     - `check_env.py`：環境與工具相依性檢查（FFmpeg、中文字體、Python 套件）。
+     - `heic_hdr_converter.py`：iPhone HEIC 批次轉 JPG，HDR（Dolby Vision / HLG）影片色域映射至 BT.709 SDR，防止畫面變灰。
+     - `vlog_builder.py`：依據分鏡與字幕設定檔，產生各場景預覽圖、拼合 Contact Sheet、手機 400px 自檢圖，並以 FFmpeg 自動組合成成片與混音（`我的Vlog.mp4`）。
+   - 建立提示詞與口述指南：`references/prompt_template.md`、`references/voice_story_guide.md`、`references/ffmpeg_recipes.md`。
+2. **多代理跨平台鏡像同步**：
+   - 鏡像同步至 `.agents/skills/ai-vlog/`、`.opencode/skills/ai-vlog/` 與 `C:\Users\Mark\.codex\skills\ai-vlog/`。
+   - 更新 `opencode.json`，授權 `"ai-vlog": "allow"`。
+   - 更新 `AGENTS.md`、`README.md`、`.agents/README.md`、`docs/AGENT_SHARED_SKILLS.md`。
+3. **主動型 ETF 日更補更**：
+   - 完成 2026-11-13（週五）第 117 次日更補更，31 檔 1,727 筆明細，新增 `20261113` 工作表與週加減碼結算，更新圖表與儀表板資料。
+
+### 📁 重要異動檔案
+
+- `skills/ai-vlog/`（全新專用技能目錄）
+- `.agents/skills/ai-vlog/`
+- `.opencode/skills/ai-vlog/`
+- `C:\Users\Mark\.codex\skills\ai-vlog/`
+- `opencode.json`
+- `AGENTS.md`
+- `README.md`
+- `.agents/README.md`
+- `docs/AGENT_SHARED_SKILLS.md`
+- `handoff.md`
+- `每日筆記/2026-11-14.md`
+
+---
+
+## 2026-11-13 ── 主動型 ETF 持股日更（第 117 次，2026-11-14 補更）
+
+### ✅ 完成
+
+1. **主動型 ETF 持股日更（20261113，第 117 次）**：
+   - 抓取週五 31 檔主動型 ETF，共 1,727 筆，寫入 `20261113` 工作表，與 `20261112` 比對完成。
+   - `add_weekly_summary.py`：週加碼 444 筆、週減碼 209 筆（20261106→20261113，完整週結算）。
+   - `add_daily_stock_total.py`：每日個股合計更新至 20,628 列，自動產生 Top 10 圖表（`20261113_additions.png`、`20261113_reductions.png`）。
+   - `generate_dashboard_data.py`：28 個日期分頁解析完成，`dashboard_data.js` 重新生成。
+2. **週五加減碼亮點**：
+   - 加碼 Top 10：中信金 (+3,900 張)、長華* (+1,000 張)、華航 (+848 張)、台積電 (+592 張)、鉅祥 (+552 張)、健鼎 (+520 張)、日月光投控 (+348 張)、金像電 (+256 張)、藥華藥 (+223 張)、貿聯-KY (+209 張)。
+   - 減碼部分：聯電持續大減 (-6,065 張)、南亞科 (-2,300 張)、鴻海 (-2,173 張)、台燿 (-1,021 張)、台塑化 (-723 張)、致茂 (-604 張)、慧洋-KY (-600 張)。
+   - 換股亮點：00400A 出清鴻海 (2,173 張) 與台塑化；00408A、00994A 同步新進大量並出清旺矽；00988A 出清 NVIDIA (200 張)；00990A 出清 Tesla (32.48 張)；00404A/00981A/00993A 執行台指期貨轉倉至 12 月。
+
+### 📁 重要異動檔案
+
+- `wiki/金融投資/主動型ETF持股明細.xlsx`（+1 日期分頁 `20261113`，共 28 日）
+- `wiki/金融投資/dashboard_data.js`
+- `wiki/金融投資/images/20261113_additions.png`
+- `wiki/金融投資/images/20261113_reductions.png`
+- `wiki/金融投資/images/active_etf_top_additions.png`
+- `wiki/金融投資/images/active_etf_top_reductions.png`
+- `wiki/金融投資/主動型ETF持股變動.md`
+- `wiki/金融投資/主動型ETF持股彙總.md`
+- `每日筆記/2026-11-13.md`
+
+---
+
 ## 2026-11-12 ── 主動型 ETF 持股日更（第 116 次）
 
 ### ✅ 完成
