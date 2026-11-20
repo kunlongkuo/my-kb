@@ -7,7 +7,7 @@
 - `collect_active_etf_holdings.py` — 31 檔 ETF，1,693 筆明細，寫入 `20261120` 分頁，與 `20261119` 比對完成
 - `add_weekly_summary.py` — 比對區間 `20261113` → `20261120`，週加碼 318 筆、週減碼 198 筆
 - `add_daily_stock_total.py` — 每日個股合計 24,166 列，圖表（`20261120_additions.png`、`20261120_reductions.png`、`active_etf_top_additions.png`、`active_etf_top_reductions.png`）已生成並更新 Markdown
-- `generate_dashboard_data.py` — `dashboard_data.js` 更新完成（430 檔股票）
+- `generate_dashboard_data.py` — `dashboard_data.js` 更新完成（432 檔股票）
 - 每日筆記 `每日筆記/2026-11-20.md` 已建立
 - `docs/PROGRESS.md` 已更新
 
@@ -33,6 +33,6 @@
 
 ## 最後更新
 
-- **日期時間**：2026-11-20（週五）
+- **日期時間**：2026-11-20（週五）21:35
 - **更新者**：Antigravity @ DESKTOP-GIM4VFP
 - **Git push 狀態**：已推送
