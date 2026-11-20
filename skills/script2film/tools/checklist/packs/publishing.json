@@ -1,0 +1,21 @@
+{
+ "_readme": "Questions for series that get published. Asked only when the series writes \"checklist\": {\"packs\": [\"publishing\"]} in series.json.",
+ "rules": [
+  {
+   "id": "thumb-checked",
+   "stage": [
+    "release"
+   ],
+   "ask": "Which image does the thumbnail use? Does it follow the series rules (for example, no host)? Can it be read at phone size?",
+   "source": "tools/checklist/packs/publishing.json"
+  },
+  {
+   "id": "channel-checked",
+   "stage": [
+    "release"
+   ],
+   "ask": "Which channel does this episode go to? Did you run whoami before uploading, and is the channel it printed the right one? Should the altered or synthetic content label be checked?",
+   "source": "tools/checklist/packs/publishing.json"
+  }
+ ]
+}

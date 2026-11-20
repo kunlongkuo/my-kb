@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Studio: a single-file storyboard prompt tool | Script2Film</title>
+  <meta name="description"
+    content="Prompt Studio is a single HTML file that runs in your browser: pick a combination, type an idea, and get storyboard or single-shot prompts ready to paste into VideoExpress. Nothing to install, no account.">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/en/studio.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/studio.html">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/studio.html">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/studio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="Prompt Studio: a single-file storyboard prompt tool | Script2Film">
+  <meta property="og:description" content="Prompt Studio is a single HTML file that runs in your browser: pick a combination, type an idea, and get storyboard or single-shot prompts ready to paste into VideoExpress. Nothing to install, no account.">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/en/studio.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Script2Film name beside two frames from films: a dinosaur chasing explorers, and a host with English subtitles">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="../site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="index.html#different">What's different</a>
+        <a href="index.html#features">Features</a>
+        <a href="gallery.html">Scenes &amp; palettes</a>
+        <a href="tools.html">Tools</a>
+        <a href="studio.html" class="keep">Prompt Studio</a>
+        <a href="index.html#works">Films</a>
+        <a href="index.html#flow">How it works</a>
+        <a href="index.html#start">Start</a>
+      </div>
+      <a class="lang" href="../studio.html" hreflang="zh-Hant" lang="zh-Hant">中文</a>
+    </div>
+  </nav>
+
+  <header class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Prompt Studio</div>
+        <h1>Turn an idea into a storyboard, no agent needed</h1>
+        <p class="lead">Prompt Studio is one HTML file. Open it in a browser and it works, with nothing to install and no account to create. Pick the kind of film, type an idea, and it helps you expand that idea into storyboard or single-shot prompts you can paste into VideoExpress. Your settings are kept only in your own browser.</p>
+        <div class="cta">
+          <a class="btn primary" href="../studio/app.html" target="_blank" rel="noopener">Open in your browser</a>
+          <a class="btn ghost gh-doc" href="https://github.com/notoriouslab/script2film/blob/main/tools/prompt-studio/prompt-studio.html"
+            data-path="tools/prompt-studio/prompt-studio.html" target="_blank" rel="noopener">Download the HTML file</a>
+        </div>
+        <p class="hero-note">The interface is in English by default; the CN button at the top right switches it to Chinese. Download opens the file's page on GitHub first: use the download button at its top right to save it, then double-click it whenever you need it.</p>
+      </div>
+      <div>
+        <div class="hero-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="../site/studio-hero-poster.jpg"
+            aria-label="Clips from Dino park, a short film made with prompts written in Prompt Studio">
+            <source src="../site/studio-hero.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-under">
+          <a class="play" id="play-full" href="https://www.youtube.com/watch?v=fKrBTTZsiMM" data-yt="fKrBTTZsiMM"
+            data-title="Dino park" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 2.5v11a.5.5 0 0 0 .77.42l8.5-5.5a.5.5 0 0 0 0-.84l-8.5-5.5A.5.5 0 0 0 4 2.5Z" />
+            </svg>
+            Watch the full film (with sound, 1 min 26 s)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">What it does</div>
+      <h2>Pick a combination, add an idea, and let a chatbot expand it</h2>
+      <p class="intro">This is how the project started. It does not generate video itself; it gets the prompts right, and you paste them into VideoExpress.</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">Pick</div>
+          <h3>Pick the kind of film, and it assembles the writing instructions</h3>
+          <p>First the mode: a storyboard for a whole film, a single shot, or a first-and-last-frame transition. Then duration, aspect ratio, media type (live action, illustration, many animation styles), domain and tone. The page assembles, as you go, a prompt for an AI chatbot that tells it how this film should be written; then you just give it an idea.</p>
+        </div>
+        <div class="tool">
+          <div class="stage">Expand</div>
+          <h3>Three ways to expand it</h3>
+          <p><strong>Copy and paste</strong>: the ChatGPT and Gemini buttons copy the prompt and open the chat page. Paste it, then tell it your idea. Nothing to set up.</p>
+          <p><strong>Your own free key</strong>: in AI Expand, choose Gemini API and paste a free key from Google AI Studio (any OpenAI-compatible service works too). Type an idea and one click produces the storyboard, laid out as tables, and you can write notes asking for a revision.</p>
+          <p><strong>Local Ollama</strong>: everything stays on your computer. This route needs the launcher in the project folder (<code>PromptStudio.command</code> on macOS, <code>PromptStudio.bat</code> on Windows); by default the online copy and a file opened directly cannot reach Ollama.</p>
+        </div>
+        <div class="tool">
+          <div class="stage">Tuned for VideoExpress</div>
+          <h3>Every pattern has been run on VideoExpress</h3>
+          <p>Characters are named by how they look, such as "Actor 1, the 50-year-old host in a dark blue suit", and restated in every shot, so they are less likely to turn into someone else between shots. Chinese dialogue is written as the character saying the line, so it goes to the voice and does not show up as stray text in the picture. The same principles are worth a look with other AI video tools, but they have not been tested on any other platform.</p>
+        </div>
+        <div class="tool">
+          <div class="stage">Local first</div>
+          <h3>One file, no server</h3>
+          <p>No account, no tracking. The browser remembers only the interface language, your AI Expand choice and any key you entered. The prompts it makes are not saved: copy them, or download them as a <code>.md</code> file. When you use AI Expand, your idea goes straight to the service you chose.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-text">
+          <div class="feat-num">The screen</div>
+          <h3>Options on top, the prompt below</h3>
+          <p>Pick the combination along the top; the live prompt appears below, with notes on the mode at the right. AI Expand sits under the prompt.</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="../site/studio-app-en.png" width="1440" height="900" loading="lazy"
+              alt="Prompt Studio: mode, duration, aspect, media type, domain and tone along the top, with the live prompt below"></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="kicker">Films</div>
+      <h2>Films made with prompts written in it</h2>
+      <p class="intro">The author wrote the prompts for these early films in Prompt Studio and generated them in VideoExpress. Each opens on YouTube.</p>
+      <div class="works three">
+        <a class="work" href="https://www.youtube.com/watch?v=fKrBTTZsiMM" target="_blank" rel="noopener">
+          <img src="../site/studio-work-1.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">AI short · adventure</span><b>Dino park</b><small>1 min 26 s · Jacob Mei</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=UfWb6C3dOAM" target="_blank" rel="noopener">
+          <img src="../site/studio-work-2.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">AI short · English</span><b>Blue Collar Hero Heavy Duty</b><small>2 min 15 s · Jacob Mei</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=FjaXYLEwLHI" target="_blank" rel="noopener">
+          <img src="../site/studio-work-3.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">Animation · English</span><b lang="zh-Hant">馬偕博士動畫</b><small>An animated short about Dr. Mackay · 1 min 3 s · Jacob Mei</small></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">How it relates to Script2Film</div>
+      <h2>Two separate routes</h2>
+      <p class="intro">Both are in this project and both write prompts for VideoExpress, but they are used differently.</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">By hand</div>
+          <h3>Prompt Studio</h3>
+          <p>Made for people working by hand. You pick the options, paste the result into a chatbot, then paste the prompts it returns into VideoExpress field by field. Good for one or two shots, or for a first draft of a storyboard.</p>
+        </div>
+        <div class="tool">
+          <div class="stage">Handed to an agent</div>
+          <h3>Script2Film</h3>
+          <p>An AI agent runs the whole flow. The agent reads a separate set of VideoExpress rules and storyboard tools in the project written for agents (<code>skills/ve-director/</code>), and does more on top: it works out how long each shot must be, checks the prompts with code, and submits and collects the clips.</p>
+        </div>
+      </div>
+      <p class="flow-note">The two rule sets are maintained separately, and both have been tested on VideoExpress. A storyboard draft from Prompt Studio can be a starting point to hand to an agent, or a reference while you write; the agent will not read it on its own, so paste it in if you want it used.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film · MIT License</span>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Scenes &amp; palettes</a>
+      <a href="tools.html">Tools</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="../studio.html" hreflang="zh-Hant" lang="zh-Hant">中文</a>
+    </div>
+  </footer>
+
+  <script src="../site/site.js"></script>
+</body>
+
+</html>

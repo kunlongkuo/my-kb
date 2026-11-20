@@ -1,0 +1,72 @@
+# Install from docs/INSTALL.md on a fresh Apple Silicon Mac, check it, run the tests.
+#
+# Not covered: the voice and transcription environments and their models (step 7 of docs/INSTALL.md, about 6 to 7 GB),
+# so the doctor runs with --skip voice. Making a film is not covered either: even examples/brewing, which ships its
+# narration and generated shots in premade/, needs local transcription (mlx-whisper) for the timing step (doc_align.py)
+# before anything can be drawn or cut, and the repository has no ready-made timing file. The scene tests in the pytest
+# run still build the scene pages and load them in a headless browser.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  install-and-test:
+    runs-on: macos-15   # Apple Silicon (arm64)
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "26"   # what `brew install node` gives (docs/INSTALL.md); HyperFrames needs 22 or later
+          cache: npm
+
+      - name: System tools (install only what the runner lacks)
+        run: |
+          for t in git ffmpeg; do
+            command -v "$t" >/dev/null || brew install "$t"
+          done
+          ffmpeg -hide_banner -version | head -1
+
+      - name: Python packages (INSTALL step 2)
+        run: python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+
+      # The Python Playwright package needs its own headless browser. The tests read built scene pages with it, and
+      # doc_code.py does for sound marks ("sfx_on") and screen-recording beats; without it 87 tests fail with
+      # "Executable doesn't exist" (measured on a fresh home folder, 2026-11-17).
+      - name: Playwright headless browser (INSTALL step 3)
+        run: .venv/bin/python -m playwright install --only-shell chromium
+
+      - name: npm ci (INSTALL step 4)
+        run: npm ci
+
+      - name: Headless browser (INSTALL step 5)
+        run: npx hyperframes browser ensure
+
+      - name: Fonts (INSTALL step 6)
+        run: |
+          curl -fL -o assets/fonts/NotoSansTC-Variable.ttf 'https://github.com/google/fonts/raw/main/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf'
+          curl -fL -o assets/fonts/NotoSerifTC-Variable.ttf 'https://github.com/google/fonts/raw/main/ofl/notoseriftc/NotoSerifTC%5Bwght%5D.ttf'
+
+      - name: Install check (INSTALL step 8, voice skipped)
+        run: python3 tools/doctor/doctor.py --skip voice
+
+      - name: Tests
+        run: .venv/bin/python -m pytest -q

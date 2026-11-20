@@ -1,0 +1,396 @@
+{
+ "lang": "zh",
+ "facts": "facts.md",
+ "beats": [
+  {
+   "id": "B1",
+   "source": "code",
+   "scene": "cover",
+   "params": {
+    "series": "示範系列",
+    "title": "出埃及記",
+    "sub": "第 13–21 章",
+    "sub_at": "第十三",
+    "badge": "第 12 天",
+    "at": 0.15
+   }
+  },
+  {
+   "id": "B4",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "順序，剛好反過來",
+    "by": "出埃及記 13–21 章",
+    "at": 0.15,
+    "size": 120,
+    "fact": false
+   }
+  },
+  {
+   "id": "B5",
+   "source": "code",
+   "scene": "timeline",
+   "params": {
+    "hot": 2,
+    "items": [
+     {
+      "date": "創造",
+      "text": "",
+      "at": "創造"
+     },
+     {
+      "date": "墮落",
+      "text": "",
+      "at": "墮落"
+     },
+     {
+      "date": "救贖",
+      "text": "立約期",
+      "at": "救贖"
+     },
+     {
+      "date": "成全",
+      "text": "",
+      "at": "成全"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B6",
+   "source": "code",
+   "scene": "timeline",
+   "params": {
+    "hot": 2,
+    "items": [
+     {
+      "date": "原初",
+      "text": "創 1–11",
+      "at": 0.15
+     },
+     {
+      "date": "族長",
+      "text": "伯、創 12–50",
+      "at": 0.35
+     },
+     {
+      "date": "出埃及與曠野",
+      "text": "出、利、民、申",
+      "at": 0.6
+     },
+     {
+      "date": "征服與士師",
+      "text": "書、士、得",
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "B10",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "不要懼怕，只管站住！看耶和華今天向你們所要施行的救恩",
+    "by": "出埃及記 14:13",
+    "at": 0.15,
+    "size": 90
+   }
+  },
+  {
+   "id": "B11b",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "水在他們的左右作了牆垣",
+    "by": "出埃及記 14:22",
+    "at": 0.15,
+    "size": 84,
+    "photo": {
+     "src": "stills/sea_split.jpg",
+     "rect": [
+      150,
+      230,
+      560,
+      315
+     ],
+     "rot": -3
+    }
+   }
+  },
+  {
+   "id": "B14",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "巴不得我們早死在埃及地……那時我們坐在肉鍋旁邊，吃得飽足",
+    "by": "出埃及記 16:3",
+    "at": 0.15,
+    "size": 90
+   }
+  },
+  {
+   "id": "B16",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "我要將糧食從天降給你們",
+    "by": "出埃及記 16:4",
+    "at": 0.15,
+    "size": 84,
+    "photo": {
+     "src": "stills/manna_morning.jpg",
+     "rect": [
+      150,
+      230,
+      560,
+      315
+     ],
+     "rot": 3
+    }
+   }
+  },
+  {
+   "id": "B18",
+   "source": "code",
+   "scene": "stat_count",
+   "params": {
+    "value": 40,
+    "from": 0,
+    "suffix": " 年",
+    "at": "四十年",
+    "dur": 1.2,
+    "caption": "吃嗎哪（出埃及記 16:35）",
+    "caption_at": "四十年",
+    "hot": true
+   }
+  },
+  {
+   "id": "B19",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "我就是生命的糧。到我這裡來的，必定不餓",
+    "by": "約翰福音 6:35",
+    "at": 0.3,
+    "size": 100
+   }
+  },
+  {
+   "id": "B21",
+   "source": "code",
+   "scene": "map_route",
+   "params": {
+    "title": "出埃及的路線",
+    "note": "路線示意（傳統說法）",
+    "hot": 4,
+    "land": [
+     "M 260 250 Q 700 220 1250 260 Q 1500 280 1700 250",
+     "M 420 790 Q 470 560 460 420 Q 455 330 520 260",
+     "M 720 300 Q 820 520 1010 800",
+     "M 1340 300 Q 1250 520 1100 800"
+    ],
+    "stops": [
+     {
+      "name": "埃及",
+      "x": 520,
+      "y": 330,
+      "at": 0.15,
+      "side": "left"
+     },
+     {
+      "name": "紅海",
+      "x": 760,
+      "y": 380,
+      "at": 0.6
+     },
+     {
+      "name": "書珥曠野",
+      "x": 880,
+      "y": 450,
+      "at": 1.0
+     },
+     {
+      "name": "利非訂",
+      "x": 960,
+      "y": 620,
+      "at": 1.5
+     },
+     {
+      "name": "西乃山",
+      "x": 1050,
+      "y": 740,
+      "at": "西乃"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B23",
+   "source": "code",
+   "scene": "burst_title",
+   "params": {
+    "word": "我如鷹",
+    "big": "如鷹",
+    "term": "我如鷹將你們背在翅膀上，帶來歸我",
+    "term_sub": "出埃及記 19:4"
+   }
+  },
+  {
+   "id": "B24",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "就要在萬民中作屬我的子民",
+    "by": "出埃及記 19:5",
+    "at": 0.15,
+    "size": 110
+   }
+  },
+  {
+   "id": "B25",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "סְגֻלָּה　Segullah",
+    "by": "原文：君王私人的珍寶",
+    "at": 0.15,
+    "size": 110
+   }
+  },
+  {
+   "id": "B26",
+   "source": "code",
+   "scene": "compare",
+   "params": {
+    "left": {
+     "title": "先",
+     "text": "把他們背出埃及",
+     "at": "先把"
+    },
+    "right": {
+     "title": "後",
+     "text": "立約、頒律法",
+     "at": "才跟"
+    },
+    "verdict": {
+     "side": "left",
+     "text": "恩典在前",
+     "at": "立約"
+    }
+   }
+  },
+  {
+   "id": "B27",
+   "source": "code",
+   "scene": "object_draw",
+   "params": {
+    "paths": [
+     "M 790 690 L 790 450 Q 790 380 870 380 Q 950 380 950 450 L 950 690 Z",
+     "M 970 690 L 970 450 Q 970 380 1050 380 Q 1130 380 1130 450 L 1130 690 Z",
+     "M 825 480 L 915 480",
+     "M 825 540 L 915 540",
+     "M 825 600 L 915 600",
+     "M 1005 480 L 1095 480",
+     "M 1005 540 L 1095 540",
+     "M 1005 600 L 1095 600"
+    ],
+    "label": {
+     "text": "十誡開頭：我曾將你領出來（出 20:2）",
+     "at": "提醒"
+    },
+    "photos": [
+     {
+      "src": "stills/sinai_thunder.jpg",
+      "rect": [
+       130,
+       300,
+       520,
+       292
+      ],
+      "rot": -4,
+      "at": 0.3,
+      "push": 1.06
+     }
+    ]
+   }
+  },
+  {
+   "id": "B29",
+   "source": "code",
+   "scene": "list_reveal",
+   "params": {
+    "title": "一輪又一輪的怨言",
+    "hot": 2,
+    "items": [
+     {
+      "text": "沒水（出 15:24）",
+      "at": "一輪"
+     },
+     {
+      "text": "沒吃的（出 16:3）",
+      "at": "怨言"
+     },
+     {
+      "text": "又沒水（出 17:3）",
+      "at": "什麼都"
+     }
+    ],
+    "photos": [
+     {
+      "src": "stills/desert_thirst.jpg",
+      "rect": [
+       1290,
+       330,
+       500,
+       281
+      ],
+      "rot": 3,
+      "at": 0.2,
+      "push": 1.06
+     }
+    ]
+   }
+  },
+  {
+   "id": "B30",
+   "source": "code",
+   "scene": "burst_title",
+   "params": {
+    "word": "恩典",
+    "big": "恩典",
+    "term": "恩典，一直走在律法前面",
+    "term_sub": "出埃及記 19–20"
+   }
+  },
+  {
+   "id": "B31",
+   "source": "code",
+   "scene": "stat_count",
+   "params": {
+    "value": 7,
+    "from": 1,
+    "prefix": "第 ",
+    "suffix": " 年",
+    "at": "第七年",
+    "dur": 1.0,
+    "caption": "他可以自由，白白的出去（出 21:2）",
+    "caption_at": "自由",
+    "hot": true
+   }
+  },
+  {
+   "id": "B38",
+   "source": "code",
+   "scene": "quote_card",
+   "params": {
+    "text": "下一集｜出埃及記 22–29 章",
+    "by": "示範系列",
+    "at": 0.15,
+    "size": 96,
+    "fact": false
+   }
+  }
+ ]
+}

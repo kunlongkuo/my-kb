@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每個環節用什麼工具｜Script2Film</title>
+  <meta name="description"
+    content="Script2Film 每個環節的預設工具、在哪裡跑、要不要錢、能換成什麼：Qwen3-TTS、whisper.cpp、HyperFrames、VideoExpress、TalkingPhotos、MiniMax H3、MiniMax Music 3、Google Flow、Flow Music、Concat、YouTube。">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/tools.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/tools.html">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/tools.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="每個環節用什麼工具｜Script2Film">
+  <meta property="og:description" content="Script2Film 每個環節的預設工具、在哪裡跑、要不要錢、能換成什麼：Qwen3-TTS、whisper.cpp、HyperFrames、VideoExpress、TalkingPhotos、MiniMax H3、MiniMax Music 3、Google Flow、Flow Music、Concat、YouTube。">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/tools.html">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og-zh.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Script2Film 字樣與「給 AI agent 用的影片與解說片工具組」，旁邊是兩格每日得力一分鐘的成片畫面">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="index.html#different">有什麼不同</a>
+        <a href="index.html#features">能做什麼</a>
+        <a href="gallery.html">場景與色版</a>
+        <a href="tools.html" class="keep">工具</a>
+        <a href="studio.html">Prompt Studio</a>
+        <a href="index.html#works">作品</a>
+        <a href="index.html#flow">怎麼做出來</a>
+        <a href="index.html#start">開始</a>
+      </div>
+      <a class="lang" href="en/tools.html" hreflang="en" lang="en">English</a>
+    </div>
+  </nav>
+
+  <header class="hero page-hero">
+    <div class="wrap one">
+      <div>
+        <div class="eyebrow">工具</div>
+        <h1>每個環節，一個預設工具</h1>
+        <p class="lead wide">Script2Film 自己不配音、不生成影片、不剪輯。它把一支片拆成幾個環節，每個環節接一個現成的工具，環節之間只靠資料夾裡的檔案交接。所以任何一個環節都能換成你習慣的工具。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">核心流程</div>
+      <h2>這些都是可以在你的電腦上跑，不用錢</h2>
+      <p class="intro">第一個範例只用到這一段。模型與套件要自己安裝，安裝檢查會告訴你缺什麼。</p>
+      <div class="tools">
+        <div class="tool">
+          <div class="stage">旁白</div>
+          <h3>Qwen3-TTS</h3>
+          <p>在本機配音。給它十秒左右的參考聲音就能模擬你的音色，也可以用文字描述設計一個合成聲音。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費，開源（Apache-2.0）</dd>
+            <dt>可以換成</dt>
+            <dd>其他聲音製作工具，例如 <a href="https://paykstrt.com/56038/180754" target="_blank" rel="noopener sponsored">CloneVoice.ai</a></dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">對時與字幕</div>
+          <h3>whisper.cpp</h3>
+          <p>把配好的旁白轉回文字，量出每個字落在第幾秒。挑候選、字幕、畫面出現的時間都靠它。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費，開源</dd>
+            <dt>可以換成</dt>
+            <dd>Groq、ElevenLabs Scribe（雲端，要金鑰，旁白會送出去）</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">程式畫的畫面</div>
+          <h3>HyperFrames ＋ GSAP</h3>
+          <p>27 種場景各是一頁網頁動畫，由 HyperFrames 一格一格拍成影片。場景程式在這個專案裡。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費（HyperFrames 是 Apache-2.0；GSAP 是它自己的免費授權）</dd>
+            <dt>可以換成</dt>
+            <dd>用 AI 自己寫場景</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">組裝與檢查</div>
+          <h3>HyperFrames ＋ ffmpeg</h3>
+          <p>把旁白、畫面、字幕接成一支片。每支出片都量音畫長度、黑格、響度、音效有沒有混進去，解說片再排出截圖表。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費，開源</dd>
+            <dt>可以換成</dt>
+            <dd>搭配免費開源 <a href="https://concat.standalones.org/" target="_blank" rel="noopener">Concat</a>，很棒</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">配樂與音效</div>
+          <h3>程式作曲 ＋ CC0 音效</h3>
+          <p>背景音樂由專案裡的作曲程式照畫面事件寫出來，用 SoundFont 離線渲染。音效是 Kenney 的 CC0 素材與自製的。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費；SoundFont 要自己下載</dd>
+            <dt>可以換成</dt>
+            <dd>自己的音樂（CC BY 的曲子要標註），或下面的 MiniMax Music 3、Google Flow Music 生成的歌</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">字型</div>
+          <h3>Noto Sans TC、Noto Serif TC</h3>
+          <p>畫面與字幕用的字型，授權文字跟著字型檔一起放。另列霞鶩文楷、jf 粉圓兩套選用字型與原始下載網址。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>隨專案的素材層</dd>
+            <dt>費用</dt>
+            <dd>免費（SIL OFL 1.1）</dd>
+            <dt>可以換成</dt>
+            <dd>你有授權的任何字型</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">選用</div>
+      <h2>要實景、要主持人、要生成各種影片或歌曲的時候，可以考慮這幾個選擇</h2>
+      <p class="intro">這些都是選用的：不接也做得出片。接的時候，工具在<strong>你自己登入的帳號</strong>裡操作：送出、等候、收回、檢查。花額度或運算點數之前 agent
+        會先問你，帳號密碼由你自己輸入。</p>
+      <div class="tools two">
+        <div class="tool feature">
+          <div class="stage">生成鏡頭</div>
+          <h3>VideoExpress</h3>
+          <p>文字或圖片生成影片。Script2Film 會先算好每個鏡頭要幾秒、寫好提示詞、排成跑單，自動送出並收回，再量長度、檢查首尾有沒有壞格。專案裡另外有一整套替 VideoExpress 寫提示詞的規則與分鏡工具。
+          </p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>VideoExpress 的服務</dd>
+            <dt>費用</dt>
+            <dd>這是一個買斷型的AI影片製作平台，不需額外付費，成品可商用。</dd>
+            <dt>可以換成</dt>
+            <dd>任何影片生成工具（例如 Seedance、Kling 等）：照跑單的秒數與提示詞生成，按檔名放回資料夾</dd>
+          </dl>
+          <a class="btn" href="https://paykstrt.com/50942/180754" target="_blank" rel="noopener sponsored">了解
+            VideoExpress（終身版約美金143元）</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">主持人</div>
+          <h3>TalkingPhotos</h3>
+          <p>一張人像加一段文字或聲音，就可以做出對嘴的主持人。Script2Film 把旁白切段、上傳造型圖、逐段送出、收回後接回時間軸，擺成圓框、右框或全版。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>TalkingPhotos 的服務</dd>
+            <dt>費用</dt>
+            <dd>這是一個買斷型的AI主持人影片製作平台，不需額外付費，成品可商用。</dd>
+            <dt>可以換成</dt>
+            <dd>任何對嘴工具：把切好的每段聲音餵進去，產出的片照同樣的檔名放回來</dd>
+          </dl>
+          <a class="btn" href="https://paykstrt.com/52357/180754" target="_blank" rel="noopener sponsored">了解
+            TalkingPhotos（終身版約美金78元）</a>
+        </div>
+      </div>
+      <div class="tools two colab">
+        <div class="tool feature">
+          <div class="stage">生成鏡頭與主持人</div>
+          <h3>MiniMax H3（需要有 Google Colab 帳號）</h3>
+          <p>開放權重的影片模型，在你自己 Google 帳號的 Colab GPU 上生成。拿旁白錄音驅動主持人，嘴型跟著錄音走，人物照提示詞比手勢、邊走邊講，或拍成手持自拍的 vlog；也能生成鏡頭、接著往下延伸。Script2Film 把旁白切成 15 秒內的段落、寫好主持人的提示詞、開機前先查機器在哪個國家，做完收回放進時間軸。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你自己 Google 帳號的 Colab GPU，電腦不需要顯示卡</dd>
+            <dt>費用</dt>
+            <dd>要 Google AI Pro（附 Colab 運算點數）。實測 L4 一段 12 秒的主持人約 4 分鐘，試了十幾支約用掉 2 點</dd>
+            <dt>授權</dt>
+            <dd>開放權重的授權不涵蓋美國、歐盟、英國、南韓，在這些地方不能用</dd>
+            <dt>可以換成</dt>
+            <dd>上面的 VideoExpress、TalkingPhotos，或任何能照檔名放回的工具</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/tools/h3/README.md" target="_blank"
+            rel="noopener">怎麼接 MiniMax H3</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">配樂與歌曲</div>
+          <h3>MiniMax Music 3（需要有 Google Colab 帳號）</h3>
+          <p>開放權重的音樂模型，給歌詞和一段曲風描述，生成有人聲的歌或純配樂，台語、華語都唱得出來。Script2Film 會寫好工作、開機生成、下載回來就關機，再把 WAV 接成片的背景音樂；也可以自己在 Colab 開 notebook 貼程式跑。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你自己 Google 帳號的 Colab GPU，電腦不需要顯示卡</dd>
+            <dt>費用</dt>
+            <dd>要 Google AI Pro（附 Colab 運算點數）。實測 L4 一首 60 秒的歌約 5 分鐘，開機加生成約 0.3 到 0.5 點</dd>
+            <dt>授權</dt>
+            <dd>沒有地區限制；歌詞要是你自己的，公開發布要標示 AI 生成</dd>
+            <dt>可以換成</dt>
+            <dd>上面的程式作曲，或任何有授權的音樂</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/tools/music3/README.md" target="_blank"
+            rel="noopener">怎麼用 MiniMax Music 3</a>
+        </div>
+      </div>
+      <div class="tools two colab">
+        <div class="tool feature">
+          <div class="stage">生成鏡頭</div>
+          <h3>Google Flow（需要 Google AI 方案）</h3>
+          <p>Google 的影片工作室，模型是 Omni 1.2 Flash 與 Veo。給一張參考圖，人物的臉和衣服都留得住；一個連續動作配一條運鏡最流暢，手機自拍邊走邊講、子彈時間都做得出來，大開大闔的武打場面還不行。Flow 沒有可用的 API，Google 也不讓自動化工具開的瀏覽器登入，所以由 agent 在你已登入的 Chrome 裡操作，下載後連同模型、參數、提示詞一起歸檔，附一張抽格表先看再用。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>Google 的服務，透過你自己的 Chrome</dd>
+            <dt>費用</dt>
+            <dd>用 Google AI Plus、Pro、Ultra 方案的點數；送出前畫面會顯示這次要幾點。實測 360p、10 秒、一次兩支 20 點，被政策擋下的會退回</dd>
+            <dt>授權</dt>
+            <dd>Google 不主張產出的所有權，成品帶隱形的 SynthID 浮水印；公開發布要標示 AI 生成</dd>
+            <dt>可以換成</dt>
+            <dd>上面的 VideoExpress、MiniMax H3，或任何能照檔名放回的工具</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/skills/google-flow/SKILL.md" target="_blank"
+            rel="noopener">怎麼用 Google Flow</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">配樂與歌曲</div>
+          <h3>Google Flow Music（需要 Google AI 方案）</h3>
+          <p>Google 的音樂工作室（Lyria 模型），貼上歌詞和一段曲風描述，不到一分鐘生成一首完整的歌，可下載 WAV 與分軌。同樣在你已登入的 Chrome 裡操作；收檔程式一步把它設成片子的背景音樂，寫好出處。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>Google 的服務，透過你自己的 Chrome</dd>
+            <dt>費用</dt>
+            <dd>Google AI Pro 內含 Flow Music 的 Plus 方案，點數和 Flow 影片分開算</dd>
+            <dt>授權</dt>
+            <dd>歌詞要是你自己的；Google 不主張所有權，但商用與 YouTube 營利的條款沒寫清楚，販售或發行前先看當下的條款</dd>
+            <dt>可以換成</dt>
+            <dd>上面的程式作曲、MiniMax Music 3，或任何有授權的音樂</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/skills/google-flow/references/flow-music.md" target="_blank"
+            rel="noopener">怎麼用 Flow Music</a>
+        </div>
+      </div>
+      <p class="disclose">說明：VideoExpress 和 TalkingPhotos 的按鈕、上面旁白一欄的 CloneVoice.ai 連結是推薦連結。VideoExpress 和 TalkingPhotos 是作者自己每週在用的；透過連結購買，作者會收到一點推廣費，你付的價錢不變（2026年11月）。不買也完全不影響核心流程。</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">選用</div>
+      <h2>想把分鏡與提示詞寫得更好</h2>
+      <p class="intro">對影片的編劇想更精進的話，可以用專案附帶的這個小工具自己動手寫寫看。</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">編劇與提示詞</div>
+          <h3>Prompt Studio</h3>
+          <p>幫你把一段點子展開成分鏡與提示詞，可以拿來練習，也能拿來對照 agent 寫出來的分鏡。寫法是替 VideoExpress 校準過的；分鏡怎麼拆、角色怎麼描述、台詞怎麼寫，這些原則用別的 AI 影片工具時也能參考，但沒有在別家實測過。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的瀏覽器（單一 HTML 檔）</dd>
+            <dt>費用</dt>
+            <dd>免費，隨專案附帶（MIT）</dd>
+            <dt>可以換成</dt>
+            <dd>直接交給 agent 寫分鏡（另一套規則）</dd>
+          </dl>
+          <a class="btn ghost" href="studio.html">看 Prompt Studio 介紹</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">選用</div>
+      <h2>剪輯軟體，和影音平台上架</h2>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">加疊加層、可再編輯</div>
+          <h3><a href="https://concat.standalones.org/" target="_blank" rel="noopener">Concat</a></h3>
+          <p>免費開源的影片編輯器。Script2Film 寫出剪輯計畫，直接送進 Concat：主持人的框、關鍵字、章節標籤、配樂都在時間軸上，還能自己再調。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>你的電腦</dd>
+            <dt>費用</dt>
+            <dd>免費，開源，可透過 MCP 操作！</dd>
+            <dt>可以換成</dt>
+            <dd>不用它也有成片</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">發佈</div>
+          <h3>YouTube API</h3>
+          <p>上傳、排程、縮圖、說明欄、合成內容標記。授權在瀏覽器裡由你自己完成；要不要上傳、什麼時候公開，完全可由自己決定。</p>
+          <dl>
+            <dt>在哪跑</dt>
+            <dd>Google 的服務</dd>
+            <dt>費用</dt>
+            <dd>免費（要自己的 Google Cloud 專案）</dd>
+            <dt>可以換成</dt>
+            <dd>手動上傳</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="flow-note">每個環節讀什麼檔、寫什麼檔，以及換別家平台時檔名怎麼放，寫在 <a
+          href="https://github.com/notoriouslab/script2film/blob/main/docs/FLOW.md" class="gh-doc"
+          data-path="docs/FLOW.md" target="_blank" rel="noopener">流程文件</a>（英文）。各個套件與素材的授權逐項列在 <a
+          href="https://github.com/notoriouslab/script2film/blob/main/NOTICE.md" class="gh-doc" data-path="NOTICE.md"
+          target="_blank" rel="noopener">出處檔</a>。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film・MIT 授權</span>
+      <a href="index.html">首頁</a>
+      <a href="gallery.html">場景與色版</a>
+      <a href="studio.html">Prompt Studio</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="en/tools.html" hreflang="en" lang="en">English</a>
+    </div>
+  </footer>
+
+  <script src="site/site.js"></script>
+</body>
+
+</html>

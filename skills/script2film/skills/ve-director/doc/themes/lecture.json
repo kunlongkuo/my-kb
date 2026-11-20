@@ -1,0 +1,223 @@
+{
+ "_note": "教學片主題的色票（lecture-style D1）。doc mode 的 doc_themes.py 讀它組 lecture-light／lecture-dark。值從截圖取色，2026-10-28 預覽卡第 3 版定案。_source：每個鍵取自哪張截圖的哪個像素，tests/lecture_tokens_check.py 重取比對。 story／finance／food 三套是 2026-10-28 加的（說書、金融商業、美食），沒有參考截圖（無 _source），同日預覽卡定案。 tech／history／faith 三套是 2026-11-12 加的，從自己的素材取樣（各套 _from），規則見 README「新增色票」。",
+ "light": {
+  "bg": "#cadff0",
+  "panel": "#edf2f1",
+  "fg": "#272e40",
+  "muted": "#315984",
+  "accent": "#557fe1",
+  "accent2": "#efca66",
+  "hi": "#efca66",
+  "ring": "#2e3340",
+  "dim": "#272e40",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC"
+ },
+ "dark": {
+  "bg": "#020101",
+  "panel": "#01041b",
+  "fg": "#ffffff",
+  "muted": "#7de3f2",
+  "accent": "#69dff9",
+  "accent2": "#b863ce",
+  "hi": "#fbe94e",
+  "ring": "#7aa8f4",
+  "dim": "#020101",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC"
+ },
+ "story": {
+  "light": false,
+  "bg": "#1c1612",
+  "panel": "#2a211a",
+  "fg": "#f3e9d8",
+  "muted": "#b9a58a",
+  "accent": "#d98e3f",
+  "accent2": "#8fb3a3",
+  "hi": "#f2c46d",
+  "ring": "#d98e3f",
+  "dim": "#1c1612",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "夜裡點燈說故事：胡桃木深底、羊皮紙字、燈火琥珀主色、灰綠次色"
+ },
+ "finance": {
+  "light": true,
+  "bg": "#f6f1e7",
+  "panel": "#fffcf6",
+  "fg": "#1d2b4a",
+  "muted": "#6e6656",
+  "accent": "#b7862c",
+  "accent2": "#2c4a7c",
+  "hi": "#f2c14e",
+  "ring": "#1d2b4a",
+  "dim": "#1d2b4a",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "財報與看盤：暖米白底、藏青字、金色主色（漲跌紅綠另由 _rise 給，主色不跟它們搶）；2026-10-28 第 2 版回饋「太冷」改暖"
+ },
+ "food": {
+  "light": true,
+  "bg": "#fff1dc",
+  "panel": "#fffaf0",
+  "fg": "#3a1d10",
+  "muted": "#8f5a38",
+  "accent": "#f03e1a",
+  "accent2": "#3aa43a",
+  "hi": "#ffc414",
+  "ring": "#f03e1a",
+  "dim": "#3a1d10",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "廚房與餐桌：奶油底、可可字、番茄紅主色、羅勒綠次色；2026-10-28 第 2 版回饋「鮮艷一點點」提高彩度"
+ },
+ "tech": {
+  "light": false,
+  "bg": "#0e1f35",
+  "panel": "#17304c",
+  "fg": "#d8e2ee",
+  "muted": "#a9b8cc",
+  "accent": "#d4a24c",
+  "accent2": "#ee8e6e",
+  "hi": "#f0c978",
+  "ring": "#9fc3e6",
+  "dim": "#0e1f35",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "深夜的機房與螢幕：深藏青底、淺灰藍字、金色主色、珊瑚次色；九個顏色都是來源簡報 CSS 裡的原色碼，沒有調整",
+  "_from": "author-files-not-shipped:slides/face-ai-discernment-action.html"
+ },
+ "history": {
+  "light": true,
+  "bg": "#ebdaae",
+  "panel": "#f6ecd0",
+  "fg": "#252918",
+  "muted": "#6b4f44",
+  "accent": "#b0545a",
+  "accent2": "#3f7470",
+  "hi": "#e9a94a",
+  "ring": "#252918",
+  "dim": "#252918",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "百年前的石印地圖：泛黃地圖紙底、墨字、支派分區的玫瑰紅主色、海與湖的藍綠次色、鄰國分區的橙黃當螢光；紙與墨是取樣原值，紅、藍綠、橙、褐調深到在紙底上看得清楚",
+  "_from": "author-files-not-shipped:maps/judges_smith1915.jpg"
+ },
+ "faith": {
+  "light": true,
+  "bg": "#ece5d2",
+  "panel": "#f7f2e4",
+  "fg": "#1c4849",
+  "muted": "#4d6a6b",
+  "accent": "#c8393b",
+  "accent2": "#486539",
+  "hi": "#e8c95a",
+  "ring": "#1c4849",
+  "dim": "#1c4849",
+  "font_big": "Noto Sans TC",
+  "font_ui": "Noto Sans TC",
+  "_why": "靈修書頁上的植物水彩：米色紙底、書名的墨綠字、聖誕紅的紅當主色、葉子的深綠當次色、花心的黃當螢光；紙、墨綠、葉綠是取樣原值，紅與黃提高彩度，灰青從書名下那條細線調深",
+  "_from": "author-files-not-shipped:design/yt_thumb_12.jpg"
+ },
+ "_rise": {
+  "red": "#d23c3c",
+  "green": "#1a9a5a",
+  "_why": "漲跌色。台灣、中國、日本股市上漲是紅色，美股上漲是綠色；doc.json \"rise\": \"red\"（預設）或 \"green\" 決定上漲用哪色，下跌用另一色。所有 lecture 主題共用；圖表用 CSS 變數 --up／--down。"
+ },
+ "_source": {
+  "light": {
+   "bg": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    200,
+    600
+   ],
+   "panel": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    1300,
+    60
+   ],
+   "fg": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    364,
+    193
+   ],
+   "muted": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    194,
+    81
+   ],
+   "accent": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    738,
+    361
+   ],
+   "accent2": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    118,
+    343
+   ],
+   "hi": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    118,
+    343
+   ],
+   "ring": [
+    "截圖 2026-10-28 上午9.51.28.png",
+    1069,
+    303
+   ],
+   "dim": [
+    "截圖 2026-10-28 上午9.51.08.png",
+    364,
+    193
+   ]
+  },
+  "dark": {
+   "bg": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    700,
+    900
+   ],
+   "panel": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    570,
+    420
+   ],
+   "fg": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    47,
+    106
+   ],
+   "muted": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    117,
+    70
+   ],
+   "accent": [
+    "截圖 2026-10-28 上午9.56.57.png",
+    447,
+    374
+   ],
+   "accent2": [
+    "截圖 2026-10-28 上午9.56.57.png",
+    799,
+    349
+   ],
+   "hi": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    1446,
+    865
+   ],
+   "ring": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    1029,
+    435
+   ],
+   "dim": [
+    "截圖 2026-10-28 上午9.56.33.png",
+    700,
+    900
+   ]
+  }
+ }
+}

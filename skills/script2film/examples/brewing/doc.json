@@ -1,0 +1,83 @@
+{
+ "title": "小咖啡店的兩種做法",
+ "lang": "zh",
+ "theme": "lecture-finance",
+ "speaker": "旁白",
+ "voice": {
+  "ref_wav": "refs/narrator.wav",
+  "ref_text": "refs/narrator.txt",
+  "seed": 11,
+  "tail_fade": 0.08
+ },
+ "gaps": {
+  "default": 0.45
+ },
+ "lines": [
+  {"text": "示意的小咖啡店，同一包豆子，有兩種做法。"},
+  {"text": "示意的手沖，一杯要等四分鐘，一天賣三十杯。"},
+  {"text": "示意的義式，一杯只要一分鐘，一天賣九十杯。"},
+  {"text": "示意算下來，手沖一杯一百八，義式一杯六十，一天的營收一樣多。"},
+  {"text": "所以示意的老闆兩種都留著，早上賣義式，下午賣手沖。"}
+ ],
+ "beats": [
+  {"id": "B1", "lines": [1], "source": "ve", "shot": "two_brews"},
+  {"id": "B2", "lines": [2], "source": "code", "scene": "list_reveal", "params": {
+   "title": "示意：手沖",
+   "big": true,
+   "items": [
+    {"text": "一杯四分鐘", "at": "四分鐘"},
+    {"text": "一天三十杯", "at": "三十杯"}
+   ]
+  }},
+  {"id": "B3", "lines": [3], "source": "code", "scene": "compare", "params": {
+   "left": {
+    "title": "手沖",
+    "at": "義式",
+    "items": [
+     {"text": "四分鐘", "at": "義式"},
+     {"text": "三十杯", "at": "義式"}
+    ]
+   },
+   "right": {
+    "title": "義式",
+    "at": "義式",
+    "items": [
+     {"text": "一分鐘", "at": "一分鐘"},
+     {"text": "九十杯", "at": "九十杯", "hot": true}
+    ]
+   }
+  }},
+  {"id": "B4", "lines": [4], "source": "code", "scene": "formula", "params": {
+   "title": "示意：一天的營收",
+   "terms": [
+    {"text": "30", "sub": "手沖杯數", "at": "手沖"},
+    {"text": "180", "sub": "一杯", "at": "一百八"},
+    {"text": "90", "sub": "義式杯數", "at": "義式"},
+    {"text": "60", "sub": "一杯", "at": "六十"}
+   ],
+   "ops": ["×", "=", "×"]
+  }},
+  {"id": "B5", "lines": [5], "source": "clip", "clip": "host/tp_host.mp4", "clip_sync": true}
+ ],
+ "pip": {
+  "clip": "host/tp_host.mp4",
+  "beats": ["B1", "B2"],
+  "crop": [680, 680, 620, 20],
+  "d": 280
+ },
+ "shots": {
+  "two_brews": {
+   "t2i": [
+    "A medium-wide view of a clean wooden cafe counter. On the left stands a glass pour-over dripper on a small stand with a gooseneck kettle beside it; on the right stands a compact espresso machine with a small cup under its spout. One open paper bag of coffee beans sits in the centre between them.",
+    "Behind the counter is a calm, uncluttered off-white wall with generous empty space in the upper half of the frame. No people."
+   ],
+   "scene": "A pour-over dripper with a gooseneck kettle on the left and a compact espresso machine on the right of a wooden cafe counter, one open bag of coffee beans between them",
+   "ident": "Preserve the pour-over dripper, the gooseneck kettle, the espresso machine, the bag of coffee beans, the wooden counter and the clean off-white wall",
+   "acts": [
+    [0.0, 0.5, "A thin stream of coffee drips from the pour-over dripper into the glass server below it."],
+    [0.5, 1.0, "A short stream of espresso runs from the machine into the small cup, and a little steam rises from both."]
+   ],
+   "camera": "Static medium-wide shot, locked-off, no camera movement."
+  }
+ }
+}

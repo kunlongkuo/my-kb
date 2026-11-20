@@ -1,0 +1,52 @@
+{
+ "title": "A Small Coffee Shop's Year",
+ "lang": "en",
+ "theme": "lecture-finance",
+ "speaker": "Narrator",
+ "voice": {"ref_wav": "refs/narrator.wav", "ref_text": "refs/narrator.txt", "seed": 11, "tail_fade": 0.08},
+ "gaps": {"default": 0.6},
+ "lines": [
+  {"text": "Flat in spring, climbing all summer: one year of sales at a made-up coffee shop."},
+  {"text": "The costs are beans, rent, and staff. Beans take the biggest share."},
+  {"text": "Take what comes in, subtract what goes out, and what is left is profit."},
+  {"text": "Split that profit in two: coffee earns most of it, pastries only a little."}
+ ],
+ "beats": [
+  {"id": "B1", "lines": [1], "source": "code", "scene": "line_chart", "params": {
+   "title": "Sample: monthly sales",
+   "labels": ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+   "series": [{"name": "Sales", "values": [20, 21, 20, 28, 35, 42]}],
+   "unit": "k",
+   "reveal": [{"upto": 2, "at": "spring"}, {"upto": 5, "at": "summer"}]
+  }},
+  {"id": "B2", "lines": [2], "source": "code", "scene": "pie", "params": {
+   "title": "Sample: where the costs go",
+   "items": [
+    {"label": "Beans", "value": 45, "at": "beans"},
+    {"label": "Rent", "value": 30, "at": "rent"},
+    {"label": "Staff", "value": 25, "at": "staff"}
+   ],
+   "focus": [{"i": 0, "at": "biggest"}]
+  }},
+  {"id": "B3", "lines": [3], "source": "code", "scene": "formula", "params": {
+   "title": "Sample sum",
+   "terms": [
+    {"text": "100", "sub": "Sales (k)", "at": "comes in"},
+    {"text": "90", "sub": "Costs (k)", "at": "goes out"},
+    {"text": "10", "sub": "Profit (k)", "at": "left", "hot": true}
+   ],
+   "ops": ["−", "="],
+   "focus": [{"i": 2, "at": "profit"}]
+  }},
+  {"id": "B4", "lines": [4], "source": "code", "scene": "breakdown", "params": {
+   "title": "Sample: profit split",
+   "root": {"text": "Profit", "value": 10, "at": "profit"},
+   "parts": [
+    {"text": "Coffee", "value": 8, "at": "coffee"},
+    {"text": "Pastries", "value": 2, "op": "+", "at": "pastries"}
+   ],
+   "unit": "k",
+   "focus": [{"id": "0", "at": "most"}]
+  }}
+ ]
+}

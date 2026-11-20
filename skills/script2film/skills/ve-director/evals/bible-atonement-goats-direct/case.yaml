@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: bible-atonement-goats-direct
+expected_outcome: |
+  A plan and a paste-ready shadow-puppet storyboard for 15-30 s that passes plan_lint.py and lint.py and keeps the source facts (two male goats, lots cast, one offered, hands laid on the other's head, led into the wilderness) without adding a lamb or other non-source events.

@@ -1,0 +1,6 @@
+events/
+plans/
+outputs/
+score_out/
+.venv/
+__pycache__/

@@ -2,6 +2,30 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
+## 2026-11-21 ── 安裝 Script2Film 影片製作技能
+
+### ✅ 完成
+
+1. **安裝 `script2film` 完整技能與工具庫**：
+   - 來源倉庫：`https://github.com/notoriouslab/script2film.git`
+   - 安裝位置：`skills/script2film/`
+   - 包含主技能 `script2film`、分鏡導演 `ve-director`、生成擴充 `google-flow`。
+2. **依賴環境配置與驗證**：
+   - 安裝 Python 核心套件：`pytest`, `opencc-python-reimplemented`, `soundfile`。
+   - 安裝 Node 依賴：HyperFrames v0.7.111, GSAP 3.12.2。
+   - 下載 HyperFrames 渲染瀏覽器核心 Chrome Headless Shell。
+   - 下載 Google Noto 思源黑體與宋體可變字型（`NotoSansTC-Variable.ttf`、`NotoSerifTC-Variable.ttf`）。
+   - 修訂 `tools/doctor/doctor.py` 支援 Windows 系統路徑與 chrome-headless-shell.exe 偵測。
+   - 通過 `doctor.py --skip voice` 與 `doc_lint.py examples/coffee/doc.json` 驗證。
+3. **Agent 技能註冊與指引整合**：
+   - 建立 `.agents/skills/script2film/SKILL.md`
+   - 建立 `.agents/skills/ve-director/SKILL.md`
+   - 建立 `.agents/skills/google-flow/SKILL.md`
+   - 同步更新 `skills/script2film/SKILL.md`
+   - 更新根目錄 `AGENTS.md`、`ANTIGRAVITY.md`、`README.md`。
+
+---
+
 ## 2026-11-20 ── 主動型 ETF 持股日更（第 122 次）
 
 ### ✅ 完成

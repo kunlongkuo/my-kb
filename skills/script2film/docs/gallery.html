@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>27 種場景與 15 套色版｜Script2Film</title>
+  <meta name="description" content="Script2Film 程式畫的 27 種場景（會動的示範）、15 套色版，以及用它做過的幾種片型。">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/gallery.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/gallery.html">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/gallery.html">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/gallery.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="27 種場景與 15 套色版｜Script2Film">
+  <meta property="og:description" content="Script2Film 程式畫的 27 種場景（會動的示範）、15 套色版，以及用它做過的幾種片型。">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/gallery.html">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og-zh.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Script2Film 字樣與「給 AI agent 用的影片與解說片工具組」，旁邊是兩格每日得力一分鐘的成片畫面">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="index.html#different">有什麼不同</a>
+        <a href="index.html#features">能做什麼</a>
+        <a href="gallery.html" class="keep">場景與色版</a>
+        <a href="tools.html">工具</a>
+        <a href="studio.html">Prompt Studio</a>
+        <a href="index.html#works">作品</a>
+        <a href="index.html#flow">怎麼做出來</a>
+        <a href="index.html#start">開始</a>
+      </div>
+      <a class="lang" href="en/gallery.html" hreflang="en" lang="en">English</a>
+    </div>
+  </nav>
+
+  <header class="hero page-hero">
+    <div class="wrap one">
+      <div>
+        <div class="eyebrow">場景與色版</div>
+        <h1>27 種場景，15 套色版</h1>
+        <p class="lead wide">每一格都是程式照一小段參數畫出來的，內容是虛構的示範。在稿裡寫場景的名字、給它幾個字與數字，再指定「說到哪個字的時候出現」，畫面就照配音的時間動起來。滑到的那一格會自己播放。</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt" id="scenes">
+    <div class="wrap">
+      <div class="kicker">場景</div>
+      <h2>27 種，從開場到片尾。</h2>
+      <p class="intro">這裡都用同一套色版（<code>lecture-light</code>）畫，方便比較。每種場景只示範最基本的用法。</p>
+      <div class="tiles">
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/seed_dot.jpg" width="480"
+              height="270">
+              <source src="site/scenes/seed_dot.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>seed_dot</code>開場的鉤子：一個點落下、輕輕呼吸，在關鍵字上跳一下</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/split_duel.jpg"
+              width="480" height="270">
+              <source src="site/scenes/split_duel.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>split_duel</code>分割畫面裡兩個點，一來一往</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/cover.jpg" width="480"
+              height="270">
+              <source src="site/scenes/cover.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>cover</code>一集的標題卡，留位置給角落的主持人</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/burst_title.jpg"
+              width="480" height="270">
+              <source src="site/scenes/burst_title.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>burst_title</code>高潮：先暗下來，在那個字上爆開大字</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/exchange.jpg" width="480"
+              height="270">
+              <source src="site/scenes/exchange.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>exchange</code>兩方在同一塊板上交手</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/photo.jpg" width="480"
+              height="270">
+              <source src="site/scenes/photo.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>photo</code>一張照片當畫面，推近、加說明</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/object_draw.jpg"
+              width="480" height="270">
+              <source src="site/scenes/object_draw.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>object_draw</code>收尾：一筆一筆畫出一個物件</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/stat_count.jpg"
+              width="480" height="270">
+              <source src="site/scenes/stat_count.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>stat_count</code>一個重要的數字，唸到時跳上去</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/timeline.jpg" width="480"
+              height="270">
+              <source src="site/scenes/timeline.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>timeline</code>時間軸，說到哪個日期，標記出現</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/compare.jpg" width="480"
+              height="270">
+              <source src="site/scenes/compare.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>compare</code>左右兩欄對照，最後標出結論</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/countdown.jpg" width="480"
+              height="270">
+              <source src="site/scenes/countdown.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>countdown</code>時鐘跑到那件事花的時間，進度條跟著走</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/grid_hot.jpg" width="480"
+              height="270">
+              <source src="site/scenes/grid_hot.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>grid_hot</code>一格一格出現，最後其中一格亮起</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/credits.jpg" width="480"
+              height="270">
+              <source src="site/scenes/credits.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>credits</code>片尾字幕，一組一組往上捲</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/bars.jpg" width="480"
+              height="270">
+              <source src="site/scenes/bars.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>bars</code>長條圖，唸到哪個標籤哪一根長出來</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/line_chart.jpg"
+              width="480" height="270">
+              <source src="site/scenes/line_chart.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>line_chart</code>折線圖，旁白說到哪裡線畫到哪裡</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/pie.jpg" width="480"
+              height="270">
+              <source src="site/scenes/pie.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>pie</code>圓餅圖，一塊一塊展開，圖例在右邊</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/formula.jpg" width="480"
+              height="270">
+              <source src="site/scenes/formula.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>formula</code>一行大字的算式或因果鏈</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/breakdown.jpg" width="480"
+              height="270">
+              <source src="site/scenes/breakdown.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>breakdown</code>一個量拆成幾個部分，可以再拆一層</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/list_reveal.jpg"
+              width="480" height="270">
+              <source src="site/scenes/list_reveal.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>list_reveal</code>清單一項一項出現</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/map_route.jpg" width="480"
+              height="270">
+              <source src="site/scenes/map_route.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>map_route</code>簡圖上一站一站畫出路線</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/flow.jpg" width="480"
+              height="270">
+              <source src="site/scenes/flow.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>flow</code>東西怎麼流動：節點與線依序出現</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/relation.jpg" width="480"
+              height="270">
+              <source src="site/scenes/relation.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>relation</code>誰和誰有關：名牌出現，連線畫上</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/web_evidence.jpg"
+              width="480" height="270">
+              <source src="site/scenes/web_evidence.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>web_evidence</code>一張真實頁面的截圖，重點處畫螢光筆</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/ve_annotate.jpg"
+              width="480" height="270">
+              <source src="site/scenes/ve_annotate.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>ve_annotate</code>生成的鏡頭播到一半定格，加圈與箭頭</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/quote_card.jpg"
+              width="480" height="270">
+              <source src="site/scenes/quote_card.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>quote_card</code>整頁的引言，附出處，可以配照片</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/merge_bubble.jpg"
+              width="480" height="270">
+              <source src="site/scenes/merge_bubble.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>merge_bubble</code>一個泡泡把另一個吞進去</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><video muted loop playsinline preload="none" poster="site/scenes/screen_step.jpg"
+              width="480" height="270">
+              <source src="site/scenes/screen_step.mp4" type="video/mp4">
+            </video></div>
+          <figcaption><code>screen_step</code>螢幕畫面上一步一步標出操作</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="palettes">
+    <div class="wrap">
+      <div class="kicker">色版</div>
+      <h2>同一張圖，15 套色版</h2>
+      <p class="intro">色版在稿裡是一個欄位（<code>"theme"</code>）。換一個名字重跑，整支片的底色、字、強調色一起換，時間軸不動。最後五套連卡片形狀與底紋也一起換。</p>
+      <div class="tiles five">
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-light.jpg" alt="淺色色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-light</code>淺色</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-dark.jpg" alt="深色色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-dark</code>深色</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-story.jpg" alt="故事色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-story</code>故事</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-finance.jpg" alt="財經色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-finance</code>財經</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-food.jpg" alt="飲食色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-food</code>飲食</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-tech.jpg" alt="科技色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-tech</code>科技</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-history.jpg" alt="歷史色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-history</code>歷史</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/lecture-faith.jpg" alt="信仰色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>lecture-faith</code>信仰</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/collage.jpg" alt="拼貼紙感色版的長條圖" loading="lazy" width="480"
+              height="270"></div>
+          <figcaption><code>collage</code>拼貼紙感</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/live.jpg" alt="實景底色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>live</code>實景底</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/dark-gold.jpg" alt="深底金字色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>dark-gold</code>深底金字</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/newsroom.jpg" alt="新聞台色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>newsroom</code>新聞台</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/vintage-poster.jpg" alt="舊海報色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>vintage-poster</code>舊海報</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/editorial-serif.jpg" alt="雜誌明體色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>editorial-serif</code>雜誌明體</figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="frame"><img src="site/palettes/cinematic-dark.jpg" alt="電影暗場色版的長條圖" loading="lazy" width="480" height="270">
+          </div>
+          <figcaption><code>cinematic-dark</code>電影暗場</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="styles">
+    <div class="wrap">
+      <div class="kicker">片型</div>
+      <h2>做過哪幾種片</h2>
+      <p class="intro">場景與色版是零件，下面是用它們組出來的幾種片。前四種的流程與規則都在這個專案裡；後兩種是作者用這套工具、加上各自系列的腳本做的，專案裡沒有現成的範本。</p>
+      <div class="tools">
+        <div class="tool">
+          <div class="stage">專案內建</div>
+          <h3>知識教學片</h3>
+          <p>主持人加程式畫的清單、圖表、逐段標重點的文字。<code>lecture</code> 系列色版。</p><a class="btn ghost"
+            href="https://www.youtube.com/watch?v=1aTJSye-l38" target="_blank" rel="noopener">看一支（英文）</a>
+        </div>
+        <div class="tool">
+          <div class="stage">專案內建</div>
+          <h3>旁白紀錄片</h3>
+          <p>拼貼紙感的畫面、照片與生成鏡頭穿插，旁白帶著走。時事解說與歷史題材用這一種。</p><a class="btn ghost"
+            href="https://www.youtube.com/watch?v=hOELz6nG-ns" target="_blank" rel="noopener">看一支（英文）</a>
+        </div>
+        <div class="tool">
+          <div class="stage">專案內建</div>
+          <h3>分鏡生成片</h3>
+          <p>劇情、動作這類全靠生成的片走另一條流程：先排分鏡表，再產出提示詞送 VideoExpress，附 12 種畫風的規則。鏡頭回來後接成有對白、字幕和配樂的成片，或送進 Concat 自己修。</p><a class="btn ghost"
+            href="https://www.youtube.com/watch?v=qrFl_yrWPNk" target="_blank" rel="noopener">看一支短劇（英文）</a>
+        </div>
+        <div class="tool">
+          <div class="stage">專案內建</div>
+          <h3>知識長片</h3>
+          <p>同樣的零件做長一點：主持人、剪紙風生成鏡頭、照片、引言卡、對照表，六分鐘左右。</p><a class="btn ghost"
+            href="https://www.youtube.com/watch?v=LjCb9Le6Vps" target="_blank" rel="noopener">看一支（中文）</a>
+        </div>
+        <div class="tool">
+          <div class="stage">作者的系列</div>
+          <h3>每日靈修短片</h3>
+          <p>一分鐘的直式短片，書頁版面配旁白，每天一支，整個月一次排好。</p><a class="btn ghost" href="https://www.youtube.com/watch?v=I51kD1EMYQ0"
+            target="_blank" rel="noopener">看一支（中文）</a>
+        </div>
+        <div class="tool">
+          <div class="stage">作者的系列</div>
+          <h3>直式 Vlog</h3>
+          <p>一個固定的虛構角色對著鏡頭講話，整支由生成鏡頭組成，當長片的預告。</p><a class="btn ghost"
+            href="https://www.youtube.com/watch?v=FTp-yOzc0eY" target="_blank" rel="noopener">看一支（中文）</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film・MIT 授權</span>
+      <a href="index.html">首頁</a>
+      <a href="tools.html">工具</a>
+      <a href="studio.html">Prompt Studio</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="en/gallery.html" hreflang="en" lang="en">English</a>
+    </div>
+  </footer>
+
+  <script src="site/site.js"></script>
+</body>
+
+</html>

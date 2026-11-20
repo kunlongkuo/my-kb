@@ -1,0 +1,5 @@
+{"url": "screen_locked_pw.html",
+ "steps": [
+  {"do": "click", "sel": "input[name=name]"},
+  {"do": "wait", "ms": 300}
+ ]}

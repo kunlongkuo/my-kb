@@ -1,0 +1,68 @@
+# OS / editor
+.DS_Store
+*.swp
+*~
+
+# Claude Code per-machine state
+.claude/*
+!.claude/skills/
+
+# Personal reference (not for upstream)
+demo.md
+提示詞範本/
+
+# Node (in case anyone adds tooling later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local secrets (never commit)
+.env
+.env.*
+*.secrets.json
+.gstack/
+
+# Run outputs (kept local)
+ve-runs/
+
+# patch by-products
+*.rej
+*.orig
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Asset files: sound effects (assets/sfx/) ship with the repository; the font files do not (download them, see
+# assets/README.md), only their manifest is in git
+assets/fonts/*
+!assets/fonts/manifest.json
+# the dated backups skills/ve-director/doc/scripts/sfx_seed.py writes before changing the manifest
+assets/sfx/manifest.*.json
+
+# Films made inside examples/ (docs/FLOW.md): what the steps write stays out of git. Scoped to examples/*/ on purpose:
+# a bare tts/ or host/ would also hide tools/tts/. Clean up with: git clean -fdX examples/<name>
+examples/*/tts/
+examples/*/tts_lines/
+examples/*/voice.cleaned/
+examples/*/beats.json
+examples/*/beats_est.json
+examples/*/code_*/
+examples/*/shell_*/
+examples/*/picks_*/
+examples/*/cut_*/
+examples/*/cut_*.json
+examples/*/frames/
+examples/*/concat_list.txt
+examples/*/nightly/
+examples/*/ve_*/
+examples/*/ve-runs/
+examples/*/host/
+examples/*/storyboard_*.md
+examples/*/checklist_answers.json
+examples/*/script_approval.json
+
+# 規格與每一期的紀錄：只留在本機，不公開
+openspec/

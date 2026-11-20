@@ -1,0 +1,10 @@
+{
+ "voices": {
+  "narrator": {
+   "lang": "en",
+   "instruct": "A woman in her thirties with a neutral American accent, medium pace, clear and warm, explaining something to a friend, natural, not a broadcast voice",
+   "ref_text": "Today I want to tell you a short story about a small coffee shop on a quiet street, and how much money it really made in one year.",
+   "seed": 7
+  }
+ }
+}

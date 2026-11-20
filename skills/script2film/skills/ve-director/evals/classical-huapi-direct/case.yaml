@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: classical-huapi-direct
+expected_outcome: |
+  A plan (shot table + ledger) and a paste-ready VideoExpress storyboard for 30-45 s in live style that passes plan_lint.py and lint.py, keeps the source beats in order, names period objects without inventing a dynasty, and keeps lettering-prone objects blank.

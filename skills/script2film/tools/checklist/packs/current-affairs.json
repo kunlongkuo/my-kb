@@ -1,0 +1,45 @@
+{
+ "_readme": "Questions for current affairs and news explainers. Asked only when the series writes \"checklist\": {\"packs\": [\"current-affairs\"]} in series.json.",
+ "rules": [
+  {
+   "id": "review-done",
+   "stage": [
+    "start"
+   ],
+   "ask": "Has a second person or another review tool read the script? For each fact the review pointed out, did you check the source yourself, one by one, before changing it?",
+   "source": "tools/checklist/packs/current-affairs.json"
+  },
+  {
+   "id": "neutral-wording",
+   "stage": [
+    "start"
+   ],
+   "ask": "Do the loaded words in the narration appear only inside quotes of what others said? Where it talks about motives, does it say who says so (\"according to reports\" and the like)? Has the conclusion turned into a prediction or a comment on policy?",
+   "source": "tools/checklist/packs/current-affairs.json"
+  },
+  {
+   "id": "real-people-photos",
+   "stage": [
+    "start"
+   ],
+   "ask": "For each photo of a real person, which organization released it and under what license? Did you use any generated faces of real people, news agency material, or close-ups of people in custody?",
+   "source": "tools/checklist/packs/current-affairs.json"
+  },
+  {
+   "id": "post-date",
+   "stage": [
+    "start"
+   ],
+   "ask": "For each quoted social media post, is the date the one on the post itself (not the date of the report)?",
+   "source": "tools/checklist/packs/current-affairs.json"
+  },
+  {
+   "id": "footage-source",
+   "stage": [
+    "release"
+   ],
+   "ask": "Where does each piece of real footage come from? Is the license text recorded in footage/SOURCE.md? Are disaster scenes wide shots with no identifiable people, labeled with the year?",
+   "source": "tools/checklist/packs/current-affairs.json"
+  }
+ ]
+}

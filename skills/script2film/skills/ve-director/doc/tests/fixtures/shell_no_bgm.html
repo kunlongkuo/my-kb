@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><title>合成測試</title>
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Noto Serif TC"; src: url("fonts/NotoSerifTC-Variable.ttf") format("truetype"); font-weight: 200 900; }
+  * { box-sizing: border-box; } body { margin: 0; background: #000; overflow: hidden; }
+  #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: "Noto Serif TC", serif; }
+  .mist { position: absolute; left: 0; width: 1920px; top: 800px; height: 280px; z-index: 95;
+           background: linear-gradient(to bottom, rgba(242,236,221,0) 0%, rgba(242,236,221,.72) 50%, rgba(242,236,221,.82) 100%);  }
+  .subs { position: absolute; left: 0; width: 1920px; top: 900px; text-align: center; z-index: 100; }
+  #sub { display: inline-block; white-space: pre-line; font-size: 48px; font-weight: 700; letter-spacing: 2px; color: #1d1a17;
+          text-shadow: 0 0 10px rgba(242,236,221,.95), 0 0 22px rgba(242,236,221,.85); }
+  
+</style></head><body>
+<div id="root" data-composition-id="main" data-width="1920" data-height="1080" data-start="0" data-duration="4.0">
+  <video id="visual" class="clip" src="visual.mp4" muted playsinline data-start="0" data-duration="4.0" data-track-index="1"
+         style="position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover;z-index:20"></video>
+  <div class="mist"></div><div class="subs"><div id="sub"></div></div>
+  <audio id="voice" class="clip" src="voice.cleaned/audio.m4a" data-start="0" data-duration="4.0" data-volume="1.0" data-track-index="10"></audio>
+  <audio id="wind" class="clip" src="sfx/wind.wav" data-start="0" data-duration="4.0" data-volume="1.0" data-track-index="11"></audio>
+</div>
+<script>
+  const main = gsap.timeline({ paused: true });
+  [[0.0, "第一句"], [1.5, ""], [1.6, "第二句"], [3.7, ""]].forEach(([t, txt]) => main.set("#sub", { textContent: txt }, t));
+  main.set({}, {}, 4.0);
+  window.__timelines = window.__timelines || {}; window.__timelines["main"] = main;
+</script></body></html>

@@ -1,0 +1,8 @@
+{"url": "screen_selftest.html",
+ "steps": [
+  {"do": "wait", "ms": 600},
+  {"do": "click", "sel": "#a", "say": 1},
+  {"do": "wait", "ms": 900},
+  {"do": "click", "sel": "#b", "say": 2},
+  {"do": "wait", "ms": 900}
+ ]}

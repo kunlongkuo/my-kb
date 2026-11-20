@@ -1,0 +1,21 @@
+[
+ {
+  "id": "door-creak",
+  "prompt": "Old wooden door creaking open slowly, no music, no voice",
+  "tags": ["door", "creak", "wood"],
+  "tags_zh": ["開門", "木門"]
+ },
+ {
+  "id": "page-turn",
+  "prompt": "Single page of a paper book turning, close up, no music, no voice",
+  "tags": ["page", "paper", "book"],
+  "tags_zh": ["翻頁"],
+  "duration": 3
+ },
+ {
+  "id": "coins-drop",
+  "prompt": "Handful of metal coins dropped onto a wooden table, no music, no voice",
+  "tags": ["coins", "money", "metal"],
+  "tags_zh": ["硬幣", "錢"]
+ }
+]

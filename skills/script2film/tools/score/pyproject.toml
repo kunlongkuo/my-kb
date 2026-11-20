@@ -1,0 +1,16 @@
+[project]
+name = "score-composer"
+version = "0.1.0"
+description = "程式作曲配樂：SoundFont 離線渲染、參考曲量化分析"
+requires-python = ">=3.12"
+dependencies = [
+    "librosa>=1.0.0",
+    "numpy>=2.5.4",
+    "soundfile>=0.14.0",
+    "tinysoundfont>=0.3.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

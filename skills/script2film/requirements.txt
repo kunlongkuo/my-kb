@@ -1,0 +1,9 @@
+# 核心流程用的 Python 套件（和 tools/doctor/doctor.py 的 PACKAGES 同一份）。裝進倉庫自己的環境：
+#   python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+pytest
+opencc-python-reimplemented
+pillow
+numpy
+fonttools
+playwright
+soundfile

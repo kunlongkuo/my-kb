@@ -1,0 +1,16 @@
+{
+ "_readme": "Pronunciation table applied to every narration line before speech synthesis (tools/tts/lexicon.py). One table for every series: when a word is heard read wrong, add it here, not in one episode's script. Rules run top to bottom; keep whole-word rules above single-character rules. note: when it was heard and what was heard.",
+ "rules": [
+  {"from": "姪", "to": "侄", "lang": "zh", "note": "2026-11-09「姪兒」四條候選都唸不出來，改「侄兒」後正確"},
+  {"from": "罣", "to": "掛", "lang": "zh", "note": "2026-11-19「罣慮」四條候選都唸錯（聽成寡慮／伽律），改「掛慮」後正確"},
+  {"from": "徬", "to": "彷", "lang": "zh", "note": "2026-12-02「徬徨」四條候選都唸錯（聽成通狂），改「彷徨」"},
+  {"from": "常藉", "to": "常借", "lang": "zh", "note": "2027-02-09「仇敵常藉環境」三條候選都唸成「常期」（藉唸成 jí），改「常借」"},
+  {"from": "唱和散那", "to": "唱，和散那", "lang": "zh", "note": "2027-04-09 斷成「唱和／散那」，應是「唱／和散那」，加逗號斷開"},
+  {"from": "什一", "to": "十一", "lang": "zh", "note": "什一奉獻、什一稅的「什」會唸成「什麼」的 shén，改「十一」唸 shí（2026-11-11 記下；2026-11-14 第一次在成片裡聽到唸錯）"},
+  {"from": "使徒行傳", "to": "使徒行撰", "lang": "zh", "note": "書卷名的「傳」唸 zhuàn，不改會唸成 chuán（2026-11-14 成片裡聽出）"},
+  {"from": "他連得", "to": "「他連得」", "lang": "zh", "note": "單位名會被前後文拆開唸，加引號讓它連著唸；只改送去唸的字，字幕不帶引號（2026-11-14）"},
+  {"from": "應許", "to": "硬許", "lang": "zh", "note": "2026-11-19「讓應許成為禱告」的「應」聽來讀音不對，使用者要讀四聲 yìng，換「硬」；每個系列都適用"},
+  {"from": "髮", "to": "法", "lang": "zh", "note": "2026-11-19「白髮為老年人的尊榮」唸成四聲 fà，台灣讀三聲 fǎ；換「法」。單字規則，頭髮、理髮也一起改"},
+  {"from": "著", "to": "着", "lang": "zh", "note": "全面規則，放最後：「著」常被唸成 zhù（帶著唸成帶住、拿著唸成拿住，2027-04-05、04-09 聽出）；換成「着」唸 zhe／zháo。副作用：「著作」這類該唸 zhù 的詞也會被換，遇到就在這條上面加整個詞的規則"}
+ ]
+}

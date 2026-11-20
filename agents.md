@@ -47,6 +47,7 @@
    - `skills/blender-previs/SKILL.md`：Blender 3D 白模空間預演與交付包（鎖定機位、空間防漂移、布置圖檢查、運鏡契約）。
    - `skills/hunyuan-browser-3d-animation/SKILL.md`：混元網頁 3D 角色建模與動畫（Browser Use 操作混元官網、Mixamo 綁骨、Blender 修整、subagent 派工）。
 2. **原理解說動畫與視覺動態**：
+   - `skills/script2film/SKILL.md`：Script2Film 想法轉解說片完整工作流（文稿 doc.json、逐字對時、27 種程式動態場景、配音、自動剪輯合成、自動質檢；含 VideoExpress 分鏡導演 ve-director 與 Google Flow/Veo 擴充）。做解說短片、科普圖表影片、VOX 風格影片必讀。
    - `skills/motion-explainer/SKILL.md`（含 `-images`、`-video`）：HyperFrames 原理解說動畫影片、中文旁白與字幕流程。
    - `skills/motion-design/SKILL.md`：動態設計時間軸、緩動、節奏與繁中排版規範。
    - `skills/review-loop/SKILL.md`：動畫視覺自我審查與 contact sheet 檢查機制。

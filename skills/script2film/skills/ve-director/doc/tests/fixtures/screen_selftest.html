@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>screen selftest</title>
+<!-- doc_screen T1: two pure-red buttons turn pure blue when clicked, so a frame before / after the logged time tells
+     whether the time is right (screen_sync_check.py). -->
+<style>
+  body { margin: 0; background: #ffffff; font: 24px sans-serif; }
+  button { position: absolute; width: 180px; height: 60px; border: 0; background: #ff0000; color: #ff0000; }
+  button.done { background: #0000ff; color: #0000ff; }
+  #a { left: 300px; top: 200px; }
+  #b { left: 1200px; top: 700px; }
+  #msg { position: absolute; left: 300px; top: 400px; }
+</style>
+<button id="a">a</button><button id="b">b</button><div id="msg">ready</div>
+<script>
+  for (const b of document.querySelectorAll("button"))
+    b.onclick = () => { b.classList.add("done"); document.getElementById("msg").textContent = "clicked " + b.id; };
+</script>

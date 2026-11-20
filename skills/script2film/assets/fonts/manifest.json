@@ -1,0 +1,50 @@
+[
+ {
+  "id": "NotoSansTC-Variable",
+  "file": "NotoSansTC-Variable.ttf",
+  "license": "OFL 1.1",
+  "source": "google/fonts (Noto)"
+ },
+ {
+  "id": "NotoSerifTC-Variable",
+  "file": "NotoSerifTC-Variable.ttf",
+  "license": "OFL 1.1",
+  "source": "google/fonts (Noto)"
+ },
+ {
+  "id": "LXGWWenKaiTC-Regular",
+  "file": "LXGWWenKaiTC-Regular.ttf",
+  "license": "OFL 1.1",
+  "source": "lxgw/LxgwWenkaiTC v1.530",
+  "url": "https://github.com/lxgw/LxgwWenkaiTC/releases/download/v1.530/LXGWWenKaiTC-Regular.ttf",
+  "use": "scripture and quote cards (Taiwan glyph forms)",
+  "optional": true
+ },
+ {
+  "id": "LXGWWenKaiTC-Medium",
+  "file": "LXGWWenKaiTC-Medium.ttf",
+  "license": "OFL 1.1",
+  "source": "lxgw/LxgwWenkaiTC v1.530",
+  "url": "https://github.com/lxgw/LxgwWenkaiTC/releases/download/v1.530/LXGWWenKaiTC-Medium.ttf",
+  "use": "scripture and quote cards, heavier weight",
+  "optional": true
+ },
+ {
+  "id": "LXGWWenKai-Regular",
+  "file": "LXGWWenKai-Regular.ttf",
+  "license": "OFL 1.1",
+  "source": "lxgw/LxgwWenKai v1.530",
+  "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.530/LXGWWenKai-Regular.ttf",
+  "use": "the same design for Simplified Chinese text",
+  "optional": true
+ },
+ {
+  "id": "jf-openhuninn-2.1",
+  "file": "jf-openhuninn-2.1.ttf",
+  "license": "OFL 1.1",
+  "source": "justfont/open-huninn-font v2.1",
+  "url": "https://github.com/justfont/open-huninn-font/releases/download/v2.1/jf-openhuninn-2.1.ttf",
+  "use": "rounded title cards for vertical videos (Traditional Chinese only)",
+  "optional": true
+ }
+]

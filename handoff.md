@@ -2,37 +2,37 @@
 
 ## 目前做到哪
 
-**第 122 次主動型 ETF 持股日更（20261120，週五）完成**
+**已安裝並配置完成 Script2Film 影片製作技能 🎬**
 
-- `collect_active_etf_holdings.py` — 31 檔 ETF，1,693 筆明細，寫入 `20261120` 分頁，與 `20261119` 比對完成
-- `add_weekly_summary.py` — 比對區間 `20261113` → `20261120`，週加碼 318 筆、週減碼 198 筆
-- `add_daily_stock_total.py` — 每日個股合計 24,166 列，圖表（`20261120_additions.png`、`20261120_reductions.png`、`active_etf_top_additions.png`、`active_etf_top_reductions.png`）已生成並更新 Markdown
-- `generate_dashboard_data.py` — `dashboard_data.js` 更新完成（432 檔股票）
-- 每日筆記 `每日筆記/2026-11-20.md` 已建立
-- `docs/PROGRESS.md` 已更新
+- 倉庫位置：`skills/script2film/`
+- Agent 技能入口：
+  - `.agents/skills/script2film/SKILL.md`（解說短片、27 種程式圖表、對時、自動剪輯合成）
+  - `.agents/skills/ve-director/SKILL.md`（VideoExpress 分鏡導演、提示詞生成）
+  - `.agents/skills/google-flow/SKILL.md`（Google Flow / Veo / Lyria 生成）
+- 依賴安裝：Node / npm（HyperFrames, GSAP）、Chrome Headless Shell、Python（pytest, opencc, soundfile）、思源黑體與宋體可變字型。
+- 檢驗通過：`doctor.py --skip voice`（✓ ready to go）與 `doc_lint.py` 驗證成功。
+- 文件更新：`AGENTS.md`、`ANTIGRAVITY.md`、`README.md`、`docs/PROGRESS.md`、`每日筆記/2026-11-21.md`。
 
 ## 目前狀態
 
-✅ 所有指令執行完畢，全部功能正常可運行。
+✅ 所有技能與指令配置完畢，環境正常可運行。
 
-- XLSX 歷史分頁：33 個（`20261001`～`20261120`），保留完整。
-- Dashboard 資料正常更新。
-- 安全掃描：`skills/video-use/.env` 有 ElevenLabs API Key，已確認在 `.gitignore` 排除，不會 push 到遠端。
+- 工作區乾淨，無衝突。
+- 安全掃描：通過，無敏感金鑰洩漏。
 
 ## 下一步
 
-1. **2026-11-23（週一）**：執行第 123 次主動型 ETF 日更
+1. **影片製作嘗試**：使用者若想嘗試第一個解說短片，可隨時發送稿子或想法觸發 `script2film`。
+2. **2026-11-23（週一）**：執行第 123 次主動型 ETF 日更
    ```powershell
    python skills/active-etf-holdings/scripts/collect_active_etf_holdings.py --output-dir wiki/金融投資
    python skills/active-etf-holdings/scripts/add_weekly_summary.py --excel wiki/金融投資/主動型ETF持股明細.xlsx
    python skills/active-etf-holdings/scripts/add_daily_stock_total.py --xlsx wiki/金融投資/主動型ETF持股明細.xlsx
    python skills/active-etf-holdings/scripts/generate_dashboard_data.py
    ```
-2. 追蹤 **00982A 群益台灣強棒**：換股動作劇烈，賣出光寶科、環球晶、聯電、中美晶等 11 檔，觀察下週是否持續調整。
-3. 追蹤 **聯電（2303）**：加碼 1,554 張 vs 減碼 8,236 張，整體淨減碼逾 6,600 張。
 
 ## 最後更新
 
-- **日期時間**：2026-11-20（週五）21:35
+- **日期時間**：2026-11-21（週六）06:49
 - **更新者**：Antigravity @ DESKTOP-GIM4VFP
-- **Git push 狀態**：已推送
+- **Git push 狀態**：準備推送

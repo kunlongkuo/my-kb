@@ -1,0 +1,37 @@
+{
+ "_readme": "Questions for Bible subjects. Asked only when the series writes \"checklist\": {\"packs\": [\"scripture\"]} in series.json.",
+ "rules": [
+  {
+   "id": "scripture-checked",
+   "stage": [
+    "start"
+   ],
+   "ask": "Has every verse in the film been checked against the exact text of the translation you use? Where the translation's units differ from the original's, is there a note?",
+   "source": "tools/checklist/packs/scripture.json"
+  },
+  {
+   "id": "source-only",
+   "stage": [
+    "start"
+   ],
+   "ask": "Does the script have facts that are not in the source article? If so, where does each one come from?",
+   "source": "tools/checklist/packs/scripture.json"
+  },
+  {
+   "id": "generated-faces",
+   "stage": [
+    "release"
+   ],
+   "ask": "Have you watched every generated shot, one by one? Do ancient people look right for their time, is Jesus drawn with a face, is there garbled text in the picture? Which shots did you regenerate?",
+   "source": "tools/checklist/packs/scripture.json"
+  },
+  {
+   "id": "credibility-tags",
+   "stage": [
+    "release"
+   ],
+   "ask": "Which beats are estimates, analogies or reconstructions? Are they all labeled on screen?",
+   "source": "tools/checklist/packs/scripture.json"
+  }
+ ]
+}

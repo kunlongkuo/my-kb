@@ -1,0 +1,164 @@
+[
+ {
+  "scene": "seed_dot",
+  "what": "Hook: one dot lands, a soft wash breathes, the dot pulses on the anchor word.",
+  "seconds": 5.2,
+  "bytes": 11284
+ },
+ {
+  "scene": "split_duel",
+  "what": "A split-screen frame, two dots, a strike and a strike back.",
+  "seconds": 5.2,
+  "bytes": 12813
+ },
+ {
+  "scene": "cover",
+  "what": "An episode's title card: series label, big title, range card and a badge.",
+  "seconds": 5.2,
+  "bytes": 71466
+ },
+ {
+  "scene": "burst_title",
+  "what": "Climax: the frame dims, then bursts on the word with a big title and a term.",
+  "seconds": 5.2,
+  "bytes": 27210
+ },
+ {
+  "scene": "exchange",
+  "what": "Two agents trading moves on one board.",
+  "seconds": 6.2,
+  "bytes": 15018
+ },
+ {
+  "scene": "photo",
+  "what": "One still image with a caption, pushed in slowly.",
+  "seconds": 5.2,
+  "bytes": 54896
+ },
+ {
+  "scene": "object_draw",
+  "what": "A closing object drawn stroke by stroke.",
+  "seconds": 5.2,
+  "bytes": 11443
+ },
+ {
+  "scene": "stat_count",
+  "what": "One number that matters, counting up as it is said.",
+  "seconds": 5.2,
+  "bytes": 38650
+ },
+ {
+  "scene": "timeline",
+  "what": "A line with dated markers appearing as each date is mentioned.",
+  "seconds": 5.7,
+  "bytes": 31052
+ },
+ {
+  "scene": "compare",
+  "what": "Two columns (A vs B) with a verdict marking one.",
+  "seconds": 5.7,
+  "bytes": 50388
+ },
+ {
+  "scene": "countdown",
+  "what": "A clock running up to how long something took, a bar draining under it.",
+  "seconds": 5.7,
+  "bytes": 62740
+ },
+ {
+  "scene": "grid_hot",
+  "what": "Numbered cells appear one by one, then one turns accent and the rest dim.",
+  "seconds": 5.7,
+  "bytes": 96349
+ },
+ {
+  "scene": "credits",
+  "what": "The closing page: credit groups roll up like film end credits.",
+  "seconds": 6.2,
+  "bytes": 21409
+ },
+ {
+  "scene": "bars",
+  "what": "A small bar chart; each bar grows when its label is said.",
+  "seconds": 5.2,
+  "bytes": 21028
+ },
+ {
+  "scene": "line_chart",
+  "what": "A trend: the line draws as far as the narration has got.",
+  "seconds": 5.7,
+  "bytes": 17667
+ },
+ {
+  "scene": "pie",
+  "what": "What something is made of: slices sweep open as each is said.",
+  "seconds": 5.2,
+  "bytes": 23830
+ },
+ {
+  "scene": "formula",
+  "what": "A formula or chain of cause and effect in one row of large words.",
+  "seconds": 5.2,
+  "bytes": 22539
+ },
+ {
+  "scene": "breakdown",
+  "what": "One quantity split into its parts, with a second level.",
+  "seconds": 5.7,
+  "bytes": 25273
+ },
+ {
+  "scene": "list_reveal",
+  "what": "A short list built up item by item.",
+  "seconds": 5.2,
+  "bytes": 21035
+ },
+ {
+  "scene": "map_route",
+  "what": "A sketch map with a route drawn stop by stop as each place is said.",
+  "seconds": 5.7,
+  "bytes": 18836
+ },
+ {
+  "scene": "flow",
+  "what": "How something travels: nodes joined by links, glowing packets run along them.",
+  "seconds": 5.7,
+  "bytes": 61319
+ },
+ {
+  "scene": "relation",
+  "what": "Who or what is tied to whom: name cards, ties, and a focus that dims the rest.",
+  "seconds": 5.7,
+  "bytes": 42329
+ },
+ {
+  "scene": "web_evidence",
+  "what": "A screenshot cropped to the part that matters, key words swiped by a highlighter, source below.",
+  "seconds": 5.2,
+  "bytes": 25998
+ },
+ {
+  "scene": "ve_annotate",
+  "what": "A shot plays, freezes on one frame, gets a ring, an arrow and one note, then plays on.",
+  "seconds": 5.2,
+  "bytes": 36717
+ },
+ {
+  "scene": "quote_card",
+  "what": "A full-screen quotation with its source and a photo.",
+  "seconds": 5.2,
+  "bytes": 26605
+ },
+ {
+  "scene": "merge_bubble",
+  "what": "One company swallows another: a bubble is pulled into another and nested; a price below.",
+  "seconds": 5.2,
+  "bytes": 21093
+ },
+ {
+  "scene": "screen_step",
+  "what": "A screen with each step marked as it is said: the rest dims, a box rings the element, a numbered label.",
+  "seconds": 5.7,
+  "bytes": 55399
+ }
+]

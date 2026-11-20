@@ -1,0 +1,5438 @@
+[
+ {
+  "id": "kenney-interface-back_001",
+  "file": "kenney-interface-back_001.wav",
+  "query": "back 001",
+  "tags": [
+   "back"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-back_002",
+  "file": "kenney-interface-back_002.wav",
+  "query": "back 002",
+  "tags": [
+   "back"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-back_003",
+  "file": "kenney-interface-back_003.wav",
+  "query": "back 003",
+  "tags": [
+   "back"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-back_004",
+  "file": "kenney-interface-back_004.wav",
+  "query": "back 004",
+  "tags": [
+   "back"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-bong_001",
+  "file": "kenney-interface-bong_001.wav",
+  "query": "bong 001",
+  "tags": [
+   "bong",
+   "ding"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-click_001",
+  "file": "kenney-interface-click_001.wav",
+  "query": "click 001",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-click_002",
+  "file": "kenney-interface-click_002.wav",
+  "query": "click 002",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-click_003",
+  "file": "kenney-interface-click_003.wav",
+  "query": "click 003",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-click_004",
+  "file": "kenney-interface-click_004.wav",
+  "query": "click 004",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-click_005",
+  "file": "kenney-interface-click_005.wav",
+  "query": "click 005",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-close_001",
+  "file": "kenney-interface-close_001.wav",
+  "query": "close 001",
+  "tags": [
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-close_002",
+  "file": "kenney-interface-close_002.wav",
+  "query": "close 002",
+  "tags": [
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-close_003",
+  "file": "kenney-interface-close_003.wav",
+  "query": "close 003",
+  "tags": [
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-close_004",
+  "file": "kenney-interface-close_004.wav",
+  "query": "close 004",
+  "tags": [
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-confirmation_001",
+  "file": "kenney-interface-confirmation_001.wav",
+  "query": "confirmation 001",
+  "tags": [
+   "ding",
+   "confirm",
+   "success"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-confirmation_002",
+  "file": "kenney-interface-confirmation_002.wav",
+  "query": "confirmation 002",
+  "tags": [
+   "ding",
+   "confirm",
+   "success"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-confirmation_003",
+  "file": "kenney-interface-confirmation_003.wav",
+  "query": "confirmation 003",
+  "tags": [
+   "ding",
+   "confirm",
+   "success"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-confirmation_004",
+  "file": "kenney-interface-confirmation_004.wav",
+  "query": "confirmation 004",
+  "tags": [
+   "ding",
+   "confirm",
+   "success"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-drop_001",
+  "file": "kenney-interface-drop_001.wav",
+  "query": "drop 001",
+  "tags": [
+   "drop",
+   "pop"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-drop_002",
+  "file": "kenney-interface-drop_002.wav",
+  "query": "drop 002",
+  "tags": [
+   "drop",
+   "pop"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-drop_003",
+  "file": "kenney-interface-drop_003.wav",
+  "query": "drop 003",
+  "tags": [
+   "drop",
+   "pop"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-drop_004",
+  "file": "kenney-interface-drop_004.wav",
+  "query": "drop 004",
+  "tags": [
+   "drop",
+   "pop"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_001",
+  "file": "kenney-interface-error_001.wav",
+  "query": "error 001",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_002",
+  "file": "kenney-interface-error_002.wav",
+  "query": "error 002",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_003",
+  "file": "kenney-interface-error_003.wav",
+  "query": "error 003",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_004",
+  "file": "kenney-interface-error_004.wav",
+  "query": "error 004",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_005",
+  "file": "kenney-interface-error_005.wav",
+  "query": "error 005",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_006",
+  "file": "kenney-interface-error_006.wav",
+  "query": "error 006",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_007",
+  "file": "kenney-interface-error_007.wav",
+  "query": "error 007",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-error_008",
+  "file": "kenney-interface-error_008.wav",
+  "query": "error 008",
+  "tags": [
+   "error",
+   "buzz",
+   "deny"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_001",
+  "file": "kenney-interface-glass_001.wav",
+  "query": "glass 001",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_002",
+  "file": "kenney-interface-glass_002.wav",
+  "query": "glass 002",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_003",
+  "file": "kenney-interface-glass_003.wav",
+  "query": "glass 003",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_004",
+  "file": "kenney-interface-glass_004.wav",
+  "query": "glass 004",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_005",
+  "file": "kenney-interface-glass_005.wav",
+  "query": "glass 005",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glass_006",
+  "file": "kenney-interface-glass_006.wav",
+  "query": "glass 006",
+  "tags": [
+   "ding",
+   "glass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glitch_001",
+  "file": "kenney-interface-glitch_001.wav",
+  "query": "glitch 001",
+  "tags": [
+   "glitch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glitch_002",
+  "file": "kenney-interface-glitch_002.wav",
+  "query": "glitch 002",
+  "tags": [
+   "glitch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glitch_003",
+  "file": "kenney-interface-glitch_003.wav",
+  "query": "glitch 003",
+  "tags": [
+   "glitch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-glitch_004",
+  "file": "kenney-interface-glitch_004.wav",
+  "query": "glitch 004",
+  "tags": [
+   "glitch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_001",
+  "file": "kenney-interface-maximize_001.wav",
+  "query": "maximize 001",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_002",
+  "file": "kenney-interface-maximize_002.wav",
+  "query": "maximize 002",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_003",
+  "file": "kenney-interface-maximize_003.wav",
+  "query": "maximize 003",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_004",
+  "file": "kenney-interface-maximize_004.wav",
+  "query": "maximize 004",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_005",
+  "file": "kenney-interface-maximize_005.wav",
+  "query": "maximize 005",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_006",
+  "file": "kenney-interface-maximize_006.wav",
+  "query": "maximize 006",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_007",
+  "file": "kenney-interface-maximize_007.wav",
+  "query": "maximize 007",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_008",
+  "file": "kenney-interface-maximize_008.wav",
+  "query": "maximize 008",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-maximize_009",
+  "file": "kenney-interface-maximize_009.wav",
+  "query": "maximize 009",
+  "tags": [
+   "maximize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_001",
+  "file": "kenney-interface-minimize_001.wav",
+  "query": "minimize 001",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_002",
+  "file": "kenney-interface-minimize_002.wav",
+  "query": "minimize 002",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_003",
+  "file": "kenney-interface-minimize_003.wav",
+  "query": "minimize 003",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_004",
+  "file": "kenney-interface-minimize_004.wav",
+  "query": "minimize 004",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_005",
+  "file": "kenney-interface-minimize_005.wav",
+  "query": "minimize 005",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_006",
+  "file": "kenney-interface-minimize_006.wav",
+  "query": "minimize 006",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_007",
+  "file": "kenney-interface-minimize_007.wav",
+  "query": "minimize 007",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_008",
+  "file": "kenney-interface-minimize_008.wav",
+  "query": "minimize 008",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-minimize_009",
+  "file": "kenney-interface-minimize_009.wav",
+  "query": "minimize 009",
+  "tags": [
+   "minimize"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-open_001",
+  "file": "kenney-interface-open_001.wav",
+  "query": "open 001",
+  "tags": [
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-open_002",
+  "file": "kenney-interface-open_002.wav",
+  "query": "open 002",
+  "tags": [
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-open_003",
+  "file": "kenney-interface-open_003.wav",
+  "query": "open 003",
+  "tags": [
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-open_004",
+  "file": "kenney-interface-open_004.wav",
+  "query": "open 004",
+  "tags": [
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-pluck_001",
+  "file": "kenney-interface-pluck_001.wav",
+  "query": "pluck 001",
+  "tags": [
+   "pop",
+   "pluck"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-pluck_002",
+  "file": "kenney-interface-pluck_002.wav",
+  "query": "pluck 002",
+  "tags": [
+   "pop",
+   "pluck"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-question_001",
+  "file": "kenney-interface-question_001.wav",
+  "query": "question 001",
+  "tags": [
+   "question",
+   "ding"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-question_002",
+  "file": "kenney-interface-question_002.wav",
+  "query": "question 002",
+  "tags": [
+   "question",
+   "ding"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-question_003",
+  "file": "kenney-interface-question_003.wav",
+  "query": "question 003",
+  "tags": [
+   "question",
+   "ding"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-question_004",
+  "file": "kenney-interface-question_004.wav",
+  "query": "question 004",
+  "tags": [
+   "question",
+   "ding"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scratch_001",
+  "file": "kenney-interface-scratch_001.wav",
+  "query": "scratch 001",
+  "tags": [
+   "scratch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scratch_002",
+  "file": "kenney-interface-scratch_002.wav",
+  "query": "scratch 002",
+  "tags": [
+   "scratch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scratch_003",
+  "file": "kenney-interface-scratch_003.wav",
+  "query": "scratch 003",
+  "tags": [
+   "scratch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scratch_004",
+  "file": "kenney-interface-scratch_004.wav",
+  "query": "scratch 004",
+  "tags": [
+   "scratch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scratch_005",
+  "file": "kenney-interface-scratch_005.wav",
+  "query": "scratch 005",
+  "tags": [
+   "scratch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scroll_001",
+  "file": "kenney-interface-scroll_001.wav",
+  "query": "scroll 001",
+  "tags": [
+   "scroll",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scroll_002",
+  "file": "kenney-interface-scroll_002.wav",
+  "query": "scroll 002",
+  "tags": [
+   "scroll",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scroll_003",
+  "file": "kenney-interface-scroll_003.wav",
+  "query": "scroll 003",
+  "tags": [
+   "scroll",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scroll_004",
+  "file": "kenney-interface-scroll_004.wav",
+  "query": "scroll 004",
+  "tags": [
+   "scroll",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-scroll_005",
+  "file": "kenney-interface-scroll_005.wav",
+  "query": "scroll 005",
+  "tags": [
+   "scroll",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_001",
+  "file": "kenney-interface-select_001.wav",
+  "query": "select 001",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_002",
+  "file": "kenney-interface-select_002.wav",
+  "query": "select 002",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_003",
+  "file": "kenney-interface-select_003.wav",
+  "query": "select 003",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_004",
+  "file": "kenney-interface-select_004.wav",
+  "query": "select 004",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_005",
+  "file": "kenney-interface-select_005.wav",
+  "query": "select 005",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_006",
+  "file": "kenney-interface-select_006.wav",
+  "query": "select 006",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_007",
+  "file": "kenney-interface-select_007.wav",
+  "query": "select 007",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-select_008",
+  "file": "kenney-interface-select_008.wav",
+  "query": "select 008",
+  "tags": [
+   "select",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_001",
+  "file": "kenney-interface-switch_001.wav",
+  "query": "switch 001",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_002",
+  "file": "kenney-interface-switch_002.wav",
+  "query": "switch 002",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_003",
+  "file": "kenney-interface-switch_003.wav",
+  "query": "switch 003",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_004",
+  "file": "kenney-interface-switch_004.wav",
+  "query": "switch 004",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_005",
+  "file": "kenney-interface-switch_005.wav",
+  "query": "switch 005",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_006",
+  "file": "kenney-interface-switch_006.wav",
+  "query": "switch 006",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-switch_007",
+  "file": "kenney-interface-switch_007.wav",
+  "query": "switch 007",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-tick_001",
+  "file": "kenney-interface-tick_001.wav",
+  "query": "tick 001",
+  "tags": [
+   "tick",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-tick_002",
+  "file": "kenney-interface-tick_002.wav",
+  "query": "tick 002",
+  "tags": [
+   "tick",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-tick_004",
+  "file": "kenney-interface-tick_004.wav",
+  "query": "tick 004",
+  "tags": [
+   "tick",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-toggle_001",
+  "file": "kenney-interface-toggle_001.wav",
+  "query": "toggle 001",
+  "tags": [
+   "toggle",
+   "switch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-toggle_002",
+  "file": "kenney-interface-toggle_002.wav",
+  "query": "toggle 002",
+  "tags": [
+   "toggle",
+   "switch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-toggle_003",
+  "file": "kenney-interface-toggle_003.wav",
+  "query": "toggle 003",
+  "tags": [
+   "toggle",
+   "switch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-interface-toggle_004",
+  "file": "kenney-interface-toggle_004.wav",
+  "query": "toggle 004",
+  "tags": [
+   "toggle",
+   "switch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Interface Sounds（kenney.nl，GitHub 鏡像 Calinou/kenney-interface-sounds）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-click1",
+  "file": "kenney-ui-click1.wav",
+  "query": "click1",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-click2",
+  "file": "kenney-ui-click2.wav",
+  "query": "click2",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-click3",
+  "file": "kenney-ui-click3.wav",
+  "query": "click3",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-click4",
+  "file": "kenney-ui-click4.wav",
+  "query": "click4",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-click5",
+  "file": "kenney-ui-click5.wav",
+  "query": "click5",
+  "tags": [
+   "click",
+   "tick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-mouseclick1",
+  "file": "kenney-ui-mouseclick1.wav",
+  "query": "mouseclick1",
+  "tags": [
+   "mouseclick"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-mouserelease1",
+  "file": "kenney-ui-mouserelease1.wav",
+  "query": "mouserelease1",
+  "tags": [
+   "mouserelease"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover1",
+  "file": "kenney-ui-rollover1.wav",
+  "query": "rollover1",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover2",
+  "file": "kenney-ui-rollover2.wav",
+  "query": "rollover2",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover3",
+  "file": "kenney-ui-rollover3.wav",
+  "query": "rollover3",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover4",
+  "file": "kenney-ui-rollover4.wav",
+  "query": "rollover4",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover5",
+  "file": "kenney-ui-rollover5.wav",
+  "query": "rollover5",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-rollover6",
+  "file": "kenney-ui-rollover6.wav",
+  "query": "rollover6",
+  "tags": [
+   "hover",
+   "swipe"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch1",
+  "file": "kenney-ui-switch1.wav",
+  "query": "switch1",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch10",
+  "file": "kenney-ui-switch10.wav",
+  "query": "switch10",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch11",
+  "file": "kenney-ui-switch11.wav",
+  "query": "switch11",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch12",
+  "file": "kenney-ui-switch12.wav",
+  "query": "switch12",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch13",
+  "file": "kenney-ui-switch13.wav",
+  "query": "switch13",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch14",
+  "file": "kenney-ui-switch14.wav",
+  "query": "switch14",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch15",
+  "file": "kenney-ui-switch15.wav",
+  "query": "switch15",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch16",
+  "file": "kenney-ui-switch16.wav",
+  "query": "switch16",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch17",
+  "file": "kenney-ui-switch17.wav",
+  "query": "switch17",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch18",
+  "file": "kenney-ui-switch18.wav",
+  "query": "switch18",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch19",
+  "file": "kenney-ui-switch19.wav",
+  "query": "switch19",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch2",
+  "file": "kenney-ui-switch2.wav",
+  "query": "switch2",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch20",
+  "file": "kenney-ui-switch20.wav",
+  "query": "switch20",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch21",
+  "file": "kenney-ui-switch21.wav",
+  "query": "switch21",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch22",
+  "file": "kenney-ui-switch22.wav",
+  "query": "switch22",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch23",
+  "file": "kenney-ui-switch23.wav",
+  "query": "switch23",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch24",
+  "file": "kenney-ui-switch24.wav",
+  "query": "switch24",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch25",
+  "file": "kenney-ui-switch25.wav",
+  "query": "switch25",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch26",
+  "file": "kenney-ui-switch26.wav",
+  "query": "switch26",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch27",
+  "file": "kenney-ui-switch27.wav",
+  "query": "switch27",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch28",
+  "file": "kenney-ui-switch28.wav",
+  "query": "switch28",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch29",
+  "file": "kenney-ui-switch29.wav",
+  "query": "switch29",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch3",
+  "file": "kenney-ui-switch3.wav",
+  "query": "switch3",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch30",
+  "file": "kenney-ui-switch30.wav",
+  "query": "switch30",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch31",
+  "file": "kenney-ui-switch31.wav",
+  "query": "switch31",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch32",
+  "file": "kenney-ui-switch32.wav",
+  "query": "switch32",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch33",
+  "file": "kenney-ui-switch33.wav",
+  "query": "switch33",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch34",
+  "file": "kenney-ui-switch34.wav",
+  "query": "switch34",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch35",
+  "file": "kenney-ui-switch35.wav",
+  "query": "switch35",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch36",
+  "file": "kenney-ui-switch36.wav",
+  "query": "switch36",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch37",
+  "file": "kenney-ui-switch37.wav",
+  "query": "switch37",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch38",
+  "file": "kenney-ui-switch38.wav",
+  "query": "switch38",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch4",
+  "file": "kenney-ui-switch4.wav",
+  "query": "switch4",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch5",
+  "file": "kenney-ui-switch5.wav",
+  "query": "switch5",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch6",
+  "file": "kenney-ui-switch6.wav",
+  "query": "switch6",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch7",
+  "file": "kenney-ui-switch7.wav",
+  "query": "switch7",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch8",
+  "file": "kenney-ui-switch8.wav",
+  "query": "switch8",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-ui-switch9",
+  "file": "kenney-ui-switch9.wav",
+  "query": "switch9",
+  "tags": [
+   "toggle",
+   "switch",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney UI Audio（kenney.nl，GitHub 鏡像 Calinou/kenney-ui-audio）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "downloaded_at": "2026-08-21"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-carpet-000",
+  "file": "kenney-impact-sounds-footstep-carpet-000.wav",
+  "query": "footstep carpet",
+  "tags": [
+   "footstep",
+   "carpet"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-carpet-001",
+  "file": "kenney-impact-sounds-footstep-carpet-001.wav",
+  "query": "footstep carpet",
+  "tags": [
+   "footstep",
+   "carpet"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-carpet-002",
+  "file": "kenney-impact-sounds-footstep-carpet-002.wav",
+  "query": "footstep carpet",
+  "tags": [
+   "footstep",
+   "carpet"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-carpet-003",
+  "file": "kenney-impact-sounds-footstep-carpet-003.wav",
+  "query": "footstep carpet",
+  "tags": [
+   "footstep",
+   "carpet"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-carpet-004",
+  "file": "kenney-impact-sounds-footstep-carpet-004.wav",
+  "query": "footstep carpet",
+  "tags": [
+   "footstep",
+   "carpet"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-concrete-000",
+  "file": "kenney-impact-sounds-footstep-concrete-000.wav",
+  "query": "footstep concrete",
+  "tags": [
+   "footstep",
+   "concrete"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-concrete-001",
+  "file": "kenney-impact-sounds-footstep-concrete-001.wav",
+  "query": "footstep concrete",
+  "tags": [
+   "footstep",
+   "concrete"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-concrete-002",
+  "file": "kenney-impact-sounds-footstep-concrete-002.wav",
+  "query": "footstep concrete",
+  "tags": [
+   "footstep",
+   "concrete"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-concrete-003",
+  "file": "kenney-impact-sounds-footstep-concrete-003.wav",
+  "query": "footstep concrete",
+  "tags": [
+   "footstep",
+   "concrete"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-concrete-004",
+  "file": "kenney-impact-sounds-footstep-concrete-004.wav",
+  "query": "footstep concrete",
+  "tags": [
+   "footstep",
+   "concrete"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-grass-000",
+  "file": "kenney-impact-sounds-footstep-grass-000.wav",
+  "query": "footstep grass",
+  "tags": [
+   "footstep",
+   "grass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-grass-001",
+  "file": "kenney-impact-sounds-footstep-grass-001.wav",
+  "query": "footstep grass",
+  "tags": [
+   "footstep",
+   "grass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-grass-002",
+  "file": "kenney-impact-sounds-footstep-grass-002.wav",
+  "query": "footstep grass",
+  "tags": [
+   "footstep",
+   "grass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-grass-003",
+  "file": "kenney-impact-sounds-footstep-grass-003.wav",
+  "query": "footstep grass",
+  "tags": [
+   "footstep",
+   "grass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-grass-004",
+  "file": "kenney-impact-sounds-footstep-grass-004.wav",
+  "query": "footstep grass",
+  "tags": [
+   "footstep",
+   "grass"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-snow-000",
+  "file": "kenney-impact-sounds-footstep-snow-000.wav",
+  "query": "footstep snow",
+  "tags": [
+   "footstep",
+   "snow"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-snow-001",
+  "file": "kenney-impact-sounds-footstep-snow-001.wav",
+  "query": "footstep snow",
+  "tags": [
+   "footstep",
+   "snow"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-snow-002",
+  "file": "kenney-impact-sounds-footstep-snow-002.wav",
+  "query": "footstep snow",
+  "tags": [
+   "footstep",
+   "snow"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-snow-003",
+  "file": "kenney-impact-sounds-footstep-snow-003.wav",
+  "query": "footstep snow",
+  "tags": [
+   "footstep",
+   "snow"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-snow-004",
+  "file": "kenney-impact-sounds-footstep-snow-004.wav",
+  "query": "footstep snow",
+  "tags": [
+   "footstep",
+   "snow"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-wood-000",
+  "file": "kenney-impact-sounds-footstep-wood-000.wav",
+  "query": "footstep wood",
+  "tags": [
+   "footstep",
+   "wood"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-wood-001",
+  "file": "kenney-impact-sounds-footstep-wood-001.wav",
+  "query": "footstep wood",
+  "tags": [
+   "footstep",
+   "wood"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-wood-002",
+  "file": "kenney-impact-sounds-footstep-wood-002.wav",
+  "query": "footstep wood",
+  "tags": [
+   "footstep",
+   "wood"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-wood-003",
+  "file": "kenney-impact-sounds-footstep-wood-003.wav",
+  "query": "footstep wood",
+  "tags": [
+   "footstep",
+   "wood"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-footstep-wood-004",
+  "file": "kenney-impact-sounds-footstep-wood-004.wav",
+  "query": "footstep wood",
+  "tags": [
+   "footstep",
+   "wood"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-bell-heavy-000",
+  "file": "kenney-impact-sounds-impact-bell-heavy-000.wav",
+  "query": "impact bell heavy",
+  "tags": [
+   "impact",
+   "bell",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-bell-heavy-001",
+  "file": "kenney-impact-sounds-impact-bell-heavy-001.wav",
+  "query": "impact bell heavy",
+  "tags": [
+   "impact",
+   "bell",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-bell-heavy-002",
+  "file": "kenney-impact-sounds-impact-bell-heavy-002.wav",
+  "query": "impact bell heavy",
+  "tags": [
+   "impact",
+   "bell",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-bell-heavy-003",
+  "file": "kenney-impact-sounds-impact-bell-heavy-003.wav",
+  "query": "impact bell heavy",
+  "tags": [
+   "impact",
+   "bell",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-bell-heavy-004",
+  "file": "kenney-impact-sounds-impact-bell-heavy-004.wav",
+  "query": "impact bell heavy",
+  "tags": [
+   "impact",
+   "bell",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-generic-light-000",
+  "file": "kenney-impact-sounds-impact-generic-light-000.wav",
+  "query": "impact generic light",
+  "tags": [
+   "impact",
+   "generic",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-generic-light-001",
+  "file": "kenney-impact-sounds-impact-generic-light-001.wav",
+  "query": "impact generic light",
+  "tags": [
+   "impact",
+   "generic",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-generic-light-002",
+  "file": "kenney-impact-sounds-impact-generic-light-002.wav",
+  "query": "impact generic light",
+  "tags": [
+   "impact",
+   "generic",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-generic-light-003",
+  "file": "kenney-impact-sounds-impact-generic-light-003.wav",
+  "query": "impact generic light",
+  "tags": [
+   "impact",
+   "generic",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-generic-light-004",
+  "file": "kenney-impact-sounds-impact-generic-light-004.wav",
+  "query": "impact generic light",
+  "tags": [
+   "impact",
+   "generic",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-heavy-000",
+  "file": "kenney-impact-sounds-impact-glass-heavy-000.wav",
+  "query": "impact glass heavy",
+  "tags": [
+   "impact",
+   "glass",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-heavy-001",
+  "file": "kenney-impact-sounds-impact-glass-heavy-001.wav",
+  "query": "impact glass heavy",
+  "tags": [
+   "impact",
+   "glass",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-heavy-002",
+  "file": "kenney-impact-sounds-impact-glass-heavy-002.wav",
+  "query": "impact glass heavy",
+  "tags": [
+   "impact",
+   "glass",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-heavy-003",
+  "file": "kenney-impact-sounds-impact-glass-heavy-003.wav",
+  "query": "impact glass heavy",
+  "tags": [
+   "impact",
+   "glass",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-heavy-004",
+  "file": "kenney-impact-sounds-impact-glass-heavy-004.wav",
+  "query": "impact glass heavy",
+  "tags": [
+   "impact",
+   "glass",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-light-000",
+  "file": "kenney-impact-sounds-impact-glass-light-000.wav",
+  "query": "impact glass light",
+  "tags": [
+   "impact",
+   "glass",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-light-001",
+  "file": "kenney-impact-sounds-impact-glass-light-001.wav",
+  "query": "impact glass light",
+  "tags": [
+   "impact",
+   "glass",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-light-002",
+  "file": "kenney-impact-sounds-impact-glass-light-002.wav",
+  "query": "impact glass light",
+  "tags": [
+   "impact",
+   "glass",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-light-003",
+  "file": "kenney-impact-sounds-impact-glass-light-003.wav",
+  "query": "impact glass light",
+  "tags": [
+   "impact",
+   "glass",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-light-004",
+  "file": "kenney-impact-sounds-impact-glass-light-004.wav",
+  "query": "impact glass light",
+  "tags": [
+   "impact",
+   "glass",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-medium-000",
+  "file": "kenney-impact-sounds-impact-glass-medium-000.wav",
+  "query": "impact glass medium",
+  "tags": [
+   "impact",
+   "glass",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-medium-001",
+  "file": "kenney-impact-sounds-impact-glass-medium-001.wav",
+  "query": "impact glass medium",
+  "tags": [
+   "impact",
+   "glass",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-medium-002",
+  "file": "kenney-impact-sounds-impact-glass-medium-002.wav",
+  "query": "impact glass medium",
+  "tags": [
+   "impact",
+   "glass",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-medium-003",
+  "file": "kenney-impact-sounds-impact-glass-medium-003.wav",
+  "query": "impact glass medium",
+  "tags": [
+   "impact",
+   "glass",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-glass-medium-004",
+  "file": "kenney-impact-sounds-impact-glass-medium-004.wav",
+  "query": "impact glass medium",
+  "tags": [
+   "impact",
+   "glass",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-heavy-000",
+  "file": "kenney-impact-sounds-impact-metal-heavy-000.wav",
+  "query": "impact metal heavy",
+  "tags": [
+   "impact",
+   "metal",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-heavy-001",
+  "file": "kenney-impact-sounds-impact-metal-heavy-001.wav",
+  "query": "impact metal heavy",
+  "tags": [
+   "impact",
+   "metal",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-heavy-002",
+  "file": "kenney-impact-sounds-impact-metal-heavy-002.wav",
+  "query": "impact metal heavy",
+  "tags": [
+   "impact",
+   "metal",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-heavy-003",
+  "file": "kenney-impact-sounds-impact-metal-heavy-003.wav",
+  "query": "impact metal heavy",
+  "tags": [
+   "impact",
+   "metal",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-heavy-004",
+  "file": "kenney-impact-sounds-impact-metal-heavy-004.wav",
+  "query": "impact metal heavy",
+  "tags": [
+   "impact",
+   "metal",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-light-000",
+  "file": "kenney-impact-sounds-impact-metal-light-000.wav",
+  "query": "impact metal light",
+  "tags": [
+   "impact",
+   "metal",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-light-001",
+  "file": "kenney-impact-sounds-impact-metal-light-001.wav",
+  "query": "impact metal light",
+  "tags": [
+   "impact",
+   "metal",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-light-002",
+  "file": "kenney-impact-sounds-impact-metal-light-002.wav",
+  "query": "impact metal light",
+  "tags": [
+   "impact",
+   "metal",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-light-003",
+  "file": "kenney-impact-sounds-impact-metal-light-003.wav",
+  "query": "impact metal light",
+  "tags": [
+   "impact",
+   "metal",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-light-004",
+  "file": "kenney-impact-sounds-impact-metal-light-004.wav",
+  "query": "impact metal light",
+  "tags": [
+   "impact",
+   "metal",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-medium-000",
+  "file": "kenney-impact-sounds-impact-metal-medium-000.wav",
+  "query": "impact metal medium",
+  "tags": [
+   "impact",
+   "metal",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-medium-001",
+  "file": "kenney-impact-sounds-impact-metal-medium-001.wav",
+  "query": "impact metal medium",
+  "tags": [
+   "impact",
+   "metal",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-medium-002",
+  "file": "kenney-impact-sounds-impact-metal-medium-002.wav",
+  "query": "impact metal medium",
+  "tags": [
+   "impact",
+   "metal",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-medium-003",
+  "file": "kenney-impact-sounds-impact-metal-medium-003.wav",
+  "query": "impact metal medium",
+  "tags": [
+   "impact",
+   "metal",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-metal-medium-004",
+  "file": "kenney-impact-sounds-impact-metal-medium-004.wav",
+  "query": "impact metal medium",
+  "tags": [
+   "impact",
+   "metal",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-mining-000",
+  "file": "kenney-impact-sounds-impact-mining-000.wav",
+  "query": "impact mining",
+  "tags": [
+   "impact",
+   "mining"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-mining-001",
+  "file": "kenney-impact-sounds-impact-mining-001.wav",
+  "query": "impact mining",
+  "tags": [
+   "impact",
+   "mining"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-mining-002",
+  "file": "kenney-impact-sounds-impact-mining-002.wav",
+  "query": "impact mining",
+  "tags": [
+   "impact",
+   "mining"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-mining-003",
+  "file": "kenney-impact-sounds-impact-mining-003.wav",
+  "query": "impact mining",
+  "tags": [
+   "impact",
+   "mining"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-mining-004",
+  "file": "kenney-impact-sounds-impact-mining-004.wav",
+  "query": "impact mining",
+  "tags": [
+   "impact",
+   "mining"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plank-medium-000",
+  "file": "kenney-impact-sounds-impact-plank-medium-000.wav",
+  "query": "impact plank medium",
+  "tags": [
+   "impact",
+   "plank",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plank-medium-001",
+  "file": "kenney-impact-sounds-impact-plank-medium-001.wav",
+  "query": "impact plank medium",
+  "tags": [
+   "impact",
+   "plank",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plank-medium-002",
+  "file": "kenney-impact-sounds-impact-plank-medium-002.wav",
+  "query": "impact plank medium",
+  "tags": [
+   "impact",
+   "plank",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plank-medium-003",
+  "file": "kenney-impact-sounds-impact-plank-medium-003.wav",
+  "query": "impact plank medium",
+  "tags": [
+   "impact",
+   "plank",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plank-medium-004",
+  "file": "kenney-impact-sounds-impact-plank-medium-004.wav",
+  "query": "impact plank medium",
+  "tags": [
+   "impact",
+   "plank",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-heavy-000",
+  "file": "kenney-impact-sounds-impact-plate-heavy-000.wav",
+  "query": "impact plate heavy",
+  "tags": [
+   "impact",
+   "plate",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-heavy-001",
+  "file": "kenney-impact-sounds-impact-plate-heavy-001.wav",
+  "query": "impact plate heavy",
+  "tags": [
+   "impact",
+   "plate",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-heavy-002",
+  "file": "kenney-impact-sounds-impact-plate-heavy-002.wav",
+  "query": "impact plate heavy",
+  "tags": [
+   "impact",
+   "plate",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-heavy-003",
+  "file": "kenney-impact-sounds-impact-plate-heavy-003.wav",
+  "query": "impact plate heavy",
+  "tags": [
+   "impact",
+   "plate",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-heavy-004",
+  "file": "kenney-impact-sounds-impact-plate-heavy-004.wav",
+  "query": "impact plate heavy",
+  "tags": [
+   "impact",
+   "plate",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-light-000",
+  "file": "kenney-impact-sounds-impact-plate-light-000.wav",
+  "query": "impact plate light",
+  "tags": [
+   "impact",
+   "plate",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-light-001",
+  "file": "kenney-impact-sounds-impact-plate-light-001.wav",
+  "query": "impact plate light",
+  "tags": [
+   "impact",
+   "plate",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-light-002",
+  "file": "kenney-impact-sounds-impact-plate-light-002.wav",
+  "query": "impact plate light",
+  "tags": [
+   "impact",
+   "plate",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-light-003",
+  "file": "kenney-impact-sounds-impact-plate-light-003.wav",
+  "query": "impact plate light",
+  "tags": [
+   "impact",
+   "plate",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-light-004",
+  "file": "kenney-impact-sounds-impact-plate-light-004.wav",
+  "query": "impact plate light",
+  "tags": [
+   "impact",
+   "plate",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-medium-000",
+  "file": "kenney-impact-sounds-impact-plate-medium-000.wav",
+  "query": "impact plate medium",
+  "tags": [
+   "impact",
+   "plate",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-medium-001",
+  "file": "kenney-impact-sounds-impact-plate-medium-001.wav",
+  "query": "impact plate medium",
+  "tags": [
+   "impact",
+   "plate",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-medium-002",
+  "file": "kenney-impact-sounds-impact-plate-medium-002.wav",
+  "query": "impact plate medium",
+  "tags": [
+   "impact",
+   "plate",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-medium-003",
+  "file": "kenney-impact-sounds-impact-plate-medium-003.wav",
+  "query": "impact plate medium",
+  "tags": [
+   "impact",
+   "plate",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-plate-medium-004",
+  "file": "kenney-impact-sounds-impact-plate-medium-004.wav",
+  "query": "impact plate medium",
+  "tags": [
+   "impact",
+   "plate",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-heavy-000",
+  "file": "kenney-impact-sounds-impact-punch-heavy-000.wav",
+  "query": "impact punch heavy",
+  "tags": [
+   "impact",
+   "punch",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-heavy-001",
+  "file": "kenney-impact-sounds-impact-punch-heavy-001.wav",
+  "query": "impact punch heavy",
+  "tags": [
+   "impact",
+   "punch",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-heavy-002",
+  "file": "kenney-impact-sounds-impact-punch-heavy-002.wav",
+  "query": "impact punch heavy",
+  "tags": [
+   "impact",
+   "punch",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-heavy-003",
+  "file": "kenney-impact-sounds-impact-punch-heavy-003.wav",
+  "query": "impact punch heavy",
+  "tags": [
+   "impact",
+   "punch",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-heavy-004",
+  "file": "kenney-impact-sounds-impact-punch-heavy-004.wav",
+  "query": "impact punch heavy",
+  "tags": [
+   "impact",
+   "punch",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-medium-000",
+  "file": "kenney-impact-sounds-impact-punch-medium-000.wav",
+  "query": "impact punch medium",
+  "tags": [
+   "impact",
+   "punch",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-medium-001",
+  "file": "kenney-impact-sounds-impact-punch-medium-001.wav",
+  "query": "impact punch medium",
+  "tags": [
+   "impact",
+   "punch",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-medium-002",
+  "file": "kenney-impact-sounds-impact-punch-medium-002.wav",
+  "query": "impact punch medium",
+  "tags": [
+   "impact",
+   "punch",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-medium-003",
+  "file": "kenney-impact-sounds-impact-punch-medium-003.wav",
+  "query": "impact punch medium",
+  "tags": [
+   "impact",
+   "punch",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-punch-medium-004",
+  "file": "kenney-impact-sounds-impact-punch-medium-004.wav",
+  "query": "impact punch medium",
+  "tags": [
+   "impact",
+   "punch",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-heavy-000",
+  "file": "kenney-impact-sounds-impact-soft-heavy-000.wav",
+  "query": "impact soft heavy",
+  "tags": [
+   "impact",
+   "soft",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-heavy-001",
+  "file": "kenney-impact-sounds-impact-soft-heavy-001.wav",
+  "query": "impact soft heavy",
+  "tags": [
+   "impact",
+   "soft",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-heavy-002",
+  "file": "kenney-impact-sounds-impact-soft-heavy-002.wav",
+  "query": "impact soft heavy",
+  "tags": [
+   "impact",
+   "soft",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-heavy-003",
+  "file": "kenney-impact-sounds-impact-soft-heavy-003.wav",
+  "query": "impact soft heavy",
+  "tags": [
+   "impact",
+   "soft",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-heavy-004",
+  "file": "kenney-impact-sounds-impact-soft-heavy-004.wav",
+  "query": "impact soft heavy",
+  "tags": [
+   "impact",
+   "soft",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-medium-000",
+  "file": "kenney-impact-sounds-impact-soft-medium-000.wav",
+  "query": "impact soft medium",
+  "tags": [
+   "impact",
+   "soft",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-medium-001",
+  "file": "kenney-impact-sounds-impact-soft-medium-001.wav",
+  "query": "impact soft medium",
+  "tags": [
+   "impact",
+   "soft",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-medium-002",
+  "file": "kenney-impact-sounds-impact-soft-medium-002.wav",
+  "query": "impact soft medium",
+  "tags": [
+   "impact",
+   "soft",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-medium-003",
+  "file": "kenney-impact-sounds-impact-soft-medium-003.wav",
+  "query": "impact soft medium",
+  "tags": [
+   "impact",
+   "soft",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-soft-medium-004",
+  "file": "kenney-impact-sounds-impact-soft-medium-004.wav",
+  "query": "impact soft medium",
+  "tags": [
+   "impact",
+   "soft",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-tin-medium-000",
+  "file": "kenney-impact-sounds-impact-tin-medium-000.wav",
+  "query": "impact tin medium",
+  "tags": [
+   "impact",
+   "tin",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-tin-medium-001",
+  "file": "kenney-impact-sounds-impact-tin-medium-001.wav",
+  "query": "impact tin medium",
+  "tags": [
+   "impact",
+   "tin",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-tin-medium-002",
+  "file": "kenney-impact-sounds-impact-tin-medium-002.wav",
+  "query": "impact tin medium",
+  "tags": [
+   "impact",
+   "tin",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-tin-medium-003",
+  "file": "kenney-impact-sounds-impact-tin-medium-003.wav",
+  "query": "impact tin medium",
+  "tags": [
+   "impact",
+   "tin",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-tin-medium-004",
+  "file": "kenney-impact-sounds-impact-tin-medium-004.wav",
+  "query": "impact tin medium",
+  "tags": [
+   "impact",
+   "tin",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-heavy-000",
+  "file": "kenney-impact-sounds-impact-wood-heavy-000.wav",
+  "query": "impact wood heavy",
+  "tags": [
+   "impact",
+   "wood",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-heavy-001",
+  "file": "kenney-impact-sounds-impact-wood-heavy-001.wav",
+  "query": "impact wood heavy",
+  "tags": [
+   "impact",
+   "wood",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-heavy-002",
+  "file": "kenney-impact-sounds-impact-wood-heavy-002.wav",
+  "query": "impact wood heavy",
+  "tags": [
+   "impact",
+   "wood",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-heavy-003",
+  "file": "kenney-impact-sounds-impact-wood-heavy-003.wav",
+  "query": "impact wood heavy",
+  "tags": [
+   "impact",
+   "wood",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-heavy-004",
+  "file": "kenney-impact-sounds-impact-wood-heavy-004.wav",
+  "query": "impact wood heavy",
+  "tags": [
+   "impact",
+   "wood",
+   "heavy"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-light-000",
+  "file": "kenney-impact-sounds-impact-wood-light-000.wav",
+  "query": "impact wood light",
+  "tags": [
+   "impact",
+   "wood",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-light-001",
+  "file": "kenney-impact-sounds-impact-wood-light-001.wav",
+  "query": "impact wood light",
+  "tags": [
+   "impact",
+   "wood",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-light-002",
+  "file": "kenney-impact-sounds-impact-wood-light-002.wav",
+  "query": "impact wood light",
+  "tags": [
+   "impact",
+   "wood",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-light-003",
+  "file": "kenney-impact-sounds-impact-wood-light-003.wav",
+  "query": "impact wood light",
+  "tags": [
+   "impact",
+   "wood",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-light-004",
+  "file": "kenney-impact-sounds-impact-wood-light-004.wav",
+  "query": "impact wood light",
+  "tags": [
+   "impact",
+   "wood",
+   "light"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-medium-000",
+  "file": "kenney-impact-sounds-impact-wood-medium-000.wav",
+  "query": "impact wood medium",
+  "tags": [
+   "impact",
+   "wood",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-medium-001",
+  "file": "kenney-impact-sounds-impact-wood-medium-001.wav",
+  "query": "impact wood medium",
+  "tags": [
+   "impact",
+   "wood",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-medium-002",
+  "file": "kenney-impact-sounds-impact-wood-medium-002.wav",
+  "query": "impact wood medium",
+  "tags": [
+   "impact",
+   "wood",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-medium-003",
+  "file": "kenney-impact-sounds-impact-wood-medium-003.wav",
+  "query": "impact wood medium",
+  "tags": [
+   "impact",
+   "wood",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-impact-sounds-impact-wood-medium-004",
+  "file": "kenney-impact-sounds-impact-wood-medium-004.wav",
+  "query": "impact wood medium",
+  "tags": [
+   "impact",
+   "wood",
+   "medium"
+  ],
+  "tags_zh": [],
+  "source": "Kenney Impact Sounds（kenney.nl，GitHub 鏡像 Boyquotes/kenney-impact-sounds-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/impact-sounds",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-belt-handle-1",
+  "file": "kenney-rpg-audio-belt-handle-1.wav",
+  "query": "belt handle",
+  "tags": [
+   "belt",
+   "handle"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-belt-handle-2",
+  "file": "kenney-rpg-audio-belt-handle-2.wav",
+  "query": "belt handle",
+  "tags": [
+   "belt",
+   "handle"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-close",
+  "file": "kenney-rpg-audio-book-close.wav",
+  "query": "book close",
+  "tags": [
+   "book",
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-flip-1",
+  "file": "kenney-rpg-audio-book-flip-1.wav",
+  "query": "book flip",
+  "tags": [
+   "book",
+   "flip"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-flip-2",
+  "file": "kenney-rpg-audio-book-flip-2.wav",
+  "query": "book flip",
+  "tags": [
+   "book",
+   "flip"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-flip-3",
+  "file": "kenney-rpg-audio-book-flip-3.wav",
+  "query": "book flip",
+  "tags": [
+   "book",
+   "flip"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-open",
+  "file": "kenney-rpg-audio-book-open.wav",
+  "query": "book open",
+  "tags": [
+   "book",
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-place-1",
+  "file": "kenney-rpg-audio-book-place-1.wav",
+  "query": "book place",
+  "tags": [
+   "book",
+   "place"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-place-2",
+  "file": "kenney-rpg-audio-book-place-2.wav",
+  "query": "book place",
+  "tags": [
+   "book",
+   "place"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-book-place-3",
+  "file": "kenney-rpg-audio-book-place-3.wav",
+  "query": "book place",
+  "tags": [
+   "book",
+   "place"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-chop",
+  "file": "kenney-rpg-audio-chop.wav",
+  "query": "chop",
+  "tags": [
+   "chop"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-1",
+  "file": "kenney-rpg-audio-cloth-1.wav",
+  "query": "cloth",
+  "tags": [
+   "cloth"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-2",
+  "file": "kenney-rpg-audio-cloth-2.wav",
+  "query": "cloth",
+  "tags": [
+   "cloth"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-3",
+  "file": "kenney-rpg-audio-cloth-3.wav",
+  "query": "cloth",
+  "tags": [
+   "cloth"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-4",
+  "file": "kenney-rpg-audio-cloth-4.wav",
+  "query": "cloth",
+  "tags": [
+   "cloth"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-belt",
+  "file": "kenney-rpg-audio-cloth-belt.wav",
+  "query": "cloth belt",
+  "tags": [
+   "cloth",
+   "belt"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-cloth-belt-2",
+  "file": "kenney-rpg-audio-cloth-belt-2.wav",
+  "query": "cloth belt",
+  "tags": [
+   "cloth",
+   "belt"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-creak-1",
+  "file": "kenney-rpg-audio-creak-1.wav",
+  "query": "creak",
+  "tags": [
+   "creak"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-creak-2",
+  "file": "kenney-rpg-audio-creak-2.wav",
+  "query": "creak",
+  "tags": [
+   "creak"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-creak-3",
+  "file": "kenney-rpg-audio-creak-3.wav",
+  "query": "creak",
+  "tags": [
+   "creak"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-close-1",
+  "file": "kenney-rpg-audio-door-close-1.wav",
+  "query": "door close",
+  "tags": [
+   "door",
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-close-2",
+  "file": "kenney-rpg-audio-door-close-2.wav",
+  "query": "door close",
+  "tags": [
+   "door",
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-close-3",
+  "file": "kenney-rpg-audio-door-close-3.wav",
+  "query": "door close",
+  "tags": [
+   "door",
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-close-4",
+  "file": "kenney-rpg-audio-door-close-4.wav",
+  "query": "door close",
+  "tags": [
+   "door",
+   "close"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-open-1",
+  "file": "kenney-rpg-audio-door-open-1.wav",
+  "query": "door open",
+  "tags": [
+   "door",
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-door-open-2",
+  "file": "kenney-rpg-audio-door-open-2.wav",
+  "query": "door open",
+  "tags": [
+   "door",
+   "open"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-draw-knife-1",
+  "file": "kenney-rpg-audio-draw-knife-1.wav",
+  "query": "draw knife",
+  "tags": [
+   "draw",
+   "knife"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-draw-knife-2",
+  "file": "kenney-rpg-audio-draw-knife-2.wav",
+  "query": "draw knife",
+  "tags": [
+   "draw",
+   "knife"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-draw-knife-3",
+  "file": "kenney-rpg-audio-draw-knife-3.wav",
+  "query": "draw knife",
+  "tags": [
+   "draw",
+   "knife"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-drop-leather",
+  "file": "kenney-rpg-audio-drop-leather.wav",
+  "query": "drop leather",
+  "tags": [
+   "drop",
+   "leather"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-0",
+  "file": "kenney-rpg-audio-footstep-0.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-1",
+  "file": "kenney-rpg-audio-footstep-1.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-2",
+  "file": "kenney-rpg-audio-footstep-2.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-3",
+  "file": "kenney-rpg-audio-footstep-3.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-4",
+  "file": "kenney-rpg-audio-footstep-4.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-5",
+  "file": "kenney-rpg-audio-footstep-5.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-6",
+  "file": "kenney-rpg-audio-footstep-6.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-7",
+  "file": "kenney-rpg-audio-footstep-7.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-8",
+  "file": "kenney-rpg-audio-footstep-8.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-footstep-9",
+  "file": "kenney-rpg-audio-footstep-9.wav",
+  "query": "footstep",
+  "tags": [
+   "footstep"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-handle-coins",
+  "file": "kenney-rpg-audio-handle-coins.wav",
+  "query": "handle coins",
+  "tags": [
+   "handle",
+   "coins"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-handle-coins-2",
+  "file": "kenney-rpg-audio-handle-coins-2.wav",
+  "query": "handle coins",
+  "tags": [
+   "handle",
+   "coins"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-handle-small-leather",
+  "file": "kenney-rpg-audio-handle-small-leather.wav",
+  "query": "handle small leather",
+  "tags": [
+   "handle",
+   "small",
+   "leather"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-handle-small-leather-2",
+  "file": "kenney-rpg-audio-handle-small-leather-2.wav",
+  "query": "handle small leather",
+  "tags": [
+   "handle",
+   "small",
+   "leather"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-knife-slice",
+  "file": "kenney-rpg-audio-knife-slice.wav",
+  "query": "knife slice",
+  "tags": [
+   "knife",
+   "slice"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-knife-slice-2",
+  "file": "kenney-rpg-audio-knife-slice-2.wav",
+  "query": "knife slice",
+  "tags": [
+   "knife",
+   "slice"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-metal-click",
+  "file": "kenney-rpg-audio-metal-click.wav",
+  "query": "metal click",
+  "tags": [
+   "metal",
+   "click"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-metal-latch",
+  "file": "kenney-rpg-audio-metal-latch.wav",
+  "query": "metal latch",
+  "tags": [
+   "metal",
+   "latch"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-metal-pot-1",
+  "file": "kenney-rpg-audio-metal-pot-1.wav",
+  "query": "metal pot",
+  "tags": [
+   "metal",
+   "pot"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-metal-pot-2",
+  "file": "kenney-rpg-audio-metal-pot-2.wav",
+  "query": "metal pot",
+  "tags": [
+   "metal",
+   "pot"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "kenney-rpg-audio-metal-pot-3",
+  "file": "kenney-rpg-audio-metal-pot-3.wav",
+  "query": "metal pot",
+  "tags": [
+   "metal",
+   "pot"
+  ],
+  "tags_zh": [],
+  "source": "Kenney RPG Audio（kenney.nl，GitHub 鏡像 Boyquotes/kenney-rpg-audio-for-godot，CC0 LICENSE）",
+  "license": "CC0（Kenney 官方明文可商用、免 attribution）",
+  "author": "Kenney",
+  "source_url": "https://kenney.nl/assets/rpg-audio",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "self-whoosh",
+  "file": "self-whoosh.wav",
+  "query": "whoosh",
+  "tags": [
+   "whoosh"
+  ],
+  "tags_zh": [],
+  "source": "自製（ffmpeg 合成，doc_sfx sfx_seed.py）",
+  "license": "自製",
+  "author": "",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "self-shutter",
+  "file": "self-shutter.wav",
+  "query": "shutter",
+  "tags": [
+   "shutter"
+  ],
+  "tags_zh": [],
+  "source": "自製（ffmpeg 合成，doc_sfx sfx_seed.py）",
+  "license": "自製",
+  "author": "",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "self-marker",
+  "file": "self-marker.wav",
+  "query": "marker",
+  "tags": [
+   "marker"
+  ],
+  "tags_zh": [],
+  "source": "自製（ffmpeg 合成，doc_sfx sfx_seed.py）",
+  "license": "自製",
+  "author": "",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "self-tear",
+  "file": "self-tear.wav",
+  "query": "tear",
+  "tags": [
+   "tear"
+  ],
+  "tags_zh": [],
+  "source": "自製（ffmpeg 合成，doc_sfx sfx_seed.py）",
+  "license": "自製",
+  "author": "",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "self-paper",
+  "file": "self-paper.wav",
+  "query": "paper",
+  "tags": [
+   "paper"
+  ],
+  "tags_zh": [],
+  "source": "自製（ffmpeg 合成，doc_sfx sfx_seed.py）",
+  "license": "自製",
+  "author": "",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-01-water",
+  "file": "ve-gen/ve-01-water.mp3",
+  "query": "Large ocean waves crashing and rushing water, no music, no voice",
+  "tags": [
+   "large",
+   "ocean",
+   "waves",
+   "crashing",
+   "and",
+   "rushing",
+   "water"
+  ],
+  "tags_zh": [
+   "海浪"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-02-water",
+  "file": "ve-gen/ve-02-water.mp3",
+  "query": "Gentle river stream flowing over rocks, no music, no voice",
+  "tags": [
+   "gentle",
+   "river",
+   "stream",
+   "flowing",
+   "over",
+   "rocks"
+  ],
+  "tags_zh": [
+   "溪流"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-04-wind",
+  "file": "ve-gen/ve-04-wind.mp3",
+  "query": "Strong desert wind howling across open sand, no music, no voice",
+  "tags": [
+   "strong",
+   "desert",
+   "wind",
+   "howling",
+   "across",
+   "open",
+   "sand"
+  ],
+  "tags_zh": [
+   "強風"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-05-wind",
+  "file": "ve-gen/ve-05-wind.mp3",
+  "query": "Soft gentle breeze through grass, no music, no voice",
+  "tags": [
+   "soft",
+   "gentle",
+   "breeze",
+   "through",
+   "grass"
+  ],
+  "tags_zh": [
+   "微風"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-06-fire",
+  "file": "ve-gen/ve-06-fire.mp3",
+  "query": "Crackling wood campfire burning, no music, no voice",
+  "tags": [
+   "crackling",
+   "wood",
+   "campfire",
+   "burning"
+  ],
+  "tags_zh": [
+   "營火"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-07-rain",
+  "file": "ve-gen/ve-07-rain.mp3",
+  "query": "Large roaring fire with flames whooshing, no music, no voice",
+  "tags": [
+   "large",
+   "roaring",
+   "fire",
+   "with",
+   "flames",
+   "whooshing"
+  ],
+  "tags_zh": [
+   "大雨"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-08-thunder",
+  "file": "ve-gen/ve-08-thunder.mp3",
+  "query": "Sharp loud thunder clap with long rumble, no music, no voice",
+  "tags": [
+   "sharp",
+   "loud",
+   "thunder",
+   "clap",
+   "with",
+   "long",
+   "rumble"
+  ],
+  "tags_zh": [
+   "雷聲"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-09-thunder",
+  "file": "ve-gen/ve-09-thunder.mp3",
+  "query": "Distant rolling thunder in a storm, no music, no voice",
+  "tags": [
+   "distant",
+   "rolling",
+   "thunder",
+   "in",
+   "a",
+   "storm"
+  ],
+  "tags_zh": [
+   "遠雷"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-11-cry",
+  "file": "ve-gen/ve-11-cry.mp3",
+  "query": "One man sobbing quietly, no music",
+  "tags": [
+   "one",
+   "man",
+   "sobbing",
+   "quietly"
+  ],
+  "tags_zh": [
+   "啜泣"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-12-quake",
+  "file": "ve-gen/ve-12-quake.mp3",
+  "query": "Deep earthquake rumble with ground shaking and rocks falling, no music, no voice",
+  "tags": [
+   "deep",
+   "earthquake",
+   "rumble",
+   "with",
+   "ground",
+   "shaking",
+   "and",
+   "rocks",
+   "falling"
+  ],
+  "tags_zh": [
+   "地震"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-13-crowd",
+  "file": "ve-gen/ve-13-crowd.mp3",
+  "query": "Large crowd murmuring outdoors in an ancient town, no music",
+  "tags": [
+   "large",
+   "crowd",
+   "murmuring",
+   "outdoors",
+   "in",
+   "an",
+   "ancient",
+   "town"
+  ],
+  "tags_zh": [
+   "群眾低語"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-15-sheep",
+  "file": "ve-gen/ve-15-sheep.mp3",
+  "query": "Flock of sheep and goats bleating in a field, no music, no voice",
+  "tags": [
+   "flock",
+   "of",
+   "sheep",
+   "and",
+   "goats",
+   "bleating",
+   "in",
+   "a",
+   "field"
+  ],
+  "tags_zh": [
+   "羊群"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-16-horse",
+  "file": "ve-gen/ve-16-horse.mp3",
+  "query": "Horses galloping with wooden chariot wheels rumbling, no music, no voice",
+  "tags": [
+   "horses",
+   "galloping",
+   "with",
+   "wooden",
+   "chariot",
+   "wheels",
+   "rumbling"
+  ],
+  "tags_zh": [
+   "馬車"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-17-horn",
+  "file": "ve-gen/ve-17-horn.mp3",
+  "query": "A single long blast of a ram's horn shofar, no music, no voice",
+  "tags": [
+   "a",
+   "single",
+   "long",
+   "blast",
+   "of",
+   "a",
+   "ram's",
+   "horn",
+   "shofar"
+  ],
+  "tags_zh": [
+   "號角"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-18-steps",
+  "file": "ve-gen/ve-18-steps.mp3",
+  "query": "Footsteps walking slowly on sand and gravel, no music, no voice",
+  "tags": [
+   "footsteps",
+   "walking",
+   "slowly",
+   "on",
+   "sand",
+   "and",
+   "gravel"
+  ],
+  "tags_zh": [
+   "腳步"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-22-scroll",
+  "file": "ve-gen/ve-22-scroll.mp3",
+  "query": "Old parchment scroll being unrolled, no music, no voice",
+  "tags": [
+   "old",
+   "parchment",
+   "scroll",
+   "being",
+   "unrolled"
+  ],
+  "tags_zh": [
+   "羊皮卷"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-24-birds",
+  "file": "ve-gen/ve-24-birds.mp3",
+  "query": "Birds chirping in the early morning, no music, no voice",
+  "tags": [
+   "birds",
+   "chirping",
+   "in",
+   "the",
+   "early",
+   "morning"
+  ],
+  "tags_zh": [
+   "鳥鳴"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-25-night",
+  "file": "ve-gen/ve-25-night.mp3",
+  "query": "Quiet night with crickets chirping, no music, no voice",
+  "tags": [
+   "quiet",
+   "night",
+   "with",
+   "crickets",
+   "chirping"
+  ],
+  "tags_zh": [
+   "蟲鳴夜"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-26-typing",
+  "file": "ve-gen/ve-26-typing.mp3",
+  "query": "Fast typing on a computer keyboard, no music, no voice",
+  "tags": [
+   "fast",
+   "typing",
+   "on",
+   "a",
+   "computer",
+   "keyboard"
+  ],
+  "tags_zh": [
+   "打字"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-27-chime",
+  "file": "ve-gen/ve-27-chime.mp3",
+  "query": "Short bright notification chime, no music, no voice",
+  "tags": [
+   "short",
+   "bright",
+   "notification",
+   "chime"
+  ],
+  "tags_zh": [
+   "通知鈴"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-28-success",
+  "file": "ve-gen/ve-28-success.mp3",
+  "query": "Short cheerful success chime, two rising notes, no voice",
+  "tags": [
+   "short",
+   "cheerful",
+   "success",
+   "chime"
+  ],
+  "tags_zh": [
+   "成功音"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-29-pop",
+  "file": "ve-gen/ve-29-pop.mp3",
+  "query": "A soft bubble pop, no music, no voice",
+  "tags": [
+   "a",
+   "soft",
+   "bubble",
+   "pop"
+  ],
+  "tags_zh": [
+   "氣泡"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-30-heart",
+  "file": "ve-gen/ve-30-heart.mp3",
+  "query": "Slow heartbeat thumping, no music, no voice",
+  "tags": [
+   "slow",
+   "heartbeat",
+   "thumping"
+  ],
+  "tags_zh": [
+   "心跳"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-31-clock",
+  "file": "ve-gen/ve-31-clock.mp3",
+  "query": "Clock ticking steadily, no music, no voice",
+  "tags": [
+   "clock",
+   "ticking",
+   "steadily"
+  ],
+  "tags_zh": [
+   "時鐘"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-32-sparkle",
+  "file": "ve-gen/ve-32-sparkle.mp3",
+  "query": "Magical shimmering sparkle, no music, no voice",
+  "tags": [
+   "magical",
+   "shimmering",
+   "sparkle"
+  ],
+  "tags_zh": [
+   "閃光"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-35-cheer",
+  "file": "ve-gen/ve-35-cheer.mp3",
+  "query": "Crowd of people rejoicing and clapping hands with happy shouts, no screaming, no music",
+  "tags": [
+   "crowd",
+   "of",
+   "people",
+   "rejoicing",
+   "and",
+   "clapping",
+   "hands",
+   "with"
+  ],
+  "tags_zh": [
+   "群眾歡呼拍手"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-36-cheer",
+  "file": "ve-gen/ve-36-cheer.mp3",
+  "query": "Festive crowd celebrating outdoors, cheerful voices and applause, no music",
+  "tags": [
+   "festive",
+   "crowd",
+   "celebrating",
+   "outdoors",
+   "cheerful",
+   "voices",
+   "and",
+   "applause"
+  ],
+  "tags_zh": [
+   "慶祝歡呼"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ },
+ {
+  "id": "ve-sfx-37-sword",
+  "file": "ve-gen/ve-37-sword.mp3",
+  "query": "Two metal swords striking each other, three sharp clangs, no music, no voice",
+  "tags": [
+   "two",
+   "metal",
+   "swords",
+   "striking",
+   "each",
+   "other",
+   "three",
+   "sharp"
+  ],
+  "tags_zh": [
+   "刀劍互擊"
+  ],
+  "source": "Generated by the project author with VideoExpress AI Sound Maker (Sound From Prompt)",
+  "license": "Released by the author with this repository (MIT)",
+  "author": "project author",
+  "source_url": "",
+  "downloaded_at": "2026-10-29"
+ }
+]

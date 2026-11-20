@@ -1,0 +1,506 @@
+{
+ "title": "七十個七次",
+ "lang": "zh",
+ "theme": "collage",
+ "speaker": "說書人",
+ "voice": {
+  "ref_wav": "refs/說書人.wav",
+  "ref_text": "refs/說書人.txt",
+  "seed": 11
+ },
+ "gaps": {
+  "default": 0.32,
+  "after": {
+   "6": 0.9,
+   "7": 1.6,
+   "13": 0.6,
+   "16": 0.6,
+   "17": 0.6
+  }
+ },
+ "lines": [
+  {
+   "text": "你已經原諒過他了，為什麼，還要再一次？"
+  },
+  {
+   "text": "吵完架的兩個人，背對著背，誰都不肯先開口。"
+  },
+  {
+   "text": "兩戶人家，一場舊怨，記恨了幾十年。"
+  },
+  {
+   "text": "螢幕上兩個程式，你打我一下，我就回你一下。"
+  },
+  {
+   "text": "彼得也問過：主啊，饒恕七次，夠嗎？"
+  },
+  {
+   "text": "耶穌說：不是七次，是七十個七次。"
+  },
+  {
+   "text": "再一次。"
+  },
+  {
+   "text": "科學家用電腦模擬過這件事：兩個程式，一回又一回地交手。"
+  },
+  {
+   "text": "最直覺的策略是以牙還牙，你怎麼對我，我就怎麼對你。"
+  },
+  {
+   "text": "可是只要一次誤會，把善意看成了惡意，"
+  },
+  {
+   "text": "報復就開始了。你回我一下，我再回你一下，從此停不下來。"
+  },
+  {
+   "text": "另一個程式不一樣，它偶爾，會多原諒一次。"
+  },
+  {
+   "text": "就是這一次，把兩個點從報復裡拉了回來。長期下來，它走得更遠。"
+  },
+  {
+   "text": "賽局只是呼應了一件事：寬容，不是天真。"
+  },
+  {
+   "text": "而聖經裡的饒恕，本來就不是算出來的。"
+  },
+  {
+   "text": "當然，前提是對方還在這段關係裡；被傷害，不等於要一直忍。"
+  },
+  {
+   "text": "所以，再一次，不是又一次的退讓，是給關係，留一次機會。"
+  },
+  {
+   "text": "如果是你，會再給他一次機會嗎？"
+  }
+ ],
+ "beats": [
+  {
+   "id": "B1",
+   "lines": [
+    1
+   ],
+   "source": "code",
+   "scene": "seed_dot",
+   "veil": [
+    true,
+    true
+   ],
+   "params": {
+    "sigh": [
+     "原諒",
+     "為什麼"
+    ],
+    "pulse": "再一次"
+   }
+  },
+  {
+   "id": "B2",
+   "lines": [
+    2
+   ],
+   "source": "ve",
+   "shot": "bench_apart"
+  },
+  {
+   "id": "B3",
+   "lines": [
+    3
+   ],
+   "source": "code",
+   "scene": "photo",
+   "veil": [
+    true,
+    true
+   ],
+   "params": {
+    "photos": [
+     {
+      "src": "assets/hatfield.jpg",
+      "rect": [
+       470,
+       90,
+       980,
+       761
+      ],
+      "rot": -1.5,
+      "cap": "哈特菲爾德與麥考伊家族世仇｜美國 1863–1891",
+      "at": 0.05,
+      "cap_at": {
+       "w": "兩戶人家",
+       "d": 0.3
+      },
+      "push": 1.06,
+      "accent_at": "幾十年"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B4",
+   "lines": [
+    4
+   ],
+   "source": "code",
+   "scene": "split_duel",
+   "veil": [
+    true,
+    true
+   ],
+   "params": {
+    "appear": "兩個程式",
+    "hits": [
+     "打我",
+     "回你"
+    ]
+   }
+  },
+  {
+   "id": "B5",
+   "lines": [
+    5,
+    6
+   ],
+   "source": "code",
+   "scene": "photo",
+   "veil": [
+    true,
+    false
+   ],
+   "params": {
+    "photos": [
+     {
+      "src": "assets/vignon.jpg",
+      "rect": [
+       400,
+       70,
+       1120,
+       797
+      ],
+      "rot": 1.5,
+      "cap": "Claude Vignon〈不饒恕人的僕人〉1629｜馬太福音 18 章",
+      "at": 0.05,
+      "cap_at": {
+       "w": "彼得",
+       "d": 0.2
+      },
+      "push": 1.07
+     }
+    ],
+    "quote": {
+     "text": "「不是到七次，乃是到七十個七次。」　— 馬太福音 18:22",
+     "at": {
+      "w": "耶穌說",
+      "d": 0.3
+     },
+     "top": 640
+    }
+   }
+  },
+  {
+   "id": "B6",
+   "lines": [
+    7
+   ],
+   "source": "code",
+   "scene": "burst_title",
+   "start": "after_prev",
+   "veil": [
+    false,
+    true
+   ],
+   "params": {
+    "word": "再一次",
+    "big": "再一次",
+    "term": "重複囚徒困境",
+    "term_sub": "The Iterated Prisoner's Dilemma"
+   }
+  },
+  {
+   "id": "B7",
+   "lines": [
+    8
+   ],
+   "source": "code",
+   "scene": "exchange",
+   "params": {
+    "mode": "coop",
+    "appear": "兩個程式",
+    "loop": "一回",
+    "photos": [
+     {
+      "src": "assets/axelrod.png",
+      "rect": [
+       640,
+       120,
+       640,
+       640
+      ],
+      "rot": -2,
+      "cap": "羅伯特・艾瑟羅德 Robert Axelrod｜政治學家",
+      "at": 0.05,
+      "cap_at": {
+       "w": "科學家",
+       "d": 0.2
+      },
+      "exit": {
+       "at": {
+        "w": "兩個程式",
+        "d": -0.6
+       },
+       "x": -590,
+       "y": -60,
+       "scale": 0.5
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "B8",
+   "lines": [
+    9
+   ],
+   "source": "code",
+   "scene": "exchange",
+   "params": {
+    "mode": "mirror",
+    "a": "你怎麼對我",
+    "b": "我就怎麼對你",
+    "label": {
+     "text": "以牙還牙",
+     "sub": "Tit for Tat",
+     "at": "以牙還牙"
+    },
+    "photos": [
+     {
+      "src": "assets/rapoport.jpg",
+      "rect": [
+       130,
+       130,
+       300,
+       390
+      ],
+      "rot": 3,
+      "cap": "阿納托爾・拉波波特｜以牙還牙程式作者",
+      "at": {
+       "w": "以牙還牙",
+       "d": -0.25
+      },
+      "cap_at": {
+       "w": "以牙還牙",
+       "d": 0.3
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "B9",
+   "lines": [
+    10,
+    11
+   ],
+   "source": "code",
+   "scene": "exchange",
+   "params": {
+    "mode": "spiral",
+    "good": "善意",
+    "bad": "惡意",
+    "revenge": "報復",
+    "loop": "你回我"
+   }
+  },
+  {
+   "id": "B10",
+   "lines": [
+    12
+   ],
+   "source": "code",
+   "scene": "exchange",
+   "params": {
+    "mode": "forgive",
+    "other": "另一個程式",
+    "attack": "偶爾",
+    "forgive": "多原諒一次"
+   }
+  },
+  {
+   "id": "B11",
+   "lines": [
+    13
+   ],
+   "source": "code",
+   "scene": "exchange",
+   "veil": [
+    false,
+    true
+   ],
+   "params": {
+    "mode": "reconcile",
+    "start": "這一次",
+    "pull": "拉了回來",
+    "far": "走得更遠",
+    "photos": [
+     {
+      "src": "assets/nowak.jpg",
+      "rect": [
+       110,
+       110,
+       300,
+       300
+      ],
+      "rot": -3,
+      "cap": null,
+      "at": {
+       "w": "長期下來",
+       "d": -0.2
+      }
+     },
+     {
+      "src": "assets/sigmund.jpg",
+      "rect": [
+       430,
+       125,
+       230,
+       328
+      ],
+      "rot": 2,
+      "cap": "諾瓦克與西格蒙德｜1992《Nature》寬容版以牙還牙",
+      "at": "長期下來",
+      "cap_at": {
+       "w": "長期下來",
+       "d": 0.4
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "B12",
+   "lines": [
+    14,
+    15
+   ],
+   "source": "ve",
+   "shot": "hill_path"
+  },
+  {
+   "id": "B13",
+   "lines": [
+    16
+   ],
+   "source": "ve",
+   "shot": "kitchen_table"
+  },
+  {
+   "id": "B14",
+   "lines": [
+    17
+   ],
+   "source": "ve",
+   "shot": "bench_turn"
+  },
+  {
+   "id": "B15",
+   "lines": [
+    18
+   ],
+   "source": "code",
+   "scene": "object_draw",
+   "veil": [
+    true,
+    true
+   ],
+   "params": {
+    "preset": "chair"
+   }
+  }
+ ],
+ "shots": {
+  "bench_apart": {
+   "t2i": [
+    "A wide, distant view of a long empty park bench running horizontally across the lower third of the frame. On the left end sits a woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail, seen in side profile facing the left edge of the frame; on the right end sits a broad-shouldered man in his forties in a dark navy jacket with short cropped hair, seen in side profile facing the right edge, so they sit back to back with the long empty middle of the bench between them. Both are seen from a distance, faces turned away.",
+    "A bare tree branch reaches in from the upper right corner; a plain path and flat grass fill the ground. The upper half of the frame is open, quiet space."
+   ],
+   "scene": "Two people sit back to back at the two ends of a long park bench, with empty space between them",
+   "ident": "Preserve a woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail on the left end and a broad-shouldered man in his forties in a dark navy jacket with short cropped hair on the right end, both facing away from each other, the bench, the tree branch and the empty middle of the frame",
+   "acts": [
+    [
+     0.0,
+     0.5,
+     "Both stay seated and still, backs to each other."
+    ],
+    [
+     0.5,
+     1.0,
+     "Each lowers the head slightly, a small heavy movement; a few dry leaves drift down between them."
+    ]
+   ],
+   "camera": "Static wide shot, locked-off, no camera movement."
+  },
+  "hill_path": {
+   "t2i": [
+    "A vast hillside landscape. A narrow winding path starts in the lower left foreground and climbs toward the upper right between layered hills, disappearing into soft haze. Far along the path, two small figures walk side by side toward the upper right.",
+    "Layered hills fill the middle distance; the upper third of the frame is wide open sky with one thin drifting cloud."
+   ],
+   "scene": "A winding hill path climbing toward the upper right, two small figures walking side by side into the haze",
+   "ident": "Preserve the path, the layered hills, the two small figures walking together and the open sky",
+   "acts": [
+    [
+     0.0,
+     0.5,
+     "The two figures walk slowly together along the path toward the upper right; the thin cloud drifts."
+    ],
+    [
+     0.5,
+     1.0,
+     "They keep walking side by side and grow smaller in the haze."
+    ]
+   ],
+   "camera": "Static wide shot, locked-off, no camera movement."
+  },
+  "kitchen_table": {
+   "t2i": [
+    "A medium-wide view of a small kitchen table by a window. A woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail sits on the left side of the table and a broad-shouldered man in his forties in a dark navy jacket with short cropped hair sits on the right side, facing each other across it, seen in side view, faces turned slightly down. On the table are two plain mugs of tea; thin steam rises from the mug on the left.",
+    "Behind them a plain wall and a window with soft daylight. The upper third of the frame is quiet empty wall."
+   ],
+   "scene": "Two people sit facing each other across a small kitchen table, steam rising from one mug",
+   "ident": "Preserve a woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail on the left and a broad-shouldered man in his forties in a dark navy jacket with short cropped hair on the right, the table, both mugs and the window",
+   "acts": [
+    [
+     0.0,
+     0.6,
+     "Thin steam rises slowly from the left mug and curls upward. Both stay seated and still."
+    ],
+    [
+     0.6,
+     1.0,
+     "The man lowers his head slightly; neither stands up or leaves."
+    ]
+   ],
+   "camera": "Static medium-wide shot, locked-off, no camera movement."
+  },
+  "bench_turn": {
+   "t2i": [
+    "A wide, distant view of the same long park bench running horizontally across the lower third of the frame. On the left end sits a woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail, now turned toward the right, facing the other end of the bench; on the right end sits a broad-shouldered man in his forties in a dark navy jacket with short cropped hair, still seen in side profile facing the right edge. Both are seen from a distance.",
+    "Between them the long empty middle of the bench. A bare tree branch reaches in from the upper right corner; a plain path and flat grass fill the ground."
+   ],
+   "scene": "The same park bench; the woman has turned toward the man, who still faces away",
+   "ident": "Preserve a woman in her thirties in a light grey knit sweater with dark hair tied in a low ponytail on the left end, a broad-shouldered man in his forties in a dark navy jacket with short cropped hair on the right end, the bench and the tree branch",
+   "acts": [
+    [
+     0.0,
+     0.5,
+     "The man slowly turns his head a little toward the woman."
+    ],
+    [
+     0.5,
+     1.0,
+     "He shifts his shoulders slightly toward her; both stay seated on the bench."
+    ]
+   ],
+   "camera": "Static wide shot, locked-off, no camera movement."
+  }
+ }
+}

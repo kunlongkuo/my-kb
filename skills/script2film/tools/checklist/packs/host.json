@@ -1,0 +1,21 @@
+{
+ "_readme": "Questions for series with host videos. Asked only when the series writes \"checklist\": {\"packs\": [\"host\"]} in series.json.",
+ "rules": [
+  {
+   "id": "host-look",
+   "stage": [
+    "start"
+   ],
+   "ask": "Which image is this episode's final host image? Do the framing, gestures and expression follow the series rules? Has it been uploaded to the service that makes the host videos?",
+   "source": "tools/checklist/packs/host.json"
+  },
+  {
+   "id": "heard-before-host",
+   "stage": [
+    "release"
+   ],
+   "ask": "After timing and before sending to the host service, have you listened to every word whose pronunciation you changed yourself?",
+   "source": "tools/checklist/packs/host.json"
+  }
+ ]
+}

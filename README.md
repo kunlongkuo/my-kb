@@ -48,6 +48,7 @@
 | Anti-Gravity 工作流 | 「開工 / 收工 / 初始化專案」AI 自動化 SOP（整合 `handoff.md` 跨電腦交接） |
 | 規則檔自動同步 | `sync_rules.py` 支援 OS 硬連結 (Hard Link) 偵測之規則同步工具 |
 | 影片製作工作流 | `skills/video-production-workflow` 規範活動紀錄、教學與科普影片前期策略與分鏡 SOP |
+| Script2Film 解說片系統 | `skills/script2film` 從想法到成片：27 種程式動態場景、逐字對時、-14 LUFS 剪輯、機器審片與 VE/Flow 擴充 |
 | 影片自動執行 | `skills/video-autopilot` 整合 Editkin v4 唯一剪輯合約、機械閘門與 CapCut/ffmpeg 落地 |
 | AI 語音精剪 | `skills/video-use` 對話驅動之 AI 自動逐字稿與口播贅詞/死空間精剪 |
 | 原理解說動畫 | `skills/motion-explainer` 系列（HyperFrames 動畫、授權照片證據卡、H3 AI 影片、品味規範與審查） |

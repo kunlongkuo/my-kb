@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which tool each stage uses | Script2Film</title>
+  <meta name="description"
+    content="The default tool for each stage of Script2Film, where it runs, what it costs and what can replace it: Qwen3-TTS, whisper.cpp, HyperFrames, VideoExpress, TalkingPhotos, MiniMax H3, MiniMax Music 3, Google Flow, Flow Music, Concat, YouTube.">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/en/tools.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/tools.html">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/tools.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="Which tool each stage uses | Script2Film">
+  <meta property="og:description" content="The default tool for each stage of Script2Film, where it runs, what it costs and what can replace it: Qwen3-TTS, whisper.cpp, HyperFrames, VideoExpress, TalkingPhotos, MiniMax H3, MiniMax Music 3, Google Flow, Flow Music, Concat, YouTube.">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/en/tools.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Script2Film name beside two frames from films: a dinosaur chasing explorers, and a host with English subtitles">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="../site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="index.html#different">What's different</a>
+        <a href="index.html#features">Features</a>
+        <a href="gallery.html">Scenes &amp; palettes</a>
+        <a href="tools.html" class="keep">Tools</a>
+        <a href="studio.html">Prompt Studio</a>
+        <a href="index.html#works">Films</a>
+        <a href="index.html#flow">How it works</a>
+        <a href="index.html#start">Start</a>
+      </div>
+      <a class="lang" href="../tools.html" hreflang="zh-Hant" lang="zh-Hant">中文</a>
+    </div>
+  </nav>
+
+  <header class="hero page-hero">
+    <div class="wrap one">
+      <div>
+        <div class="eyebrow">Tools</div>
+        <h1>One default tool for each stage</h1>
+        <p class="lead wide">Script2Film does not synthesize voices, generate video or edit by itself. It splits a film into stages, connects an existing tool to each, and passes work between stages only as files in a folder. That is why any stage can be swapped for the tool you prefer.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">Core flow</div>
+      <h2>All of these run on your computer, free</h2>
+      <p class="intro">The first example uses only this part. You install the models and packages yourself; the install check tells you what is missing.</p>
+      <div class="tools">
+        <div class="tool">
+          <div class="stage">Narration</div>
+          <h3>Qwen3-TTS</h3>
+          <p>Local speech synthesis. About ten seconds of reference audio is enough to match your voice, or you can design a synthetic voice from a text description.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free, open source (Apache-2.0)</dd>
+            <dt>Swap for</dt>
+            <dd>Any other voice tool, such as <a href="https://paykstrt.com/56038/180754" target="_blank" rel="noopener sponsored">CloneVoice.ai</a></dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Timing and subtitles</div>
+          <h3>whisper.cpp</h3>
+          <p>Transcribes the finished narration back to text and measures when every word is spoken. Take picking, subtitles and the timing of visuals all depend on it.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free, open source</dd>
+            <dt>Swap for</dt>
+            <dd>Groq or ElevenLabs Scribe (cloud, needs a key, and the narration audio is sent out)</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Code-drawn visuals</div>
+          <h3>HyperFrames + GSAP</h3>
+          <p>Each of the 27 scenes is a web animation that HyperFrames captures frame by frame into video. The scene code is in this project.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free (HyperFrames is Apache-2.0; GSAP has its own no-charge license)</dd>
+            <dt>Swap for</dt>
+            <dd>Scenes you write yourself with AI</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Assembly and check</div>
+          <h3>HyperFrames + ffmpeg</h3>
+          <p>Joins narration, visuals and subtitles into one film. Every exported film is measured for length, black frames, loudness and whether the sound effects made it into the mix; explainers also get the check sheet.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free, open source</dd>
+            <dt>Swap for</dt>
+            <dd>Works well with <a href="https://concat.standalones.org/" target="_blank" rel="noopener">Concat</a>, which is free and open source</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Music and sound effects</div>
+          <h3>Composed music + CC0 sound effects</h3>
+          <p>Background music is written by the project's composer program from the on-screen events and rendered offline with a SoundFont. Sound effects are Kenney's CC0 assets and some made in-house.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free; you download the SoundFont yourself</dd>
+            <dt>Swap for</dt>
+            <dd>Your own music (credit CC BY tracks), or a song made with MiniMax Music 3 or Google Flow Music below</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Fonts</div>
+          <h3>Noto Sans TC, Noto Serif TC</h3>
+          <p>The fonts used for visuals and subtitles. The license text ships next to the font files. Two optional fonts, LXGW WenKai and jf open-huninn, are listed with their original download links.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>The asset layer that ships with the project</dd>
+            <dt>Cost</dt>
+            <dd>Free (SIL OFL 1.1)</dd>
+            <dt>Swap for</dt>
+            <dd>Any font you have a license for</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">Optional</div>
+      <h2>For live footage, a host, generated video of any kind, or a song, consider these options</h2>
+      <p class="intro">All of them are optional: you can make a film without them. When you connect one, the tool works inside <strong>the account you logged in to yourself</strong>: submit, wait, collect, check. The agent asks before spending credits or compute units, and you type your own account name and password.</p>
+      <div class="tools two">
+        <div class="tool feature">
+          <div class="stage">Generated shots</div>
+          <h3>VideoExpress</h3>
+          <p>Video from text or images. Script2Film works out how long each shot must be, writes the prompts, lays them out as a run sheet, submits and collects them, then measures the clips and checks for bad first and last frames. The project also includes a full set of prompt-writing rules and storyboard tools for VideoExpress.
+          </p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>VideoExpress's service</dd>
+            <dt>Cost</dt>
+            <dd>A one-time-purchase AI video platform with no further fees; output can be used commercially.</dd>
+            <dt>Swap for</dt>
+            <dd>Any video generator (Seedance, Kling and so on): generate to the run sheet's durations and prompts, then put the files back in the folder under the expected names</dd>
+          </dl>
+          <a class="btn" href="https://paykstrt.com/50942/180754" target="_blank" rel="noopener sponsored">About VideoExpress (lifetime plan, about US$143)</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">Host</div>
+          <h3>TalkingPhotos</h3>
+          <p>One portrait plus text or audio makes a lip-synced host. Script2Film cuts the narration into segments, uploads the look image, submits each segment, collects the results and places them back on the timeline as a circle, a side frame or full frame.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>TalkingPhotos's service</dd>
+            <dt>Cost</dt>
+            <dd>A one-time-purchase AI presenter video platform with no further fees; output can be used commercially.</dd>
+            <dt>Swap for</dt>
+            <dd>Any lip-sync tool: feed it each audio segment and put the results back under the same file names</dd>
+          </dl>
+          <a class="btn" href="https://paykstrt.com/52357/180754" target="_blank" rel="noopener sponsored">About TalkingPhotos (lifetime plan, about US$78)</a>
+        </div>
+      </div>
+      <div class="tools two colab">
+        <div class="tool feature">
+          <div class="stage">Generated shots and host</div>
+          <h3>MiniMax H3 (needs a Google Colab account)</h3>
+          <p>An open-weight video model that generates on the Colab GPU of your own Google account. The narration recording drives the host, so the lips follow it, and the prompt can make the person gesture, walk while talking, or film a handheld selfie vlog. It can also generate shots and extend them. Script2Film cuts the narration into parts of 15 s or less, writes the host prompts, checks which country the machine is in before booting, and puts the results back on the timeline.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>The Colab GPU of your own Google account; your computer needs no graphics card</dd>
+            <dt>Cost</dt>
+            <dd>Needs Google AI Pro (it includes Colab compute units). Measured on an L4: a 12 s host part takes about 4 minutes; a dozen test clips used about 2 units</dd>
+            <dt>License</dt>
+            <dd>The open-weight license does not cover the United States, the European Union, the United Kingdom or South Korea; it cannot be used there</dd>
+            <dt>Swap for</dt>
+            <dd>VideoExpress or TalkingPhotos above, or any tool whose results can be put back under the expected file names</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/tools/h3/README.md" target="_blank"
+            rel="noopener">How to connect MiniMax H3</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">Music and songs</div>
+          <h3>MiniMax Music 3 (needs a Google Colab account)</h3>
+          <p>An open-weight music model. Give it lyrics and a description of the style, and it makes a song with vocals or an instrumental; it can sing in Taiwanese Hokkien and Mandarin. Script2Film writes the job, boots the GPU, generates, downloads and releases the machine, then sets the WAV as the film's background music; you can also paste the code into a Colab notebook yourself.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>The Colab GPU of your own Google account; your computer needs no graphics card</dd>
+            <dt>Cost</dt>
+            <dd>Needs Google AI Pro (it includes Colab compute units). Measured on an L4: a 60 s song takes about 5 minutes; booting and one song use about 0.3 to 0.5 units</dd>
+            <dt>License</dt>
+            <dd>No territory limits; the lyrics must be your own, and published work must be labelled as AI-generated</dd>
+            <dt>Swap for</dt>
+            <dd>The program-composed music above, or any music you have a license for</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/tools/music3/README.md" target="_blank"
+            rel="noopener">How to use MiniMax Music 3</a>
+        </div>
+      </div>
+      <div class="tools two colab">
+        <div class="tool feature">
+          <div class="stage">Generated shots</div>
+          <h3>Google Flow (needs a Google AI plan)</h3>
+          <p>Google's video studio, with Omni 1.2 Flash and Veo. A reference image keeps faces and clothes; one continuous action with one camera path flows best, and selfie walk-and-talk vlogs and bullet time work, while large, sweeping martial-arts fights do not yet. Flow has no usable API and Google refuses sign-in in browsers launched by automation tools, so the agent works in your own signed-in Chrome, then files each download with its model, settings and prompt, plus a frame sheet to look at first.</p>
+          <dl>
+            <dt>Where it runs</dt>
+            <dd>Google's service, through your own Chrome</dd>
+            <dt>Cost</dt>
+            <dd>Credits from a Google AI Plus, Pro or Ultra plan; the price shows before you send. Measured: 360p, 10 s, two outputs for 20 credits; jobs refused by policy are refunded</dd>
+            <dt>Licence</dt>
+            <dd>Google does not claim ownership of the output, which carries an invisible SynthID watermark; label a published film as AI-generated</dd>
+            <dt>Can be replaced by</dt>
+            <dd>VideoExpress or MiniMax H3 above, or any tool whose files you can put back under the expected names</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/skills/google-flow/SKILL.md" target="_blank"
+            rel="noopener">How to use Google Flow</a>
+        </div>
+        <div class="tool feature">
+          <div class="stage">Music and songs</div>
+          <h3>Google Flow Music (needs a Google AI plan)</h3>
+          <p>Google's music studio (Lyria models). Paste lyrics and a style line and a full song comes back in under a minute, downloadable as WAV or stems. It also runs in your signed-in Chrome, and the ingest script sets it as the film's music with its credit in one step.</p>
+          <dl>
+            <dt>Where it runs</dt>
+            <dd>Google's service, through your own Chrome</dd>
+            <dt>Cost</dt>
+            <dd>Google AI Pro includes Flow Music's Plus plan, with credits separate from Flow video</dd>
+            <dt>Licence</dt>
+            <dd>The lyrics must be yours; Google does not claim ownership, but the terms do not say plainly whether commercial use and YouTube monetisation are allowed, so check the current terms before selling or distributing a song</dd>
+            <dt>Can be replaced by</dt>
+            <dd>The composed music or MiniMax Music 3 above, or any licensed music</dd>
+          </dl>
+          <a class="btn" href="https://github.com/notoriouslab/script2film/blob/main/skills/google-flow/references/flow-music.md" target="_blank"
+            rel="noopener">How to use Flow Music</a>
+        </div>
+      </div>
+      <p class="disclose">Disclosure: the VideoExpress and TalkingPhotos buttons, and the CloneVoice.ai link in the narration card above, are referral links. The author uses VideoExpress and TalkingPhotos every week. If you buy through a link the author receives a small commission, and the price you pay is the same (prices as of November 2026). The core flow works fully without either.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">Optional</div>
+      <h2>Want to write better storyboards and prompts</h2>
+      <p class="intro">If you want to get better at writing for video, try writing by hand with this small tool that comes with the project.</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">Writing and prompts</div>
+          <h3>Prompt Studio</h3>
+          <p>Helps you expand an idea into a storyboard and prompts, for practice or to compare with a storyboard an agent wrote. Its patterns are tuned for VideoExpress. How to split shots, describe characters and write dialogue is worth a look with other AI video tools, but none of it has been tested on any other platform.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your browser (a single HTML file)</dd>
+            <dt>Cost</dt>
+            <dd>Free, included with the project (MIT)</dd>
+            <dt>Swap for</dt>
+            <dd>Letting the agent write the storyboard (a separate rule set)</dd>
+          </dl>
+          <a class="btn ghost" href="studio.html">About Prompt Studio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">Optional</div>
+      <h2>An editor, and publishing</h2>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">Overlays, still editable</div>
+          <h3><a href="https://concat.standalones.org/" target="_blank" rel="noopener">Concat</a></h3>
+          <p>A free, open-source video editor. Script2Film writes an edit plan and sends it straight into Concat: the host frame, keywords, chapter labels and music are all on the timeline, and you can keep adjusting.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Your computer</dd>
+            <dt>Cost</dt>
+            <dd>Free, open source, and scriptable over MCP</dd>
+            <dt>Swap for</dt>
+            <dd>You get a finished film without it</dd>
+          </dl>
+        </div>
+        <div class="tool">
+          <div class="stage">Publishing</div>
+          <h3>YouTube API</h3>
+          <p>Upload, scheduling, thumbnail, description and the altered-content label. You complete the authorization yourself in the browser, and whether to upload and when to publish is entirely up to you.</p>
+          <dl>
+            <dt>Runs on</dt>
+            <dd>Google's service</dd>
+            <dt>Cost</dt>
+            <dd>Free (needs your own Google Cloud project)</dd>
+            <dt>Swap for</dt>
+            <dd>Uploading by hand</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="flow-note">What each stage reads and writes, and how to name files when you use another platform, is in the <a
+          href="https://github.com/notoriouslab/script2film/blob/main/docs/FLOW.md" class="gh-doc"
+          data-path="docs/FLOW.md" target="_blank" rel="noopener">flow document</a>. The license of every package and asset is listed in the <a
+          href="https://github.com/notoriouslab/script2film/blob/main/NOTICE.md" class="gh-doc" data-path="NOTICE.md"
+          target="_blank" rel="noopener">notice file</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film · MIT License</span>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Scenes &amp; palettes</a>
+      <a href="studio.html">Prompt Studio</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="../tools.html" hreflang="zh-Hant" lang="zh-Hant">中文</a>
+    </div>
+  </footer>
+
+  <script src="../site/site.js"></script>
+</body>
+
+</html>

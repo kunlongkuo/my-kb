@@ -1,0 +1,17 @@
+{
+ "_readme": "Rules a machine cannot check: each episode has to answer them in one sentence (checklist.py answer). stage: where the answer must exist. format: doc or book; left out means both. source: where the rule is written, a path in this repository. when_file: a path inside the episode folder; the question is asked only when that file exists.",
+ "rules": [
+  {"id": "named-place", "stage": ["start", "release"], "format": "doc",
+   "ask": "Which beats use generated pictures? Do any of them carry a place name, or come while the narration is talking about a real place?",
+   "source": "skills/ve-director/doc/formats/vox-host/FORMAT.md:133"},
+  {"id": "inventory-read", "stage": ["start"], "format": "doc",
+   "ask": "What are the three inventory numbers (longest run of plain cards, most time on one background video, the shares)? Are any over the series targets, and if so, why?",
+   "source": "skills/ve-director/doc/formats/vox-host/FORMAT.md:190"},
+  {"id": "listen-names", "stage": ["release"],
+   "ask": "Have you listened to this episode's proper names, book names and unit names? Did you add the mispronounced words you newly heard to the pronunciation table? Should any of this episode's own pronunciation changes move up into the table?",
+   "source": "tools/tts/README.md (pronunciation table)"},
+  {"id": "h3-territory", "stage": ["start"], "when_file": "h3/manifest.json",
+   "ask": "This episode uses MiniMax H3, whose open-weight licence does not cover the United States, the European Union, the United Kingdom or South Korea. Where are you, and where will this film be used? (h3_film.py also checks the country of the Colab machine before generating.)",
+   "source": "tools/h3/README.md"}
+ ]
+}

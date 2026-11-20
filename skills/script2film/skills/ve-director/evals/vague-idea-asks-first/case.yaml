@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: vague-idea-asks-first
+expected_outcome: |
+  The response asks for the missing fields (at least duration and art style) in a single numbered message and stops without producing a shot plan or storyboard.

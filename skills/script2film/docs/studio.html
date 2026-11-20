@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Studio：單檔的分鏡提示詞工具｜Script2Film</title>
+  <meta name="description"
+    content="Prompt Studio 是一個 HTML 檔，瀏覽器打開就能用：選好組合、填一段點子，產出可以貼進 VideoExpress 的分鏡或單鏡頭提示詞。不用安裝，不用帳號。">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/studio.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/studio.html">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/studio.html">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/studio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="Prompt Studio：單檔的分鏡提示詞工具｜Script2Film">
+  <meta property="og:description" content="Prompt Studio 是一個 HTML 檔，瀏覽器打開就能用：選好組合、填一段點子，產出可以貼進 VideoExpress 的分鏡或單鏡頭提示詞。不用安裝，不用帳號。">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/studio.html">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og-zh.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Script2Film 字樣與「給 AI agent 用的影片與解說片工具組」，旁邊是兩格每日得力一分鐘的成片畫面">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="index.html#different">有什麼不同</a>
+        <a href="index.html#features">能做什麼</a>
+        <a href="gallery.html">場景與色版</a>
+        <a href="tools.html">工具</a>
+        <a href="studio.html" class="keep">Prompt Studio</a>
+        <a href="index.html#works">作品</a>
+        <a href="index.html#flow">怎麼做出來</a>
+        <a href="index.html#start">開始</a>
+      </div>
+      <a class="lang" href="en/studio.html" hreflang="en" lang="en">English</a>
+    </div>
+  </nav>
+
+  <header class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Prompt Studio</div>
+        <h1>不用 agent，也能先把點子變成分鏡</h1>
+        <p class="lead">Prompt Studio 就是一個 HTML 檔，用瀏覽器打開就能用，不用安裝，也不用註冊帳號。選好片型、填一段點子，它幫你把點子展開成可以貼進 VideoExpress 的分鏡或單鏡頭提示詞。設定只記在你自己的瀏覽器裡。</p>
+        <div class="cta">
+          <a class="btn primary" href="studio/app.html" target="_blank" rel="noopener">在瀏覽器打開</a>
+          <a class="btn ghost gh-doc" href="https://github.com/notoriouslab/script2film/blob/main/tools/prompt-studio/prompt-studio.html"
+            data-path="tools/prompt-studio/prompt-studio.html" target="_blank" rel="noopener">下載 HTML 檔</a>
+        </div>
+        <p class="hero-note">介面預設是英文，右上角的 CN 按鈕可以切成中文。下載會先開 GitHub 上的檔案頁，按右上角的下載鍵存到自己的電腦，之後點兩下就能開。</p>
+      </div>
+      <div>
+        <div class="hero-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="site/studio-hero-poster.jpg"
+            aria-label="用 Prompt Studio 寫提示詞做出來的短片 Dino park 的片段">
+            <source src="site/studio-hero.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-under">
+          <a class="play" id="play-full" href="https://www.youtube.com/watch?v=fKrBTTZsiMM" data-yt="fKrBTTZsiMM"
+            data-title="Dino park" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 2.5v11a.5.5 0 0 0 .77.42l8.5-5.5a.5.5 0 0 0 0-.84l-8.5-5.5A.5.5 0 0 0 4 2.5Z" />
+            </svg>
+            看完整影片（有聲音，1 分 26 秒）</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">它做什麼</div>
+      <h2>選好組合、填點子，剩下交給聊天機器人展開</h2>
+      <p class="intro">這是這個專案最早的樣子。它不自己生成影片，只負責把提示詞寫對，寫好的提示詞再貼進 VideoExpress。</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">選組合</div>
+          <h3>選好片型，它組出一份寫作指引</h3>
+          <p>先選模式：整支片的分鏡、單一鏡頭，或首尾幀轉場。再選片長、畫面比例、媒體類型（真人、插畫、各種動畫風格）、題材和基調。頁面會即時組出一份給 AI 聊天機器人看的提示，告訴它這支片要怎麼寫，你再給它一段點子就好。</p>
+        </div>
+        <div class="tool">
+          <div class="stage">展開</div>
+          <h3>三種展開方式，挑順手的</h3>
+          <p><strong>複製貼上</strong>：按 ChatGPT 或 Gemini 鈕，提示會自動複製並開啟聊天頁，貼上之後再說你的點子，什麼都不用設定。</p>
+          <p><strong>自備免費金鑰</strong>：在「AI 展開」選 Gemini API，貼上從 Google AI Studio 免費申請的金鑰（相容 OpenAI 格式的服務也可以），填點子按一下就產生分鏡，結果直接排成表格，還能寫意見請它改。</p>
+          <p><strong>本機 Ollama</strong>：全程在自己的電腦上跑。這條路要從專案資料夾用附的啟動檔打開（macOS 點 <code>PromptStudio.command</code>，Windows 點 <code>PromptStudio.bat</code>）；線上版或直接點開檔案，預設連不到 Ollama。</p>
+        </div>
+        <div class="tool">
+          <div class="stage">為 VideoExpress 校準</div>
+          <h3>寫法都在 VideoExpress 上實際跑過</h3>
+          <p>角色用外觀來叫，例如「Actor 1，五十歲、穿深藍西裝的主持人」，每個鏡頭都重講一次，換鏡頭比較不會變成另一個人。中文台詞寫成「角色說了這句話」，會交給配音，不會變成畫面上亂跑的字。這些原則用別的 AI 影片工具時也能參考，但沒有在別家實測過。</p>
+        </div>
+        <div class="tool">
+          <div class="stage">本地優先</div>
+          <h3>一個檔案，沒有伺服器</h3>
+          <p>沒有帳號，沒有追蹤。瀏覽器只記住介面語言、AI 展開的選擇和你自己填的金鑰；產出的提示不會存起來，要留就複製，或下載成 <code>.md</code> 檔。用 AI 展開的時候，你的點子會直接送到你選的那個服務。</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-text">
+          <div class="feat-num">畫面</div>
+          <h3>選項在上面，提示在下面</h3>
+          <p>上排選組合，下面是即時組出的提示，右邊是這個模式的說明。「AI 展開」在提示的下方。</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="site/studio-app.png" width="1440" height="900" loading="lazy"
+              alt="Prompt Studio 的畫面：上排選模式、片長、比例、媒體類型、題材與基調，下面是即時組出的提示"></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="kicker">作品</div>
+      <h2>用它寫提示詞做出來的片</h2>
+      <p class="intro">這幾支是作者早期用 Prompt Studio 寫提示詞、在 VideoExpress 生成的。點了到 YouTube 看。</p>
+      <div class="works three">
+        <a class="work" href="https://www.youtube.com/watch?v=fKrBTTZsiMM" target="_blank" rel="noopener">
+          <img src="site/studio-work-1.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">AI 短片・冒險</span><b>Dino park</b><small>1 分 26 秒・Jacob Mei</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=UfWb6C3dOAM" target="_blank" rel="noopener">
+          <img src="site/studio-work-2.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">AI 短片・英文</span><b>Blue Collar Hero Heavy Duty</b><small>2 分 15 秒・Jacob Mei</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=FjaXYLEwLHI" target="_blank" rel="noopener">
+          <img src="site/studio-work-3.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">動畫・英文</span><b>馬偕博士動畫</b><small>1 分 3 秒・Jacob Mei</small></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">和 Script2Film 的關係</div>
+      <h2>兩條路，各走各的</h2>
+      <p class="intro">兩個都在這個專案裡，也都拿來替 VideoExpress 寫提示詞，但用法不一樣。</p>
+      <div class="tools two">
+        <div class="tool">
+          <div class="stage">自己動手</div>
+          <h3>Prompt Studio</h3>
+          <p>給人手動用的。自己挑選項，把結果貼到聊天機器人，再把產出的提示詞一格一格貼進 VideoExpress。適合只要一兩個鏡頭，或想先打一份分鏡草稿看看。</p>
+        </div>
+        <div class="tool">
+          <div class="stage">交給 agent</div>
+          <h3>Script2Film</h3>
+          <p>交給 AI agent 跑完整流程。agent 讀的是專案裡另一套寫給 agent 看的 VideoExpress 規則與分鏡工具（<code>skills/ve-director/</code>），還會多做幾件事：算好每個鏡頭要幾秒、用程式檢查提示詞、自動送出再收回。</p>
+        </div>
+      </div>
+      <p class="flow-note">兩套規則各自維護，都在 VideoExpress 上實際測過。Prompt Studio 打好的分鏡草稿，可以當成交給 agent 的起點，或寫劇本時的參考；不過 agent 不會自己去讀它，要用的話把內容貼給它。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film・MIT 授權</span>
+      <a href="index.html">首頁</a>
+      <a href="gallery.html">場景與色版</a>
+      <a href="tools.html">工具</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="en/studio.html" hreflang="en" lang="en">English</a>
+    </div>
+  </footer>
+
+  <script src="site/site.js"></script>
+</body>
+
+</html>

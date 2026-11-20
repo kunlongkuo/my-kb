@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="__LANG__"><head><meta charset="UTF-8"><title>__ID__</title>
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Noto Serif TC"; src: url("fonts/NotoSerifTC-Variable.ttf") format("truetype"); font-weight: 200 900; }
+  @font-face { font-family: "Noto Sans TC"; src: url("fonts/NotoSansTC-Variable.ttf") format("truetype"); font-weight: 100 900; }
+  :root { __VARS__ }
+  * { box-sizing: border-box; } body { margin: 0; background: #000; overflow: hidden; }
+  #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: var(--font-big), serif; color: var(--fg); }
+  .full { position: absolute; inset: 0; }
+  .paper { __PAPER__ z-index: 0; }
+  #fibre { z-index: 1; }
+  #stage { z-index: 5; transform-origin: 50% 46%; }
+  #drift { z-index: 5; transform-origin: 50% 50%; }   /* wraps #content: drift() pushes it, #content keeps the side layout's transform */
+  #photos { z-index: 12; }
+  .phwrap { position: absolute; }
+  .ph { position: absolute; inset: 0; overflow: hidden; }
+  .ph .inner { position: absolute; inset: 0; background-size: cover; background-position: center; transform-origin: 50% 50%; }
+  .vignette { z-index: 30; background: radial-gradient(ellipse at 50% 48%, __VIGNETTE__); }
+  .dim { z-index: 40; background: __DIM__; opacity: 0; }
+  .flash { z-index: 41; background: __FLASH__; opacity: 0; }
+  .veil { z-index: 50; background: var(--bg); opacity: 0; }
+  .txt { position: absolute; left: 0; width: 1920px; text-align: center; z-index: 20; opacity: 0; }
+  #big { top: 300px; font-size: __BIGSIZE__px; font-weight: 900; letter-spacing: 12px; line-height: 1; }
+  #term { top: 600px; }
+  #term .main { font-family: var(--font-ui); font-size: 46px; font-weight: 700; letter-spacing: 6px; }
+  #term .sub { font-size: 34px; font-style: italic; font-weight: 400; margin-top: 12px; opacity: .85; }
+  #label { top: 140px; }
+  #label .main { font-family: var(--font-ui); font-size: 50px; font-weight: 800; letter-spacing: 6px; }
+  #label .sub { font-size: 30px; font-style: italic; margin-top: 8px; opacity: .8; }
+  .txt .main:empty, .txt .sub:empty { display: none; }
+  .quote { z-index: 25; opacity: 0; }
+  /* text blocks for the generic templates (stat_count, timeline, compare, bars, list_reveal, quote_card) */
+  .blk { position: absolute; z-index: 22; opacity: 0; font-family: var(--font-ui); color: var(--fg); }
+  .card { background: var(--strip); padding: 14px 24px; }
+  .num { font-family: var(--font-big); font-weight: 900; font-variant-numeric: lining-nums tabular-nums; line-height: 1; }
+  .hot { color: var(--red); }
+__CSS__
+__STAGE__
+</style></head><body>
+<div id="root" data-composition-id="main" data-width="1920" data-height="1080" data-start="0" data-duration="__D__">
+  <div class="full paper"></div>
+  <svg id="fibre" class="full" viewBox="0 0 1920 1080">__TEXTURE__</svg>
+__MEDIA__
+  <div id="drift" class="full">
+  <div id="content" class="full">
+  <div id="stage" class="full"><svg id="ink" class="full" viewBox="0 0 1920 1080"><defs>__FILTERS__</defs></svg></div>
+  <div id="photos" class="full"></div>
+  <div id="big" class="txt"></div>
+  <div id="term" class="txt"><div class="main"></div><div class="sub"></div></div>
+  <div id="label" class="txt"><div class="main"></div><div class="sub"></div></div>
+  </div>
+  </div>
+  <div class="full vignette"></div><div class="full dim"></div><div class="full flash"></div><div class="full veil"></div>
+</div>
+<script>
+const D = __D__, TOKENS = __TOKENS__, LANG = "__LANG__", VEIL_IN = __VIN__, VEIL_OUT = __VOUT__, TAIL = __TAIL__;
+const THEME = "__THEME__", TORN = __TORN__, PH_EASE = "__PHEASE__", P = __PARAMS__;
+__LIB__
+__SCENES__
+const tl = gsap.timeline({ paused: true });
+// Scenes measure text (offsetWidth / offsetHeight) to centre and stack it, so the scene is built only once both font files
+// are in: built straight away it measured a fallback font and every centred Latin line sat up to 90 px off (2026-11-17,
+// onion B4's title). The fonts are loaded explicitly: a face loads only when text first uses it, so document.fonts.ready
+// before the build waits for nothing. The timeline is registered at the end of the build (HyperFrames waits for it, then for
+// fonts); anything that reads the page (doc_code.page_value, tests) awaits window.__built first.
+window.__built = Promise.all([...document.fonts].map(f => f.load())).catch(() => {}).then(() => {
+if (VEIL_IN) { gsap.set(".veil", { opacity: 1 }); tl.to(".veil", { opacity: 0, duration: .35, ease: "power1.out" }, 0); }
+if (VEIL_OUT) tl.to(".veil", { opacity: 1, duration: .35, ease: "power1.in" }, D - TAIL - .35);
+SCENES["__SCENE__"](P);
+overlays(P);
+tl.set({}, {}, D);
+window.__timelines = window.__timelines || {}; window.__timelines["main"] = tl;
+});
+</script></body></html>

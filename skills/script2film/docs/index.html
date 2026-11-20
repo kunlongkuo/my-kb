@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Script2Film：只要你有想法，剩下的交給 agent</title>
+  <meta name="description" content="給 AI agent 用的影片與解說片工具組。一段想法、一份稿件，做到一支有旁白、字幕、圖表與主持人的成片；核心流程在自己的電腦上跑，不用帳號與 API 金鑰。">
+  <!-- share preview: written by tools/site/og_tags.py -->
+  <link rel="canonical" href="https://notoriouslab.github.io/script2film/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://notoriouslab.github.io/script2film/">
+  <link rel="alternate" hreflang="en" href="https://notoriouslab.github.io/script2film/en/">
+  <link rel="alternate" hreflang="x-default" href="https://notoriouslab.github.io/script2film/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Script2Film">
+  <meta property="og:title" content="Script2Film：只要你有想法，剩下的交給 agent">
+  <meta property="og:description" content="給 AI agent 用的影片與解說片工具組。一段想法、一份稿件，做到一支有旁白、字幕、圖表與主持人的成片；核心流程在自己的電腦上跑，不用帳號與 API 金鑰。">
+  <meta property="og:url" content="https://notoriouslab.github.io/script2film/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://notoriouslab.github.io/script2film/site/og-zh.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Script2Film 字樣與「給 AI agent 用的影片與解說片工具組」，旁邊是兩格每日得力一分鐘的成片畫面">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /share preview -->
+  <link rel="stylesheet" href="site/site.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">Script<b>2</b>Film</a>
+      <div class="nav-links">
+        <a href="#different">有什麼不同</a>
+        <a href="#features">能做什麼</a>
+        <a href="gallery.html">場景與色版</a>
+        <a href="tools.html">工具</a>
+        <a href="studio.html">Prompt Studio</a>
+        <a href="#works">作品</a>
+        <a href="#flow">怎麼做出來</a>
+        <a href="#start" class="keep">開始</a>
+      </div>
+      <a class="lang" href="en/index.html" hreflang="en" lang="en">English</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">開源・MIT 授權</div>
+        <h1>只要你有想法，<br>剩下的交給 agent</h1>
+        <p class="sub">給 AI agent 用的影片/解說片工具組</p>
+        <p class="lead">一段想法、一份稿件，一支有旁白、字幕、圖表與主持人的成片就可以出來。每一步都有看得懂的說明，核心流程在你自己的電腦上跑，不用帳號，也不用API金鑰。</p>
+        <div class="cta">
+          <a class="btn primary" id="gh-main" href="https://github.com/notoriouslab/script2film" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.77-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" />
+            </svg>
+            在 GitHub 上看</a>
+          <a class="btn ghost" id="gh-zip"
+            href="https://github.com/notoriouslab/script2film/archive/refs/heads/main.zip" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14ZM7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z" />
+            </svg>
+            下載 ZIP</a>
+        </div>
+        <div class="gh-row">
+          <a class="gh-btn" id="gh-star-link" href="https://github.com/notoriouslab/script2film" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z" />
+            </svg>
+            星標<span class="gh-count" id="gh-stars"></span></a>
+          <a class="gh-btn" id="gh-fork-link" href="https://github.com/notoriouslab/script2film/fork" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z" />
+            </svg>
+            分支<span class="gh-count" id="gh-forks"></span></a>
+          <a class="gh-btn" id="gh-watch-link" href="https://github.com/notoriouslab/script2film/subscription"
+            target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM8 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+            </svg>
+            關注<span class="gh-count" id="gh-watch"></span></a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="site/hero-poster.jpg"
+            aria-label="用 Script2Film 做出來的一支英文短劇的片段">
+            <source src="site/hero.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-under">
+          <a class="play" id="play-full" href="https://www.youtube.com/watch?v=qrFl_yrWPNk" data-yt="qrFl_yrWPNk"
+            data-title="When You Meet a Love Negotiator" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 2.5v11a.5.5 0 0 0 .77.42l8.5-5.5a.5.5 0 0 0 0-.84l-8.5-5.5A.5.5 0 0 0 4 2.5Z" />
+            </svg>
+            看完整影片（有聲音，1 分 52 秒）</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="alt" id="facts">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><b>27</b><span>種程式畫的場景</span></div>
+        <div class="stat"><b>15</b><span>套色版</span></div>
+        <div class="stat"><b>3</b><span>家 AI agent 實際跑過</span></div>
+        <div class="stat"><b>0</b><span>個必要的帳號或金鑰</span></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>免費工具就能出片</strong>
+          <p>配音、對時、畫面、組裝都可以在自己的電腦上跑。第一個範例從頭做到尾，免費工具就能跑。</p>
+        </div>
+        <div class="fact"><strong>每個環節都能換工具</strong>
+          <p>配音、生成鏡頭、主持人、剪輯軟體，換成你習慣順手的，照設定跟著做就能接得上。</p>
+        </div>
+        <div class="fact"><strong>AI agent 照文件就能跑</strong>
+          <p>基本測試三家不同的 agent 只讀專案裡的文件，都可以做出通過檢查的片，包含一個在筆電上跑的本機模型，以及免費額度的 DeepSeek。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="different">
+    <div class="wrap">
+      <div class="kicker">有什麼不同</div>
+      <h2>它不是另一個剪輯軟體</h2>
+      <p class="intro">一般的 AI 剪輯工具幫你把拍好的素材剪短、上字幕。Script2Film 從想法出發：作品是照著你的想法做出來的。</p>
+      <div class="cmp">
+        <div class="cmp-row cmp-head">
+          <div class="them">一般 AI 剪輯工具</div>
+          <div class="us">Script2Film</div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">從拍好的素材開始剪</div>
+          <div class="us"><b>從一個想法開始</b><span>旁白寫在稿裡，哪一句配哪個畫面也寫在稿裡。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">畫面是找來的，或整段生成的</div>
+          <div class="us"><b>圖表、算式、清單等27種場景由程式畫</b><span>數字照稿，不會畫錯；改了稿，重跑一次就好。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">專案藏在軟體裡</div>
+          <div class="us"><b>每一步都有說明清楚的檔案</b><span>文稿、每句話的時間、剪輯計畫都是文字檔，可以比對、可以進版控。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">輸出就結束</div>
+          <div class="us"><b>每一支出片都會被檢查</b><span>半截檔、片中黑格、響度不對、音效沒混進去、成片比素材舊，就不能上傳。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">綁在固定的服務上</div>
+          <div class="us"><b>每個環節都能換</b><span>配音、生成鏡頭、主持人、剪輯軟體各有預設，也各有換別家的做法。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">按月訂閱</div>
+          <div class="us"><b>核心流程不花錢</b><span>在自己的電腦上跑，不用帳號與金鑰。生成鏡頭與主持人等影片製作是選用的，那兩步才需要外部服務。</span></div>
+        </div>
+        <div class="cmp-row">
+          <div class="them" data-label="一般工具：">有操作介面，用滑鼠拉</div>
+          <div class="us"><b>不用介面，不用動手</b><span>告訴 AI agent 要做什麼，它照文件一步步做；花額度、挑主持人造型、上傳之前都會先問你。自動化也是有紀律的。</span>
+          </div>
+        </div>
+      </div>
+      <div class="pair">
+        <div class="term"><span class="dim">// 文稿裡的動作（examples/coffee/doc.json）</span>
+{ <span class="k">"lines"</span>: [2], <span class="k">"scene"</span>: <span class="s">"pie"</span>, <span class="k">"params"</span>: {
+  <span class="k">"title"</span>: <span class="s">"Sample: where the costs go"</span>,
+  <span class="k">"items"</span>: [
+    { <span class="k">"label"</span>: <span class="s">"Beans"</span>, <span class="k">"value"</span>: 45, <span class="k">"at"</span>: <span class="s">"beans"</span> },
+    { <span class="k">"label"</span>: <span class="s">"Rent"</span>,  <span class="k">"value"</span>: 30, <span class="k">"at"</span>: <span class="s">"rent"</span> },
+    { <span class="k">"label"</span>: <span class="s">"Staff"</span>, <span class="k">"value"</span>: 25, <span class="k">"at"</span>: <span class="s">"staff"</span> }
+  ],
+  <span class="k">"focus"</span>: [{ <span class="k">"i"</span>: 0, <span class="k">"at"</span>: <span class="s">"biggest"</span> }]
+}}</div>
+        <div>
+          <div class="frame"><video autoplay muted loop playsinline preload="metadata" poster="site/beat-pie.jpg"
+              aria-label="圓餅圖照旁白一塊一塊展開">
+              <source src="site/beat-pie.mp4" type="video/mp4">
+            </video></div>
+          <p class="pair-cap">左邊是文稿，右邊是它畫出來的動作。唸到 beans，第一塊展開；唸到 biggest，那一塊被強調。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="features">
+    <div class="wrap">
+      <div class="kicker">能做什麼</div>
+      <h2>一支解說片需要的，一段一段來</h2>
+      <p class="intro">下面的畫面都是實際做出來的成片與工具輸出。</p>
+
+      <div class="feat">
+        <div class="feat-text">
+          <div class="feat-num">01　旁白</div>
+          <h3>在自己的電腦上配音，每句挑最準的那一條</h3>
+          <p>每句話錄幾條，轉成文字和稿比對，自動挑最接近的一條串接。常被唸錯的字寫進一張共用的讀音表，之後每支片都照著改。</p>
+          <ul>
+            <li>用十秒左右的參考聲音就能配整支片</li>
+            <li>沒有現成的聲音，可以用文字描述設計一個合成聲音</li>
+          </ul>
+        </div>
+        <figure>
+          <div class="term"><span class="dim">$ python3 doc_voice.py examples/coffee/doc.json</span>
+  transcribing 12 candidates locally (whisper.cpp)
+ 1 <span class="ok">1.00</span>  Flat in spring, climbing all summer: one
+ 2 <span class="ok">1.00</span>  The costs are beans, rent, and staff. Be
+ 3 <span class="ok">1.00</span>  Take what comes in, subtract what goes o
+ 4 <span class="ok">1.00</span>  Split that profit in two: coffee earns m
+narration 23.7s, 4 lines; lowest 1.00; below 0.85: none</div>
+          <figcaption>第一個範例挑候選的實際輸出（節錄）：四句、十二條候選，每句的分數。</figcaption>
+        </figure>
+      </div>
+
+      <div class="feat flip">
+        <div class="feat-text">
+          <div class="feat-num">02　程式畫的畫面</div>
+          <h3>27 種場景，說到哪個字，畫面動到哪裡</h3>
+          <p>折線、圓餅、算式、拆解、對照、清單、時間軸、地圖路線、逐段標重點的文字。你在稿裡寫「說到這個詞的時候出現」，程式照配音的實際時間對上去。引言隨旁白逐字從模糊浮現、劃掉改寫、時間軸從這一段滑到下一段、拉紅線的線索板。15 套長相，還沒配音就能用這一集自己的三拍並排試看。</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="site/scene-prompt.jpg" alt="一段提示詞，說到的那幾個字被標成黃色" loading="lazy" width="1280"
+              height="720"></div>
+          <figcaption>旁白唸到哪一段，那一段就被標出來。</figcaption>
+        </figure>
+      </div>
+
+      <div class="feat">
+        <div class="feat-text">
+          <div class="feat-num">03　生成鏡頭</div>
+          <h3>需要實景的那幾拍，交給影片生成平台</h3>
+          <p>工具先算出每個鏡頭要幾秒、寫好提示詞，排成一張跑單。預設接 VideoExpress，自動送出、收回；有 Google AI 方案的話，單一鏡頭也能交給 Google Flow（Omni、Veo），在你已登入的 Chrome 裡做，下載後連同提示詞一起歸檔。換別家或手動生成也可以，照檔名放回來就好。回來的片會量長度、檢查首尾有沒有壞格。</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="site/shot-generated.jpg" alt="咖啡吧台上的手沖壺與義式咖啡機，左下角有圓框主持人，下方有字幕" loading="lazy"
+              width="1280" height="720"></div>
+          <figcaption>範例 <code>examples/brewing</code> 的第一拍：生成的鏡頭接進時間軸，主持人圓框與字幕照樣疊上去。</figcaption>
+        </figure>
+      </div>
+
+      <div class="feat flip">
+        <div class="feat-text">
+          <div class="feat-num">04　主持人</div>
+          <h3>對嘴的主持人，三種型態</h3>
+          <p>旁白切段送去做對嘴，回來接回時間軸。可以放在角落的圓框、右邊的框，或整個畫面。造型圖會先做幾張給你挑，定了才送出。</p>
+          <ul>
+            <li>只用你自己的樣子，或你有權使用的人物</li>
+            <li>聲音要和畫面上的人相符</li>
+          </ul>
+        </div>
+        <figure>
+          <div class="trio">
+            <div class="frame"><img src="site/host-full.jpg" alt="主持人全版" loading="lazy" width="1280" height="720"></div>
+            <div class="frame"><img src="site/host-circle.jpg" alt="主持人在左下角圓框" loading="lazy" width="1280" height="720">
+            </div>
+            <div class="frame"><img src="site/host-side.jpg" alt="主持人在右上角的框" loading="lazy" width="1280" height="720">
+            </div>
+          </div>
+          <figcaption>全版、圓框、右框，同一支片裡混著用。</figcaption>
+        </figure>
+      </div>
+
+      <div class="feat">
+        <div class="feat-text">
+          <div class="feat-num">05　字幕與對時</div>
+          <h3>字幕跟著聲音走，不用手動對</h3>
+          <p>配音在本機轉出每個字的時間，字幕與畫面都照這份時間排。也會另外產出帶時間軸的字幕檔備用。</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="site/subtitles.jpg" alt="利潤拆成咖啡與甜點兩格的圖，下方有兩行英文字幕" loading="lazy" width="1280"
+              height="720"></div>
+          <figcaption>第一個範例的最後一拍：說到 coffee，那一格亮起來，字幕同時出現。</figcaption>
+        </figure>
+      </div>
+
+      <div class="feat flip">
+        <div class="feat-text">
+          <div class="feat-num">06　出片檢查</div>
+          <h3>做完不是結束，AI 會自己再確認一遍</h3>
+          <p>每一支出片當下就檢查，不論片型：音畫長度、片中黑格、響度與峰值、音效有沒有真的混進去、是不是用最新的素材做的。結果和成片的 SHA-256 一起留在片旁，上傳時只認這一支。解說片再把每一拍的開頭與結尾各截一格排成一張表，agent 必須實際讀過、逐格檢查才能回報完成；看不清楚的直接回報，不亂猜。</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="site/check-sheet.jpg" alt="四拍各兩格的截圖表" loading="lazy" width="1600" height="555">
+          </div>
+          <figcaption>第一個範例的截圖表：四拍，每拍的第一格與最後一格。</figcaption>
+        </figure>
+      </div>
+      <p class="feat-note">品味的事只提醒、不擋：句子之間配樂沒讓開、開場同一個畫面停超過 5 秒（封面不算）、生成畫面多到高點跳不出來、這一集和前三集太像。門檻來自實測已上架的片，出處都寫在程式裡。</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>配樂與音效</h3>
+          <p>背景音樂由程式照畫面事件作曲，段落開頭落在拍點上；要一首有歌詞的歌，可以用自己 Colab 上的 MiniMax Music 3 或 Google Flow Music。音效自動對到畫面出現的那一刻。</p>
+        </div>
+        <div class="card">
+          <h3>開工與出片清單</h3>
+          <p>送出生成、上傳之前，逐題確認該問的事：授權、出處、有沒有畫錯人。沒答完就停下。</p>
+        </div>
+        <div class="card">
+          <h3>上傳 YouTube</h3>
+          <p>排程、縮圖、說明欄、合成內容標記一次帶上。要不要上傳、什麼時候公開，由你說了算。</p>
+        </div>
+        <div class="card">
+          <h3>看懂一支好片的節奏</h3>
+          <p>把欣賞的片和自己的片並排量：鏡頭長度、開場換畫面的速度、說話佔多少、句間多安靜，再排出每格寫著旁白的聯絡表。只量，不替你下判斷。</p>
+        </div>
+      </div>
+      <div class="more">
+        <a href="gallery.html">看 27 種場景與色版 →</a>
+        <a href="tools.html">每個環節用什麼工具 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="kicker">做出來的片</div>
+      <h2>這些都是用它做的</h2>
+      <p class="intro">作者自己的兩個頻道每週在用。四種片型各一支，點了到 YouTube 看。</p>
+      <div class="works">
+        <a class="work" href="https://www.youtube.com/watch?v=qrFl_yrWPNk" target="_blank" rel="noopener">
+          <img src="site/work-1.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">反轉喜劇・英文</span><b>When You Meet a Love Negotiator ?!</b><small>1 分 52 秒・NotoriousLab</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=1aTJSye-l38" target="_blank" rel="noopener">
+          <img src="site/work-4.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">教學片・英文</span><b>One Prompt, a 5-Shot Kung Fu Fight</b><small>3 分 43 秒・NotoriousLab</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=LjCb9Le6Vps" target="_blank" rel="noopener">
+          <img src="site/work-2.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">知識長片・中文</span><b>你以為彼得是個窮漁夫？｜穿越聖經時代 EP2</b><small>6 分 39 秒・Jacob
+              Mei</small></div>
+        </a>
+        <a class="work" href="https://www.youtube.com/watch?v=I51kD1EMYQ0" target="_blank" rel="noopener">
+          <img src="site/work-3.jpg" alt="" loading="lazy" width="640" height="360">
+          <div class="body"><span class="tag">每日短片・直式</span><b>每日得力一分鐘 11-01</b><small>1 分 25 秒・Jacob Mei</small></div>
+        </a>
+      </div>
+      <p class="chan">頻道：<a href="https://www.youtube.com/channel/UCut6SxDwtJHblGQgX6LuTgA" target="_blank"
+          rel="noopener">NotoriousLab</a>（英文）・<a href="https://www.youtube.com/channel/UC7uSiyB1XIv71SPaWEzF3pw"
+          target="_blank" rel="noopener">Jacob Mei</a>（中文）</p>
+    </div>
+  </section>
+
+  <section class="alt" id="flow">
+    <div class="wrap">
+      <div class="kicker">怎麼做出來</div>
+      <h2>七個環節，凡走過的必留下痕跡</h2>
+      <p class="intro">每一個環節讀上一環節留下的檔，做完寫下自己的。中間任何一個環節都可以停下來看、改、重跑。</p>
+      <div class="flow">
+        <div class="step">
+          <div class="id">F0</div><b>安裝檢查</b>
+          <p>缺什麼、怎麼裝，一次列出來。</p>
+        </div>
+        <div class="step">
+          <div class="id">F1</div><b>稿</b>
+          <p>旁白、每一拍配什麼畫面，寫成一個檔。</p>
+        </div>
+        <div class="step">
+          <div class="id">F2</div><b>聲音</b>
+          <p>配音，每句挑最準的一條。</p>
+        </div>
+        <div class="step">
+          <div class="id">F3</div><b>對時</b>
+          <p>量出每個字落在第幾秒。</p>
+        </div>
+        <div class="step">
+          <div class="id">F4</div><b>畫面</b>
+          <p>程式照時間把每一拍畫出來。</p>
+        </div>
+        <div class="step">
+          <div class="id">F5</div><b>組裝</b>
+          <p>聲音、畫面、字幕接成一支片。</p>
+        </div>
+        <div class="step">
+          <div class="id">F6</div><b>檢查</b>
+          <p>量數字、排截圖表、逐格看。</p>
+        </div>
+      </div>
+      <p class="flow-note">選用的六段接在旁邊：生成鏡頭、主持人、配樂與音效、進剪輯軟體加疊加層、清單、上傳。完整的步驟與命令在 <a
+          href="https://github.com/notoriouslab/script2film/blob/main/docs/FLOW.md" class="gh-doc"
+          data-path="docs/FLOW.md" target="_blank" rel="noopener">流程文件</a>（英文）。</p>
+    </div>
+  </section>
+
+  <section id="agents">
+    <div class="wrap">
+      <div class="kicker">誰跑過</div>
+      <h2>三家 agent，只讀文件，都可以做得出來</h2>
+      <p class="intro">我的筆電是 MacBook Pro（M3 Max，36GB 記憶體）。三種 AI Agent、四種模型的出片都通過出片檢查，成片長度落在範例 (25 秒的英文片) 預期的範圍內。</p>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Agent</th>
+              <th>模型</th>
+              <th>核心流程（不用帳號）</th>
+              <th>生成鏡頭＋主持人</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Claude Code</td>
+              <td>Claude Opus</td>
+              <td>可以</td>
+              <td>可以</td>
+            </tr>
+            <tr>
+              <td>Google Antigravity</td>
+              <td>Gemini 4 Argon, low</td>
+              <td>可以</td>
+              <td>可以</td>
+            </tr>
+            <tr>
+              <td>opencode + Ollama</td>
+              <td>Qwen 27b (MLX)，本機</td>
+              <td>可以，約 13 分鐘</td>
+              <td>可以，約 35 分鐘</td>
+            </tr>
+            <tr>
+              <td>opencode</td>
+              <td>DeepSeek V4.1 Flash（免費額度）</td>
+              <td>可以，兩支片約 20 分鐘</td>
+              <td>沒試</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="flow-note">每一家卡在哪、換別的 agent 怎麼排除，寫在 <a
+          href="https://github.com/notoriouslab/script2film/blob/main/docs/AGENT-TRIALS.md" class="gh-doc"
+          data-path="docs/AGENT-TRIALS.md" target="_blank" rel="noopener">試跑紀錄</a>（英文）。</p>
+    </div>
+  </section>
+
+  <section class="alt" id="start">
+    <div class="wrap">
+      <div class="kicker">開始</div>
+      <h2>三步，做出第一支片</h2>
+      <p class="intro">目前在 Apple Silicon 的 Mac 上驗證過（實測機型為 MacBook Pro M3 Max）。第一個範例是四句話、約 25 秒的英文片，不用任何帳號。</p>
+      <div class="start">
+        <div class="card">
+          <div class="n">1</div>
+          <h3>把專案抓下來（不懂怎麼做？問你的 AI）</h3>
+          <p>用 git 複製，或下載 ZIP 解開。</p>
+          <pre><code id="clone-cmd">git clone https://github.com/notoriouslab/script2film.git</code></pre>
+        </div>
+        <div class="card">
+          <div class="n">2</div>
+          <h3>跑安裝檢查</h3>
+          <p>它只檢查、不安裝，缺什麼會告訴你怎麼裝。新機器第一次安裝約 30 分鐘、下載約 7 GB，步驟在 <a
+              href="https://github.com/notoriouslab/script2film/blob/main/docs/INSTALL.md" class="gh-doc"
+              data-path="docs/INSTALL.md" target="_blank" rel="noopener">安裝文件</a>（英文）。</p>
+          <pre><code>python3 tools/doctor/doctor.py</code></pre>
+        </div>
+        <div class="card">
+          <div class="n">3</div>
+          <h3>在這個資料夾打開你的 agent</h3>
+          <p>然後跟它說：</p>
+          <div class="say">照文件把 examples/coffee 做成一支片。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Script2Film・MIT 授權</span>
+      <a href="studio.html">Prompt Studio</a>
+      <a href="https://github.com/notoriouslab/script2film" class="gh-doc" data-path="" target="_blank"
+        rel="noopener">GitHub</a>
+      <a href="https://github.com/notoriouslab/script2film/blob/main/NOTICE.md" class="gh-doc" data-path="NOTICE.md"
+        target="_blank" rel="noopener">素材與程式的出處</a>
+      <a href="en/index.html" hreflang="en" lang="en">English</a>
+    </div>
+  </footer>
+
+  <script src="site/site.js"></script>
+</body>
+
+</html>
