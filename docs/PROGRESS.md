@@ -2,7 +2,7 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
-## 2026-11-21 ── 安裝 Script2Film 影片製作技能
+## 2026-11-21 ── 安裝 Script2Film 影片製作技能 & 建立堆高機科普短片文稿
 
 ### ✅ 完成
 
@@ -23,6 +23,11 @@
    - 建立 `.agents/skills/google-flow/SKILL.md`
    - 同步更新 `skills/script2film/SKILL.md`
    - 更新根目錄 `AGENTS.md`、`ANTIGRAVITY.md`、`README.md`。
+4. **首支 VOX 科普短影音企劃與分鏡建構**：
+   - 主題：《不是車，是輪子上的蹺蹺板：堆高機的運作原理》
+   - 建立專案：`skills/script2film/projects/forklift/doc.json`
+   - 規劃 5 大核心拍點（直覺對照、槓桿力矩公式、穩定性三角形、側翻三大誘因、液壓系統拆解）
+   - 通過 `doc_lint.py` 檢查，停等點 F1 已就緒。
 
 ---
 
