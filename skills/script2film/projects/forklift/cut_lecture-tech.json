@@ -1,0 +1,35 @@
+{
+ "clips": "picks_lecture-tech",
+ "srt": "voice.cleaned/final.srt",
+ "out": "cut_lecture-tech",
+ "stepped_fps": 0,
+ "shots": {
+  "shot1": 1,
+  "shot2": "7.12s",
+  "shot3": "14.82s",
+  "shot4": "23.72s",
+  "shot5": "33.46s"
+ },
+ "max_stretch": 1.2,
+ "shell": {
+  "dir": "shell_lecture-tech",
+  "copy": [
+   "index.html",
+   "gsap.min.js",
+   "fonts",
+   "sfx",
+   "voice.cleaned"
+  ],
+  "video_src": "visual.mp4"
+ },
+ "timeline": {
+  "name": "不是車，是輪子上的蹺蹺板：堆高機的運作原理_lecture-tech",
+  "lines": "tts/lines.json",
+  "audio": "voice.cleaned/audio.m4a",
+  "lead_s": 0.45,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "extra_audios": []
+ }
+}

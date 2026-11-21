@@ -42,8 +42,7 @@ assets/fonts/*
 # the dated backups skills/ve-director/doc/scripts/sfx_seed.py writes before changing the manifest
 assets/sfx/manifest.*.json
 
-# Films made inside examples/ (docs/FLOW.md): what the steps write stays out of git. Scoped to examples/*/ on purpose:
-# a bare tts/ or host/ would also hide tools/tts/. Clean up with: git clean -fdX examples/<name>
+# Films made inside examples/ and projects/: intermediate build artifacts stay out of git
 examples/*/tts/
 examples/*/tts_lines/
 examples/*/voice.cleaned/
@@ -63,6 +62,22 @@ examples/*/host/
 examples/*/storyboard_*.md
 examples/*/checklist_answers.json
 examples/*/script_approval.json
+
+# Projects intermediate build artifacts & duplicate fonts (keep doc.json, beats.json, output.mp4, srt)
+projects/*/*/fonts/
+projects/*/*/.segments/
+projects/*/*/.output.*
+projects/*/code_*/
+projects/*/shell_*/
+projects/*/picks_*/
+projects/*/nightly/
+projects/*/voice.cleaned/
+projects/*/*.log
+projects/*/*/*.log
+projects/*/*/*.mp4
+projects/*/cut_*/*.mp4
+!projects/*/cut_*/output.mp4
+
 
 # 規格與每一期的紀錄：只留在本機，不公開
 openspec/

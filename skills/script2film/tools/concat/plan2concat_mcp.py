@@ -250,7 +250,28 @@ def loudnorm(path, target="I=-14:TP=-2.5:LRA=11", grain=0):
               "-preset", "medium", "-pix_fmt", "yuv420p"]
              if grain else ["-c:v", "copy"])
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, *video, "-af", af, "-c:a", "aac", "-b:a", "192k", tmp], check=True)
-    os.replace(tmp, path)
+    import time
+    for _ in range(5):
+        try:
+            if os.path.exists(path):
+                try:
+                    os.replace(tmp, path)
+                    break
+                except OSError:
+                    os.remove(path)
+                    os.replace(tmp, path)
+                    break
+            else:
+                os.replace(tmp, path)
+                break
+        except OSError:
+            time.sleep(0.5)
+    else:
+        if os.path.exists(tmp):
+            import shutil
+            shutil.copy2(tmp, path)
+            os.remove(tmp)
+
 
 
 def stream_dur(path, kind):

@@ -1,0 +1,61 @@
+{
+ "video": "I:\\Mark\\my-kb\\skills\\script2film\\projects\\forklift\\ai_support_images\\output_with_ai_illustrations.mp4",
+ "ok": true,
+ "items": [
+  {
+   "code": "av_len",
+   "item": "video and audio lengths within 3 frames (0.100s)",
+   "ok": true,
+   "value": "video 42.400s, audio 42.400s",
+   "notes": []
+  },
+  {
+   "code": "last_frame",
+   "item": "last video frame within 3 frames of the file length",
+   "ok": true,
+   "value": "last frame ends 42.400s, file 42.400s",
+   "notes": []
+  },
+  {
+   "code": "black_mid",
+   "item": "no black frames inside the film",
+   "ok": true,
+   "value": "0 found",
+   "notes": []
+  },
+  {
+   "code": "loudness",
+   "item": "loudness -14.0±0.8 LUFS",
+   "ok": true,
+   "value": -14.0,
+   "notes": []
+  },
+  {
+   "code": "peak",
+   "item": "peak ≤ -1.0 dBTP",
+   "ok": true,
+   "value": -2.4,
+   "notes": []
+  }
+ ],
+ "listed": [
+  {
+   "code": "stale",
+   "item": "inputs fingerprint (listed, not blocking)",
+   "value": "no record"
+  },
+  {
+   "code": "quiet",
+   "item": "quietest 5% of the sound (listed, not blocking)",
+   "value": "-56.2 dB"
+  },
+  {
+   "code": "first30",
+   "item": "longest stretch without a new picture in the first 30 s, cover left out (listed, not blocking)",
+   "value": "30.0s; over 5s (FORMAT §4c)"
+  }
+ ],
+ "size": 5280838,
+ "sha256": "fbe22e7495a9f5752b28f66a3140d4df6fa447fcd543324d2290396f4853256a",
+ "skipped": []
+}

@@ -403,7 +403,10 @@ def duration(path):
 
 
 def sh(*a, **kw):
-    subprocess.run([str(x) for x in a], check=True, **kw)
+    args = [str(x) for x in a]
+    if args and args[0] in ("python3", "python"):
+        args[0] = sys.executable
+    subprocess.run(args, check=True, **kw)
 
 
 REPO = SKILL_DOC.parents[2]

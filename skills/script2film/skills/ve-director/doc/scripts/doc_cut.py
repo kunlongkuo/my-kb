@@ -742,7 +742,11 @@ def main():
             src = P / f"ve_{ve_look(doc, theme)}" / f"shot{ve.index(b['id']) + 1}.mp4"
         if not src.exists():
             sys.exit(f"✗ missing clip for {b['id']}: {src}")
-        (picks / f"shot{k}.mp4").symlink_to(src)
+        dst = picks / f"shot{k}.mp4"
+        try:
+            dst.symlink_to(src)
+        except OSError:
+            shutil.copy2(src, dst)
         shots[f"shot{k}"] = 1 if k == 1 else f"{b['start']:.2f}s"
     out = f"cut_{theme}"
     if (P / out).exists():

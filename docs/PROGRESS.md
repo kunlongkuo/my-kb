@@ -2,7 +2,7 @@
 
 > 本文件記錄專案的重要里程碑與進度，供 AI Agent 交接或團隊成員快速掌握現況。
 
-## 2026-11-21 ── 安裝 Script2Film 影片製作技能 & 建立堆高機科普短片文稿
+## 2026-11-21 ── 安裝 Script2Film 影片製作技能 & 完成《堆高機的運作原理》成片與排版優化
 
 ### ✅ 完成
 
@@ -11,23 +11,26 @@
    - 安裝位置：`skills/script2film/`
    - 包含主技能 `script2film`、分鏡導演 `ve-director`、生成擴充 `google-flow`。
 2. **依賴環境配置與驗證**：
-   - 安裝 Python 核心套件：`pytest`, `opencc-python-reimplemented`, `soundfile`。
+   - 安裝 Python 核心套件：`pytest`, `opencc-python-reimplemented`, `soundfile`, `edge-tts`。
    - 安裝 Node 依賴：HyperFrames v0.7.111, GSAP 3.12.2。
    - 下載 HyperFrames 渲染瀏覽器核心 Chrome Headless Shell。
    - 下載 Google Noto 思源黑體與宋體可變字型（`NotoSansTC-Variable.ttf`、`NotoSerifTC-Variable.ttf`）。
    - 修訂 `tools/doctor/doctor.py` 支援 Windows 系統路徑與 chrome-headless-shell.exe 偵測。
-   - 通過 `doctor.py --skip voice` 與 `doc_lint.py examples/coffee/doc.json` 驗證。
-3. **Agent 技能註冊與指引整合**：
-   - 建立 `.agents/skills/script2film/SKILL.md`
-   - 建立 `.agents/skills/ve-director/SKILL.md`
-   - 建立 `.agents/skills/google-flow/SKILL.md`
-   - 同步更新 `skills/script2film/SKILL.md`
-   - 更新根目錄 `AGENTS.md`、`ANTIGRAVITY.md`、`README.md`。
-4. **首支 VOX 科普短影音企劃與分鏡建構**：
-   - 主題：《不是車，是輪子上的蹺蹺板：堆高機的運作原理》
-   - 建立專案：`skills/script2film/projects/forklift/doc.json`
-   - 規劃 5 大核心拍點（直覺對照、槓桿力矩公式、穩定性三角形、側翻三大誘因、液壓系統拆解）
-   - 通過 `doc_lint.py` 檢查，停等點 F1 已就緒。
+   - 通過 `doctor.py --skip voice` 與 `doc_lint.py` 驗證。
+3. **首支 VOX 科普短影音《堆高機的運作原理》全流程實作並輸出成片**：
+   - 企劃與文稿：`skills/script2film/projects/forklift/doc.json`，色版 `lecture-tech`。
+   - 旁白語音合成：開發並執行 `tools/tts/edge_pipeline.py`，使用 `zh-TW-YunJheNeural` 產出 41.5 秒高品質旁白。
+   - 逐字對時：開發 `tools/tts/make_words_json.py`，產出 `audio.words.json`，`doc_align.py` 成功對齊時間軸（worst match 1.00）並生成繁中字幕。
+   - 程式場景渲染：`doc_code.py` 成功渲染 5 大動態場景（直覺對照、力矩平衡公式、穩定性三角形、側翻誘因、力量拆解）。
+   - 剪輯合成與質檢：`doc_cut.py` 成功渲染出最終成片 `projects/forklift/cut_lecture-tech/output.mp4`（42.40 秒），通過 `check.py` 檢驗（-14.0 LUFS、0 黑格、音畫誤差 0.000s）。
+4. **字卡佈局引擎優化（解決結尾字卡互相疊到問題）**：
+   - 修改 `skills/ve-director/doc/scenes/breakdown.js`：加入自適應防重疊推開演算（保持上下卡片 $\ge 40\text{ px}$ 安全間距）、調適 Y 軸座標與字級大小。
+   - 優化 `projects/forklift/doc.json` B5 文案：精煉為「搬運物理系統」、「槓桿力矩平衡」、「帕斯卡液壓倍增」，徹底杜絕折行遮擋。
+   - 通過 `test_breakdown.py` 18 項測試，重新渲染成片並通過 `check.py`。
+5. **Windows 平台相容性全域加固**：
+   - `doc_common.py`：`sh()` 自動相容 Windows Python 解譯器調用。
+   - `doc_cut.py`：Windows symlink 權限不足時自動 fallback 至 `shutil.copy2`。
+   - `plan2concat_mcp.py`：`loudnorm` 加入 Windows 檔案鎖定重試與複製機制，徹底解決 WinError 5。
 
 ---
 

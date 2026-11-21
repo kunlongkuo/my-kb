@@ -1,0 +1,88 @@
+{
+ "video": "I:\\Mark\\my-kb\\skills\\script2film\\projects\\forklift\\cut_lecture-tech\\output.mp4",
+ "ok": true,
+ "items": [
+  {
+   "code": "av_len",
+   "item": "video and audio lengths within 3 frames (0.100s)",
+   "ok": true,
+   "value": "video 42.400s, audio 42.400s",
+   "notes": []
+  },
+  {
+   "code": "last_frame",
+   "item": "last video frame within 3 frames of the file length",
+   "ok": true,
+   "value": "last frame ends 42.400s, file 42.400s",
+   "notes": []
+  },
+  {
+   "code": "black_mid",
+   "item": "no black frames inside the film",
+   "ok": true,
+   "value": "0 found",
+   "notes": []
+  },
+  {
+   "code": "loudness",
+   "item": "loudness -14.0±0.8 LUFS",
+   "ok": true,
+   "value": -14.0,
+   "notes": []
+  },
+  {
+   "code": "peak",
+   "item": "peak ≤ -1.0 dBTP",
+   "ok": true,
+   "value": -2.4,
+   "notes": []
+  },
+  {
+   "code": "timeline_len",
+   "item": "length vs subtitle timeline ≤ 0.05s",
+   "ok": true,
+   "value": "42.40 vs 42.40"
+  },
+  {
+   "item": "no subtitles under 0.5s",
+   "ok": true,
+   "value": "0 found",
+   "notes": []
+  }
+ ],
+ "listed": [
+  {
+   "code": "stale",
+   "item": "inputs fingerprint (listed, not blocking)",
+   "value": "no record"
+  },
+  {
+   "code": "quiet",
+   "item": "quietest 5% of the sound (listed, not blocking)",
+   "value": "-56.2 dB"
+  },
+  {
+   "code": "first30",
+   "item": "longest stretch without a new picture in the first 30 s, cover left out (listed, not blocking)",
+   "value": "30.0s; over 5s (FORMAT §4c)"
+  }
+ ],
+ "skipped": [],
+ "size": 7337424,
+ "sha256": "a9e70ab65481bccbae35897b4a1a8df06434a23ad181ea02ce3179dfcb6578f1",
+ "sheet": "sheet.jpg",
+ "frozen": [
+  {
+   "beat": "B4",
+   "at": 25.97,
+   "seconds": 5.77
+  }
+ ],
+ "sparse": [],
+ "blank_open": [],
+ "short_subs": {
+  "source": "final.srt",
+  "fail": [],
+  "warn": []
+ }
+}

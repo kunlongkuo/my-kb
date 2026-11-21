@@ -31,16 +31,26 @@ SCENES.breakdown = p => {
   };
   // a parent's children hang from one bar; each child's branch draws as it is said, from the parent's edge to the child's
   const branch = (P, kids) => {
-    const y0 = P.b.offsetTop + P.b.offsetHeight, y1 = Math.min(...kids.map(([C]) => C.b.offsetTop)), ym = (y0 + y1) / 2;
+    let y0 = P.b.offsetTop + P.b.offsetHeight, y1 = Math.min(...kids.map(([C]) => C.b.offsetTop));
+    if (y0 + 40 > y1) {
+      const need = (y0 + 40) - y1;
+      const up = Math.min(need / 2, Math.max(0, P.b.offsetTop - 120));
+      const down = need - up;
+      P.b.style.top = (P.b.offsetTop - up) + "px";
+      kids.forEach(([C]) => { C.b.style.top = (C.b.offsetTop + down) + "px"; });
+      y0 = P.b.offsetTop + P.b.offsetHeight;
+      y1 = Math.min(...kids.map(([C]) => C.b.offsetTop));
+    }
+    const ym = (y0 + y1) / 2;
     kids.forEach(([C, it]) => {
       const s = stroke(`M ${P.x} ${y0} L ${P.x} ${ym} L ${C.x} ${ym} L ${C.x} ${C.b.offsetTop}`, 4.5, it.hot ? RED : FG, .85);
       draw(s, C.t, .45); sfx("marker", C.t); C.els.push(ELS.push(s) - 1);
     });
   };
   const deep = parts.some(it => it.parts), wide = S >= 500;   // wide: 2-4 parts, room for larger words
-  const R = card("root", p.root, 960, deep ? 190 : 270, deep ? 72 : 84, deep ? 480 : 600, at(p.root.at, .3), null);
-  const first = parts.map((it, k) => [card(String(k), it, 960 + (k - (n - 1) / 2) * S, deep ? 470 : 600,
-    wide ? (deep ? 64 : 76) : 58, Math.min(S - 40, 460), at(it.at, .9 + k * .6), "root"), it]);
+  const R = card("root", p.root, 960, deep ? 190 : 230, deep ? 72 : 72, deep ? 480 : 620, at(p.root.at, .3), null);
+  const first = parts.map((it, k) => [card(String(k), it, 960 + (k - (n - 1) / 2) * S, deep ? 470 : 610,
+    wide ? (deep ? 64 : 64) : 58, Math.min(S - 40, 480), at(it.at, .9 + k * .6), "root"), it]);
   branch(R, first);
   first.forEach(([P, it], k) => {
     if (!it.parts) return;
